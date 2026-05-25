@@ -65,9 +65,8 @@ const SCENES = {
 // ============ FRAMING — ACT 1 ============
 
 start: {
-  id: 'START', title: 'The Old Roar',
-  meta: 'A choose-your-own-adventure for the cousins of Sun Lakes',
-  text: `<figure class="illus"><img src="images/jump.webp" alt="Eight cousins jumping off the dock at sunset"><figcaption>The summer always starts the same way.</figcaption></figure>
+  id: '', title: '', meta: '',
+  text: `<figure class="illus"><img src="images/cover.webp" alt="The Old Roar — book cover with dock, lake, basalt cliffs at sunset"></figure>
 <div class="demo-note"><strong>A true CYOA.</strong> You'll meet all eight cousins. You'll choose one to BE. You'll travel into a lake-below-the-lake to earn what you need. Then all eight of you will face the man with the clipboards together. Your choices change the ending.</div>
 <p>The truck doors open at the same time. It is the third of July. Eight cousins tumble out into dust and dry grass and the smell of warm rock. Sun Lakes sits below them. The cove is the bluest it has ever been.</p>
 <p>Madison (15). Carson (15). Reid (14). Chayten (13). Kellen (12). Keira (10). Ella (10). Aiden (7).</p>
@@ -91,7 +90,8 @@ p001: {
 
 p002: {
   id: 'P-002', title: 'The Man with the Clipboards', meta: 'The threat arrives',
-  text: `<p>Next morning. A man in a beige shirt is walking the dock with a clipboard. The eight cousins have come down for the dawn swim. They watch him from the lawn.</p>
+  text: `<figure class="illus"><img src="images/drystone.webp" alt="Drystone hammering a CLOSED — UNSAFE — REMOVAL PENDING sign into the lawn at the foot of the dock"><figcaption>His name, they will learn, is Drystone.</figcaption></figure>
+<p>Next morning. A man in a beige shirt is walking the dock with a clipboard. The eight cousins have come down for the dawn swim. They watch him from the lawn.</p>
 <p>He is measuring things. He taps the third plank with his shoe — the wobbly one. He writes something. He shakes his head.</p>
 <p>His name, they will learn, is <em>Drystone.</em></p>
 <p>He sees the kids. He smiles in the way grown-ups smile when they have already decided. "Morning. You kids been swimming off this dock?"</p>
@@ -136,7 +136,8 @@ p004: {
 
 p005: {
   id: 'P-005', title: 'The C-130', meta: 'Portal triggers',
-  text: `<p>It is the hum of a C-130.</p>
+  text: `<figure class="illus"><img src="images/c130.webp" alt="A C-130 cargo plane flying low over the lake cove at dusk, angled downward as if diving into the water, basalt cliffs framing the canyon"><figcaption>It flies into the lake.</figcaption></figure>
+<p>It is the hum of a C-130.</p>
 <p>The C-130 is the cargo plane that flies low over Sun Lakes every few summers — military training, dropping into the canyon between Coulee walls. The kids have always loved it. They run to the dock when they hear it and they wave at the pilots and sometimes the pilots wag the wings back.</p>
 <p>The hum gets louder. It is closer than the C-130 has ever been. The sunroom windows are rattling.</p>
 <p>The C-130 comes over the cove low — so low they can see rivets — and it does the thing it has never done before:</p>
@@ -151,7 +152,8 @@ p005: {
 
 p010: {
   id: 'P-010', title: 'Arrival — The Old Roar', meta: 'Eight rafts land in a meadow',
-  text: `<p>They land in a meadow that is greener than grass should be. The C-130 hum is gone. The sky is the color of a postcard.</p>
+  text: `<figure class="illus"><img src="images/harbor_keeper.webp" alt="An older man with a kind face and a baseball cap sitting cross-legged on a flat rock in a meadow, holding a wooden clipboard; eight different rafts landed in a loose circle around him"><figcaption>The Harbor Keeper, waiting.</figcaption></figure>
+<p>They land in a meadow that is greener than grass should be. The C-130 hum is gone. The sky is the color of a postcard.</p>
 <p>An old man is waiting for them on a flat rock. He looks a little like Uncle Bill but isn't quite. He has a baseball cap with no logo on it and a kind face and a clipboard, but his clipboard is wood and the paper has handwritten lists. He is the kind of person you trust within four seconds.</p>
 <p>"You found us," he says. "Took you long enough." He grins.</p>
 <p>"I am the Harbor Keeper. I have been keeping this place ready for visitors for a long time. You eight in particular — your dock-above is in trouble and the dock-above is hooked to the dock-below. If we don\'t fix things here, your home up there doesn\'t have a chance."</p>
@@ -176,7 +178,7 @@ hub: {
 
 showdown_intro: {
   id: 'SHOWDOWN', title: 'Back at the Dock', meta: 'Friday morning',
-  text: `<figure class="illus"><img src="images/dock_night.webp" alt="Three cousins sitting on the dock at night under a full moon, fireworks distant across the cove"><figcaption>The night before. The dock they came home to save.</figcaption></figure>
+  text: `<figure class="illus"><img src="images/showdown.webp" alt="Eight cousins standing in a line on the dock at dawn, facing Drystone on the lawn; impossible creatures arriving behind the kids — a mammoth shape, a tree-being, a unicorn, otters, birds"><figcaption>Friday morning. The dock they came home to save.</figcaption></figure>
 <p>Friday morning. The eight cousins are back at Sun Lakes. They remember everything. The grown-ups remember nothing — the lake-below kept the memory inside them.</p>
 <p>Drystone\'s truck is parked at the top of the lawn. Two of his crewmen are unloading a small bulldozer. He is walking down the gravel with his clipboard.</p>
 <p>He sees them on the dock. He smiles his apology-smile. "Sorry kids. Time\'s up. We need you to clear the area."</p>
@@ -552,7 +554,8 @@ function render() {
   let h = '';
   if (s.id) h += `<div class="passage-id">${s.id}</div>`;
   if (s.meta) h += `<div class="scene-meta">${s.meta}</div>`;
-  h += `<h2 class="scene-title">${s.title}</h2><div class="scene-text">${s.text || ''}</div>`;
+  if (s.title) h += `<h2 class="scene-title">${s.title}</h2>`;
+  h += `<div class="scene-text">${s.text || ''}</div>`;
   if (s.isHub) {
     h += renderHub();
   } else if (s.isEndingDecide) {
