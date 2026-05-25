@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Old Roar — A Sun Lakes Story</title>
+<title>The Old Roar — Complete Reading Copy</title>
 <style>
   :root {
     --paper: #faf6ed;
@@ -12,172 +12,1616 @@
     --water: #4a7d8c;
     --green: #6b8e4e;
     --gold: #c9a23f;
+    --soft: rgba(43, 36, 25, 0.05);
+    --rule: rgba(43, 36, 25, 0.15);
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   html, body {
     background: var(--paper);
     color: var(--ink);
     font-family: 'Charter', 'Georgia', serif;
-    line-height: 1.6;
+    line-height: 1.7;
+    font-size: 18px;
+  }
+  body {
+    display: flex;
     min-height: 100vh;
   }
-  .container {
-    max-width: 720px;
-    margin: 0 auto;
-    padding: 60px 30px 80px;
+  nav.toc {
+    width: 260px;
+    background: rgba(255, 255, 255, 0.4);
+    border-right: 1px solid var(--rule);
+    padding: 28px 20px;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+    flex-shrink: 0;
   }
-  header {
-    text-align: center;
-    margin-bottom: 50px;
-    border-bottom: 3px double var(--ink);
-    padding-bottom: 32px;
-  }
-  h1 {
-    font-size: 52px;
+  nav.toc h2 {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--warm);
     font-weight: normal;
     font-style: italic;
+    margin-bottom: 18px;
+  }
+  nav.toc a {
+    display: block;
+    padding: 6px 4px;
+    color: var(--ink);
+    text-decoration: none;
+    font-size: 14px;
+    border-bottom: 1px solid transparent;
+  }
+  nav.toc a:hover {
+    border-bottom: 1px solid var(--warm);
+    color: var(--warm);
+  }
+  nav.toc .group {
+    margin-bottom: 14px;
+  }
+  nav.toc .group-label {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: rgba(43, 36, 25, 0.5);
+    margin: 16px 0 6px 4px;
+  }
+  main {
+    flex: 1;
+    max-width: 720px;
+    padding: 48px 40px 80px;
+    margin: 0 auto;
+  }
+  h1.book-title {
+    font-size: 42px;
+    font-weight: normal;
+    font-style: italic;
+    text-align: center;
     margin-bottom: 8px;
     letter-spacing: 1px;
   }
-  .subtitle {
+  .book-subtitle {
+    text-align: center;
     color: var(--warm);
     font-size: 14px;
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
+    margin-bottom: 48px;
     font-style: italic;
   }
-  .intro {
-    font-size: 18px;
-    margin-bottom: 50px;
+  .book-meta {
     text-align: center;
-    color: rgba(43, 36, 25, 0.75);
-  }
-  .three-ways {
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
+    font-size: 13px;
+    color: rgba(43, 36, 25, 0.55);
     margin-bottom: 60px;
+    font-style: italic;
   }
-  .three-ways a {
-    display: block;
-    background: rgba(255, 255, 255, 0.5);
-    border: 1.5px solid var(--ink);
-    border-radius: 6px;
-    padding: 24px 28px;
-    text-decoration: none;
-    color: var(--ink);
-    transition: all 0.15s ease;
+  h2.chapter {
+    font-size: 32px;
+    font-weight: normal;
+    font-style: italic;
+    margin: 80px 0 8px;
+    padding-top: 40px;
+    border-top: 3px double var(--ink);
+    letter-spacing: 0.5px;
   }
-  .three-ways a:hover {
-    background: var(--ink);
-    color: var(--paper);
-    transform: translateX(4px);
-  }
-  .three-ways a:hover .label {
-    color: var(--paper);
-  }
-  .three-ways .label {
-    font-size: 12px;
+  h2.chapter:first-of-type { border-top: none; padding-top: 0; }
+  h3.chapter-sub {
+    font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: var(--warm);
-    display: block;
-    margin-bottom: 4px;
-  }
-  .three-ways .title {
-    font-size: 22px;
+    font-weight: normal;
+    margin-bottom: 28px;
     font-style: italic;
-    margin-bottom: 6px;
   }
-  .three-ways .desc {
-    font-size: 14px;
-    line-height: 1.5;
+  h4.passage {
+    font-size: 20px;
+    font-weight: normal;
+    font-style: italic;
+    margin: 36px 0 10px;
+    color: var(--ink);
   }
-  .kids-list {
+  h4.passage .pid {
+    display: inline-block;
+    font-family: 'Courier New', monospace;
+    font-size: 11px;
+    color: var(--warm);
+    background: rgba(201, 122, 63, 0.08);
+    padding: 2px 7px;
+    border-radius: 3px;
+    margin-right: 10px;
+    vertical-align: middle;
+    letter-spacing: 0.5px;
+    font-style: normal;
+  }
+  h5.path {
+    font-size: 17px;
+    font-weight: bold;
+    color: var(--water);
+    margin: 32px 0 12px;
+    padding-top: 14px;
+    border-top: 1px solid var(--rule);
+    letter-spacing: 1px;
+  }
+  h5.fallback {
+    color: rgba(43, 36, 25, 0.55);
+    font-style: italic;
+  }
+  p {
+    margin-bottom: 16px;
+  }
+  .variant-block {
     background: rgba(74, 125, 140, 0.06);
     border-left: 3px solid var(--water);
-    padding: 24px 28px;
-    margin-bottom: 40px;
-    border-radius: 0 6px 6px 0;
+    padding: 12px 18px;
+    margin: 14px 0;
+    font-size: 16px;
   }
-  .kids-list h2 {
-    font-size: 14px;
+  .variant-block .v-label {
+    display: block;
+    font-size: 11px;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
     color: var(--water);
-    font-weight: normal;
-    margin-bottom: 14px;
-    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 6px;
   }
-  .kids-list ul {
-    list-style: none;
-    padding: 0;
-  }
-  .kids-list li {
-    padding: 5px 0;
+  .variant-block em { font-style: italic; }
+  .choice-note {
+    background: rgba(201, 162, 63, 0.08);
+    border: 1px solid var(--gold);
+    border-radius: 4px;
+    padding: 14px 18px;
+    margin: 20px 0;
     font-size: 15px;
   }
-  .kids-list li strong {
-    color: var(--ink);
+  .choice-note ul {
+    list-style: none;
+    padding: 0;
+    margin: 8px 0 0;
   }
-  footer {
+  .choice-note li {
+    padding: 6px 0;
+    border-bottom: 1px solid rgba(201, 162, 63, 0.2);
+  }
+  .choice-note li:last-child { border-bottom: none; }
+  .choice-note strong { color: var(--warm); }
+  .ending-banner {
     text-align: center;
-    margin-top: 60px;
-    padding-top: 30px;
-    border-top: 1px solid rgba(43, 36, 25, 0.15);
-    font-size: 13px;
-    color: rgba(43, 36, 25, 0.5);
+    padding: 16px;
+    margin: 32px 0 18px;
+    border-radius: 4px;
+    font-size: 16px;
     font-style: italic;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  .ending-banner.crown { background: var(--gold); color: var(--ink); }
+  .ending-banner.silver { background: var(--water); color: var(--paper); }
+  .stage-note {
+    font-size: 13px;
+    color: rgba(43, 36, 25, 0.55);
+    font-style: italic;
+    text-align: center;
+    margin: 20px 0;
+  }
+  hr.scene-break {
+    border: none;
+    text-align: center;
+    margin: 28px 0;
+  }
+  hr.scene-break::after {
+    content: "◆ ◆ ◆";
+    color: rgba(43, 36, 25, 0.3);
+    letter-spacing: 12px;
+    font-size: 14px;
+  }
+  @media (max-width: 900px) {
+    body { flex-direction: column; }
+    nav.toc { width: 100%; position: relative; height: auto; }
+    main { padding: 24px 20px 40px; }
+    h1.book-title { font-size: 32px; }
+    h2.chapter { font-size: 24px; }
   }
 </style>
 </head>
 <body>
-<div class="container">
-  <header>
-    <h1>The Old Roar</h1>
-    <div class="subtitle">A Sun Lakes Story</div>
-  </header>
 
-  <p class="intro">
-    A choose-your-own-adventure book about eight cousins at Hotel Sun Lakes,<br>
-    the magical world that lives under the lake, and what it means to belong to a place.
-  </p>
-
-  <div class="three-ways">
-    <a href="reading_copy.html">
-      <span class="label">★ Recommended ★</span>
-      <div class="title">Read the Book</div>
-      <div class="desc">The full reading copy. Every chapter, every path, both endings. ~50,000 words. Best for reading aloud to a kid, or reading end-to-end yourself.</div>
-    </a>
-    <a href="prototype.html">
-      <span class="label">Interactive</span>
-      <div class="title">Play the Adventure</div>
-      <div class="desc">Click-through CYOA prototype. Make real choices. State tracking, multiple endings. Best for testing how the branches feel and replay value.</div>
-    </a>
-    <a href="bingo_card.html">
-      <span class="label">Printable</span>
-      <div class="title">Sun Lakes Bingo Card</div>
-      <div class="desc">Print this out for the real trip. 5×5 family-activity card. Center space is the synchronized jump-in. Five-in-a-row earns a prize.</div>
-    </a>
+<nav class="toc">
+  <h2>Contents</h2>
+  <div class="group">
+    <div class="group-label">Act 1 — Sun Lakes</div>
+    <a href="#ch1">Chapter 1 — Arrival</a>
   </div>
-
-  <div class="kids-list">
-    <h2>The eight cousins</h2>
-    <ul>
-      <li><strong>Madison</strong> (15) &mdash; strategist, the oldest, brings the cookies</li>
-      <li><strong>Carson</strong> (15) &mdash; competitor, the rally point, big heart</li>
-      <li><strong>Reid</strong> (14) &mdash; gentle giant, craftsman, the calm center</li>
-      <li><strong>Chayten</strong> (13) &mdash; connector, performer, fierce sister</li>
-      <li><strong>Kellen</strong> (12) &mdash; athlete and thinker, played whole</li>
-      <li><strong>Keira</strong> (10) &mdash; artist, climber, sees what others miss</li>
-      <li><strong>Ella</strong> (10) &mdash; courage in a small package, deciding face</li>
-      <li><strong>Aiden</strong> (7) &mdash; wonder, kindness, just learned to swim</li>
-    </ul>
+  <div class="group">
+    <div class="group-label">Act 2 — The Old Roar</div>
+    <a href="#ch2">Chapter 2 — Crossing Over</a>
   </div>
+  <div class="group">
+    <div class="group-label">Act 3 — The Regions</div>
+    <a href="#madison">Madison — Quiet Pool</a>
+    <a href="#chayten">Chayten — Driftwood Stage</a>
+    <a href="#carson">Carson — Coulee Plains</a>
+    <a href="#reid">Reid — Old Speak's Wood</a>
+    <a href="#kellen">Kellen — Skip-Stone Lake</a>
+    <a href="#keira">Keira — Painted Cliff</a>
+    <a href="#ella">Ella — Bright Water Court</a>
+    <a href="#aiden">Aiden — Unicorn Meadow</a>
+  </div>
+  <div class="group">
+    <div class="group-label">Acts 4–6 — The Showdown</div>
+    <a href="#showdown-1">Chapter 4 — Showdown Part 1</a>
+    <a href="#showdown-2">Chapter 5 — Showdown Part 2</a>
+    <a href="#endings">Endings</a>
+  </div>
+</nav>
 
-  <footer>
-    Private family book &mdash; please don't share publicly.
-  </footer>
+<main>
+
+<h1 class="book-title">The Old Roar</h1>
+<div class="book-subtitle">A Sun Lakes Story</div>
+<div class="book-meta">Complete reading copy &mdash; every passage, every path, both endings.</div>
+
+<h2 class="chapter" id="ch1">Chapter 1 — Arrival at Sun Lakes</h2>
+<h3 class="chapter-sub">The first day of the trip</h3>
+
+<h4 class="passage"><span class="pid">P-001</span>The Synchronized Jump</h4>
+
+<p>The truck doors open at the same time.</p>
+<p>It is the third of July. The drive from the western side of the state took most of the day. The last twenty minutes was the long winding downhill road &mdash; narrow, no shoulder, dropping into the canyon &mdash; and you'd miss the turn entirely except for the dented unmarked mailbox at the top of it. Every year somebody in the lead car panics that they've gone past. They haven't. There it is.</p>
+<p>The dirt parking lot is at the bottom of the hill. Eight kids tumble out of four cars, into dust and dry grass and the smell of warm rock. Sun Lakes sits below them. The cove is the bluest it's ever been.</p>
+<p>The grown-ups are still in the parking lot arguing about who made the best time. (The mom from Madison and Kellen's car insists she did. The dad from Carson and Keira's car disagrees on principle. Uncle Bill, sitting on the tailgate of his truck, is refereeing badly.) They are also arguing about what time to start the pizza for tonight. Pizza is the first-night dinner. It has been the first-night dinner for as long as any of them can remember. The argument isn't about whether &mdash; it's about <em>when</em> to put the first one in the oven, which depends on how hungry the kids are, which depends on how cold the lake is, which depends on a thousand things nobody is going to actually figure out before someone just goes ahead and turns on the oven.</p>
+<p>The dock is still there. (Reid checks. He always checks. He noticed last summer that the third plank wobbles. This summer the wobble is a little worse. He doesn't tell anyone. He never does. But he files the difference under the same heading he files everything: <em>things that get smaller every year if you don't pay attention.</em>)</p>
+<p>The kids run. Not toward the condos. Not toward the bags. Toward the dock.</p>
+<p>This is the rule. The rule is older than any of them. The rule has no rule-maker. It just is.</p>
+<p>When you arrive at Sun Lakes, you put your bag down and you run to the dock and you all jump in at the same time.</p>
+<p>Madison hits the dock first, because she's the oldest and her legs are longest. She kicks her sandals off as she runs and they land in the grass behind her. Carson is next, a half-step behind. Then Reid, then Chayten and Kellen at a near-tie, then Keira (whose legs are catching up to the older kids each year and who is going to be faster than all of them in two more summers), then Ella in her bright pink swimsuit, then Aiden, last, the smallest, his bare feet slapping the wood.</p>
+<p>This year is different for Aiden. He learned to swim this spring. <em>Really</em> learned. No life jacket. No grown-up holding the back of his suit. He spent six weekends at the YMCA pool with his mom and now he can do an entire lap. Last summer he was the kid the grown-ups had to bring in, careful, double-checked. This year he is running to the end of the dock with the rest of them and nobody is reaching for him because nobody has to. He is going to jump in with his cousins. By himself. For the first time. And nobody is going to ask if he's sure.</p>
+<p>He is sure.</p>
+<p>They line up at the end of the dock. Eight kids in a row. The wood is hot under their feet. The water is so clear they can see the brown shadow of the dock pilings underneath. A heron stops fishing in the shallows and looks up at them like <em>here we go again.</em></p>
+<p>Madison says, "Ready."</p>
+<p>Reid says, "Ready."</p>
+<p>Carson says, "READY."</p>
+<p>Chayten says, "Ready."</p>
+<p>Kellen says, "Ready."</p>
+<p>Keira says, "Ready."</p>
+<p>Ella says, "Ready."</p>
+<p>Aiden says, "Ready."</p>
+<p>They count to three out loud, all together.</p>
+<p>ONE.</p>
+<p>TWO.</p>
+<p><em>THREE.</em></p>
+<p>Eight kids jump at once.</p>
+<p>The splash is enormous. Eight bodies hit the water in the same second. Carson does a cannonball that is louder than physics allows. Madison goes in feet-first, ballet-clean. Reid hits the water like a tree falling. Chayten and Kellen go in side by side. Keira does a half-twist she's been practicing. Ella jumps with her arms straight up and her crown of pink hair-ties intact. Aiden jumps with his eyes closed and his hand reaching for Chayten's, finding it under the water.</p>
+<p>They surface together. Eight heads bobbing. Eight grins. The lake is exactly as cold as it always is, exactly as warm at the surface, exactly the right kind of <em>here</em> that means the trip has started.</p>
+<p>Madison spits water. "We're here."</p>
+<p>Aiden, breathing through his nose because his sister's hand is still around his and he refuses to let go, says, "<em>We're HERE.</em>"</p>
+<p>The grown-ups are walking down the path now, carrying bags, still arguing about coolers and pizza times. They look up and they see eight kids in the water and they smile at each other in the specific way grown-ups smile when they have done one thing right.</p>
+<p>Tonight is pizza night. The big house won't smell of brisket until tomorrow, or the night after &mdash; Uncle Bill's BBQ does its slow work for the middle of the trip. But the porch and the side yard still hold the <em>ghost</em> of brisket from years past. The wood is soaked in it. The siding is. The cushions on the deck chairs are. Even after a year of rain and snow and canyon wind, the place still smells faintly of every brisket Uncle Bill has ever cooked here. Memory has a smell. So does Sun Lakes.</p>
+<p>The bats are not yet out. They will be, tonight, after sunset, swooping low to eat the canyon mosquitoes. The wind is not yet howling. It will, after dark, when the canyon breathes the cold air down from Grand Coulee Dam.</p>
+<p>But for now: just water. Just sun. Just eight kids in the cove on the third of July, exactly where they belong.</p>
+<p>The summer has started.</p>
+<p>The summer always starts this way.</p>
+
+<hr class="scene-break">
+
+<h4 class="passage"><span class="pid">P-002</span>Mr. Drystone Arrives</h4>
+
+<p>It happens later in the afternoon.</p>
+<p>The kids have done the things kids do at Sun Lakes in the first hours: unpacked into the same condos they always have (each family has the same condo every year; nobody decided this, it just is), grabbed snacks from the cooler, and scattered. The pizza dough is rising on the counter in the big house. The grown-ups are still in there laughing at something none of the kids will ever know.</p>
+<p>Madison is reading on the grass with a tin of cookies beside her. She always brings cookies on the first day &mdash; or, some years, makes them during the trip. This was a bring-them year. She made them last night. They are oatmeal-chocolate-chip and they have a small amount of cinnamon in them that nobody but Aiden ever names.</p>
+<p>Chayten is paddle-boarding back from the back dock with Aiden, who is sitting cross-legged on the front of the board holding a fishing rod and talking to it.</p>
+<p>Reid is at the edge of the main dock, whittling a stick.</p>
+<p>Kellen is in the grass taking shadow swings with a baseball bat. He is not hitting anything. He is doing the thing where you look out at the far-off island on the other side of the lake and you visualize the perfect arc &mdash; pitch in, weight back, hips through, contact, follow-through, the ball sailing all the way across the cove and landing on that island. He has hit that island in his head about forty times today. He is going to keep hitting it.</p>
+<p>Carson is on the grass with a putter, hyping a mini-golf rematch for after dinner.</p>
+<p>Keira is sketching the lake in a notebook with a small soft pencil.</p>
+<p>Ella is sitting on the porch with her chin on her hands. She is just sitting. She is not putting on makeup, not playing a game, not doing anything in particular. She is <em>with her cousins.</em> All week. No school. No piano. No one telling her what's next. She is thinking about exactly nothing, and it is the best feeling she has had all year.</p>
+<p>Aiden is, as established, talking to his fishing rod. ("Wait. <em>Wait.</em> Fish are in WATER. How am I going to fish? I can't fish from the dock. I have to be IN the water. But if I'm in the water I'll scare the fish. This is &mdash; Chayten. CHAYTEN. How do people FISH.")</p>
+<p>The man arrives in a white pickup truck.</p>
+<p>He pulls into the dirt parking lot. He gets out. He is wearing a hard hat. In a wide open dirt parking lot. That is the first weird thing. He has three clipboards under one arm and a tablet in his other hand. He walks down to the dock without looking up from the tablet.</p>
+<p>Carson sees him first. Carson says, "Uh."</p>
+<p>The man does not introduce himself. He pulls out a sign on a metal stake and hammers the stake into the grass at the head of the dock. He uses a small mallet. He hits the stake four times. He does not look up.</p>
+<p>The sign reads:</p>
+<div class="choice-note" style="text-align:center;">
+<strong>COMING SOON</strong><br>
+DRIEDMORE DATA CENTER &mdash; WEST CASCADIA HUB<br>
+GROUNDBREAKING JULY 4 &mdash; 12:00 NOON<br>
+THIS COVE IS UNDER CONTRACT TO DRIEDMORE PROPERTIES
 </div>
-</body>
-</html>
+<p>Madison sets her book down. She walks over. She reads it twice. She knows what a data center is. She knows what they need.</p>
+<p>Carson asks. Madison says, "They use a LOT of water. Cooling. They want to drain the lake."</p>
+<p>Aiden, paddle-boarding back, says, "But we can't have a lake if there's no water."</p>
+<p>Madison says, "That's the whole point."</p>
+<p>The man finally looks up. He sees a small group of kids standing around his sign. He sighs.</p>
+<p>"Don't TOUCH the sign, kids. This here is a malfeasance of zoning. I am Mr. Drystone of Driedmore Properties." He pronounces <em>ecosystem</em> "echo-system" without noticing.</p>
+<p>Reid says, quietly, "My family has come here for years. Why are the other people selling?"</p>
+<p>Drystone laughs. "Selling? Sweetheart, the people who own this place have a dock with NO foundation. The water's eaten the ground out from under it. They can't AFFORD the geological work. Driedmore is RESCUING them. We're the good guys here."</p>
+<p>(The rental families who come every summer don't own a square inch of Sun Lakes. They have rented the condos every July for as long as the kids have been alive. The cove belongs to the family who runs it. The rental families just <em>belong</em> to the cove. There's a difference. There's not really a difference.)</p>
+<p>He scans something on his tablet. He does not look at any of the kids' faces.</p>
+<p>He leaves.</p>
+
+<hr class="scene-break">
+
+<h4 class="passage"><span class="pid">P-003</span>The Kids Can't Fix This</h4>
+
+<p>The kids stand around the sign for a long minute.</p>
+<p>Reid looks at the dock. The third plank is wobbling under his weight more than it did even last summer. He bends down. He looks at the pilings underneath. He can see, in the clear water, the way the dirt around them is being pulled by the current. The dock foundation IS being eroded. Drystone is right about that part.</p>
+<p>The kids try the obvious things.</p>
+<p>Madison wants to find the adults. The adults are inside, finishing the lunch dishes and starting prep for tonight's brisket. Uncle Bill is asleep on the couch in the sunroom. (Bill has been up since four AM. He is allowed.) Madison does not wake him. She also realizes, as she's standing outside the door, that her own mother has been talking about "the situation" all week on the phone. The grown-ups already KNOW about Driedmore. They have been talking about it for weeks. They have been quietly considering it because of the dock.</p>
+<p>Reid suggests pulling the sign down. Carson says no &mdash; that's not how you win. That just makes them put up another sign and now you also have a vandalism charge.</p>
+<p>Kellen suggests calling somebody. Keira points out they don't know who.</p>
+<p>Aiden, very quietly, says, "Can we just ask the lake to stop it?"</p>
+<p>There is a pause. Several of the older kids laugh, but the laugh is not unkind. Madison doesn't laugh at all. She looks at Aiden. Then she looks past him.</p>
+<p>She looks at the sunroom.</p>
+<p>The door is half-open. Inside, the rafts are piled up against the wall, drying from this morning's lake-jump. The big inflatable unicorn is on top of the pile.</p>
+<p>The unicorn is bobbing.</p>
+<p>There's no wind.</p>
+
+<hr class="scene-break">
+
+<h4 class="passage"><span class="pid">P-004</span>The Sunroom</h4>
+
+<p>The kids drift toward the main house.</p>
+<p>The sunroom door is half-open. The big inflated unicorn is still bobbing.</p>
+<p>Aiden walks in first. Aiden is seven and has not yet learned to be afraid of weird things.</p>
+<p>The other seven follow.</p>
+<p>The sunroom is warm &mdash; warmer than the rest of the house. The sun has been on it all afternoon and the wall of windows has trapped the heat. The plastic of the inflatables is warm against the skin. The smell is the specific smell of Sun Lakes in July: the deep-soaked brisket-memory of the side yard, sunscreen on the kids' shoulders, lake water still on their suits, warm plastic, the faint sourdough smell of pizza dough rising in the kitchen, and one other smell that nobody can name &mdash; cold and wet and faintly green, like cave water on a hot day, even though there is no cave water in the sunroom.</p>
+<p>Madison says, "Is that smell new?"</p>
+<p>Reid says, "It feels new."</p>
+<p>Chayten sets the paddle board against the wall. Kellen leans the baseball bat against the doorframe. Carson pockets his putter. Keira closes her sketchbook. Ella stands up from where she's been sitting.</p>
+<p>Eight kids are now standing in the sunroom, surrounded by inflatables, with no clear plan.</p>
+<p>Aiden walks up to the unicorn raft. He places one small hand on its plastic side.</p>
+<p>The unicorn raft is warm.</p>
+<p>The unicorn raft tilts its big inflatable head toward him.</p>
+<p>Aiden does not flinch. He just nods, like the unicorn raft has confirmed something he already suspected.</p>
+<p>Outside, somewhere up the canyon, a sound begins. It is far off and getting closer. The sound is enormous and low and the kids feel it in their chests before their ears catch it.</p>
+<p>The C-130.</p>
+<p>It comes through the canyon a couple of times during their week here. Not every day. Just a handful of times during the trip, the giant gray cargo plane swinging low between the cliffs because the canyon is the perfect training run. The kids look forward to it. The grown-ups pretend not to. When somebody yells <em>PLANE!</em> every kid in earshot drops what they're doing and runs to the deck to watch.</p>
+<p>But today is different. Today the sunroom is <em>humming.</em></p>
+
+<hr class="scene-break">
+
+<h4 class="passage"><span class="pid">P-005</span>The C-130</h4>
+
+<p>The C-130 thunders past.</p>
+<p>It is so loud the windows rattle. The frame of the sunroom shakes. The pile of inflatables shifts. Aiden grabs Chayten's hand. Reid grins. Carson covers his ears and laughs. Keira instinctively shields her sketchbook even though it's already closed. Ella's hand mirror falls off the windowsill and onto the carpet without breaking.</p>
+<p>The plane is huge. Through the sunroom windows, the kids can see it for a full second &mdash; gray and low and almost stupidly close to the cliffs &mdash; and then it is past, the sound trailing behind it as it disappears around the bend.</p>
+<p>The sunroom is still humming.</p>
+<p>The pile of inflatables is no longer a pile.</p>
+<p>The rafts have moved.</p>
+<p>The unicorn raft is on the floor in front of Aiden. The canoe-shaped raft is in front of Madison. A long log-shaped raft is in front of Reid. A sturdy wheeled-boat raft is in front of Carson. A racing canoe is in front of Kellen. A flat painter's raft is in front of Keira. A small boat with golden trim is in front of Ella. A driftwood-bowed boat is in front of Chayten.</p>
+<p>Each kid is standing in front of a raft.</p>
+<p>Each raft was waiting for them.</p>
+<p>Nobody says anything for a moment.</p>
+<p>Then Aiden climbs onto the unicorn raft.</p>
+<p>He doesn't think about it. He just does.</p>
+<p>The unicorn raft lifts off the floor.</p>
+<p>The walls of the sunroom go away.</p>
+<p>The lake outside is no longer the lake outside. There is a bigger water. A <em>louder</em> water. Madison can hear it &mdash; a big sound, far off, like a waterfall. Like the BIGGEST waterfall.</p>
+<p>Each raft starts to slide off in a different direction. The kids try to call to each other but the wind is loud. Aiden, on his unicorn, is laughing. Madison, in her canoe, is shouting instructions. Reid is calmly steering. Carson is whooping. Kellen is grinning. Keira is open-mouthed. Ella is sitting perfectly straight with her hands folded in her lap as if she has been waiting for a royal carriage and one has finally arrived.</p>
+<p>The last thing each kid hears is Madison's voice, far off: "WHATEVER YOU DO, STAY ON YOUR RAFT UNTIL IT LANDS."</p>
+<p>(Madison is the oldest. She always knows.)</p>
+<p>The rafts pull them through. The sunroom is far behind them. The bigger water is below them. The C-130 is somewhere far away in a world they have just, briefly, left.</p>
+
+<h2 class="chapter" id="ch2">Chapter 2 — The Old Roar</h2>
+<h3 class="chapter-sub">Crossing into the memory-world</h3>
+
+<h4 class="passage"><span class="pid">P-010</span>Eight Rafts Land in the Meadow</h4>
+
+<p>The rafts land together.</p>
+<p>Not where they were heading separately &mdash; somewhere new. A green meadow under a sky that is the color of green water seen from underneath. The grass is the brightest green any of the kids have ever seen. The air smells like rain that has not happened.</p>
+<p>They climb off their rafts. They stand in a loose group. They check that everyone is here. Madison counts heads. Eight. Good.</p>
+<p>A roaring sound is filling the meadow from every direction. It is the sound Madison heard from her canoe &mdash; bigger, louder, more present. It is a waterfall. It is <em>every</em> waterfall.</p>
+<p>In front of them, where the meadow falls away, they can see why.</p>
+<p>Dry Falls is wet.</p>
+<p>Dry Falls &mdash; the enormous cliff at the head of the canyon, the one that is in every school field trip the kids have ever taken in this part of the state, the one that has been a <em>dry</em> falls for fifteen thousand years &mdash; is <em>roaring.</em> Water coming over the lip in a sheet a thousand feet wide. The sound is the sound of geology happening.</p>
+<p>Aiden whispers, "<em>Oh.</em>"</p>
+<p>Carson whispers, "<em>Whoa.</em>"</p>
+<p>Madison says, "Where are we?"</p>
+<p>A voice from behind them, warm and low and amused, says, "Lake family. <em>Good.</em> Been too quiet around here."</p>
+<p>The eight kids turn.</p>
+
+<hr class="scene-break">
+
+<h4 class="passage"><span class="pid">P-011</span>The Harbor Keeper</h4>
+
+<p>He is sitting on a log at the edge of the meadow.</p>
+<p>He is large. Not big-as-a-tree-being large, not big-as-a-mammoth large. Just <em>human</em> large &mdash; broad shouldered, a little stooped, the size of a grown-up uncle who has spent a lifetime carrying things. He has a beard the color of cedar bark. He is wearing what looks like a faded denim shirt and suspenders. He has work boots. He has a beat-up canvas hat pushed back on his head.</p>
+<p>He is whittling.</p>
+<p>A small pile of wood shavings has gathered at his feet.</p>
+<p>He looks up as the kids turn.</p>
+<p>He smiles.</p>
+<p>The smile is <em>specifically familiar.</em></p>
+<p>Reid notices it first, in the part of his brain that notices things without telling anyone. The smile is one he has seen before. He can't quite place where.</p>
+<p>The man says, "Sit down, sit down. Don't stand around looking like you got off a bus."</p>
+<p>He gestures to a half-circle of flat stones around the log. They are the perfect height for sitting. They were not there a second ago.</p>
+<p>The kids sit.</p>
+<p>The man keeps whittling. He does not introduce himself for a while. He just works. The shavings curl off his knife in long thin spirals. Aiden watches with the kind of attention Aiden gives to things that are mysterious and excellent.</p>
+<p>After a long minute, the man says, "You can call me the Harbor Keeper. That's the name I have on this side. I have had others. Last visitor I had, a long time ago, called me something else. I don't remember what. I have a bad memory for what people call me. I have a <em>good</em> memory for the people themselves."</p>
+<p>Madison says, "What... what is this place?"</p>
+<p>The Harbor Keeper looks up. "You're in The Old Roar. That's the name for what's underneath your cove. Underneath every place that gets loved enough, long enough, by the same families coming back year after year. The Old Roar is the memory of the land. It is the <em>attention</em> the land remembers being given. Your families have been giving this lake attention for a long time. The lake remembers. So do I."</p>
+<p>He puts the whittling down. He looks at each of the kids in turn.</p>
+<p>He says, "Madison. Carson. Chayten. Reid. Kellen. Keira. Ella. Aiden."</p>
+<p>Nobody told him their names.</p>
+<p>The kids do not react the way kids in movies do. They do not gasp. They just sit there and absorb it. Aiden, characteristically, just nods like he already suspected.</p>
+<p>The Harbor Keeper says, "There is a problem at your dock. I know about it. The lake knows about it. The Old Roar is connected to your cove and what happens up there happens down here. If your lake gets drained, this world ends. So. We need to fix it."</p>
+<p>He stands up. He stretches. His knees crack like old wood.</p>
+<p>"Each of you can earn something here. Something that will help up there. There are eight things to find, one per kid. None of you can earn another kid's thing. Each one is shaped for you specifically. The Old Roar already knows what you need. You'll find it because the world will lead you to it."</p>
+<p>He turns and gestures across the meadow. The grass behind him opens out into eight different regions, visible all at once &mdash; a quiet pool, a driftwood stage, a wide grassy plain, a rocky woodland, a long flat lake, a basalt cliff, a moss circle, a meadow with a sideways-growing rainbow.</p>
+<p>The Harbor Keeper says, "<em>But.</em> There's a thing about time."</p>
+<p>The kids look up.</p>
+<p>The Harbor Keeper says, "You'll have time for four."</p>
+<p>He says it plainly. He lets it sit.</p>
+<p>"Four regions, if you stay together. All of you in one group, going to four places, deep. You won't get to all eight. You'll have to choose which four matter most."</p>
+<p>He pulls a worn deck of cards out of his shirt pocket and shuffles it once, absently, the way some grown-ups always have a deck of cards on them.</p>
+<p>"Or," he says, "you split up. Two groups of four. Cover all eight regions but each kid sees less of each one."</p>
+<p>He fans the cards. Holds them up.</p>
+<p>"Or each of you goes alone. All eight regions covered, deepest possible. Hardest. <em>Bravest.</em> I won't tell you which to pick. That part's yours."</p>
+<p>He puts the cards back in his pocket.</p>
+<p>He says, "You want to play gin rummy after, that's fine by me. I've got time."</p>
+<p>He winks at no one in particular.</p>
+<p>Reid is staring at him. He still can't place the smile.</p>
+
+<hr class="scene-break">
+
+<h4 class="passage"><span class="pid">P-012</span>The Strategy Choice</h4>
+
+<p>The Harbor Keeper steps back. He sits down on his log. He picks up his whittling.</p>
+<p>He waits.</p>
+<p>The eight kids look at each other.</p>
+<p>Madison says, "We have to decide."</p>
+<p>Carson says, "What do you guys think?"</p>
+<p>Aiden, who is seven, says, "Whatever Madison says."</p>
+<p>Madison says, "It's not just my call, buddy. We all decide."</p>
+<p>The eight kids stand in a loose huddle. The Harbor Keeper is whittling on his log, not watching them, giving them space. Dry Falls is roaring in the distance.</p>
+<p>Madison says, "Okay. Three choices. We stay together and go deep on four places. Or we split into two groups and cover all eight. Or each of us goes alone &mdash; all eight regions, deepest possible."</p>
+
+<div class="choice-note">
+<strong>The reader chooses how the kids will approach The Old Roar.</strong>
+<ul>
+<li><strong>Stay together</strong> — 4 regions deep, all 8 kids along. Safest.</li>
+<li><strong>Split into two groups</strong> — 8 regions covered, groups of 4. Balanced.</li>
+<li><strong>Each goes alone</strong> — 8 regions, deepest possible. Hardest. Bravest.</li>
+</ul>
+<p style="margin-top:10px; margin-bottom:0; font-size:14px;">In this reading copy you'll see each region with all three wrapper variants (Stay-Together / Split / Solo) and all three path choices (A base / B enhanced / C hidden). In a real playthrough you'd pick one of each.</p>
+</div>
+
+<p class="stage-note">The eight regions follow. Read them in any order &mdash; the kids visit them all.</p>
+
+<h2 class="chapter" id="madison">Chapter 3 — Madison at the Quiet Pool</h2>
+<h3 class="chapter-sub">Item earned: The Map &middot; Possible allies: Branch the beaver, the Lake Sisters</h3>
+
+<h4 class="passage"><span class="pid">P-110</span>Arrival at the Quiet Pool</h4>
+
+<p>Madison's raft slides to a stop on the shore of a pool so still you could roll a coin across it.</p>
+<p>The raft is a wooden canoe now, with her name carved into the side: <strong>MADISON</strong>. The tin of cookies she was holding in the sunroom is still in her lap. None of them are crushed. (She checks.)</p>
+<p>The pool is shaped like a heart, if a heart had been drawn by someone who'd never seen one. Rocks at the edge. Cottonwoods leaning over the water. A heron standing on one leg in the shallows, looking at her like she's late.</p>
+
+<div class="variant-block">
+<span class="v-label">If the group stayed together</span>
+<em>The other seven kids are climbing out of their rafts behind her. Reid is already studying the rocks. Aiden is whispering something to a frog. Carson is sizing up the heron like he wants to race it. Madison turns and counts heads &mdash; eight. All present. Good.</em>
+</div>
+
+<div class="variant-block">
+<span class="v-label">If the group split into two</span>
+<em>Three other kids are climbing out behind her &mdash; the group she came in with. They give her space. They know this one is hers.</em>
+</div>
+
+<div class="variant-block">
+<span class="v-label">If each kid went alone</span>
+<em>She's alone. The other seven landed somewhere else. The silence is bigger than she expected. She steadies herself. Oldest kid. She knows what she's doing.</em>
+</div>
+
+<p>Three heads pop up out of the water.</p>
+<p>Three girls. One her age. One younger. One small.</p>
+<p>Their hair drips upward instead of down.</p>
+<p>The oldest one tilts her head. "Are you the cookie-bringer?"</p>
+<p>The middle one says, "She IS the cookie-bringer."</p>
+<p>The youngest one is already chewing on something.</p>
+<p>The oldest climbs out. Her feet leave wet prints that turn into flowers. "I'm Pip. That one's Lark. The one chewing is Wren. Wren, what are you eating."</p>
+<p>Wren opens both hands. They're full of pondweed she's mashed into the shape of a cookie. It is the saddest cookie Madison has ever seen.</p>
+<p>"It's my OWN recipe," Wren says.</p>
+<p>"It's TERRIBLE," Pip says.</p>
+<p>Madison opens her tin. The cookies inside smell like brown sugar and brisket smoke and home.</p>
+<p>She is about to share them.</p>
+<p>Then Lark says: "Wait. First &mdash; sit down."</p>
+
+<hr class="scene-break">
+
+<h4 class="passage"><span class="pid">P-111</span>The Cared-For Moment</h4>
+
+<p>Lark says it again. "Sit DOWN. You've been holding it together for everyone for three days. We can tell."</p>
+<p>Madison opens her mouth to say she's fine.</p>
+<p>Pip says, "Don't."</p>
+<p>Wren tugs her hand. "Float."</p>
+<p>Madison doesn't quite understand. Pip puts a hand on her shoulder and shows her &mdash; the pool will hold you up, if you let it. The water here is the kind of water that knows what tired is.</p>
+<p>Madison sits. Then lies back. Then floats.</p>
+<p>For one minute &mdash; sixty whole seconds, no one counting but everyone knowing &mdash; Madison just floats.</p>
+<p>The sky above the pool is so green it isn't a sky color. There are no clouds. There's a sound somewhere that might be wind or might be humming. The water is warm at her back and cool at her elbows. Wren puts a pondweed cookie on her stomach. Wren is very proud of this gesture.</p>
+<p>Nobody asks Madison anything.</p>
+<p>Nobody needs anything from her.</p>
+<p>Then the pool does something it has not done in a hundred years. It shows her a memory it has been saving.</p>
+<p>It is just a flash. Three seconds, no more. Madison sees the lake at home, from underwater &mdash; the wobbly shimmer of the surface, and above it, eight pairs of legs all in a row at the end of the dock. Eight pairs. Her cousins' legs. Her own legs. The legs are bending. The legs are jumping. The water erupts above her with eight bodies arriving at once and the sound is the sound of <em>the trip starting,</em> the way it has every July of her whole life.</p>
+<p>The memory fades.</p>
+<p>Madison's eyes are wet for a reason that has nothing to do with the Sisters. The pool gave her <em>that.</em> For no reason. As a gift. Because she was floating.</p>
+<p>She is fifteen years old and someone is taking care of her.</p>
+<p>When she sits back up, her hair is dripping upward, just a little, like the Sisters'.</p>
+<p>Pip nods. "Okay. NOW you can be in charge again."</p>
+<p>Madison laughs. It's a real laugh. The kind she usually saves for inside her own head.</p>
+<p>The Sisters wait. They've done their part. The rest is hers.</p>
+<p>Pip says, "We have something to tell you. About the lake-up-above. About the man with the clipboards."</p>
+<p>Madison sits forward.</p>
+<p>She is, in fact, ready now.</p>
+
+<hr class="scene-break">
+
+<h4 class="passage"><span class="pid">P-112</span>Madison's Choice</h4>
+
+<p>Pip tells her the rest fast.</p>
+<p>The Lake Sisters have been watching the lake-up-above for years. They've seen Mr. Drystone's boats. They've seen him drop papers into the water &mdash; papers they were never meant to read. The papers sank. The Sisters caught them. They have them now.</p>
+<p>But the papers are in three pieces, and only one piece is here at the pool. The other two are elsewhere.</p>
+<p>Pip is holding the first piece. It glints in her hand.</p>
+<p>"How do you want to do this?" Pip asks.</p>
+<p>Madison thinks for a second.</p>
+
+<div class="choice-note">
+<strong>The reader chooses Madison's path.</strong>
+<ul>
+<li><strong>Path A (base) —</strong> Take the piece Pip has and head back. The fast path. You'll have a Map. Not the whole map, but enough.</li>
+<li><strong>Path B (enhanced) —</strong> Ask the Sisters what THEY need from YOU first. There's a story there. It might cost time. It might be worth it.</li>
+<li><strong>Path C (hidden) —</strong> Notice that Wren has gone quiet and ask her what's wrong. Wren is small. Most people don't see her. You see her.</li>
+</ul>
+</div>
+
+<hr class="scene-break">
+
+<h5 class="path">PATH A — SHARE THE COOKIES, TAKE THE PIECE (BASE)</h5>
+
+<p>Madison opens her tin and shares the cookies fairly. One for Pip. One for Lark. The biggest one for Wren, because Wren is smallest.</p>
+<p>(Wren cries with joy. Lark and Pip do not comment. They've seen Wren cry over a particularly good rock.)</p>
+<p>The Sisters eat their cookies the way creatures eat who have never had anything baked before. Pip nibbles. Lark inhales hers in two bites. Wren tries to make her cookie last by licking it.</p>
+<p>When they're done, Pip looks at her sisters. The three of them nod at each other in the way of people who have just received something and now have to give something back. (That's how exchanges work in the Old Roar. You bring something. They bring something. That is the whole agreement.)</p>
+<p>Lark slips back into the pool and comes up holding a small, perfectly round, lavender-colored stone. It is warm in her hand. It is glowing very faintly, the way a smooth river rock looks when a kid pulls it out of shallow water and holds it up to the sun.</p>
+<p>"For you," she says. "It's a <em>quiet stone.</em> Hold it when a place is too loud. It pulls the noise into itself and gives you back about ten seconds of quiet. Sisters made it. It only works if you got it from a sister."</p>
+<p>Madison closes her hand around it. It is exactly the kind of thing she did not know she needed and has needed her whole life.</p>
+<p>Wren hands her something next. It is a small pondweed-and-pebble bracelet she has clearly been making during the cookie sharing. It is, like Wren's cookie, the saddest bracelet ever assembled.</p>
+<p>"I MADE it," Wren says, very proud.</p>
+<p>"It's beautiful," Madison says. And means it.</p>
+<p>(She slips it on her wrist. It tickles. She does not take it off.)</p>
+<p>Then Pip hands Madison the paper.</p>
+<p>It is a single sheet, water-warped at the edges, the ink swimming a little but readable. It shows the cove. It shows the data center building Drystone plans to put on the dry lakebed once the water is gone. It shows the drainage path &mdash; straight down the canyon, into the river system, away forever.</p>
+<p>It does NOT show the bank fraud. It does NOT show the lowballed appraisal. Those pieces are elsewhere.</p>
+<p>Madison rolls the paper carefully and tucks it inside her cookie tin. The tin clicks closed. It is warm in her hands.</p>
+<p>"This is most of it," Pip says. "Not all. But you'll know what to say."</p>
+<p>Madison nods.</p>
+<p>Wren tugs her hand. "Will you come back?"</p>
+<p>Madison kneels so she's eye-level with the smallest Sister. Wren's eyes are the color of pool water in the morning.</p>
+<p>"Yes," Madison says.</p>
+<p>She means it.</p>
+<p>The Sisters walk her back toward the meadow. Pip stops at the edge of the trees. "Tell our older sister hi."</p>
+<p>Madison says, "Who's your older sister?"</p>
+<p>Lark says, "The big one. The one your hotel is named for. The cove."</p>
+<p>Madison stops walking.</p>
+<p>The lake at home. <em>Their</em> lake. The one she's been swimming in every July of her life. The one her cousins all swim in. The one Aiden took his first dip in last summer with his life jacket on backwards.</p>
+<p>That lake is family to these girls.</p>
+<p>That lake is family to HER.</p>
+<p>She feels something land in her chest that she's been almost-knowing for years.</p>
+
+<hr class="scene-break">
+
+<h5 class="path">PATH B — ASK WHAT THEY NEED FIRST (ENHANCED)</h5>
+
+<p>Madison doesn't open the tin yet.</p>
+<p>She looks at Pip and says, "What do you NEED?"</p>
+<p>Pip blinks. Lark blinks. Wren stops chewing.</p>
+<p>"Most people," Pip says slowly, "don't ask us that."</p>
+<p>Lark adds, "Most people are HUNGRY for what we have. They don't notice we might need something too."</p>
+<p>Madison waits.</p>
+<p>The Sisters look at each other in the way sisters look at each other.</p>
+<p>Pip says, "The other two pieces of the map. We can't reach them."</p>
+<p>The first piece &mdash; the one Pip is holding &mdash; sank near the pool, easy to catch.</p>
+<p>The other two sank farther downstream. Out past where the pool turns into a slow river. Out where a grumpy old beaver named <strong>Branch</strong> has been collecting interesting things in his lodge for two hundred years. Branch caught the other two pieces and he will not give them back. He says the river is his and what lands in the river is his.</p>
+<p>The Sisters have asked him a hundred times. He always says no.</p>
+<p>"He might say yes to YOU," Pip says. "He likes people who SIT."</p>
+<p>Madison thinks about her own grandmother. Her grandmother also liked people who sit.</p>
+<p>Madison says, "Take me to him."</p>
+<p>The Sisters slip into the water. Madison walks along the bank. Lark pops up every few steps to point. The pool narrows. The water starts moving. Cottonwood leaves spin past on the current.</p>
+<p>At a bend in the river, a beaver lodge the size of a small cabin rises out of the water. Smoke comes out of a hole in the top. The smoke smells like dried mint.</p>
+<p>Madison knocks on a stick.</p>
+<p>A grumpy face appears. <strong>Branch</strong>. He has a small pair of spectacles on the end of his nose and a tea towel over one shoulder.</p>
+<p>"What."</p>
+<p>Madison says, "Hello, Branch. I'm Madison. May I come in?"</p>
+<p>Branch is suspicious. But Madison didn't lead with what she wanted. Branch finds this confusing in a way he likes.</p>
+<p>"...Fine."</p>
+<p>Inside the lodge: a tiny rocking chair, a tea kettle on a stone fire, and a wall of WONDERFUL trash. A spoon. A fishing lure. A pair of sunglasses. A small ceramic pig. Two folded pieces of paper that Madison's eyes go to immediately and then, very deliberately, away from.</p>
+<p>Branch pours her a thimble of tea. (For a beaver, a thimble is a normal-sized cup. For Madison, it is approximately one drop.)</p>
+<p>She sits.</p>
+<p>She sips her one drop of tea.</p>
+<p>She does not ask about the papers.</p>
+<p>She asks about the spoon.</p>
+<p>Branch lights up. He tells her about the spoon. The spoon takes nine minutes. Then he tells her about the ceramic pig. The pig takes longer.</p>
+<p>Forty minutes go by. (Time in The Old Roar is slower, but still &mdash; forty minutes is forty minutes. The Harbor Keeper said <em>time for four</em>. She's spending it.)</p>
+<p>At the end of his stories, Branch is quiet for a long time. Then he says, "You're the first person in two hundred years who didn't ask me for the papers first."</p>
+<p>Madison says, "I figured you'd tell me about them when you wanted to."</p>
+<p>Branch hands her the two folded papers without ceremony.</p>
+<p>Then he says, "I'm coming with you."</p>
+<p>Madison says, "To the lake-up-above?"</p>
+<p>"To wherever the man with the clipboards is," Branch says. "I'll witness."</p>
+<p>She rolls the three pieces of the Map together. Now it shows everything: the drainage, the data center, the bank fraud, the lowballed appraisal, the wrong permit Drystone filed. The whole shape of the lie.</p>
+<p>Branch waddles to the door, picks up a small bow tie from his wall of trash, and clips it on.</p>
+<p>"Ready," he says.</p>
+
+<hr class="scene-break">
+
+<h5 class="path">PATH C — NOTICE WREN FIRST (HIDDEN)</h5>
+
+<p>Madison was about to open her tin.</p>
+<p>She doesn't.</p>
+<p>Because Wren has gone quiet.</p>
+<p>The smallest Sister was chewing her pondweed cookie a second ago. Now she's holding it in both hands and staring at the pool.</p>
+<p>Madison kneels. "Wren. Hey. What's the matter?"</p>
+<p>Pip and Lark go still.</p>
+<p>Wren says, in a voice so small Madison has to lean in: "She didn't sing last night."</p>
+<p>Madison says, "Who didn't?"</p>
+<p>Pip says, very quickly, "Nobody. It's nothing."</p>
+<p>Lark says, "Pip."</p>
+<p>Pip closes her mouth.</p>
+<p>Wren says, "The lady. The one who sings."</p>
+<p>Madison sits down on the bank. The wood is warm. "Tell me."</p>
+<p>The Sisters look at each other. Then Pip nods.</p>
+<p>Lark sings, very quietly, three notes. The pool hums them back. The three notes are beautiful &mdash; clear, full, the kind of voice that carries.</p>
+<p>"That's HER voice," Wren says. "She sings here some nights. Not all. Some. She's been singing here for as long as we've been here. We don't know who she is. The lake remembers her. We listen for her."</p>
+<p>Madison's skin prickles.</p>
+<p>Because Madison knows that voice.</p>
+<p>She doesn't know HOW she knows it. She just does. Like the way she knows the smell of brisket smoke. Like the way she knows the sound of the C-130 a full second before it shows up over the canyon.</p>
+<p>She HAS heard this voice. Two summers ago. A hot July night, late, after the brisket was gone and the kids were supposed to be asleep. The sound came across the water from somewhere nobody could place &mdash; somebody, somewhere, singing opera. Big, beautiful, impossible. The grown-ups had laughed about it the next morning. They'd all pretended not to know who it was. The mystery had become a family joke.</p>
+<p>But Madison had watched her mother's face that next morning. Her mother had been very busy looking at her coffee.</p>
+<p>Madison feels her chest do a thing.</p>
+<p>She doesn't say anything yet.</p>
+<p>She says: "Why didn't she sing last night?"</p>
+<p>Pip says, "We don't know. She comes when she comes. When she doesn't, the lake is quieter than it should be. Wren feels it most."</p>
+<p>Wren is crying without making a sound. The tears go up her face instead of down.</p>
+<p>Madison does the thing she does best in the whole world.</p>
+<p>She puts an arm around the smallest Sister. She doesn't say <em>it'll be okay</em>. She doesn't say <em>don't worry</em>. She just holds her and lets her cry the wrong direction.</p>
+<p>After a while, Pip says quietly, "There's another piece of the map."</p>
+<p>Madison says, "I thought there were three."</p>
+<p>Pip says, "There are. But there's also a fourth. It's not on paper. It's a song. The song the lady sings. If you can hear it, you'll know what the lake itself thinks about Mr. Drystone. The lake has an opinion."</p>
+<p>Lark says, "It's not loud. But it's real."</p>
+<p>Madison thinks for a second.</p>
+<p>Then she does the only thing she can do &mdash; the thing she's actually good at.</p>
+<p>Pip seems to know. She lifts a hand. Three flat stones rise up out of the pool, one after another, arranged in a line across the water. They are perfectly still. They are also, Madison notices, the same color as the basalt at home.</p>
+<p>Madison steps onto the first one. It holds.</p>
+<p>She hasn't danced in a year. Maybe more. But her body remembers &mdash; the way an old book remembers how to fall open at the right page.</p>
+<p>She steps to the second stone in one clean line, the way her old teacher used to drill it: head up, shoulders down, the foot finding the place before you trust it. She turns once on the second stone. She lands.</p>
+<p>She crosses to the third stone and finishes in fourth position, arms soft, eyes closed.</p>
+<p>She holds it.</p>
+<p>The pool hums.</p>
+<p>Three notes. Low. Then a long pause.</p>
+<p>And then &mdash; from somewhere far away, maybe under the pool, maybe somewhere on the other side of the canyon &mdash; three notes come back. Sung in answer. The voice is a woman's. Operatic. Big. Beautiful. She is singing in The Old Roar tonight after all. She is answering Madison's dance the way a singer answers a question.</p>
+<p>Wren laughs through her wrong-direction tears.</p>
+<p>Pip presses both hands to her mouth.</p>
+<p>Lark just listens.</p>
+<p>The lady's song goes on for a long minute. None of them speak. Madison's eyes are wet too, though she couldn't tell you why.</p>
+<p>When the song ends, Pip hands Madison the first piece of the map. Then she dives into the pool and comes up holding the second piece, then the third. They were here all along. The Sisters had been waiting to see if she was the right person to give them to.</p>
+<p>She is.</p>
+<p>The three pieces fit together cleanly. The whole Map. Everything Drystone has done, everything he plans.</p>
+<p>"And the song?" Madison asks.</p>
+<p>Pip says, "You'll carry it. The lake will remember that you heard."</p>
+<p>Madison rolls the Map. She tucks it in her tin.</p>
+<p>The tin glows, very faintly, like firelight inside a paper lantern.</p>
+<p>She doesn't know what she's going to tell her mom about this later.</p>
+<p>She'll figure it out.</p>
+
+<hr class="scene-break">
+
+<h4 class="passage"><span class="pid">P-116</span>The Sisters Wave Her Off</h4>
+
+<p>Madison walks back toward the meadow.</p>
+<p>The Sisters wave from the water. Their hair drips upward. Wren waves with both hands and a half-eaten pondweed cookie.</p>
+<p>Pip calls after her: "Tell our older sister hi."</p>
+<p>Madison stops.</p>
+<p>She turns back. "Who's your older sister?"</p>
+<p>Lark says, "The big one. The one your hotel is named for. The cove."</p>
+
+<div class="variant-block">
+<span class="v-label">If she took Path A</span>
+<em>Madison feels something land in her chest she'll figure out later.</em>
+</div>
+
+<div class="variant-block">
+<span class="v-label">If she took Path B</span>
+<em>Madison feels something land in her chest. Behind her, Branch the beaver in a small bow tie says, "Tell her I said hi too." Madison promises she will.</em>
+</div>
+
+<div class="variant-block">
+<span class="v-label">If she took Path C</span>
+<em>Madison feels something land in her chest. She also feels, somewhere far below the pool, a woman's voice humming the start of a song. The lake is family. The song is family. She'll figure the rest out later.</em>
+</div>
+
+<p>Her canoe is waiting.</p>
+<p>She steps in.</p>
+<p>She has the Map (in whatever form she earned it). She has, somewhere in her bones, the start of a feeling about chosen family that she's going to need at the dock in about an hour.</p>
+<p>The canoe pushes off. The Sisters wave from the water.</p>
+<p>Madison heads back toward the sound of the C-130, faint and far, somewhere up in the world above.</p>
+
+<h2 class="chapter" id="chayten">Chapter 3 — Chayten at the Driftwood Stage</h2>
+<h3 class="chapter-sub">Item earned: The Otter Mask &middot; Possible allies: Otto, Pickle, the Driftwood Players</h3>
+
+<h4 class="passage"><span class="pid">P-120</span>Arrival at the Driftwood Stage</h4>
+
+<p>Chayten's raft slides onto a grassy hill above a half-moon of water. The raft used to be a paddle board. Now it's a small driftwood boat with her initials burned into the bow. Her sandals are still wet from the dock at home.</p>
+<p>Below her is the strangest amphitheater she has ever seen.</p>
+<p>A natural bowl of grass curves down to the edge of the water. A long flat stage of pale driftwood juts out over the water like a tongue. The seats are stones &mdash; not stones placed there, <em>stones that grew there</em> &mdash; arranged in tidy rows by something that knew exactly how an audience should sit. Some of the stones are big. Some are huge. A few of them, the ones in the back, are larger than her house.</p>
+<p>They are humming.</p>
+<p>It's a low sound, the kind of sound you feel in your sternum before your ears catch it. The stones are warming up for something. They are an audience that arrived early.</p>
+
+<div class="variant-block">
+<span class="v-label">If the group stayed together</span>
+<em>The other seven kids land beside her. Aiden grabs her hand the way he always does when there's a new sound. Madison is counting heads. Reid is studying the construction of the stage. Carson, who has been to a play exactly twice in his life, says quietly: "This is going to be amazing."</em>
+</div>
+
+<div class="variant-block">
+<span class="v-label">If the group split into two</span>
+<em>Three others are with her. Aiden is one of them &mdash; he asked to come with Chayten, the way he always does. Reid is the other, positioning himself so he can see both the stage and his cousins at once.</em>
+</div>
+
+<div class="variant-block">
+<span class="v-label">If each kid went alone</span>
+<em>She's alone. The others are elsewhere. Aiden is not here. Her stomach pulls toward wherever he is. She is very aware of how loud the Stones' humming is when there's no one beside her to share the sound with. She has not been this alone in a long time. The humming gets bigger when nobody else is there to soak it up.</em>
+</div>
+
+<p>On the stage, a dozen otters are running in a panic.</p>
+<p>One of them &mdash; old, gray around the muzzle, wearing a velvet cape and a single small bandage wrapped around his whiskers &mdash; is sitting in the middle of the stage looking absolutely calm in the way of a man whose world is ending.</p>
+<p>He sees Chayten.</p>
+<p>He stands up very slowly.</p>
+<p>He says, in a voice like an entire theater season ending: "<em>You.</em> You with the EYES. Get DOWN here."</p>
+
+<hr class="scene-break">
+
+<h4 class="passage"><span class="pid">P-121</span>The Be-a-Kid Moment</h4>
+
+<p>Chayten walks down the grass slope. The wet ones in her sandals squelch.</p>
+<p>The old otter meets her at the foot of the stage. He bows. Then he winces, because bowing tugs his bandaged whiskers.</p>
+<p>"OTTO," he announces. "Lead actor. Or <em>was</em>. My whiskers betrayed me at the dress rehearsal. The Stones go on in forty minutes." He gestures up at the enormous humming audience. "They have been waiting for this play for <em>eighty years</em>. They will be FURIOUS if it does not happen. You have the EYES. You will play the lead. Yes?"</p>
+<p>Chayten opens her mouth.</p>
+<p>She is about to say yes, because that's what she does. Saying yes when other people need something is approximately ninety percent of her personality.</p>
+<p>But Otto holds up one paw.</p>
+<p>"Stop. Wait. Look at me."</p>
+<p>Chayten looks at him.</p>
+<p>Otto squints. He tilts his head. He sees, very clearly, the way Chayten has been holding herself &mdash; like a chaperone at someone else's party, like a sister who has misplaced her brother for the first time in seven years.</p>
+<p>"He is FINE," Otto says.</p>
+<p>Chayten says, "Who?"</p>
+<p>"The small one. The one you're missing. <em>He is fine.</em> He is somewhere doing something brave. You can feel him. Yes?"</p>
+<p>Chayten checks, behind her eyes, the place where she can always feel Aiden.</p>
+<p>He is, in fact, fine.</p>
+<p>He is also, somehow, riding something that is not a horse.</p>
+<p>She lets out a breath she didn't know she was holding.</p>
+<p>"Good," Otto says. "Now. You are not a sister right now. You are not an oldest. You are not a babysitter. For one hour, you are an <em>actor</em>. Do you accept the demotion?"</p>
+<p>Chayten laughs. It surprises her.</p>
+<p>"Yes," she says.</p>
+<p>Otto looks at her for one more long second. Then he says, more quietly: "And child. Before I go. May I just sit here a moment? With you. Not to ask anything."</p>
+<p>Chayten blinks. Nobody has ever asked her that. Nobody has ever just <em>asked to be near her</em> without needing her to do something for them.</p>
+<p>She nods.</p>
+<p>Otto sits down on the stage beside her. Cross-legged otter style. He doesn't speak. He doesn't perform. He doesn't introduce his troupe or explain the play or check his bandage. He just sits with her, the way a person sits with another person whose company is enough.</p>
+<p>It lasts maybe ten seconds. It is the most important ten seconds Chayten has experienced in a year. Nobody at home knows how to do this with her. They love her so much they always reach for her to <em>do</em> something.</p>
+<p>Otto stands up. "<em>Excellent.</em> Now. Follow me."</p>
+
+<hr class="scene-break">
+
+<h4 class="passage"><span class="pid">P-122</span>Chayten's Choice</h4>
+
+<p>Otto leads her up the driftwood ramp to the stage. The other otters part for her like she's already someone important. One of them tries to hand her a small velvet cape. Another tries to hand her a script.</p>
+<p>Otto waves them all off. He turns to Chayten and says, with great formality:</p>
+<p>"The play is <em>The Tale of the Lost Brother.</em> The lead is the SISTER. You have forty minutes. How would you like to begin?"</p>
+
+<div class="choice-note">
+<strong>The reader chooses Chayten's path.</strong>
+<ul>
+<li><strong>Path A (base) —</strong> Take the script and start reading. Fast. Honest. You're a quick study.</li>
+<li><strong>Path B (enhanced) —</strong> Ask Otto what the play is really about first. There's a story under the story.</li>
+<li><strong>Path C (hidden) —</strong> Notice a small otter shaking by the wardrobe trunk and go to her first. Otto can wait. The small one can't.</li>
+</ul>
+</div>
+
+<hr class="scene-break">
+
+<h5 class="path">PATH A — TAKE THE SCRIPT (BASE)</h5>
+
+<p>Chayten takes the script. The paper is soft from a thousand readings. The handwriting is small and looped.</p>
+<p>She reads fast. The play is short &mdash; six scenes, maybe twenty minutes of stage time. It is about a young otter girl whose little brother was lost in a storm. She spends the rest of her life singing him home, every night, by the water, until she is old. Then she finds him. That's the ending.</p>
+<p>It is a sad play.</p>
+<p>It is also, Chayten realizes, a beautiful play.</p>
+<p>She gets her lines down in twenty minutes. Otto fits her with the velvet cape. Another otter &mdash; a fussy one with a measuring tape &mdash; adjusts the hem in three seconds flat and tells her she has "<em>workable</em>" shoulders.</p>
+<p>The Stones are humming louder now. The amphitheater is full. From the back, the audience looks like a quarry someone tipped on its side.</p>
+<p>Chayten goes on stage.</p>
+<p>She delivers the lines. She is good. She has always been good at being the center of something. Her voice carries. The Stones hum approval at the climactic line &mdash; the sister's promise to her brother, every night, that she will keep singing &mdash; and when Chayten finishes the final scene, the stones rumble like distant thunder. Otters in the wings weep. Otto, from off-stage, blots his eye with a corner of his cape.</p>
+<p>The lights (which are not lights &mdash; they are floating bioluminescent moss balls) come up.</p>
+<p>Otto walks out on stage and presents Chayten with a small mask carved from driftwood. The mask is shaped like an otter's face but with eyes deliberately too kind. Otto explains that this is the Otter Mask. Whoever wears it speaks with a voice the listener cannot ignore.</p>
+<p>"You did well," Otto says. "You delivered our play."</p>
+<p>A small otter Chayten hasn't met before &mdash; tiny, holding a paper bag &mdash; comes up and hands her something. It is a small silver fish.</p>
+<p>"For your brother," the small otter says. "He likes fishing. The fish is for him."</p>
+<p>Chayten kneels down. "How did you know?"</p>
+<p>The small otter shrugs. "You said his name when you got nervous."</p>
+<p>Chayten tucks the fish in her pocket.</p>
+<p>She leaves with the mask in her hands, the fish in her pocket, and the feeling that she did something well.</p>
+<p>It was a good show.</p>
+<p>It was not a great show.</p>
+<p>She is not sure why she feels that.</p>
+<p>She thinks she might know.</p>
+<p>She doesn't quite say it out loud.</p>
+
+<hr class="scene-break">
+
+<h5 class="path">PATH B — ASK WHAT THE PLAY IS ABOUT (ENHANCED)</h5>
+
+<p>Chayten doesn't take the script yet.</p>
+<p>She looks Otto in the eye.</p>
+<p>"What's it really about?"</p>
+<p>Otto goes very still.</p>
+<p>The other otters, who had been swirling around them with capes and combs and measuring tapes, stop. They all turn slightly to look at Otto. As if they are waiting to see what he says.</p>
+<p>Otto sits down on the stage. He pats the wood next to him. Chayten sits.</p>
+<p>He takes a long breath.</p>
+<p>"It is about my brother," he says. "Not the brother I had. The brother I <em>chose</em>. We were not born to the same mother. We were not the same kind of otter. He was river. I was lake. We were raised together because his mother died and mine had room. We were brothers anyway. We were not blood. We were better than blood. Do you understand?"</p>
+<p>Chayten thinks of Aiden, who is her brother by blood.</p>
+<p>Then she thinks of the seven other kids at Sun Lakes. Who are her brothers and sisters in a different way. By choice. By return. By every July for as long as she can remember.</p>
+<p>"Yes," she says.</p>
+<p>Otto nods. "He was lost in a storm when we were small. The play says the sister sings him home. The truth is, I never sang him home. I just kept singing because I didn't know what else to do."</p>
+<p>He looks at her with old wet eyes.</p>
+<p>"I have played this play seven hundred and twelve times," Otto says. "Every time, I am the brother who comes back at the end. Every time, I think &mdash; <em>what if this is the time he hears me.</em>"</p>
+<p>He laughs at himself. It is a small, soft laugh, the kind that doesn't ask to be joined.</p>
+<p>"The Stones know," he says. "That's why they hum so loud. The play is real."</p>
+<p>Chayten thinks for a moment.</p>
+<p>Then she says, "Can I change the ending?"</p>
+<p>Otto blinks. "Change it?"</p>
+<p>"Just one line. At the very end. When the sister finds the brother. Instead of saying <em>you came home</em>, can I say <em>you were always with me</em>?"</p>
+<p>Otto is quiet for a long time.</p>
+<p>He says, "I have been playing the wrong ending for seven hundred years."</p>
+<p>Then he hugs her. It is the kind of hug only an old otter can give &mdash; small, surprisingly strong, and slightly damp around the edges. His whiskers tickle her ear. He smells like cedar and old velvet.</p>
+<p>They rehearse together. He plays the brother. She plays the sister. The new ending makes both of them cry the second time through. By the fourth time they are laughing because they keep crying.</p>
+<p>The performance is beautiful. The Stones hum until the ground shakes. The audience of otters in the front weeps openly. Two of them have to be carried out. One says, "WORTH it."</p>
+<p>After the play, Otto presents Chayten with the Otter Mask &mdash; except this version is older, more worn, more loved. "Mine," he says. "Now yours. Speak with it and the listener cannot pretend not to hear."</p>
+<p>He also says, very carefully: "I will come with you to the lake-up-above. To the dock. I have not left The Old Roar in two hundred years. But I'll come for this. For you. For what you did."</p>
+<p>A small otter (Pickle, Chayten learns) gives her a silver fish for Aiden. Pickle is shy and won't quite meet her eye.</p>
+<p>Chayten leaves with the mask, the fish, an old otter shouldering a velvet cape behind her, and a feeling she will not put into words for several days.</p>
+
+<hr class="scene-break">
+
+<h5 class="path">PATH C — NOTICE PICKLE FIRST (HIDDEN)</h5>
+
+<p>Chayten was about to take the script.</p>
+<p>But there's a small otter shaking by the wardrobe trunk.</p>
+<p>She is tiny. Half the size of the other otters. She is holding a costume in both paws &mdash; a child-sized brown smock &mdash; and she is staring at it like it might bite her.</p>
+<p>Chayten kneels down.</p>
+<p>"Hey."</p>
+<p>The small otter looks up. Her eyes are enormous.</p>
+<p>"Hey," Chayten says again. "I'm Chayten. What's your name?"</p>
+<p>"...Pickle."</p>
+<p>"Pickle. Are you in the play?"</p>
+<p>Pickle shakes her head fast. Then she nods. Then she shakes her head again. "I'm &mdash; they said I could try out. I tried out. They said I could be the <em>brother</em>. The little brother. Just the early scenes. But I can't, I can't do it, I can't go out there, my legs are &mdash; they're not &mdash; they don't work, they're wrong, I can't &mdash;"</p>
+<p>Chayten puts a hand on Pickle's shoulder.</p>
+<p>"Hey. Pickle. Look at me."</p>
+<p>Pickle looks.</p>
+<p>Chayten says, "You don't have to be brave to be useful. You just have to show up."</p>
+<p>Pickle blinks twice.</p>
+<p>"Will you go out there with me?" Chayten asks. "I'm playing the sister. You'd be playing my brother. We'd be on stage together the whole time. I won't let go of your paw. Not for one second. Deal?"</p>
+<p>Pickle says, in a voice so small Chayten has to lean in: "...Deal."</p>
+<p>Chayten stands up and walks back to Otto.</p>
+<p>She says, "I'll do the play. But I want Pickle as the brother. Both scenes. The young one AND the old one."</p>
+<p>Otto frowns. "Pickle is too small for the older scenes. The brother grows up. We have a &mdash; we have a <em>taller</em> otter for that role &mdash;"</p>
+<p>"Pickle is the brother," Chayten says. "Both halves. Or I won't do it."</p>
+<p>The other otters go very quiet.</p>
+<p>Otto looks at Chayten. He looks at Pickle, who has straightened her tiny spine half an inch.</p>
+<p>Otto says, "I have been mis-casting that role for forty-three years."</p>
+<p>He turns and roars at the troupe: "PICKLE IS THE BROTHER. RESET THE BLOCKING. <em>MOVE.</em>"</p>
+<p>The troupe moves.</p>
+<p>Chayten and Pickle take the stage holding paws. Chayten does not let go for the entire play. Not once. Pickle delivers her lines in a tiny voice. The big Stones in the back lean forward to hear &mdash; Chayten can FEEL them lean &mdash; and when Pickle says her one big line ("I am still here, I am still here, I am still here, I never went away"), the Stones in the back hum so deep that Chayten's chest vibrates with it.</p>
+<p>The play ends. Pickle is crying. Chayten is crying. Otto, from the wings, has fallen over.</p>
+<p>The Stones hum for a long minute after the curtain.</p>
+<p>Otto comes out and presents Chayten with the Otter Mask &mdash; the oldest one, the one his great-grandmother wore. "Whoever wears it is heard," he says. "But you didn't need it tonight. You were already heard. That is rare."</p>
+<p>Pickle climbs up Chayten's side and clings to her shoulder like a small wet stole. "Can I come with you?" she whispers. "I want to come with you."</p>
+<p>Chayten says, "Yes."</p>
+<p>Then one of the back-row Stones &mdash; the biggest one, the one that hasn't moved in five hundred years &mdash; says, in a voice like a quarry waking up: "<strong>SHE SAW THE SMALL ONE FIRST. THAT IS A REAL THING.</strong>"</p>
+<p>The whole troupe goes still.</p>
+<p>Otto whispers, "The Stones haven't <em>spoken</em> in a hundred and twenty years."</p>
+<p>Chayten doesn't know what to say.</p>
+<p>So she just bows.</p>
+<p>The Stones hum.</p>
+<p>Pickle gives her a small silver fish for Aiden. (Pickle had been saving it. She had been waiting for someone like Chayten.)</p>
+
+<hr class="scene-break">
+
+<h4 class="passage"><span class="pid">P-126</span>The Troupe Sees Her Off</h4>
+
+<p>The otters line up to wave her off. They are an enthusiastic farewell committee. The fussy one with the measuring tape demands she stand still for "<em>one more fitting, in case we need you again.</em>" The wardrobe-trunk one gives her a small velvet square ("<em>for emergencies</em>").</p>
+<p>The Stones hum, low and warm.</p>
+
+<div class="variant-block">
+<span class="v-label">If she took Path A</span>
+<em>Chayten waves back and walks toward the meadow. The small otter who gave her the fish stands at the edge of the stage and waves until she's out of sight.</em>
+</div>
+
+<div class="variant-block">
+<span class="v-label">If she took Path B</span>
+<em>Otto walks beside her, his velvet cape over his shoulder, his bandaged whiskers tilted with new dignity. He hums his brother's name under his breath. Chayten doesn't ask. She just walks with him.</em>
+</div>
+
+<div class="variant-block">
+<span class="v-label">If she took Path C</span>
+<em>Pickle is on her shoulder. Otto walks beside her, weeping discreetly. The Stones in the back, the big silent ones, hum once more in farewell. Chayten feels it in her teeth.</em>
+</div>
+
+<p>Her boat is waiting in the water below the stage.</p>
+<p>She steps in.</p>
+<p>She has the Otter Mask (in whatever form she earned it). She has the silver fish for Aiden. She has, somewhere under her ribs, the new and complicated feeling that a play she helped fix was also somehow a play about her own life.</p>
+<p>She heads back toward wherever Aiden is.</p>
+<p>She always does.</p>
+
+<h2 class="chapter" id="carson">Chapter 3 — Carson at the Coulee Plains</h2>
+<h3 class="chapter-sub">Item earned: The Tusk-Charm &middot; Possible allies: Big Coulee, Tuft, Tumble</h3>
+
+<h4 class="passage"><span class="pid">P-130</span>Arrival on the Coulee Plains</h4>
+
+<p>Carson's raft slides to a stop on a wide grass plain that goes farther than his eyes can follow. The raft has become a sturdy wooden boat on tiny wheels. He hops out. The grass is the bright kind, the kind that only grows when there's been a lot of rain.</p>
+<p>There is a thumping coming from across the field. Big thumping. Carson grins before he even sees what it is.</p>
+<p>A wooly mammoth jogs into view, chest out, trunk held high, talking to herself out loud.</p>
+<p>"AND BIG COULEE rounds the bend," she announces. "Looking STRONG. Looking FAST. Looking like the CHAMPION she was BORN TO BE."</p>
+<p>She is wearing a flower crown. The crown is too small for her head and tilts over one eye. Two baby mammoths the size of large dogs jog beside her, occasionally falling over and getting back up.</p>
+<p>She sees Carson. She skids to a stop in a way that produces a small dust cloud.</p>
+<p>"CHILD," she says. "Are you here for the GAMES?"</p>
+
+<div class="variant-block">
+<span class="v-label">If the group stayed together</span>
+<em>The other seven kids are tumbling out of their rafts behind him. Aiden gasps and grabs Chayten's hand. Reid says, quietly, "Mammoth." He sounds delighted. Carson notices Aiden, automatically scans for safe ground, automatically positions himself between Aiden and the giant creature. It is automatic. He does it without thinking. It is what he always does.</em>
+</div>
+
+<div class="variant-block">
+<span class="v-label">If the group split into two</span>
+<em>Three other kids land beside him. Kellen is already counting the baby mammoths. Keira is reaching for her sketchbook. Madison is watching Big Coulee with her oldest-kid eyes.</em>
+</div>
+
+<div class="variant-block">
+<span class="v-label">If each kid went alone</span>
+<em>He's alone. No Aiden to keep an eye on. No cousins to organize. Just him and a wooly mammoth in a flower crown. It is the strangest, most peaceful feeling he's had in months.</em>
+</div>
+
+<p>Carson opens his mouth to ask what the games are.</p>
+<p>Big Coulee is already telling him.</p>
+<p>She doesn't stop for breath.</p>
+<p>She is, he realizes, the loudest creature he has ever met. He likes her immediately.</p>
+
+<hr class="scene-break">
+
+<h4 class="passage"><span class="pid">P-131</span>The Go-Hard Moment</h4>
+
+<p>Big Coulee explains. The Long Race is in thirty minutes. She has been training for six moons. Her babies keep wandering off. She is NERVOUS. She needs a worthy opponent.</p>
+<p>"WILL YOU RACE ME?"</p>
+<p>Carson is about to say yes when Big Coulee does something he doesn't expect.</p>
+<p>She rams him.</p>
+<p>Not hard. Not anywhere near hard. A nudge with her flank, the kind of nudge a wooly mammoth might give a tree she's not sure is in her way. Carson is a hundred and twenty pounds and Big Coulee is roughly ten thousand. He goes sprawling. Lands in the grass. Laughing.</p>
+<p>"GET UP," Big Coulee bellows, cheerfully. "RAM ME BACK."</p>
+<p>Carson stands up. He looks at Big Coulee. Then he runs at her, shoulder lowered. He puts his entire body into the shove. He hits her side at full speed.</p>
+<p>She doesn't move. Her flower crown slips slightly.</p>
+<p>She <em>cheers.</em></p>
+<p>"YES. YES. THAT is what I am TALKING about, child. Do you SEE? You can't hurt me. You couldn't hurt me if you ran at me with a TRUCK. Stop holding YOURSELF in. I have raced thirty competitors in six moons and every one of them softened it. Every one of them. They thought I would be sad if I lost. Do you know what that's like?"</p>
+<p>Carson does, in fact, know what that's like.</p>
+<p>"Today you race like you mean it. Like a champion. Not like an older cousin. Race ME. You can be polite tomorrow."</p>
+<p>Carson grins. He has not been told to stop softening in a long time. He didn't know he was doing it.</p>
+<p>"Okay."</p>
+<p>Big Coulee straightens up. "<em>EXCELLENT.</em> Then we have a RACE. Choose your path."</p>
+
+<hr class="scene-break">
+
+<h4 class="passage"><span class="pid">P-132</span>Carson's Choice</h4>
+
+<p>Big Coulee paws the ground.</p>
+<p>"How do you want to race?" she asks. "I am open to RULES, child. I love a rule. Make ONE."</p>
+
+<div class="choice-note">
+<strong>The reader chooses Carson's race.</strong>
+<ul>
+<li><strong>Path A (base) —</strong> Just race &mdash; straight to the finish line, fastest one wins. Honest competition. She might destroy you. Worth it.</li>
+<li><strong>Path B (enhanced) —</strong> Race AND gather her babies along the way &mdash; most babies at the end wins. Smart competitive. You might actually win.</li>
+<li><strong>Path C (hidden) —</strong> Stop and look at Tuft and Tumble, who are anxious. "Race in twenty. Let's settle them first." You give up race-prep time. There's something here worth more than a head start.</li>
+</ul>
+</div>
+
+<hr class="scene-break">
+
+<h5 class="path">PATH A — RACE STRAIGHT (BASE)</h5>
+
+<p>Carson grins. "Just race. Straight to the finish line. Fastest wins."</p>
+<p>Big Coulee's eyes light up. She rears back onto her hind legs (a thing that should not be physically possible for a wooly mammoth and yet) and trumpets so loud the grass flattens for ten feet around her.</p>
+<p>"YES."</p>
+<p>The bird on her ear (her name is Pip-Pip; she is small and self-important and carries a tiny clipboard) flutters over and explains the rules. Two flagged poles a quarter-mile apart. Around the far pole. Back. First nose across the line wins.</p>
+<p>Carson stretches. Big Coulee stretches. (Big Coulee's stretches involve her entire body and look like a yoga teacher trying to invent a new pose.)</p>
+<p>Pip-Pip raises a tiny flag. Lowers it. "GO."</p>
+<p>Carson runs. He hasn't run this hard since the eighth-grade two-mile time trial. His lungs are burning before he gets halfway. Big Coulee is way ahead of him, thundering, narrating: "AND BIG COULEE TAKES the EARLY LEAD, child! She is APPROACHING the far pole! She is ROUNDING it!"</p>
+<p>He keeps going. He's not going to win. He knows he's not going to win.</p>
+<p>He's having the time of his life.</p>
+<p>He rounds the far pole maybe twenty seconds behind her. She is already a quarter of the way back, her trunk pumping like a metronome, the flower crown bouncing on her head.</p>
+<p>He sprints anyway. Full effort. No backing off.</p>
+<p>Big Coulee crosses the line first. She rears back again, trumpets, and starts a victory lap before Carson is even close.</p>
+<p>He finishes ten seconds behind her, gasping, hands on his knees.</p>
+<p>Big Coulee thunders back to him. She is delighted. She picks him up in her trunk and sets him on her back, where he sits sideways and laughs because he is too tired to do anything else.</p>
+<p>"CHILD," she says. "You ran like you MEANT it. That is rare and that is GOOD."</p>
+<p>Pip-Pip presents the prize from her clipboard: a small, smooth piece of polished mammoth tusk on a leather cord. The Tusk-Charm. "Carved from my own great-grandmother's tusk," Big Coulee says. "Whoever wears this &mdash; when you stand somewhere and ask people to stand with you, they will. It works because they already wanted to. The charm just makes the asking visible."</p>
+<p>Carson loops the cord around his neck. The charm is warm against his collarbone.</p>
+<p>She walks him back to his boat-on-wheels. Tuft and Tumble follow her, occasionally falling over and getting back up.</p>
+<p>"Come back next year," Big Coulee says. "I'll be in better shape. So will you. We'll do this properly."</p>
+<p>Carson says, "Deal."</p>
+
+<hr class="scene-break">
+
+<h5 class="path">PATH B — RACE AND GATHER (ENHANCED)</h5>
+
+<p>Carson looks at Tuft and Tumble, who are currently chewing on each other's ears.</p>
+<p>"Race AND we gather babies along the way," he says. "Whoever gets back to the finish line with the most babies wins."</p>
+<p>Big Coulee freezes.</p>
+<p>Then she lets out a sound that is half-trumpet, half-laugh, half-cry. (Mammoths can have three halves of a sound. It's a mammoth thing.)</p>
+<p>"CHILD," she says. "That is the BEST rule anyone has ever made. We use it FOREVER. Pip-Pip, write that down."</p>
+<p>Pip-Pip, scandalized, writes it down on her clipboard.</p>
+<p>The catch: Tuft and Tumble are not the only baby mammoths in The Old Roar. There are five more, scattered across the plain, all under three feet tall, all extremely lost. The race is on. The first to all seven wins.</p>
+<p>Pip-Pip drops the flag.</p>
+<p>Carson sprints. Big Coulee thunders. They peel off in different directions.</p>
+<p>Carson finds the first baby in a patch of wildflowers &mdash; a small mammoth so covered in pollen she sneezes when he picks her up. He tucks her under his arm. Two more are stuck in a bramble together. He frees them. They cling to his legs and waddle behind him.</p>
+<p>By the time he reaches the far pole, he has four babies &mdash; one under each arm, two clinging to his back. He turns. Big Coulee is coming the other way with three babies on her broad back and one in her trunk.</p>
+<p>She sees him. She brakes hard. She trumpets, "CHILD. YOU ARE TIED WITH ME."</p>
+<p>Carson is laughing too hard to answer.</p>
+<p>The last baby &mdash; the smallest, no bigger than a loaf of bread &mdash; is sitting in the middle of the field, very confused, eating a flower. Carson and Big Coulee both stop.</p>
+<p>They look at each other.</p>
+<p>"It would be a TIE," Carson says.</p>
+<p>Big Coulee narrows her eyes. "I have NEVER tied a race."</p>
+<p>"I have NEVER won a race against a mammoth."</p>
+<p>They look at the baby. The baby eats another flower.</p>
+<p>They both run for it. They reach it at the same second. Big Coulee scoops the baby with her trunk. Carson takes its other end. They cross the finish line together, holding the same baby, with several other babies clinging to them.</p>
+<p>A tie. Pip-Pip's tiny clipboard explodes. (Not literally. But she stares at it like it has betrayed her.)</p>
+<p>Big Coulee sets the babies down and turns to Carson. Her flower crown is over both eyes now.</p>
+<p>"You raced like a champion," she says. "AND you played fair when you could have stolen the last baby. AND you let it tie. Do you know how rare that is, child?"</p>
+<p>Carson shrugs.</p>
+<p>Big Coulee gives him the Tusk-Charm. Then she does something Pip-Pip has never seen her do: she breaks a small piece off the corner of her own tusk and adds it to the charm with a thread of grass. The charm is heavier now. It glows faintly.</p>
+<p>"That," she says, "is so you can call me. I'll come. I'll come ANYWHERE. I have very loud lungs and I am not afraid of the man with the clipboards."</p>
+<p>She bumps her forehead against his, gently. The flower crown drops over his head and stays there for a moment.</p>
+<p>"Take it," she says. "It looks better on you anyway."</p>
+<p>Carson laughs. He puts the flower crown back on her head.</p>
+
+<hr class="scene-break">
+
+<h5 class="path">PATH C — SETTLE THE BABIES FIRST (HIDDEN)</h5>
+
+<p>Carson is about to say something competitive.</p>
+<p>Then he looks at Tuft and Tumble.</p>
+<p>The two baby mammoths are bumping into each other. Their trunks are tangled. One of them &mdash; Tumble, he thinks &mdash; is making a small worried sound. The other is trying to nurse on Big Coulee's leg and is being gently kicked off because Big Coulee is in race mode.</p>
+<p>Tuft and Tumble are scared. They don't want their mom to leave.</p>
+<p>Carson doesn't know how he knows this. He just does.</p>
+<p>He says, "Race in twenty. Let's settle them first."</p>
+<p>Big Coulee snorts. "Child. The race is in THIRTY MINUTES. I have been TRAINING."</p>
+<p>"They're scared," Carson says. "Look at them. They don't want you to go. We'll do it. They just need to know what's going to happen."</p>
+<p>Big Coulee stops. She looks at her babies. She had not, in fact, noticed.</p>
+<p>She lowers herself to the ground (slowly &mdash; mammoths take a minute to lower themselves) so her huge belly is on the grass and she is no taller than the babies. She gathers them in her trunk. Tuft and Tumble bury themselves in her side.</p>
+<p>Carson kneels next to them.</p>
+<p>"Hey," he says. "Hey, I'm Carson. Your mom is the best racer in The Old Roar. She has been getting ready to win this race for SIX MOONS. Did you know that?"</p>
+<p>The babies do not know. They blink at him.</p>
+<p>"I bet you're worried she'll go too far," Carson says. "But she's not. The race is just to that pole and back. You'll be able to see her the whole time. I'll point so you know exactly where she is. Is that okay?"</p>
+<p>Tuft puts her trunk on Carson's wrist. Tumble climbs into his lap. (Tumble is not small. She is the size of a labrador. Carson catches her.)</p>
+<p>Big Coulee watches. Big Coulee says, in a voice Pip-Pip has never heard her use, "Nobody ever stopped to talk to them before."</p>
+<p>Carson shrugs. He has a seven-year-old cousin. He knows what scared looks like.</p>
+<p>They spend ten minutes calming the babies down. By the time they're done, Tuft and Tumble are leaning against Carson, half-asleep, breathing slow. Big Coulee is also calmer than she has been all morning.</p>
+<p>The race goes ahead. Big Coulee runs. Carson runs. Big Coulee wins by a lot &mdash; Carson lost his prep time and his legs feel like wet noodles by the halfway mark. He finishes thirty seconds behind. He laughs the whole way.</p>
+<p>Big Coulee thunders to him, scoops him up in her trunk, and brings him to where Tuft and Tumble are watching from the side. The babies cheer.</p>
+<p>Big Coulee sets Carson down. Her eyes are wet.</p>
+<p>"Child," she says. "You gave up your race so my babies wouldn't be scared."</p>
+<p>Carson shrugs again. "It wasn't going to matter for the race. They were going to be scared the whole time and you would have run worse."</p>
+<p>Big Coulee lowers herself. She presses her enormous forehead against his. Then she does it again, more deliberately. Then she lifts the Tusk-Charm off Pip-Pip's clipboard and presses it into his hand.</p>
+<p>"This is yours. But also." She nudges Tuft and Tumble forward. "<em>These</em> are yours when you need them. Whatever comes, whoever you need to face, <em>we</em> will be there. The whole family. You looked out for mine. I will look out for yours. That is how it works."</p>
+<p>Carson can't quite speak.</p>
+<p>Tuft puts her trunk on his shoulder. Tumble headbutts his hip gently.</p>
+
+<hr class="scene-break">
+
+<h4 class="passage"><span class="pid">P-136</span>Big Coulee Walks Him to His Raft</h4>
+
+<p>Before he climbs back onto the boat-on-wheels, Big Coulee stops him.</p>
+<p>She lowers her head one more time. Her voice is small. Just for him.</p>
+<p>"Child. The thing you did today &mdash; running hard, AND stopping for the babies, AND letting it tie, AND not pretending I was easier than I was &mdash; that's not just being a good competitor. That's a thing you do all the time, isn't it. At home. With the small one. The fishing kid."</p>
+<p>Carson is quiet.</p>
+<p>"You watch out. You hype people up. You shield the little ones when nobody asked you to. You make people <em>braver</em> by being near them. That is a <em>real</em> thing, child. Most people don't know what to call it. I will tell you what it's called. It's called <em>being trustworthy.</em> And it is the most underrated thing a person can be."</p>
+<p>She bumps her flower-crown against his forehead one more time.</p>
+<p>"Don't forget. People follow the loud ones. But they <em>trust</em> the ones like you."</p>
+<p>Carson nods. He doesn't say anything. He doesn't quite know what to say. But he files what she just told him under the same heading he files everything important: things he'll think about later, after he's home, after the trip is over, after he has time to know what he thinks.</p>
+<p>Carson climbs into the boat. He waves. Big Coulee waves back with her trunk and trumpets a goodbye so loud Pip-Pip falls off her head.</p>
+
+<h2 class="chapter" id="reid">Chapter 3 — Reid at Old Speak's Wood</h2>
+<h3 class="chapter-sub">Item earned: The Unbreakable Staff &middot; Possible ally: Old Speak</h3>
+
+<h4 class="passage"><span class="pid">P-140</span>Arrival in the Rocky Wood</h4>
+
+<p>Reid's raft slides up onto a beach made of small flat stones. The raft has become a long log canoe, hollowed out, the inside smooth from many hands. He steps off without looking &mdash; his feet already know.</p>
+<p>The wood in front of him is ancient.</p>
+<p>The trees are the size of houses. The trunks are wider than his arms could reach around three times over. The bark is so thick and so old it has its own bark. Light comes through the canopy in long slow shafts. The air smells like turned earth and old cedar and a specific cold sweetness Reid has never met before and somehow already knows.</p>
+<p>He bends. He picks up a fallen branch. He starts whittling without deciding to.</p>
+<p>A voice from a stump says, "<em>FINALLY.</em>"</p>
+<p>Reid looks up. Calmly. He has been startled by many things in his life and reacts to each one the same way.</p>
+<p>The stump is not a stump. It is a person. Bark for skin, leaves growing where hair should be. He is enormous &mdash; twice Reid's size &mdash; but he's sitting down so he doesn't seem scary. Just <em>large.</em></p>
+
+<div class="variant-block">
+<span class="v-label">If the group stayed together</span>
+<em>The other seven kids are stepping off their rafts onto the beach. Aiden grabs Reid's hand automatically. Reid squeezes back, automatic too. Carson stops to study the moss on a stone. Madison takes the kind of breath you take when you walk into a library that's older than your country.</em>
+</div>
+
+<div class="variant-block">
+<span class="v-label">If the group split into two</span>
+<em>Three others land beside him. Aiden is one. Ella is another. Madison is the third. Reid is the only one in his cabin who didn't bring a book on this vacation, and he is also the only one who feels at home in places like this. Aiden tucks himself against Reid's side. Reid puts a hand on the top of his head without thinking about it.</em>
+</div>
+
+<div class="variant-block">
+<span class="v-label">If each kid went alone</span>
+<em>Just him. The wood is enormous around him. He is not afraid. He has been alone in big places before. He has been alone at the back dock in the dark, after everyone else has gone in, listening for the bats. He knows how to be quiet inside something quiet. Maybe more than any of the other kids, this is where he was meant to land.</em>
+</div>
+
+<p>"FINALLY a visitor," the tree-person says. "Wait &mdash; am I sure? I might be dreaming. Pinch me. No, don't. I'm bark, you'll hurt your fingers."</p>
+<p>He laughs. The whole wood shakes a little. Birds Reid didn't notice fly out of the upper branches.</p>
+<p>"I'm OLD SPEAK," he says. "Or that's what people called me a thousand years ago. I might have a new name now. I haven't checked. Sit, sit. <em>Visit.</em>"</p>
+<p>Reid sits on a root that turns out to be perfectly shaped for sitting. He keeps whittling.</p>
+<p>Old Speak watches him for a long moment.</p>
+<p>"You make sticks," he says. "I like sticks."</p>
+
+<hr class="scene-break">
+
+<h4 class="passage"><span class="pid">P-141</span>The Just-Sit Moment</h4>
+
+<p>Old Speak watches Reid whittle for a while longer.</p>
+<p>"You're doing the thing," he says.</p>
+<p>Reid looks up. "What thing?"</p>
+<p>"The <em>working</em> thing. You always do the working thing. I can tell. I was a tree before I was a person &mdash; I've watched a thousand visitors and the working ones have a posture. Shoulders forward. Hands going. Eyes already on the next problem."</p>
+<p>Reid is quiet. He doesn't really know what to say. He IS doing the working thing. He doesn't know how to do other things.</p>
+<p>Old Speak says, "Put the stick down. Just for a minute."</p>
+<p>Reid puts the stick down.</p>
+<p>"Now look up," Old Speak says.</p>
+<p>Reid looks up. The canopy is a hundred feet above him. Light is coming through in slow shafts. A bird he can't identify is moving from branch to branch without making a sound.</p>
+<p>"That bird," Old Speak says, "is called Listen. She's the only one of her kind. She doesn't sing. She only listens. She's been listening to this wood for two hundred years."</p>
+<p>Reid watches the bird. The bird watches him back.</p>
+<p>Old Speak says, "I am ALSO listening. I have been listening to you since you stepped off your boat. You came in quiet. You don't take up extra room. You start working before you're asked because you don't want anyone to have to ask. That is a rare way to be, child."</p>
+<p>Reid feels his face get warm.</p>
+<p>Old Speak says, "I see you. Most don't. I just wanted to say so."</p>
+<p>Reid swallows.</p>
+<p>Then he picks up the stick again, but slower this time.</p>
+
+<hr class="scene-break">
+
+<h4 class="passage"><span class="pid">P-142</span>Reid's Choice</h4>
+
+<p>Old Speak says, "Now then. You're here to make a STAFF. I can tell. The wood under your hand wants to become one. The wood always wants to become whatever the maker wants. That is a wood thing."</p>
+<p>He gestures. Three pieces of wood lie at Reid's feet that weren't there a moment ago. Heavy maple. Light willow. A piece of dark driftwood the color of wet basalt.</p>
+<p>"Take one. Carve it. The staff you carve will be what you need it to be."</p>
+
+<div class="choice-note">
+<strong>The reader chooses Reid's path.</strong>
+<ul>
+<li><strong>Path A (base) —</strong> Take the maple and start carving &mdash; clean, fast, the way you've made every stick at home. Honest work. Done in twenty minutes.</li>
+<li><strong>Path B (enhanced) —</strong> Ask Old Speak to teach you a technique you don't know yet. Costs time. Learn something only Old Speak knows.</li>
+<li><strong>Path C (hidden) —</strong> Ask Old Speak to tell you about the driftwood &mdash; where it came from, how old it is. There's a story in that wood. You can feel it.</li>
+</ul>
+</div>
+
+<hr class="scene-break">
+
+<h5 class="path">PATH A — TAKE THE MAPLE, CARVE FAST (BASE)</h5>
+
+<p>Reid takes the maple. He knows maple. He's made twenty walking sticks out of maple over twenty summers. His hands know the grain and the way it splits and the way it doesn't.</p>
+<p>He carves. Old Speak watches.</p>
+<p>The staff takes about twenty-five minutes. It is six feet long, a little thicker at the base, smooth where his hand will hold it. He sands it with a rough stone Old Speak hands him without being asked. The staff is clean and straight and a good honest piece of work.</p>
+<p>He stands it up. He leans on it. It holds. The wood is warm under his palm.</p>
+<p>Old Speak nods.</p>
+<p>"That," he says, "is a fine staff. It will not break easily. It will hold the line you want it to hold. Maple is honest. So are you."</p>
+<p>He pats the staff. Then he reaches into his bark and pulls out a tiny carving &mdash; a miniature staff, the size of Reid's finger.</p>
+<p>"That's a memory token," Old Speak says. "Carved by me, a long time ago. If you ever come back, hold it up so I know it's you. I've forgotten faces a few times. Last visitor I had, I called him by his great-great-grandfather's name. He took it well."</p>
+<p>Reid pockets the tiny staff.</p>
+<p>Reid stands. He thanks Old Speak. He walks back toward his raft.</p>
+<p>Old Speak waves with leafy fingers.</p>
+<p>"Tell me a new story next time you come," he calls. "I've memorized this one already. Even though we didn't tell any."</p>
+<p>Reid laughs, just a little.</p>
+<p>He paddles away with a maple staff that will hold a bulldozer.</p>
+
+<hr class="scene-break">
+
+<h5 class="path">PATH B — ASK FOR THE TECHNIQUE (ENHANCED)</h5>
+
+<p>Reid says, "Can you teach me something I don't know yet?"</p>
+<p>Old Speak's whole face does something. His leaves brighten. The bark at the corners of his mouth crinkles upward.</p>
+<p>"<em>YES,</em>" he says.</p>
+<p>He shows Reid the technique. It is not what Reid expected.</p>
+<p>The technique is not about how you cut. It is about <em>what you think</em> while you cut.</p>
+<p>"The wood is listening," Old Speak says. "It has been listening since it was a seed. It remembers everything that ever walked past it. If you carve and you think about nothing, the wood will be nothing. If you carve and you think about WHERE you are and WHO you love and WHAT this staff is for &mdash; the wood will hold all of it. Forever. That is the technique. I cannot teach you more than that. The rest is yours."</p>
+<p>Reid takes the driftwood. (He picked it without thinking. His hand went to it.)</p>
+<p>He carves slowly. He thinks about the dock at home. He thinks about Ella jumping off the end last summer with her eyes closed and her arms straight up. He thinks about Aiden's first cast with the back-dock fishing rod, the cork bobber landing right where Reid told him to aim. He thinks about the boards under his feet that have held a thousand bare-foot summers and would like, please, to hold a thousand more.</p>
+<p>The driftwood opens for him. He doesn't carve it so much as <em>reveal</em> it. The shape inside is already there. He just takes away the parts that aren't.</p>
+<p>The staff is done in an hour. It is heavier than the maple would have been. It is the color of wet basalt and the grain shows three concentric rings near the top where his hand will rest &mdash; three rings, like the third plank of the dock that wobbles when you step on it.</p>
+<p>It hums when he holds it. Low. Like a struck bell, far away.</p>
+<p>Old Speak is very quiet for a long minute.</p>
+<p>Then he says, "I have not seen wood do that in seven hundred years."</p>
+<p>He stands up. (Standing takes him a while. He is enormous.) He bows. Then he says, "I am coming with you."</p>
+<p>Reid blinks. "To the lake-up-above?"</p>
+<p>"To the dock that wobbles. I have not left this wood in nine hundred years. I will leave it for this. I am older than the man with the clipboards. I have stood in storms he cannot imagine. He will look me in the face and remember that he is small."</p>
+<p>Reid says, "Are you sure?"</p>
+<p>"Child," Old Speak says, "I am made of <em>wood.</em> I will be very dramatic. Try and stop me."</p>
+
+<hr class="scene-break">
+
+<h5 class="path">PATH C — ASK ABOUT THE DRIFTWOOD (HIDDEN)</h5>
+
+<p>Reid says, "Tell me about the driftwood. Where did it come from?"</p>
+<p>Old Speak goes still. Then he laughs &mdash; a quiet laugh this time, not the shake-the-trees one.</p>
+<p>"Nobody has asked me that in a thousand years. They always ask if it's the <em>strongest</em> one. Nobody asks where it came from."</p>
+<p>He picks up the driftwood. He turns it slowly.</p>
+<p>"This came from the FIRST TREE in The Old Roar. The first one to grow when the floods stopped roaring and the basalt cooled and there was finally enough soil for a root. It grew at the edge of what your people now call a cove. It stood there for nine hundred years. It fell in a storm. The lake took it. The lake held it for another five hundred years, water-soaking it, hardening it, weaving the grain with memory. Then the lake gave it back to me. To hold. Until the right hands came for it."</p>
+<p>He sets the wood down in front of Reid.</p>
+<p>"You are the right hands."</p>
+<p>Reid swallows. He doesn't quite believe it. But the wood is warm under his palm.</p>
+<p>He carves it slowly. He thinks the things Old Speak taught him &mdash; <em>where you are, who you love, what this staff is for.</em> He thinks about the dock. He thinks about Ella jumping off it with her arms up. He thinks about Aiden's first cast. He thinks about the <em>third piling</em>, the one he noticed earlier this morning, the one the water has been eating out from under.</p>
+<p>He carves THAT into the staff. Not as a picture. As a knowing.</p>
+<p>The staff finishes itself, almost. His hands move and the shape appears. At the top, three rings. At the base, a faint mark like the curve of a shoreline. The whole thing hums when he picks it up &mdash; a low, slow hum, like a chord pulled out of a deep place.</p>
+<p>Old Speak is openly weeping. He weeps sap. It is bright amber and very sticky.</p>
+<p>"You did the thing I cannot teach. You let the wood remember a <em>specific</em> place. That staff is now bonded to your dock. When you plant it at the base of the third piling, the wood will <em>root.</em> It will reach into the lake-bed. It will hold the soil in place. The water will move around it instead of under. Your dock will stand."</p>
+<p>Then the wood does something Reid will remember the rest of his life.</p>
+<p>Every tree in the rocky woodland &mdash; every single one, every trunk, every branch, every leafy hand &mdash; bends very slightly toward him. The canopy itself reorganizes. The whole forest is <em>bowing.</em> Not to the staff. To the boy who carved it.</p>
+<p>The sunlight through the bent canopy makes new patterns on the beach where his canoe is waiting, and the patterns look exactly like the grain of the wood in his hand, scaled up a thousand times.</p>
+<p>Old Speak says, very quietly: "Well. They've never done that for me. They like you, child."</p>
+<p>Reid doesn't trust himself to speak.</p>
+<p>After a long moment, he says, "Can you come with me?"</p>
+<p>"I would not miss it," Old Speak says. "I am old. I have wanted to see a wobbly dock survive for a very long time."</p>
+<p>He stands. He bows to Reid the way ancient things bow &mdash; slowly, with his whole body.</p>
+
+<hr class="scene-break">
+
+<h4 class="passage"><span class="pid">P-146</span>Exit</h4>
+
+<p>The log canoe is where Reid left it. The Listen bird watches from the upper branches.</p>
+
+<div class="variant-block">
+<span class="v-label">If he took Path A</span>
+<em>Reid pushes off. Old Speak waves with leafy fingers from the beach.</em>
+</div>
+
+<div class="variant-block">
+<span class="v-label">If he took Path B</span>
+<em>Reid pushes off with his enhanced staff across the bow. Old Speak wades into the shallows beside him, his bark feet creating their own small wake. They travel together.</em>
+</div>
+
+<div class="variant-block">
+<span class="v-label">If he took Path C</span>
+<em>Reid pushes off with his bonded staff across his lap, humming faintly. Old Speak walks alongside, half in the water, half not, the canopy of every tree on the bank reaching slightly toward him as he passes.</em>
+</div>
+
+<p>He has a staff (base, enhanced, or full). He has a tiny carved memory token in his pocket. He has, somewhere under his ribs, a feeling about being SEEN that he is still figuring out.</p>
+<p>He paddles toward the sound of the C-130, faint and far, somewhere up in the world above.</p>
+
+<h2 class="chapter" id="kellen">Chapter 3 — Kellen at Skip-Stone Lake</h2>
+<h3 class="chapter-sub">Item earned: The True-Skipping Stone &middot; Possible allies: Skim, the Skip-Stone flock</h3>
+
+<h4 class="passage"><span class="pid">P-150</span>Arrival at Skip-Stone Lake</h4>
+
+<p>Kellen's raft slides up to the edge of a long flat lake. His raft is now a sleek racing canoe with carbon-black sides. He steps onto the shore and a stone skims past his ear. Bounces nine times across the water.</p>
+<p>He turns. A flock of bird-creatures stand on the bank &mdash; long-legged, blue-feathered, smug. They have piles of stones in front of them and a tiny scoreboard etched into a piece of slate. They are taking turns throwing.</p>
+<p>The biggest one &mdash; tall as Kellen's knee, with white markings around her eyes &mdash; notices him.</p>
+<p>"Kid," she says. "This is a CHAMPIONSHIP game. You can watch from over there." She points with one wing at a flat rock thirty feet away.</p>
+
+<div class="variant-block">
+<span class="v-label">If the group stayed together</span>
+<em>The other seven kids are scattered along the bank. Carson is already picking up stones, weighing them. Reid is studying the layout of the water &mdash; the way the wind crosses it, where the surface chops, where it stays glassy. Madison is watching the birds the way she watches a chess opening. Aiden is talking quietly to a small frog he found.</em>
+</div>
+
+<div class="variant-block">
+<span class="v-label">If the group split into two</span>
+<em>Three other kids are with him. Aiden is one &mdash; he tried to hand Kellen a special skipping stone he had in his pocket, and Kellen accepted it solemnly. Carson is the second; he is already eyeing the birds like an opposing baseball team. Keira is the third; she has her sketchbook open and is drawing the formation the flock has settled into.</em>
+</div>
+
+<div class="variant-block">
+<span class="v-label">If each kid went alone</span>
+<em>Just him. He likes it. He always plays better when there's nobody watching him pretend not to think. The lake is enormous. The wind is good. The birds don't know him yet. He can be all of himself before anyone has decided who he is.</em>
+</div>
+
+<p>Kellen says, "I'd like to play."</p>
+<p>All the birds laugh.</p>
+<p>The biggest bird says, "This game requires SKILL. And STRATEGY. Most kids only have one or the other. Possibly neither."</p>
+<p>Kellen says, "I'll take that bet."</p>
+<p>The bird looks intrigued. "It's not a bet. It's a CHALLENGE."</p>
+<p>Kellen picks up a stone. He doesn't say anything else. He weighs it in his palm. He turns it over. He checks the flat side against his thumb.</p>
+<p>The biggest bird watches him do this. Her name, Kellen will learn, is Skim. She is the kind of bird who notices a person's hands before their face.</p>
+<p>"Hmm," she says.</p>
+<p>Kellen doesn't look up.</p>
+<p>"FINE," Skim says. "The game is called Pattern Skip. I call a pattern. You throw a stone that follows it. Three approved skips, two long, a curve, a stop. That kind of thing. Seven approved patterns. We use them in CHAMPIONSHIP order. You miss one, you sit out."</p>
+<p>Kellen nods.</p>
+
+<hr class="scene-break">
+
+<h4 class="passage"><span class="pid">P-151</span>The Whole-Self Moment</h4>
+
+<p>Skim hops over (it is more of a hop, with her wings folded behind her like a tiny field general). She holds two stones in her beak.</p>
+<p>She sets them in front of Kellen.</p>
+<p>"Pick the throwing one."</p>
+<p>Kellen looks at them. They look identical to anyone else. They are not identical to him. The one on the left is slightly flatter on the bottom &mdash; better skip surface. The one on the right is heavier &mdash; better distance but worse curve.</p>
+<p>He picks the one on the left.</p>
+<p>Skim nods, once. She picks up the heavier stone and skips it across the lake. Nine bounces, then a curve, then a stop. She does this without looking.</p>
+<p>Then she does something weird. She picks up the <em>flatter</em> stone &mdash; the one Kellen would have used &mdash; and deliberately throws it badly. The stone skips twice, wobbles, sinks.</p>
+<p>She turns to him.</p>
+<p>"That's how it goes if I only use my throwing arm. If I forget the rest of me. Did you see?"</p>
+<p>Kellen did see.</p>
+<p>"I've been doing this for forty years," she says. "You know what I see most? Kids who hide one of their halves. Athletes pretending they're not smart. Smart kids pretending they're not athletic. They think they have to pick. They think people will tease them if they're both."</p>
+<p>She tilts her head at him. "You're both. I saw your hand on that stone. I saw you read it. Don't hide it. Eyes, hands, thinking, instinct. The whole kid. Yes?"</p>
+<p>Kellen is quiet for a longer time than he expected to be.</p>
+<p>Because here's the thing he hasn't told anyone, not Madison, not his mom, not even himself most days: he has been afraid. Not big afraid. Small afraid. The kind of afraid where you laugh first so nobody can laugh at you. The kind of afraid where you make sure your arm goes faster than your brain so nobody asks what you're thinking. He has been doing this since fourth grade and he has gotten good at it.</p>
+<p>Skim is the first creature in a year who has looked at him and seen <em>both</em> halves and decided the both was the good part.</p>
+<p>He says, quietly: "I get scared people will tease me."</p>
+<p>Skim nods, like she expected this. "I know. Most kids who hide a half are. That's why I told you first. So you don't have to hide here."</p>
+<p>Kellen swallows.</p>
+<p>"Yes," he says. He means it this time.</p>
+<p>He picks the throwing stone. He is, for the first time in a year, all the way in his own body.</p>
+
+<hr class="scene-break">
+
+<h4 class="passage"><span class="pid">P-152</span>Kellen's Choice</h4>
+
+<p>Skim raises a tiny wing-flag.</p>
+<p>"Kid. How do you want to begin?"</p>
+
+<div class="choice-note">
+<strong>The reader chooses Kellen's approach.</strong>
+<ul>
+<li><strong>Path A (base) —</strong> "The first approved pattern. Show me," and work through the seven. Honest play. Beat them at their own game.</li>
+<li><strong>Path B (enhanced) —</strong> "Skim, you go first &mdash; let me watch how YOU do it." Patient. Strategic. Learn the patterns by watching, then play them better.</li>
+<li><strong>Path C (hidden) —</strong> "What happens if I invent a new pattern?" Risky. The birds might laugh. They also might not.</li>
+</ul>
+</div>
+
+<hr class="scene-break">
+
+<h5 class="path">PATH A — PLAY THE SEVEN PATTERNS (BASE)</h5>
+
+<p>Kellen says, "First approved pattern. Show me."</p>
+<p>Skim calls it. <em>Three short, two long, one stop.</em></p>
+<p>Kellen throws. The stone goes <em>short short short, long long, stop.</em> It sits on the surface of the water for a moment before sinking.</p>
+<p>The birds blink.</p>
+<p>Skim calls the second. <em>Two long, a curve right, a curve left, two short.</em> Kellen throws. The stone obeys.</p>
+<p>Third. Fourth. Fifth. Sixth.</p>
+<p>By the seventh pattern, the birds are no longer laughing. One of them is taking notes on a slate with a tiny pencil. Two others have their heads tilted in the same direction.</p>
+<p>Kellen plays clean. He doesn't show off. He doesn't add anything that wasn't asked for. He just <em>does the patterns,</em> one after another, exactly the way they're called.</p>
+<p>When he finishes the seventh, the bank is silent.</p>
+<p>Skim hops over. She's holding a flat stone, the color of slate.</p>
+<p>"This stone," she says, "always skips true. It does what you tell it. Skip on water, dirt, paper, glass &mdash; anything flat enough to bounce off of. Don't waste it. Don't throw it because you're bored. Throw it when it matters."</p>
+<p>Kellen pockets the stone.</p>
+<p>Skim says, "And kid &mdash; you played with your WHOLE self. You didn't pretend either half wasn't there. That is rare. Most adults have forgotten how to do it."</p>
+<p>Kellen says, "I'll try not to forget."</p>
+<p>Skim nods once.</p>
+
+<hr class="scene-break">
+
+<h5 class="path">PATH B — ASK SKIM TO GO FIRST (ENHANCED)</h5>
+
+<p>Kellen says, "Skim. You go first. Let me watch."</p>
+<p>Skim's head tilts. The other birds make small surprised sounds. Skim has been the lead thrower for forty years and nobody has <em>ever</em> asked her to demonstrate first.</p>
+<p>She likes this kid.</p>
+<p>She steps to the line. She rolls her shoulders. She takes a stone &mdash; Kellen notices she chose it on weight, not on look &mdash; and throws it in the FIRST pattern. <em>Three short, two long, one stop.</em> The stone behaves perfectly. It is a small, neat demonstration.</p>
+<p>Kellen watches her hand. He watches her hip. He watches where her eyes land before she throws.</p>
+<p>She does pattern two. He watches.</p>
+<p>Pattern three. He watches.</p>
+<p>By pattern four she stops mid-throw and looks at him sharply. "You're learning faster than I'm teaching."</p>
+<p>Kellen shrugs. "You're a good teacher."</p>
+<p>"I am NOT a teacher. I am a CHAMPION."</p>
+<p>"Then you're a champion who can also teach."</p>
+<p>Skim is quiet for a second.</p>
+<p>Then she does something she has not done in front of the flock in twenty years: she compliments a thrower out loud. "Kid. Throw the patterns. All seven. <em>Your</em> way."</p>
+<p>Kellen throws. He does all seven patterns. He uses what he learned from watching her &mdash; the weight check, the hip turn, the eye-land. He executes cleanly. He adds nothing flashy.</p>
+<p>The seventh pattern, he places the stone so it ends balanced on its edge on the shore.</p>
+<p>The flock falls silent.</p>
+<p>Skim hops over. Her stone, the slate-grey one, is in her beak. She lays it at Kellen's feet.</p>
+<p>"I have given this to four throwers in forty years," she says. "Two of them used it well. Two of them lost it. You will use it well. I can already tell."</p>
+<p>Kellen pockets the stone. He says, "Thank you, Skim."</p>
+<p>Skim says, "And kid. The next time you go to the lake-up-above and someone asks you to play a game with rules &mdash; there's a man with clipboards, yes? I have been HEARING about him. The next time he comes around &mdash; I'll come too. If you want me."</p>
+<p>Kellen says, "I want you."</p>
+
+<hr class="scene-break">
+
+<h5 class="path">PATH C — INVENT A NEW PATTERN (HIDDEN)</h5>
+
+<p>Kellen says, "What happens if I invent a new pattern?"</p>
+<p>The birds laugh &mdash; automatic, dismissive. Skim does not laugh.</p>
+<p>Skim says, in a slow voice, "Nobody has invented a new pattern in three hundred years."</p>
+<p>Kellen says, "Why not?"</p>
+<p>"Because the SEVEN are perfect. They are HISTORICAL. They are APPROVED."</p>
+<p>"By who?"</p>
+<p>The birds open their mouths to answer. Then they close them. Then they look at each other. Then they look at Skim.</p>
+<p>Skim is quiet for a long moment.</p>
+<p>She says, "I don't actually know. Nobody does. They've just always been the seven."</p>
+<p>Kellen nods.</p>
+<p>He picks up a stone. He weighs it. He turns it over. He doesn't say anything for a while.</p>
+<p>Then he says, "I'm going to call it <em>the mirror.</em>"</p>
+<p>Skim leans in. "The what?"</p>
+<p>"You throw a pattern. I throw a pattern that mirrors it. Whatever you do, I do reversed. You go three skips and a curve right &mdash; I do three skips and a curve left. We make a pattern together that neither of us could make alone. You game?"</p>
+<p>Skim does not move for ten full seconds.</p>
+<p>Then she says, "Throw."</p>
+<p>She picks her stone. They walk to the line together.</p>
+<p>Skim throws first. <em>Three short, a curve right, a long, a stop.</em></p>
+<p>Kellen throws second. <em>Three short, a curve LEFT, a long, a stop.</em> The stones land beside each other on the same flat patch of water, mirroring across an invisible line.</p>
+<p>Skim trumpets &mdash; for a small bird, she has enormous lungs. The flock goes absolutely silent.</p>
+<p>They throw it again. Harder pattern. Mirror. Again. Mirror. Again.</p>
+<p>By the fourth round, Kellen is laughing out loud and Skim is making a sound that is not quite a bird laugh but is close enough.</p>
+<p>The smallest bird in the flock, the one who trips over its own feet, says quietly: "<em>We have eight patterns now.</em>"</p>
+<p>The other birds turn slowly toward Kellen.</p>
+<p>Skim says, with the gravity of a coronation: "Kid. We have <em>eight</em> patterns now. The Mirror is the eighth. It is named after you."</p>
+<p>Kellen blushes red to the tips of his ears.</p>
+<p>Skim hops to the pile of slate. She returns with the True-Skipping Stone in her beak. She lays it in his palm. Then &mdash; and this surprises the entire flock &mdash; she lays a second stone next to it. A smaller one, white-flecked. "From me. Personally. For when you need a backup."</p>
+<p>She says, "When you go back to that man with the clipboards &mdash; I'm coming. <em>We're</em> coming. Whole flock. We owe you a debt and we settle our debts."</p>
+
+<hr class="scene-break">
+
+<h4 class="passage"><span class="pid">P-156</span>Exit</h4>
+
+<p>The racing canoe is where Kellen left it. The stones in his pocket clack softly against each other.</p>
+
+<div class="variant-block">
+<span class="v-label">If he took Path A</span>
+<em>The birds wave with their wings. Skim watches him go without saying anything more.</em>
+</div>
+
+<div class="variant-block">
+<span class="v-label">If he took Path B</span>
+<em>Skim flies one loop above him as he pushes off, then settles on the bow of his canoe like she's claimed it. "I'll come when you call," she says. "Don't waste the call."</em>
+</div>
+
+<div class="variant-block">
+<span class="v-label">If he took Path C</span>
+<em>The whole flock takes off in formation behind his canoe &mdash; a small precision air force, the smallest bird at the back, doing its best. Skim flies alongside. "Kid invented a pattern," she keeps muttering. "Twelve years old. Kid invented a PATTERN."</em>
+</div>
+
+<p>He has the stone (in whatever form he earned it). He has, somewhere in his chest, the new and weird feeling that he doesn't have to hide either half of himself anymore.</p>
+<p>The flock has flown ahead. The smallest bird circles back to wave once.</p>
+<p>Kellen pushes off. As he paddles, he says it once to himself, out loud, to make sure he doesn't forget:</p>
+<p>"<em>Played whole. It worked.</em>"</p>
+<p>That's the line. That's the line he is going to remember when he is fifteen, and twenty, and forty. The line that finally tells him the truth about himself.</p>
+<p>He paddles toward the sound of the C-130, faint and far, somewhere up in the world above.</p>
+
+<h2 class="chapter" id="keira">Chapter 3 — Keira at the Painted Cliff</h2>
+<h3 class="chapter-sub">Item earned: The Truth Brush &middot; Possible ally: Cliffy</h3>
+
+<h4 class="passage"><span class="pid">P-160</span>Arrival at the Painted Cliff</h4>
+
+<p>Keira's raft slides up to the foot of an enormous cliff. Her raft is now a flat wooden raft with a small easel bolted to it, brushes in a leather holder, and paints in glass jars. The colors are colors Keira doesn't have names for. She wants names for them immediately.</p>
+<p>The cliff in front of her is gigantic. Black basalt, columns rising hundreds of feet up. The columns are perfectly hexagonal, the way good basalt always is. The shadows between them are darker than shadows should be.</p>
+<p>She tilts her head.</p>
+<p>The cliff has a face.</p>
+<p>She tilts the other way.</p>
+<p>The cliff is <em>breathing.</em></p>
+
+<div class="variant-block">
+<span class="v-label">If the group stayed together</span>
+<em>The other seven kids land beside her. Aiden takes one look at the cliff and says "He's tired." Reid agrees without saying anything. Madison is already counting the basalt columns. Carson tilts his head and squints, trying to see whatever Keira is clearly seeing. He cannot. He shrugs and trusts her anyway.</em>
+</div>
+
+<div class="variant-block">
+<span class="v-label">If the group split into two</span>
+<em>Three other kids are with her. Aiden is one of them &mdash; he picked her group because he wanted to see the cliff she described from the boat. Reid is the second. Kellen is the third, already crouching to study a stone. They give her space. They all sense she sees something they don't.</em>
+</div>
+
+<div class="variant-block">
+<span class="v-label">If each kid went alone</span>
+<em>Just her and the cliff. Her hands are already itching for a brush. The silence here is a different silence &mdash; the silence of something asleep, breathing. She has never been alone in a place this big. She finds, to her own surprise, that she likes it. She has been waiting her whole life to look at something this size without someone telling her to hurry up.</em>
+</div>
+
+<p>She steps off her raft. The cliff doesn't move. But she can hear something &mdash; a small sound. Like... snoring? But the snore is <em>colored.</em> She can see the color of the snore in the air. Pale blue, with flecks of orange.</p>
+<p>She blinks. She still sees the colors.</p>
+<p>A small voice from somewhere says, "You're not supposed to be able to see that."</p>
+<p>Keira looks around. There's nobody.</p>
+<p>The voice says, "I'm UP HERE. Look at the third column from the left."</p>
+<p>She looks. The third basalt column has eyes. The eyes are closed.</p>
+<p>The cliff is asleep.</p>
+<p>He has been asleep, she figures out, for a very long time.</p>
+<p>He says (without opening his eyes), "I haven't had a visitor in five hundred years. Are you a visitor or are you a dream? I get them confused."</p>
+<p>Keira says, "I'm a visitor."</p>
+<p>The cliff says, "<em>Wonderful.</em> Could you do me a favor? I would very much like to wake up."</p>
+<p>Keira says, "How?"</p>
+<p>The cliff says, "I don't know. I've been trying for centuries. Maybe a fresh perspective."</p>
+<p>He yawns. The yawn is purple.</p>
+
+<hr class="scene-break">
+
+<h4 class="passage"><span class="pid">P-161</span>The Both-at-Once Moment</h4>
+
+<p>Before Keira even picks up a brush, the cliff opens one eye, just a crack.</p>
+<p>He looks at her. Closes it again.</p>
+<p>"Huh," he says.</p>
+<p>Keira says, "What?"</p>
+<p>"You have an artist's eye. I can see it. But you ALSO have a climber's body. Tall for your age. Strong shoulders. I can see THAT too. Most visitors are one or the other. You're both. All the way down."</p>
+<p>Keira shrugs. "I just like to do everything."</p>
+<p>"That is RARE," the cliff says. He sounds delighted. "Most of the world makes you pick. Most of the world tells the artist to stop climbing and the climber to stop painting. <em>You haven't picked.</em> I can tell. Don't ever pick."</p>
+<p>Keira doesn't know what to say. She feels her face get warm in a way that's pleasant.</p>
+<p>She is ten years old. People have been telling her she's <em>good for an artist</em> or <em>good for her age</em> her whole life. Nobody has ever told her she gets to be everything she is all at once.</p>
+<p>"Okay," she says.</p>
+<p>"Good," the cliff says. "Now. Please paint me awake. I have been BORED for two hundred of the last five hundred years and I would like to see the sky again."</p>
+<p>He yawns purple.</p>
+<p>Keira opens her paint jars.</p>
+<p>The paints inside <em>move</em> when she opens them. They lean toward her. They are excited to be used.</p>
+<p>She picks up a brush.</p>
+
+<hr class="scene-break">
+
+<h4 class="passage"><span class="pid">P-162</span>Keira's Choice</h4>
+
+<p>The cliff yawns one more time. The yawn is now lavender with green flecks. The colors drift.</p>
+<p>He says, "How would you like to begin?"</p>
+
+<div class="choice-note">
+<strong>The reader chooses Keira's approach.</strong>
+<ul>
+<li><strong>Path A (base) —</strong> "I'll just start painting and see what happens." Bold. Trust the brush.</li>
+<li><strong>Path B (enhanced) —</strong> "What do you want to be painted AS?" He thinks about it for a long time. The conversation is slow but it goes somewhere.</li>
+<li><strong>Path C (hidden) —</strong> "I'm going to climb up first &mdash; I want to see what you've been dreaming." Hardest. He's a thousand feet tall. You are ten.</li>
+</ul>
+</div>
+
+<hr class="scene-break">
+
+<h5 class="path">PATH A — JUST START PAINTING (BASE)</h5>
+
+<p>Keira shrugs and picks up the orange. The orange leaps out of the jar. She catches it with the brush. It is <em>eager.</em></p>
+<p>She paints. Fast. The way she paints when nobody is watching &mdash; wide strokes, no plan, the colors deciding their own next move. The orange leads. The blue follows. A green she doesn't recognize joins in halfway through.</p>
+<p>The cliff is purring now. Each stroke wakes him a little more. His snore has stopped. His breathing has slowed.</p>
+<p>She gets to his eyes &mdash; they are thirty feet up.</p>
+<p>She climbs.</p>
+<p>This is the part of the chapter that should celebrate Keira's other half. She's been jumping off the small cliff with the older boys for two summers. She studies the seams in the basalt. She finds the cracks where her fingers will fit. She goes up.</p>
+<p>The mouse with spectacles (a tiny creature who has materialized on a ledge and is keeping notes in a tiny book) watches her with both paws over its mouth.</p>
+<p>She reaches Cliffy's eye. She paints a small ring of color around it. Then a small ring around the other. She perches on his cheekbone.</p>
+<p>She says, "Okay. Open."</p>
+<p>Cliffy opens his eyes.</p>
+<p>The cliff has eyes.</p>
+<p>He looks at her. She looks at him. He smiles. The whole cliff face smiles.</p>
+<p>She climbs down. Slowly. Carefully. She gets to the bottom.</p>
+<p>Cliffy reaches into his basalt chest and pulls out a small brush. The brush is wood, with a tip made of light.</p>
+<p>"This," he says, "is a Truth Brush. You don't paint with it. You look through it. Anything hidden becomes visible. Lies turn yellow. Truth glows blue."</p>
+<p>Keira takes it. It fits in her pocket.</p>
+<p>The mouse with spectacles writes the climb into the cliff's history book. He is, she will learn later, the official biographer of Cliffy. He has been waiting for something to record for two hundred years.</p>
+
+<hr class="scene-break">
+
+<h5 class="path">PATH B — ASK WHAT HE WANTS (ENHANCED)</h5>
+
+<p>Keira says, "What do you want to be painted AS?"</p>
+<p>Cliffy is quiet for a very long time.</p>
+<p>He says, "Nobody has ever asked me that."</p>
+<p>She waits.</p>
+<p>He says, slowly, "I don't think I know what I look like. I've been asleep so long. What does the world look like now? What's NEW? What would I want to wear?"</p>
+<p>Keira sits down on a flat rock at his foot. She leans against him. He is cool and steady. She thinks.</p>
+<p>"What about... kindness?" she says. "What does kindness look like? I'll paint that."</p>
+<p>Cliffy goes very still.</p>
+<p>"Kindness," he says. "I haven't thought about that in five hundred years. I... think kindness looks like... one hand reaching toward another hand. Yes? Is that right?"</p>
+<p>Keira nods. She thinks so. She thinks that's exactly right.</p>
+<p>She paints. Up his basalt forearm, a long curving stroke of warm gold &mdash; a hand. Up his other forearm, the other hand, reaching. She paints them so the fingertips don't quite touch. They are reaching, always reaching, never finishing the reach. The reach is the thing.</p>
+<p>When she steps back, Cliffy is crying.</p>
+<p>His tears are pale blue paint. They drip down his basalt face and pool at his feet. He is overwhelmed.</p>
+<p>"That is the most beautiful thing," he whispers, "that has ever been on me."</p>
+<p>She climbs to his eyes. (Same climb as Path A &mdash; she's not afraid.) She paints a small ring around each. She perches on his cheekbone.</p>
+<p>"Open."</p>
+<p>He opens his eyes.</p>
+<p>He looks down at his own arms. He sees the hands. He sees them reaching toward each other.</p>
+<p>He cries again. More blue paint.</p>
+<p>He pulls a Truth Brush out of his basalt chest and gives it to her. This one is older, more worn, the wood polished by something Keira can't quite see.</p>
+<p>"This is mine. It was my mother's. She was a cliff too. You should have it. You earned it."</p>
+<p>Then he says, very quietly: "I cannot leave this place. I am stone in this ground. But &mdash; if you call my name from somewhere with stone, my <em>attention</em> will travel. I will be there in spirit. The basalt around your home will notice. The man with the clipboards &mdash; he won't see me. But he will feel watched. That is all I can offer."</p>
+<p>Keira says, "That's a lot."</p>
+<p>Cliffy says, "It is what I have."</p>
+
+<hr class="scene-break">
+
+<h5 class="path">PATH C — CLIMB FIRST (HIDDEN)</h5>
+
+<p>Keira looks up the cliff face. Up. Up. Up.</p>
+<p>She says, "I'm going to climb up first. I want to see what you've been dreaming."</p>
+<p>Cliffy makes a sound that is somewhere between a yawn and a laugh.</p>
+<p>"Climb me? CLIMB me? No one climbs me. I am a CLIFF. I am hundreds of feet tall."</p>
+<p>Keira is already climbing.</p>
+<p>She finds the seams. The basalt is forgiving. The columns are perfectly hexagonal and her fingers know exactly where to wedge. She climbs steadily &mdash; not fast, not slow, the way she climbs the rocks at home, the way she climbs the small cliff the older boys jump off.</p>
+<p>She is fifty feet up before Cliffy realizes she is <em>actually doing this.</em></p>
+<p>He goes very still 
