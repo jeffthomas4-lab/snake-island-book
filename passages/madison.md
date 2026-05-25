@@ -78,37 +78,39 @@ Then Lark says: "Wait. First — sit down."
 
 *~300 words. Always read. This is the fix for the previous editor's note about Madison needing one moment of being taken care of, not just being useful.*
 
-"Sit DOWN. Wait. Actually — STAND. We've been watching you walk down the bank. We can tell."
+"Wait. Don't sit. STAND. We have been watching you walk down the bank."
 
-Madison blinks. "Tell what?"
+Madison blinks. "Why?"
 
-Pip steps closer. "You're a DANCER. The way you carry your shoulders. The way your feet land when you walk. The way you turned your head to look at the heron and your whole spine came with you. We have been waiting for one of you to walk down here like that."
+Pip steps closer. "You're a DANCER. We can tell from how you walk. The way your feet land. The way your spine moves with your head. We have been HOPING for a dancer for a very long time."
 
-Lark says, "And not a kid-who-takes-lessons dancer. You're the OTHER kind. The kind whose body BELIEVES it. We can see your hours."
+Lark says, "We knew one of you would be. Pools know. We have been WAITING."
 
-Madison goes very still. People at home say "oh you're such a good dancer" the way they say "you're so tall" — polite, general, not specific. The Sisters are being specific. They are talking about her hours.
+Madison is a little surprised. She knows she's a good dancer — her teacher has told her, her family has told her, she has the trophies and the placements in her room that say so. But she has never met an audience this hungry for a dancer. The Sisters are looking at her the way people look at something they've been hoping to see for years.
 
-Wren tugs her hand. "Show us. Please. The pool has been wanting to watch."
+Wren tugs her hand. "Can we see you do something? Please? We've been thinking about it for so long."
 
 Pip raises one small wet hand. Three flat stones lift from the pool and hover an inch above the surface, forming a small triangular stage just within Madison's reach. The water around them goes glassy.
 
-Madison hesitates — not because she's rusty, she's not, she danced yesterday in her room before bed — but because the audience matters and she is, suddenly, choosing what to show them.
+Madison thinks for one second. Then she picks the adagio — the one her teacher built FOR her last semester. The hardest one she does in studio. The long arabesque. The turn that took her three months to clean.
 
-She picks the adagio. The hardest one she has. The one her teacher built FOR her last semester. Slow arms. The long arabesque that took her three months to hold cleanly. The turn that lives at the edge of what she can do.
+She steps onto the first stone. Her body knows what to do.
 
-She steps onto the first stone. Her body finds the count before her head does.
+She dances three measures. They are very good measures. The arabesque is exactly as long as it should be. The turn lands clean. She has danced this same sequence a hundred times. She has never danced it with this much attention from an audience.
 
-She dances three measures. They are very good measures. The arabesque is exactly as long as her teacher wants it. The turn lands clean.
+The three Sisters do not clap. They do not whistle. They WATCH the way an audience that has been waiting for years watches when the wait is finally over — with their full faces, with their breath held, with the quiet that says *please don't let this end*.
 
-The three Sisters do not clap. They do not whistle. They WATCH the way the right audience watches — like every quarter-inch of movement matters to them.
+When she steps off the last stone, the pool ripples in a pattern around the three stones that looks, faintly, like a standing ovation made of water.
 
-When she steps off the last stone, Pip says, quietly: "That was very good, Madison. Not for-your-age very good. Not for-a-cousin very good. Just very good."
+Pip whispers: "Thank you, Madison. That was BEAUTIFUL."
 
-Madison's eyes are wet. Nobody has ever said that exact sentence to her at exactly that pitch. Her ballet teacher means it but says it differently. Her family means it but says it the family way. The Sisters said it like dancers.
+Lark wipes a Sister-tear that goes up. "We don't get dancers. People don't dance for a pool. They dance for other people. You danced for us anyway."
 
-She sits down on the bank. Her hair drips upward, just a little. She catches sight of herself in the pool's reflection — fifteen years old, hair defying gravity, breath steady after three measures of work — and laughs out loud. The kind of laugh she usually saves for when nobody's watching. Wren grabs her own hair and flips it upward to match.
+Madison feels something specific in her chest. Not surprise — she knew she could do it. Not the warmth of being praised — she gets praised, that's familiar. Something newer than that: the warmth of having SHARED something she loves with an audience that genuinely, specifically needed to see it. Her grace went somewhere today that it has never gone before. Three small water-girls had been waiting for years for it. She brought it.
 
-Pip nods. "Okay. Go back to your cousins now. Carry that with you. The pool will remember the way you moved over the stones. It doesn't forget good dancers."
+She sits down on the bank. Her hair drips upward, just a little. She catches sight of herself in the pool's reflection — fifteen years old, breath steady, all three Sisters still beaming at her — and laughs out loud. The laugh of someone who brought a gift and discovered the gift was exactly the right one.
+
+Pip nods. "Go back to your cousins now. We will remember today for a very long time. You were exactly what we had been hoping for."
 
 Madison laughs. It's a real laugh. The kind she usually saves for inside her own head.
 
