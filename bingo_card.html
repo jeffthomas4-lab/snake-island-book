@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sun Lakes Bingo</title>
+<style>
+  @page {
+    size: letter landscape;
+    margin: 0.5in;
+  }
+  body {
+    font-family: 'Georgia', 'Charter', serif;
+    color: #2b2419;
+    background: #faf6ed;
+    margin: 0;
+    padding: 24px;
+  }
+  .card {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  header {
+    text-align: center;
+    border-bottom: 3px double #2b2419;
+    padding-bottom: 16px;
+    margin-bottom: 24px;
+  }
+  h1 {
+    font-style: italic;
+    font-size: 36px;
+    font-weight: normal;
+    margin: 0 0 4px 0;
+    letter-spacing: 2px;
+  }
+  .subtitle {
+    font-size: 14px;
+    color: #c97a3f;
+    font-style: italic;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  .name-line {
+    margin: 16px 0;
+    font-size: 16px;
+  }
+  .name-line .blank {
+    display: inline-block;
+    border-bottom: 1.5px solid #2b2419;
+    width: 220px;
+    margin: 0 8px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  td {
+    border: 1.5px solid #2b2419;
+    padding: 0;
+    width: 20%;
+    height: 100px;
+    vertical-align: middle;
+    text-align: center;
+    background: #faf6ed;
+    position: relative;
+  }
+  td .task {
+    padding: 8px 6px;
+    font-size: 14px;
+    line-height: 1.3;
+  }
+  td.free {
+    background: #c97a3f;
+    color: #faf6ed;
+  }
+  td.free .task {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+  }
+  td.free .star {
+    font-size: 28px;
+    display: block;
+    margin-bottom: 4px;
+  }
+  .checkbox {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    width: 14px;
+    height: 14px;
+    border: 1.5px solid #2b2419;
+    border-radius: 2px;
+  }
+  td.free .checkbox {
+    display: none;
+  }
+  .rules {
+    margin-top: 20px;
+    font-size: 13px;
+    line-height: 1.5;
+    text-align: center;
+  }
+  .rules strong { color: #6b8e4e; }
+  .rules .rule-row { margin: 4px 0; }
+  .footer {
+    margin-top: 16px;
+    font-size: 11px;
+    color: rgba(43, 36, 25, 0.5);
+    text-align: center;
+    font-style: italic;
+  }
+  @media print {
+    body { background: white; }
+    td { background: white; }
+    td.free { background: #c97a3f; }
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <header>
+    <h1>Sun Lakes Bingo</h1>
+    <div class="subtitle">The Old Roar &mdash; Companion Card</div>
+  </header>
+
+  <div class="name-line">
+    Name: <span class="blank"></span> &nbsp;&nbsp; Year: <span class="blank" style="width:120px;"></span>
+  </div>
+
+  <table>
+    <tr>
+      <td><div class="checkbox"></div><div class="task">Catch a fish<br>(and kiss it!)</div></td>
+      <td><div class="checkbox"></div><div class="task">Read for 30 minutes</div></td>
+      <td><div class="checkbox"></div><div class="task">Help with the brisket prep</div></td>
+      <td><div class="checkbox"></div><div class="task">Take out the trash</div></td>
+      <td><div class="checkbox"></div><div class="task">Mini-golf tournament</div></td>
+    </tr>
+    <tr>
+      <td><div class="checkbox"></div><div class="task">Massage Mom or Dad for 10 minutes</div></td>
+      <td><div class="checkbox"></div><div class="task">Cliff jump<br>(with a grown-up)</div></td>
+      <td><div class="checkbox"></div><div class="task">Paddle board to the back dock</div></td>
+      <td><div class="checkbox"></div><div class="task">Skip a stone five or more times</div></td>
+      <td><div class="checkbox"></div><div class="task">Sketch the lake</div></td>
+    </tr>
+    <tr>
+      <td><div class="checkbox"></div><div class="task">Help cook one dinner</div></td>
+      <td><div class="checkbox"></div><div class="task">Tube ride behind Uncle Bill's boat</div></td>
+      <td class="free"><div class="task"><span class="star">★</span>FIRST-DAY JUMP-IN<br>(free space)</div></td>
+      <td><div class="checkbox"></div><div class="task">Concession stand ice cream run</div></td>
+      <td><div class="checkbox"></div><div class="task">Night swim<br>(must be old enough!)</div></td>
+    </tr>
+    <tr>
+      <td><div class="checkbox"></div><div class="task">Bat-counting at sunset</div></td>
+      <td><div class="checkbox"></div><div class="task">Water balloon launcher team</div></td>
+      <td><div class="checkbox"></div><div class="task">Make someone laugh until they snort</div></td>
+      <td><div class="checkbox"></div><div class="task">Card game<br>(Screw Your Neighbor or gin rummy)</div></td>
+      <td><div class="checkbox"></div><div class="task">Listen for the wind in the canyon at night</div></td>
+    </tr>
+    <tr>
+      <td><div class="checkbox"></div><div class="task">Watch a C-130 go through the canyon</div></td>
+      <td><div class="checkbox"></div><div class="task">Sit through one full sunset on the dock</div></td>
+      <td><div class="checkbox"></div><div class="task">Make and share a snack with a cousin</div></td>
+      <td><div class="checkbox"></div><div class="task">Bring someone a glass of water unprompted</div></td>
+      <td><div class="checkbox"></div><div class="task">Tell the story of one dinner you'll remember</div></td>
+    </tr>
+  </table>
+
+  <div class="rules">
+    <div class="rule-row"><strong>Five in a row</strong> (across, down, or diagonal) earns a prize.</div>
+    <div class="rule-row"><strong>Blackout</strong> (all 24 squares) earns a special end-of-week prize.</div>
+    <div class="rule-row">You do not have to do them in any order. You do not have to do them all.</div>
+  </div>
+
+  <div class="footer">
+    Tear out and use during your Sun Lakes week. Print one card per kid each year. Save your full cards &mdash; they make beautiful keepsakes.
+  </div>
+</div>
+</body>
+</html>

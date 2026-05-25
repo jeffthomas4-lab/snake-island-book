@@ -1,0 +1,84 @@
+%% The Old Roar — CYOA Macro Flow v3
+%% View at: https://mermaid.live  (paste this whole file)
+%% Or use Mermaid Preview extension in VS Code
+
+flowchart TD
+    %% ACT 1
+    Start([Open book]) --> P001[P-001 Synchronized Jump]
+    P001 --> P002[P-002 Drystone arrives]
+    P002 --> P003[P-003 Kids can't fix it]
+    P003 --> P004[P-004 Drift to sunroom]
+    P004 --> P005[P-005 C-130 portal]
+
+    %% ACT 2
+    P005 --> P010[P-010 Eight rafts land]
+    P010 --> P011[P-011 Harbor Keeper<br/>'time for four']
+    P011 --> P012{P-012 STRATEGY CHOICE}
+
+    P012 -->|A. Stay together| StratA[P-100 Pick 4 of 8 regions]
+    P012 -->|B. Split in two| StratB[P-200 Form groups of 4]
+    P012 -->|C. Each goes alone| StratC[P-300 Solo paths]
+
+    %% STRATEGY A — Stay Together
+    StratA --> R_A[Visit 4 regions together<br/>4 items, 0-4 allies]
+
+    %% STRATEGY B — Split
+    StratB --> G1[P-210 Group 1 path]
+    StratB --> G2[P-250 Group 2 path]
+    G1 --> P290[P-290 Halfway Hill]
+    G2 --> P290
+    P290 --> R_B[8 items shallow, 0-3 allies]
+
+    %% STRATEGY C — Solo
+    StratC --> S1[P-310 Madison solo]
+    StratC --> S2[P-320 Chayten solo]
+    StratC --> S3[P-330 Carson solo]
+    StratC --> S4[P-340 Reid solo]
+    StratC --> S5[P-350 Kellen solo]
+    StratC --> S6[P-360 Keira solo]
+    StratC --> S7[P-370 Ella solo]
+    StratC --> S8[P-380 Aiden solo]
+    S1 & S2 & S3 & S4 & S5 & S6 & S7 & S8 --> R_C[8 items deep, up to 8 allies]
+
+    %% ACT 4 — RETURN
+    R_A --> P400[P-400 All kids gather]
+    R_B --> P400
+    R_C --> P400
+    P400 --> P401{P-401 How to get home<br/>gated by items}
+    P401 -->|Has Pegasus| P410[Unicorn Chain]
+    P401 -->|Has Lake Sisters| P420[Water Slide]
+    P401 -->|Has Cliffy| P430[Basalt Bridge]
+    P401 -->|Default| P440[Harbor Keeper boat]
+
+    %% ACT 5 — SHOWDOWN
+    P410 & P420 & P430 & P440 --> P500[P-500 Return to sunroom]
+    P500 --> P501[P-501 Walk to dock]
+    P501 --> P502[P-502 Drystone mid-speech]
+    P502 --> B1[BEAT 1 Madison<br/>map or fallback]
+    B1 --> B2[BEAT 2 Chayten<br/>voice or fallback]
+    B2 --> B3[BEAT 3 Carson<br/>charm or fallback]
+    B3 --> B4[BEAT 4 Reid<br/>staff or fallback]
+    B4 --> Push[P-550 Drystone pushback<br/>+ chosen-family pivot]
+    Push --> B5[BEAT 5 Kellen<br/>stone or fallback]
+    B5 --> B6[BEAT 6 Keira<br/>brush or fallback]
+    B6 --> B7[BEAT 7 Ella<br/>crown or fallback]
+    B7 --> B8[BEAT 8 Aiden<br/>★ Pegasus visible ★]
+
+    %% ACT 6 — ENDINGS
+    B8 --> P600{P-600 Count items}
+    P600 -->|8 items + all kids + Pegasus| Crown[★ CROWN ENDING<br/>Dock heals overnight<br/>Pegasus stays]
+    P600 -->|Anything less| Silver[SILVER ENDING<br/>Drystone defeated<br/>Come back next summer]
+
+    Crown --> End([END])
+    Silver --> End
+
+    %% Styling
+    classDef always fill:#e8f4f8,stroke:#4a7d8c,color:#2b2419
+    classDef choice fill:#fff3e0,stroke:#c97a3f,color:#2b2419,stroke-width:2px
+    classDef ending fill:#f0e6d2,stroke:#6b8e4e,color:#2b2419,stroke-width:2px
+    classDef star fill:#ffe5cc,stroke:#c97a3f,color:#2b2419,stroke-width:3px
+
+    class P001,P002,P003,P004,P005,P010,P011,P400,P500,P501,P502,Push always
+    class P012,P401,P600 choice
+    class Crown,Silver ending
+    class B8 star
