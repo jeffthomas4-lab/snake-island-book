@@ -520,7 +520,7 @@ function render() {
     s.choices.forEach(c => h += `<button onclick="go('${c.target}')">${c.label}${c.sub ? `<span class="sub">${c.sub}</span>` : ''}</button>`);
     h += '</div>';
   } else if (s.isEnd) {
-    h += `<div class="choices"><button onclick="location.href='index.html'">← Back to pick another cousin (or head to the Showdown)</button><button onclick="restart()">Start over — try a different path in this region</button></div>`;
+    h += `<div class="choices"><button onclick="location.href='index.html?goto=showdown_intro'" style="background:#2b2419;color:#faf6ed;border-color:#2b2419;"><strong>Head to the Showdown →</strong><span class="sub" style="color:#f5c587;">End the book. Face Drystone with what you\'ve earned.</span></button><button onclick="location.href='index.html?goto=hub'">← Pick another cousin first</button><button onclick="restart()" style="opacity:0.7;font-size:13px;">Start over — try a different path in this region</button></div>`;
   }
   m.innerHTML = h;
 }

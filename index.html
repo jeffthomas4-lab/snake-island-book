@@ -398,6 +398,18 @@ function load() {
   try { const s = localStorage.getItem('old-roar-state'); if (s) state = JSON.parse(s); } catch(e) {}
   // Refresh regionsPlayed from each region's localStorage (in case user played them in another tab)
   refreshRegionsPlayed();
+  // Honor ?goto= in the URL so region exits can jump straight to a specific scene
+  try {
+    const params = new URLSearchParams(location.search);
+    const target = params.get('goto');
+    if (target && SCENES[target]) {
+      state.current = target;
+      if (!state.visited.includes(target)) state.visited.push(target);
+      save();
+      // Clean the URL so a refresh doesn't re-trigger the jump
+      history.replaceState({}, '', location.pathname);
+    }
+  } catch(e){}
   render();
 }
 function refreshRegionsPlayed() {
@@ -474,10 +486,10 @@ function renderHub() {
   h += '</div>';
   h += `<div class="progress">${rc} / 8 regions completed · 27 endings per region · 216 total paths</div>`;
   h += '<div class="choices">';
-  if (rc >= 3) {
-    h += `<button onclick="go('showdown_intro')"><strong>Head to the showdown ▸</strong><span class="sub">All eight cousins return to the dock together. Drystone is waiting.</span></button>`;
+  if (rc >= 1) {
+    h += `<button onclick="go('showdown_intro')"><strong>Head to the Showdown ▸</strong><span class="sub">All eight cousins return to the dock together. Drystone is waiting. The more cousins you played, the bigger the ending.</span></button>`;
   } else {
-    h += `<button disabled><strong>Showdown locked</strong><span class="sub">Complete at least 3 regions to unlock. (${rc} / 3 done)</span></button>`;
+    h += `<button disabled><strong>Showdown locked</strong><span class="sub">Play at least 1 cousin's region first, then come back here for the Showdown.</span></button>`;
   }
   h += `<button onclick="resetAll()" style="font-size:13px;opacity:0.7;">Reset all playthroughs</button>`;
   h += '</div>';
