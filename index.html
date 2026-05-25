@@ -456,17 +456,22 @@ function go(t) {
 }
 
 function restart() {
-  if (!confirm('Restart? This resets only the framing and showdown — your region playthroughs are kept.')) return;
-  state = { current: 'start', items: {}, allies: [], flags: [], visited: [], regionsPlayed: [] };
-  save(); refreshRegionsPlayed(); render();
-}
-
-function resetAll() {
-  if (!confirm('Reset EVERYTHING including all eight region playthroughs?')) return;
+  if (!confirm('Start over from the very beginning? This wipes ALL cousin playthroughs, all earned items, and resets the book completely.')) return;
+  // Wipe each cousin demo's saved state
   REGIONS.forEach(r => { try { localStorage.removeItem(r.key + '-demo-state'); } catch(e){} });
+  // Wipe master state
   state = { current: 'start', items: {}, allies: [], flags: [], visited: [], regionsPlayed: [] };
   save(); render();
 }
+
+// Soft navigation back to hub — keeps your earned state so you can play another cousin
+function backToHub() {
+  state.current = 'hub';
+  save(); window.scrollTo(0, 0); refreshRegionsPlayed(); render();
+}
+
+// Kept as an alias for the hub "Reset all" button
+function resetAll() { restart(); }
 
 function renderState() {
   const rc = state.regionsPlayed.length;
@@ -563,7 +568,7 @@ function render() {
     s.choices.forEach(c => h += `<button onclick="go('${c.target}')">${c.label}${c.sub ? `<span class="sub">${c.sub}</span>` : ''}</button>`);
     h += '</div>';
   } else if (s.isEnd) {
-    h += `<div class="choices"><button onclick="go('start')">Start over — try a different path</button><button onclick="go('hub')">Back to region picker</button></div>`;
+    h += `<div class="choices"><button onclick="backToHub()">← Back to region picker (keep what you earned, try another cousin)</button><button onclick="restart()" style="opacity:0.85;">Start completely over (wipe everything)</button></div>`;
   }
   m.innerHTML = h;
 }
