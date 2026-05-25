@@ -943,7 +943,7 @@ And then, just for a second — only Aiden sees this, and he won't tell anyone f
 
 He waves.
 
-Aiden waves back, one small hand out of the water.
+Aiden waves back, one small hand up out of the water, his orange life jacket holding him bobbing.
 
 The figure tips his hat. He turns. He walks into the trees on the far bank. The rock is gone. The trees close behind him.
 
