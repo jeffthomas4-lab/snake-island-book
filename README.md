@@ -15,24 +15,27 @@ Three ways:
 ```
 .
 ├── README.md                  ← you are here
-├── reading_copy.html          ← the full book, readable in browser
+├── index.html                 ← the full book (homepage)
+├── reading_copy.html          ← same as index.html, kept for direct linking
 ├── prototype.html             ← playable click-through CYOA
 ├── bingo_card.html            ← printable Sun Lakes Bingo
+├── bingo_card.md              ← bingo card content as markdown
 ├── story_map.md               ← structural source of truth (locked v3)
 ├── chapter_divisions.md       ← bedtime-reading breakdown
 ├── flowchart.mermaid          ← visual structure tree
 ├── notes.md                   ← world-bible reference
-└── passages/                  ← the actual prose, by chapter
-    ├── framing.md             ← Act 1 (arrival, Drystone, sunroom, portal)
-    ├── madison.md             ← Madison at the Quiet Pool
-    ├── chayten.md             ← Chayten at the Driftwood Stage
-    ├── carson.md              ← Carson at the Coulee Plains
-    ├── reid.md                ← Reid at Old Speak's Wood
-    ├── kellen.md              ← Kellen at Skip-Stone Lake
-    ├── keira.md               ← Keira at the Painted Cliff
-    ├── ella.md                ← Ella at the Bright Water Court
-    ├── aiden.md               ← Aiden at the Unicorn Meadow
-    └── showdown.md            ← The dock showdown + endings
+├── passages/                  ← the actual prose, by chapter (source of truth)
+│   ├── framing.md             ← Act 1 (arrival, Drystone, sunroom, portal)
+│   ├── madison.md             ← Madison at the Quiet Pool
+│   ├── chayten.md             ← Chayten at the Driftwood Stage
+│   ├── carson.md              ← Carson at the Coulee Plains
+│   ├── reid.md                ← Reid at Old Speak's Wood
+│   ├── kellen.md              ← Kellen at Skip-Stone Lake
+│   ├── keira.md               ← Keira at the Painted Cliff
+│   ├── ella.md                ← Ella at the Bright Water Court
+│   ├── aiden.md               ← Aiden at the Unicorn Meadow
+│   └── showdown.md            ← The dock showdown + endings
+└── archive/                   ← older v2 drafts, kept for history
 ```
 
 ## The eight kids
