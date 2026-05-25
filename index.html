@@ -365,7 +365,7 @@ ending_silver: {
 <p>Some of the magic stayed asleep. The deepest secrets in the cousin\'s region didn\'t open for you this time. The creature you met there will dream of <em>you</em> for years, wondering what would have happened if you had gone one choice further. You will dream of them, too. There is a small ache in both directions — the lake-below remembers what it didn\'t get to give you.</p>
 <p>But the cousins all remember. They will, every summer, jump from the dock at the same instant. They will, every summer, swim across to the cliff face and touch it. They will, every summer, leave a small thing on the rocks for the otters — a piece of cookie, a stone, a piece of driftwood — and they will never tell anyone why.</p>
 <p>One day, maybe next summer, one of them will go back into the lake-below and find the path they missed. The dock will hold until they do.</p>
-<p style="margin-top:32px; padding:16px; background:rgba(74,125,140,0.12); border-left:3px solid var(--water); border-radius:0 4px 4px 0; font-size:14px; line-height:1.5;"><strong>The Silver Ending.</strong> A middle-depth playthrough. To reach the CROWN, find a path that yields the FULL item, an ally, and a hidden flag — usually the third / "hidden" choice at the first decision point. Click "Back to region picker" below to try another path.</p>`,
+<p style="margin-top:32px; padding:16px; background:rgba(74,125,140,0.12); border-left:3px solid var(--water); border-radius:0 4px 4px 0; font-size:14px; line-height:1.5;"><strong>The Silver Ending.</strong> The region still has its deepest path waiting. So does every other cousin\'s region. Come back when you\'re ready.</p>`,
   isEnd: true, choices: [],
 },
 
@@ -375,8 +375,8 @@ ending_bronze: {
 <p>The dock stands. Drystone is gone. That part — the most important part — is a win. The boards under your feet are still the boards your grandfather laid down.</p>
 <p>But the rest of the lake-below is still waiting. The creature you met in the region remembers you. They will, somewhere in their own days, wonder what would have happened if you had asked the harder question, taken the slower path, climbed the cliff yourself. So will you, late at night this fall, when the school bus has been quiet for a while and you have time to think about it.</p>
 <p>The dock survives this summer.</p>
-<p>The next time you open the book, the deeper paths are still there. Try a different choice at the first decision point — usually the third option goes the furthest. Or play a different cousin entirely. Each cousin\'s region has its own Bronze, Silver, and Crown waiting for you.</p>
-<p style="margin-top:32px; padding:16px; background:rgba(43,36,25,0.08); border-left:3px solid var(--ink); border-radius:0 4px 4px 0; font-size:14px; line-height:1.5;"><strong>The Bronze Ending.</strong> A surface-depth playthrough. The same cousin has Silver and Crown endings waiting if you take different choices. Click "Back to region picker" to try again — or pick a different cousin.</p>`,
+<p>The next time you open the book, the deeper paths are still there. Listen harder at the cared-for moment. Ask the question you almost asked. Try the choice that feels slower or harder or stranger. Or pick a different cousin entirely — each of them has a region with more in it than they showed you the first time.</p>
+<p style="margin-top:32px; padding:16px; background:rgba(43,36,25,0.08); border-left:3px solid var(--ink); border-radius:0 4px 4px 0; font-size:14px; line-height:1.5;"><strong>The Bronze Ending.</strong> The same cousin has more for you next time. So does every other cousin. The lake is patient.</p>`,
   isEnd: true, choices: [],
 },
 
@@ -492,13 +492,13 @@ function renderHub() {
   const tierColor = tier === 'Crown' ? 'var(--gold)' : (tier === 'Silver' ? 'var(--water)' : 'var(--ink)');
   let tierHint = '';
   if (rc === 0) {
-    tierHint = 'Play any cousin to start. Each cousin\'s chapter can independently land on Bronze, Silver, or Crown — depending on how deep you go in their choices.';
+    tierHint = 'Play any cousin to start. What you bring back will shape how the book ends.';
   } else if (tier === 'Bronze') {
-    tierHint = 'You took a surface path. To earn Silver, take a middle path on any cousin (the second or third choice usually goes deeper). For Crown, find a path that ends with the FULL item plus an ally.';
+    tierHint = 'Each region holds more than you found. The deeper paths take longer and ask for harder kindnesses.';
   } else if (tier === 'Silver') {
-    tierHint = 'You earned a middle-depth playthrough. To unlock Crown, find a cousin path that yields the FULL item, an ally, and at least one flag — usually the third / hidden choice.';
+    tierHint = 'You went past the surface. There is one more layer further in — the cousin\'s region has not given you everything it has yet.';
   } else {
-    tierHint = 'You\'ve unlocked the CROWN ending — the deepest path. Head to the Showdown when ready.';
+    tierHint = 'You went all the way. Head to the Showdown when ready.';
   }
   h += `<div class="progress">${rc} / 8 regions completed · ending currently tracking: <strong style="color:${tierColor};">${tier}</strong></div>`;
   h += `<div class="progress" style="margin-top:6px;font-style:italic;text-transform:none;letter-spacing:0;font-size:13px;line-height:1.5;">${tierHint}</div>`;
