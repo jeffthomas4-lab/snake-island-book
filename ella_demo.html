@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ella's Region — 3-Deep CYOA Demo</title>
+<style>
+  :root { --paper: #faf6ed; --ink: #2b2419; --warm: #c97a3f; --water: #4a7d8c; --green: #6b8e4e; --gold: #c9a23f; --rule: rgba(43, 36, 25, 0.15); }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: var(--paper); color: var(--ink); font-family: 'Charter', 'Georgia', serif; line-height: 1.7; font-size: 18px; min-height: 100vh; }
+  .container { max-width: 720px; margin: 0 auto; padding: 28px 24px 80px; }
+  header { border-bottom: 2px solid var(--ink); padding-bottom: 16px; margin-bottom: 24px; display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 12px; }
+  header h1 { font-size: 20px; font-weight: normal; font-style: italic; }
+  .controls button { background: none; border: 1px solid var(--ink); color: var(--ink); padding: 5px 12px; cursor: pointer; font-family: inherit; font-size: 12px; border-radius: 3px; }
+  .controls button:hover { background: var(--ink); color: var(--paper); }
+  .state-strip { background: rgba(107, 142, 78, 0.08); border: 1px dashed var(--green); padding: 10px 14px; margin: 0 0 24px; font-size: 12px; border-radius: 3px; }
+  .state-strip strong { color: var(--green); }
+  .state-strip .tag { display: inline-block; background: rgba(107, 142, 78, 0.15); padding: 2px 7px; border-radius: 3px; margin: 0 3px 3px 0; font-size: 11px; }
+  .passage-id { font-family: 'Courier New', monospace; font-size: 11px; text-transform: uppercase; letter-spacing: 1.5px; color: var(--warm); margin-bottom: 4px; }
+  .scene-meta { font-size: 12px; text-transform: uppercase; letter-spacing: 1.5px; color: var(--water); margin-bottom: 6px; font-style: italic; }
+  .scene-title { font-size: 28px; font-weight: normal; margin-bottom: 20px; font-style: italic; line-height: 1.25; }
+  .scene-text { font-size: 17px; }
+  .scene-text p { margin-bottom: 14px; }
+  .choices { display: flex; flex-direction: column; gap: 12px; margin-top: 32px; padding-top: 22px; border-top: 1px solid var(--rule); }
+  .choices button { background: var(--paper); border: 1.5px solid var(--ink); padding: 14px 18px; text-align: left; cursor: pointer; font-family: inherit; font-size: 16px; color: var(--ink); border-radius: 5px; transition: all 0.15s ease; line-height: 1.4; }
+  .choices button:hover { background: var(--ink); color: var(--paper); transform: translateX(4px); }
+  .choices button .sub { display: block; font-size: 13px; color: var(--warm); margin-top: 4px; font-style: italic; }
+  .choices button:hover .sub { color: #f5c587; }
+  .demo-note { background: rgba(74,125,140,0.08); border-left: 3px solid var(--water); padding: 14px 18px; margin: 0 0 24px; border-radius: 0 4px 4px 0; font-size: 14px; line-height: 1.5; }
+  .demo-note strong { color: var(--water); }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>Ella's Region — 3-Deep CYOA Demo</h1>
+    <div class="controls"><button onclick="restart()">Start over</button></div>
+  </header>
+  <div id="state-display"></div>
+  <main id="main"></main>
+</div>
+<script>
+const SCENES = {
+
+start: {
+  id: 'START', title: 'Ella at the Bright Water Court',
+  meta: 'A 3-deep CYOA demo for Ella (10) — the deciding face',
+  text: `<div class="demo-note"><strong>27 ways through Ella's region.</strong> She arrives at a moss-circle court where the new queen, Marigold, has been queen for one week and is pretty sure she's bad at it. A fox is about to walk in with a forged scroll. Your three choices each branch into three more.</div>`,
+  choices: [{ label: "Begin Ella's region", target: 'p170' }],
+},
+
+p170: {
+  id: 'P-170', title: 'Arrival at the Bright Water Court', meta: 'Ella',
+  text: `<p>Ella's raft slides up onto a moss circle. The raft is now a small wooden boat with golden trim and a dark-green velvet seat. The gold is real gold. She steps off, very carefully, because the trim catches the sun.</p>
+<p>A frog in a tiny crown bows to her. "Princess."</p>
+<p>"Princess?"</p>
+<p>"Your boat has GOLDEN TRIM. Only royalty have golden trim. We've been EXPECTING you."</p>
+<p>She follows the frog into a glade. More frogs. A tiny throne of mossy stone. On the throne, a girl Ella's age, wearing a crown that is slipping over one eye, gripping the arms with white knuckles.</p>
+<p>The frog announces: "Princess Ella, daughter of the Lake-Up-Above, attending Her Majesty Queen Marigold of the Bright Water."</p>
+<p>Marigold looks up. She is <em>very</em> stressed.</p>
+<p>"Hi. I've been queen for one week and I am pretty sure I am BAD at it. Please help."</p>
+<p>The frogs erupt into argument. They are arguing about whether the new princess should sit on the throne. Each frog is LOUD. One frog is yelling about <em>protocol.</em> Two more are yelling about whether the protocol-yelling frog is following protocol.</p>
+<p>Ella has TWO older cousins who do this. She knows exactly how to handle it.</p>`,
+  choices: [{ label: 'Sit beside Marigold', target: 'p171' }],
+},
+
+p171: {
+  id: 'P-171', title: 'The Not-The-Dress Moment', meta: 'Ella — cared-for',
+  text: `<p>Marigold scoots over on the throne. There's room for two. Ella sits beside her.</p>
+<p>Marigold does something Ella doesn't expect. She takes off her crown. She holds it in cupped hands. She is just a frightened girl with stringy hair and a too-big robe. She puts the crown back on. Now she looks like a queen again.</p>
+<p>She takes Ella's hand and puts it on the crown.</p>
+<p>"Feel that? It's warm. It's just metal."</p>
+<p>"That's all it is. Metal and shine. It's not what makes the queen. Watch."</p>
+<p>She sets the crown on a passing frog's head. The frog looks ridiculous. But the frog STANDS UP STRAIGHTER. Clears his throat. Says, in a small uncertain voice, "...we should — order? Maybe?"</p>
+<p>It works for about three seconds. Then the other frogs erupt back into argument.</p>
+<p>Marigold takes the crown back. "See? The crown does <em>some</em> of the work. But only some. The rest is whether the person under it <em>decided.</em> The frog hadn't decided. Most adults haven't decided. That's why crowns mostly don't work."</p>
+<p>She looks at Ella. "I think <em>you</em> decide. That's why I knew you were a princess before you stepped off your boat. The fox is coming. Now you'll see."</p>`,
+  choices: [{ label: 'The fox arrives', target: 'p172' }],
+},
+
+p172: {
+  id: 'P-172', title: 'CHOICE 1 — How do you face the fox?', meta: 'First decision',
+  text: `<p>The double-doors of the court (which are really two large lily pads on hinges) slam open. A fox-creature strides in, much bigger than the frogs, carrying a scroll. He looks confident.</p>
+<p>Behind him, hiding under a fern, is a tiny round soft water-creature with a clutch of small eggs huddled at her feet. The egg-mother. She is shaking.</p>
+<p>Marigold whispers: "Oh no."</p>`,
+  choices: [
+    { label: 'Take the throne. Whisper advice to Marigold.', target: 'p173', sub: "Strategist. Help with words." },
+    { label: 'Stand up. Walk past Marigold. Step between the fox and the fern.', target: 'p174', sub: "Protector. Face him directly." },
+    { label: '"You don\'t have to do this alone. I\'ll be queen WITH you."', target: 'p175', sub: "Friend. Change the rules of the court." },
+  ],
+},
+
+// CHOICE 2 NODES
+
+p173: {
+  id: 'P-173', title: 'CHOICE 2A — What kind of advice?', meta: 'You chose to advise',
+  text: `<p>Ella sits beside Marigold. The fox starts unrolling his scroll, reading territorial claims in a smooth confident voice. Marigold's hands are shaking.</p>
+<p>You lean in. What do you give her?</p>`,
+  choices: [
+    { label: 'Strategic counters — feed her things to say', target: 'p173a', sub: "Words. Specific words. She'll repeat them." },
+    { label: 'Coach her TONE — how to speak as a queen', target: 'p173b', sub: "The crown is voice as much as words." },
+    { label: 'Spot the forgery yourself — hand her the proof', target: 'p173c', sub: "She'll deliver the verdict. You give her the bullet." },
+  ],
+},
+
+p174: {
+  id: 'P-174', title: 'CHOICE 2B — How do you stand?', meta: 'You stepped between',
+  text: `<p>You walk down the throne steps and step between the fox and the fern.</p>
+<p>You are ten. You are four feet tall. The fox is twice your size. The water in the moss circle goes flat — not still, <em>flat</em> — like a lid pressed onto it. The frogs stop arguing and turn to face you. The egg-mother takes the smallest deep breath she has taken in days.</p>
+<p>The fox blinks. He starts to laugh. The laugh stops in his throat. How do you stand?</p>`,
+  choices: [
+    { label: 'Don\'t speak. Just don\'t move. Don\'t blink.', target: 'p174a', sub: "Stillness is its own argument." },
+    { label: 'Name out loud what he came here to do', target: 'p174b', sub: "Plain words. No metaphor. Just truth." },
+    { label: 'Demand to see the scroll. Examine it.', target: 'p174c', sub: "You have a cousin who forges permission slips. You know what to look for." },
+  ],
+},
+
+p175: {
+  id: 'P-175', title: 'CHOICE 2C — How do you co-rule?', meta: 'You proposed co-rule',
+  text: `<p>"You don't have to do this alone."</p>
+<p>Marigold looks at you sideways. Her crown slides further over her eye. "...Can you DO that?"</p>
+<p>"Why not. It's your court. You make the rule."</p>
+<p>Marigold sits up straight for the first time all day. She announces, in a voice she has not used before: "<em>Court of the Bright Water. From this hour forward, Princess Ella is named Co-Queen. We rule together.</em>"</p>
+<p>The frogs go silent. Then they erupt in argument about precedents. Six frogs argue. Three frogs argue about whether the announcement was properly worded. One frog faints from excitement.</p>
+<p>How do you arrange yourselves?</p>`,
+  choices: [
+    { label: 'Side-by-side on the throne. Tag-team the case.', target: 'p175a', sub: "Two queens, one throne. Squeeze." },
+    { label: 'Stand up together. Both step down. Face the fox at his level.', target: 'p175b', sub: "No throne between you and him. Confrontation as peers." },
+    { label: 'Invite the egg-mother to sit between you', target: 'p175c', sub: "Three. The trembling one becomes the speaker." },
+  ],
+},
+
+// CHOICE 3 NODES — PATH A (ADVICE)
+
+p173a: {
+  id: 'P-173A', title: 'CHOICE 3 — Which strategic counter?', meta: 'You feed her words',
+  text: `<p>Marigold leans toward you. The fox is mid-claim. What do you tell her to say?</p>`,
+  choices: [
+    { label: 'Quote a precedent — make one up if you have to', target: 'leaf_173a1', sub: "Confidence trumps research. He won't check." },
+    { label: 'Point to a contradiction in his own scroll', target: 'leaf_173a2', sub: "He wrote two things that don't agree. Use both." },
+    { label: 'Ask him questions until he contradicts himself', target: 'leaf_173a3', sub: "Don't argue. Just ask." },
+  ],
+},
+
+p173b: {
+  id: 'P-173B', title: 'CHOICE 3 — Which part of her voice?', meta: 'You coach her tone',
+  text: `<p>You whisper, "Marigold. It's not the words. It's the WAY you say them. Watch me."</p>`,
+  choices: [
+    { label: 'Teach her to SLOW DOWN', target: 'leaf_173b1', sub: "Queens are never rushed. Stretch each word." },
+    { label: 'Teach her the queen-voice — lower, calmer', target: 'leaf_173b2', sub: "The voice you use when your little brother is scared." },
+    { label: 'Teach her to look him in the eye', target: 'leaf_173b3', sub: "Eye contact says: I am not afraid of you." },
+  ],
+},
+
+p173c: {
+  id: 'P-173C', title: 'CHOICE 3 — How do you reveal the forgery?', meta: 'You spotted the fake',
+  text: `<p>You see it. The ink at the bottom of his scroll sits ON TOP of the seal instead of UNDER it. He signed AFTER the seal was already pressed. Your six-year-old cousin forges permission slips the same way.</p>
+<p>How do you let Marigold deliver it?</p>`,
+  choices: [
+    { label: 'Show the court — let everyone gasp', target: 'leaf_173c1', sub: "Public reveal. Mass gasp." },
+    { label: 'Quietly hand Marigold the proof; she delivers', target: 'leaf_173c2', sub: "Make her look like she found it. She needs the credit." },
+    { label: 'Refuse to say what you found; let the fox panic', target: 'leaf_173c3', sub: "He doesn't know you saw it. Let him imagine the worst." },
+  ],
+},
+
+// CHOICE 3 NODES — PATH B (STEP BETWEEN)
+
+p174a: {
+  id: 'P-174A', title: 'CHOICE 3 — How long do you not move?', meta: 'You hold the silence',
+  text: `<p>You don't speak. You don't move. The fox tries to wait you out. The court holds its breath. What\'s the last thing you do?</p>`,
+  choices: [
+    { label: 'Look at him without blinking', target: 'leaf_174a1', sub: "Pure stillness. Two minutes. Three." },
+    { label: 'Cross your arms', target: 'leaf_174a2', sub: "A tiny adjustment. Massive in this room." },
+    { label: 'Take one step closer', target: 'leaf_174a3', sub: "One step. Just one. He flinches." },
+  ],
+},
+
+p174b: {
+  id: 'P-174B', title: 'CHOICE 3 — How do you name it?', meta: 'You speak plain',
+  text: `<p>You say what he is. The court goes silent. What words exactly?</p>`,
+  choices: [
+    { label: '"You came here to take her home."', target: 'leaf_174b1', sub: "Direct sentence. No room for him to slide." },
+    { label: '"You knew she was alone."', target: 'leaf_174b2', sub: "The crime under the crime. He waited until she was alone." },
+    { label: '"Tell the truth and leave with a court warning."', target: 'leaf_174b3', sub: "Mercy. With a deadline." },
+  ],
+},
+
+p174c: {
+  id: 'P-174C', title: 'CHOICE 3 — What\'s wrong with the scroll?', meta: 'You examine the evidence',
+  text: `<p>"Show me where it's signed."</p>
+<p>He shows you. The signature is florid and large. You look closely. What do you find?</p>`,
+  choices: [
+    { label: 'The signature sits ON TOP of the seal — added after', target: 'leaf_174c1', sub: "Forgery, in pen, after the seal was pressed." },
+    { label: 'A date that doesn\'t exist on the lunar calendar', target: 'leaf_174c2', sub: "He picked a month with thirty-two days. Whoops." },
+    { label: 'The scroll names HER, not the egg-mother. He came for the queen.', target: 'leaf_174c3', sub: "Wait. This is worse than you thought." },
+  ],
+},
+
+// CHOICE 3 NODES — PATH C (CO-RULE)
+
+p175a: {
+  id: 'P-175A', title: 'CHOICE 3 — How do you tag-team?', meta: 'Side-by-side on the throne',
+  text: `<p>You squeeze onto the throne next to Marigold. The fox tries to interrupt. You both turn toward him at once. He stops talking. How do you split the work?</p>`,
+  choices: [
+    { label: 'Marigold knows the law. You know the lying.', target: 'leaf_175a1', sub: "She quotes precedent. You spot the forgery." },
+    { label: 'Hold hands the whole time', target: 'leaf_175a2', sub: "Two queens, one grip. He can\'t separate you." },
+    { label: 'Trade off — every other sentence comes from one of you', target: 'leaf_175a3', sub: "He can\'t track who\'s talking. He gets dizzy." },
+  ],
+},
+
+p175b: {
+  id: 'P-175B', title: 'CHOICE 3 — How do you stand together?', meta: 'Both step down',
+  text: `<p>You both step down from the throne. You face the fox at his level. The frogs are stunned. The fox is, briefly, even more confident — until he isn\'t.</p>`,
+  choices: [
+    { label: 'Stand shoulder-to-shoulder. Two faces, one front.', target: 'leaf_175b1', sub: "He can\'t pick one of you to bully." },
+    { label: 'Invite a frog up to sit on the throne. "There\'s room."', target: 'leaf_175b2', sub: "Make the throne meaningless. Anyone gets it." },
+    { label: 'Declare the throne is now a CIRCLE, not a chair', target: 'leaf_175b3', sub: "Court redesigned in real time. Frogs gasp." },
+  ],
+},
+
+p175c: {
+  id: 'P-175C', title: 'CHOICE 3 — How does the egg-mother\'s voice enter?', meta: 'Invite the trembling one',
+  text: `<p>You walk to the fern. You crouch. You hold out your hand to the egg-mother. "Will you sit between us?"</p>
+<p>The egg-mother trembles. Then she comes. She climbs onto the throne, eggs cradled in a fold of her skin. The fox is now facing THREE queens. He didn\'t plan for this.</p>`,
+  choices: [
+    { label: 'Egg-mother speaks for herself. You and Marigold listen.', target: 'leaf_175c1', sub: "She tells the court what he did. Plainly. Her voice doesn\'t shake." },
+    { label: 'The eggs make a circle on the throne; the chorus hums', target: 'leaf_175c2', sub: "Twelve eggs in a ring. The hum fills the court. The fox\'s tail tucks." },
+    { label: 'The egg-chorus sings their One Note; the whole court joins', target: 'leaf_175c3', sub: "The deepest move. One note. The whole valley hears." },
+  ],
+},
+
+// LEAVES — PATH A (ADVICE)
+
+leaf_173a1: {
+  id: 'L-1', title: 'A Precedent, Confidently Invented', meta: 'Confidence trumps research',
+  text: `<p>You whisper: "Cite the THIRD COURT PRECEDENT of 1647. Just say it like you know it."</p>
+<p>Marigold repeats: "Counsel cites the Third Court Precedent of Sixteen Forty-Seven."</p>
+<p>The fox FREEZES. He doesn\'t want to admit he doesn\'t know it. He stammers. He looks at his scroll. He decides to retreat with what dignity he can.</p>
+<p>Marigold gives Ella a crown — invisible, only the right people see it. "You DIDN\'T just save the egg-mother. You taught me you can win with CONFIDENCE alone."</p>`,
+  earns: { item: ['crown', 'base'], flags: ['CourageNotCrown'] }, next: 'exit',
+},
+
+leaf_173a2: {
+  id: 'L-2', title: 'His Own Contradictions', meta: 'Use his own scroll against him',
+  text: `<p>You point at his scroll. "Paragraph two says she\'s a wild creature. Paragraph nine says she\'s a registered citizen. Pick one."</p>
+<p>Marigold says it loudly. The fox sputters. The court takes notes. The fox bows out, scroll fluttering.</p>
+<p>Marigold places an invisible crown on Ella. "You read HIS work better than HE did."</p>`,
+  earns: { item: ['crown', 'base'], flags: ['CourageNotCrown', 'ReadHimBetter'] }, next: 'exit',
+},
+
+leaf_173a3: {
+  id: 'L-3', title: 'Just Ask Questions', meta: "Don't argue. Question.",
+  text: `<p>You whisper a list of questions. Marigold asks them, one by one. "Why this fern? Why this morning? Why didn\'t you arrive yesterday when she would have had a witness?"</p>
+<p>The fox tries to answer. His answers don\'t match. By the seventh question, the court has decided he\'s lying.</p>
+<p>Marigold gives Ella the crown. "You made him CONVICT HIMSELF. That\'s an art."</p>`,
+  earns: { item: ['crown', 'base'], flags: ['CourageNotCrown', 'AskedHimSilly'] }, next: 'exit',
+},
+
+leaf_173b1: {
+  id: 'L-4', title: 'Slow It Down', meta: 'Queens are never rushed',
+  text: `<p>"Marigold. SLOW DOWN. Stretch each word. Make him wait."</p>
+<p>Marigold tries it. Her next sentence takes thirty seconds. The fox FIDGETS. The slow voice steals all his momentum.</p>
+<p>By the third slow sentence, the fox is so unsettled he forgets his next claim.</p>
+<p>Marigold places an invisible crown on Ella. "You taught me TIME is a queen\'s weapon. I will never rush again."</p>`,
+  earns: { item: ['crown', 'enhanced'], flags: ['CourageNotCrown', 'TimeIsAWeapon'] }, next: 'exit',
+},
+
+leaf_173b2: {
+  id: 'L-5', title: 'The Queen-Voice', meta: 'Lower, calmer',
+  text: `<p>You whisper, "Drop your voice. The way you talk to your little brother when he\'s scared. Not louder. CALMER."</p>
+<p>Marigold tries it. Her voice goes deep and soft. The court actually leans IN. The fox tries to push back and his own voice sounds shrill by comparison.</p>
+<p>Marigold places an invisible crown on Ella. "You taught me how to SOUND like a queen. I had been doing the opposite."</p>`,
+  earns: { item: ['crown', 'enhanced'], flags: ['CourageNotCrown', 'QueenVoice'] }, next: 'exit',
+},
+
+leaf_173b3: {
+  id: 'L-6', title: 'Eye Contact', meta: 'I am not afraid of you',
+  text: `<p>"Look at him in the eye. Don\'t look away first."</p>
+<p>Marigold tries. She holds the fox\'s eyes. He looks away first. He\'s the fox. He LOOKS AWAY FIRST. The court gasps.</p>
+<p>Marigold gives Ella the crown. "You taught me the eye-trick. I will use it for the rest of my reign."</p>`,
+  earns: { item: ['crown', 'enhanced'], flags: ['CourageNotCrown', 'EyeContactQueen'] }, next: 'exit',
+},
+
+leaf_173c1: {
+  id: 'L-7', title: 'A Public Gasp', meta: 'Reveal it to the court',
+  text: `<p>You stand up. You point. "Look at the seal. The ink of the signature is ON TOP of the wax. He signed AFTER the seal was pressed. The scroll is forged."</p>
+<p>The court GASPS in unison. The fox stammers. He bows out frantically.</p>
+<p>Marigold places an invisible crown on Ella\'s head. "You taught us all to LOOK CLOSER. Court precedent now requires we examine all seals. Forever."</p>`,
+  earns: { item: ['crown', 'enhanced'], flags: ['CourageNotCrown', 'CourtLearns'] }, next: 'exit',
+},
+
+leaf_173c2: {
+  id: 'L-8', title: 'Marigold Delivers', meta: 'You give her the credit',
+  text: `<p>You quietly slide the scroll to Marigold and tap the seal. She gets it instantly.</p>
+<p>"Counsel," she says, in her new queen-voice, "your signature sits ON TOP of the seal. You signed AFTER the wax was already pressed. The court rejects this scroll."</p>
+<p>The court CHEERS. Marigold has solved it, in everyone\'s eyes. She turns to Ella. "I owe you. Forever." She gives Ella the crown. "You made me a real queen by letting me LOOK like one. Few would do that."</p>`,
+  earns: { item: ['crown', 'full'], allies: ['Marigold'], flags: ['CourageNotCrown', 'GaveHerTheCredit'] }, next: 'exit',
+},
+
+leaf_173c3: {
+  id: 'L-9', title: 'Refuse to Say What You Found', meta: 'Let him imagine the worst',
+  text: `<p>You look at the seal. You look at the fox. You smile faintly. You don\'t say anything.</p>
+<p>The fox PANICS. He doesn\'t know what you saw. He fills the silence himself — talking faster, conceding things he didn\'t need to concede, admitting things he shouldn\'t have admitted. By the time he stops talking he has confessed three other crimes none of you knew about.</p>
+<p>Marigold places the crown on Ella with quiet awe. "You made him convict himself of MORE than he came here for. Without saying a word. Take this. Use it sparingly. It is a dangerous skill."</p>`,
+  earns: { item: ['crown', 'full'], allies: ['Marigold'], flags: ['CourageNotCrown', 'ThreeMoreCrimes'] }, next: 'exit',
+},
+
+// LEAVES — PATH B (STEP BETWEEN)
+
+leaf_174a1: {
+  id: 'L-10', title: 'Not Blinking', meta: 'Pure stillness',
+  text: `<p>You hold the fox\'s eyes. You do not blink. Two minutes go by. Three. He blinks. He blinks again. He starts to sweat.</p>
+<p>By minute four he is bowing his way out, mumbling apologies. He hasn\'t even said anything for you to refute.</p>
+<p>Marigold steps down. She places a crown on Ella\'s head. "You won that fight without ONE word. That\'s the deepest kind of queen."</p>`,
+  earns: { item: ['crown', 'enhanced'], allies: ['FrogHerald'], flags: ['CourageNotCrown', 'NotBlinking'] }, next: 'exit',
+},
+
+leaf_174a2: {
+  id: 'L-11', title: 'Crossed Arms', meta: 'A tiny adjustment',
+  text: `<p>You cross your arms. The fox WINCES like you slapped him. The court whispers — for a ten-year-old to cross her arms is, apparently, a profound insult in this court.</p>
+<p>The fox bows out. Backwards. Tripping.</p>
+<p>Marigold steps down. "You used a tiny gesture as a HAMMER. Take the crown." She looks at the egg-mother, who is climbing onto Ella\'s shoulder. "She\'s coming with you. So is the herald."</p>`,
+  earns: { item: ['crown', 'enhanced'], allies: ['FrogHerald', 'EggMotherChorus'], flags: ['CourageNotCrown', 'CrossedArms'] }, next: 'exit',
+},
+
+leaf_174a3: {
+  id: 'L-12', title: 'One Step Closer', meta: 'He flinches',
+  text: `<p>You take one step toward the fox. He FLINCHES. The court erupts — a ten-year-old made a fox flinch and the gossip of this will travel through the Bright Water for months.</p>
+<p>The fox bows out so fast he nearly trips on his own tail.</p>
+<p>Marigold places the full crown on Ella. The herald hops over. The egg-mother chorus hums one approving note.</p>
+<p>"You moved an inch. He retreated a mile."</p>`,
+  earns: { item: ['crown', 'full'], allies: ['FrogHerald', 'EggMotherChorus'], flags: ['CourageNotCrown', 'OneStepCloser'] }, next: 'exit',
+},
+
+leaf_174b1: {
+  id: 'L-13', title: '"You came here to take her home."', meta: 'Plain sentence',
+  text: `<p>"You came here to take her home."</p>
+<p>The fox\'s face does several things. Denial, then surprise, then the long slow collapse of someone who realizes they\'ve been read.</p>
+<p>The court erupts. The herald takes a note. The egg-mother is crying soft relieved tears.</p>
+<p>Marigold places the crown. "You said the SIMPLE TRUE THING. Most kids say the FANCY thing. You said the simple thing. That\'s a queen."</p>`,
+  earns: { item: ['crown', 'enhanced'], allies: ['FrogHerald', 'EggMotherChorus'], flags: ['CourageNotCrown'] }, next: 'exit',
+},
+
+leaf_174b2: {
+  id: 'L-14', title: '"You knew she was alone."', meta: 'The crime under the crime',
+  text: `<p>"You knew she was alone. You waited until she was alone. Don\'t pretend you didn\'t."</p>
+<p>The fox staggers. He had not expected to be SEEN like that. The court doesn\'t cheer. The court goes quiet. They\'re thinking. They\'re thinking about what kinds of things they let happen by not noticing.</p>
+<p>Marigold descends. She places the crown. "You named the part NOBODY names. Take the crown. AND the herald. AND the chorus." (The egg-mother is already on Ella\'s shoulder.) "We are reformed by you, ten-year-old. Don\'t leave us yet."</p>`,
+  earns: { item: ['crown', 'full'], allies: ['FrogHerald', 'EggMotherChorus'], flags: ['CourageNotCrown', 'NamedTheUnnamed'] }, next: 'exit',
+},
+
+leaf_174b3: {
+  id: 'L-15', title: '"Tell the Truth and Leave"', meta: 'Mercy with a deadline',
+  text: `<p>"Tell the truth about who sent you and you can leave with only a court warning."</p>
+<p>The fox is so startled by being OFFERED mercy that he confesses. He names his employer (a larger, off-stage villain). He names accomplices. The herald is taking frantic notes.</p>
+<p>Marigold descends. "You gave the fox MERCY and got an ENTIRE CRIMINAL NETWORK in exchange. Take the crown." (Full version.) "The herald is yours. The egg-mother is yours. We are reorganizing our intelligence service around what you just taught us."</p>`,
+  earns: { item: ['crown', 'full'], allies: ['FrogHerald', 'EggMotherChorus'], flags: ['CourageNotCrown', 'NetworkExposed'] }, next: 'exit',
+},
+
+leaf_174c1: {
+  id: 'L-16', title: 'Ink On Top of Seal', meta: 'The classic forgery tell',
+  text: `<p>"This is a fake. The ink sits ON TOP of the seal instead of UNDER it. He signed after the wax was already pressed."</p>
+<p>The court LEANS IN. They all see it now. The fox crumples. He backs out so fast his tail bumps a frog in the head.</p>
+<p>Marigold places the crown. "You see what most don\'t. You\'ve had practice." The egg-mother climbs onto your shoulder. The herald hops over. "All yours."</p>`,
+  earns: { item: ['crown', 'enhanced'], allies: ['FrogHerald', 'EggMotherChorus'], flags: ['CourageNotCrown', 'SealForgery'] }, next: 'exit',
+},
+
+leaf_174c2: {
+  id: 'L-17', title: 'A Month with Thirty-Two Days', meta: 'He invented a date',
+  text: `<p>"Your date — the seventeenth of the Third Thaw, year 1147 — that month only has TWENTY-EIGHT DAYS in the lunar calendar. There is no seventeenth of the Third Thaw that he could have signed this. You forged the whole document."</p>
+<p>The fox\'s mouth opens. The court erupts. Marigold descends. "You CAUGHT HIM ON A CALENDAR. That is — that is unprecedented for an out-of-towner. Take the crown. AND the herald. AND the chorus."</p>`,
+  earns: { item: ['crown', 'enhanced'], allies: ['FrogHerald', 'EggMotherChorus'], flags: ['CourageNotCrown', 'CalendarCatch'] }, next: 'exit',
+},
+
+leaf_174c3: {
+  id: 'L-18', title: 'The Scroll Names Marigold', meta: 'It was the queen all along',
+  text: `<p>You read the scroll. You see it. Your stomach drops.</p>
+<p>"This scroll doesn\'t name the egg-mother. It names MARIGOLD. He came for the queen. He used the egg-mother as a distraction."</p>
+<p>The court goes still. Marigold goes white. The fox tries to run. The HERALD tackles him in mid-air. The frogs converge.</p>
+<p>Marigold descends shakily. She places the crown on Ella. "You saved my LIFE today. Take this. Take the herald. Take the chorus. Take a permanent seat at the throne. Take EVERYTHING. I owe you forever."</p>`,
+  earns: { item: ['crown', 'full'], allies: ['FrogHerald', 'EggMotherChorus', 'Marigold'], flags: ['CourageNotCrown', 'SavedTheQueen'] }, next: 'exit',
+},
+
+// LEAVES — PATH C (CO-RULE)
+
+leaf_175a1: {
+  id: 'L-19', title: 'Law and Lying, Side-by-Side', meta: 'Two queens, two skills',
+  text: `<p>Marigold quotes precedent. You spot the forgery. The fox can\'t fight two fronts. He retreats inside three minutes.</p>
+<p>Marigold turns to Ella. "We are GOOD at this. Take the crown. AND the herald. AND we are sending the alliance proclamation." The herald is already gone, leaping through a pool that somehow leads to the lake-above.</p>`,
+  earns: { item: ['crown', 'full'], allies: ['Marigold', 'FrogHerald'], flags: ['CourageNotCrown', 'BrightWaterAlliance'] }, next: 'exit',
+},
+
+leaf_175a2: {
+  id: 'L-20', title: 'Holding Hands on the Throne', meta: 'Two queens, one grip',
+  text: `<p>You and Marigold hold hands the whole time. The fox tries to address one of you. You both answer. He tries to interrupt the other. You both turn at the same instant.</p>
+<p>He cannot SEPARATE you. He gives up.</p>
+<p>Marigold gives Ella the crown. "We have just invented something. The court must call it CO-RULE. The herald will declare it to your dock-above as an ALLIANCE. Take everything."</p>`,
+  earns: { item: ['crown', 'full'], allies: ['Marigold', 'FrogHerald'], flags: ['CourageNotCrown', 'BrightWaterAlliance', 'HandsClasped'] }, next: 'exit',
+},
+
+leaf_175a3: {
+  id: 'L-21', title: 'Trading Sentences', meta: 'He cannot track who is speaking',
+  text: `<p>You and Marigold trade off. One sentence each. The fox tries to follow. He cannot. By his sixth attempt to address one of you and have the OTHER respond, he is dizzy.</p>
+<p>He retreats. The court erupts. Marigold places the crown. "We invented a NEW WAY to court. Take the crown. AND the herald is on his way to your dock-above already. We are allied."</p>`,
+  earns: { item: ['crown', 'full'], allies: ['Marigold', 'FrogHerald'], flags: ['CourageNotCrown', 'BrightWaterAlliance', 'TradedSentences'] }, next: 'exit',
+},
+
+leaf_175b1: {
+  id: 'L-22', title: 'Shoulder-to-Shoulder', meta: 'He cannot pick one to bully',
+  text: `<p>You both step down from the throne. You stand shoulder-to-shoulder, two ten-year-olds, facing the fox. He doesn\'t know which of you to look at. He looks at his own scroll. He realizes it\'s forged. He bows and retreats.</p>
+<p>Marigold places the crown on Ella. "Sometimes the THRONE is the problem. By stepping off we became HARDER to argue with. Take the crown. AND the herald. We are allied."</p>`,
+  earns: { item: ['crown', 'full'], allies: ['Marigold', 'FrogHerald'], flags: ['CourageNotCrown', 'BrightWaterAlliance', 'OffTheThrone'] }, next: 'exit',
+},
+
+leaf_175b2: {
+  id: 'L-23', title: 'A Frog on the Throne', meta: 'There\'s room',
+  text: `<p>You invite a passing frog onto the throne. "There\'s room."</p>
+<p>The frog hops up. Looks startled. Sits. The fox is now arguing against TWO QUEENS AND A FROG.</p>
+<p>The frog clears his throat. "Speaking on behalf of the court — and being on the throne, which apparently grants me authority — I declare you an INTRUDER. Get out." The fox, dumbfounded, leaves.</p>
+<p>Marigold places the crown on Ella. "You taught us THE THRONE IS NOT THE QUEEN. The frog will tell that story for the rest of his life. Take the crown. Take the herald."</p>`,
+  earns: { item: ['crown', 'full'], allies: ['Marigold', 'FrogHerald'], flags: ['CourageNotCrown', 'BrightWaterAlliance', 'ThroneIsNothing'] }, next: 'exit',
+},
+
+leaf_175b3: {
+  id: 'L-24', title: 'The Throne Becomes a Circle', meta: 'Court redesigned in real time',
+  text: `<p>"The throne is now a CIRCLE. Not a chair. Everyone stands. The center has nobody. Decisions come from around the rim."</p>
+<p>The court is briefly stunned. Then they LOVE it. Frogs hop into position around the circle. The fox stands awkwardly in the center for two seconds before realizing he is now the focus of the WHOLE court evenly. He flees.</p>
+<p>Marigold places the crown on Ella. "You invented A NEW KIND OF GOVERNMENT. In about seven seconds. Take the crown. Take everything. The proclamation is going."</p>`,
+  earns: { item: ['crown', 'full'], allies: ['Marigold', 'FrogHerald'], flags: ['CourageNotCrown', 'BrightWaterAlliance', 'CircleCourt'] }, next: 'exit',
+},
+
+leaf_175c1: {
+  id: 'L-25', title: 'The Egg-Mother Speaks for Herself', meta: 'Her voice doesn\'t shake',
+  text: `<p>The egg-mother sits between you. She looks at the fox. Her voice is soft and exact: "You came at dawn. You knew my husband was foraging. You knew the eggs are due. You knew I could not run carrying twelve."</p>
+<p>The court is silent. The fox can\'t answer. There is no answer.</p>
+<p>Marigold places the crown on Ella. "You gave HER her voice back. Most queens take voices. You gave one. Take the crown. Take the herald. Take the chorus."</p>`,
+  earns: { item: ['crown', 'full'], allies: ['Marigold', 'FrogHerald', 'EggMotherChorus'], flags: ['CourageNotCrown', 'BrightWaterAlliance', 'GaveHerVoice'] }, next: 'exit',
+},
+
+leaf_175c2: {
+  id: 'L-26', title: 'Twelve Eggs in a Circle', meta: 'The chorus hums',
+  text: `<p>The egg-mother lays her twelve eggs in a ring on the throne between you. The eggs hum. The hum is low and clear and impossible to argue with.</p>
+<p>The fox\'s tail tucks. He BACKS away. The court holds. The hum fills the moss-circle.</p>
+<p>Marigold, when the fox is gone: "I have NEVER heard the chorus hum at court before. They only hum for HOME. They are calling this court HOME now. Take the crown." (Full. Glowing.) "Take everything. We are forever."</p>`,
+  earns: { item: ['crown', 'full'], allies: ['Marigold', 'FrogHerald', 'EggMotherChorus'], flags: ['CourageNotCrown', 'BrightWaterAlliance', 'ChorusAtCourt'] }, next: 'exit',
+},
+
+leaf_175c3: {
+  id: 'L-27', title: 'The One Note', meta: 'The whole valley hears',
+  text: `<p>The egg-mother says, "May I sing? My chorus and I sing one note, all at once. It is — quite something. People stop and listen."</p>
+<p>You both nod.</p>
+<p>The egg-mother and her twelve eggs sing ONE NOTE. The note is pure and long. It is bigger than the moss-circle. It fills the valley. It travels.</p>
+<p>The frogs stop arguing — not from fear, from REVERENCE. The fox bows so deeply his nose touches the moss. He doesn\'t even speak. He just leaves.</p>
+<p>The note keeps going for a full minute. By the time it ends, the entire Bright Water has heard it. Old creatures who haven\'t been to court in decades have looked up from their work.</p>
+<p>Marigold descends in a kind of trance. She places the crown — the FULL one, glowing — on Ella. "Today you brought THE NOTE back to court. We have not had it in a hundred years. The Bright Water is allied to your dock-above. Forever. The herald is going. The chorus is going. I am too proud to speak any further."</p>`,
+  earns: { item: ['crown', 'full'], allies: ['Marigold', 'FrogHerald', 'EggMotherChorus'], flags: ['CourageNotCrown', 'BrightWaterAlliance', 'OneNoteReturned'] }, next: 'exit',
+},
+
+exit: {
+  id: 'EXIT', title: 'The Golden-Trim Boat Is Waiting', meta: 'Ella — region complete',
+  text: `<p>The boat with the gold trim is waiting in the rushes.</p>
+<p>She has the Crown (in whatever form). She has, on her head, a weight that feels less like decoration and more like <em>deciding.</em></p>
+<p>She practices it as she pushes off — the deciding face. She tries it once in the reflection of the water. There it is. She did not have it this morning. She has it now.</p>
+<p>She is ten. She knows what her face is.</p>
+<p>That\'s the line she\'ll remember. <em>She knows what her face is.</em> No one can take that from her now.</p>
+<p>She paddles toward the sound of the C-130, faint and far, somewhere up in the world above.</p>
+<p style="margin-top:32px; padding:16px; background:rgba(74,125,140,0.08); border-left:3px solid var(--water); border-radius:0 4px 4px 0; font-size:14px; line-height:1.5;"><strong>End of Ella's region.</strong> 27 different ways through. Click "Start over" to try another.</p>`,
+  isEnd: true, choices: [],
+},
+
+}; // end SCENES
+
+let state = { current: 'start', items: {}, allies: [], flags: [], visited: [] };
+function save() { try { localStorage.setItem('ella-demo-state', JSON.stringify(state)); } catch(e){} }
+function load() { try { const s = localStorage.getItem('ella-demo-state'); if (s) state = JSON.parse(s); } catch(e) {} render(); }
+function go(t) {
+  const c = SCENES[state.current];
+  if (c && c.earns) {
+    if (c.earns.item) state.items[c.earns.item[0]] = c.earns.item[1];
+    if (c.earns.allies) c.earns.allies.forEach(a => { if (!state.allies.includes(a)) state.allies.push(a); });
+    if (c.earns.flags) c.earns.flags.forEach(f => { if (!state.flags.includes(f)) state.flags.push(f); });
+  }
+  if (c && c.next && t === 'exit') t = c.next;
+  state.current = t;
+  if (!state.visited.includes(t)) state.visited.push(t);
+  save(); window.scrollTo(0, 0); render();
+}
+function restart() { state = { current: 'start', items: {}, allies: [], flags: [], visited: [] }; save(); render(); }
+function renderState() {
+  const ic = Object.keys(state.items).length, ac = state.allies.length, fc = state.flags.length;
+  if (ic + ac + fc === 0) return '';
+  let h = '<div class="state-strip">';
+  if (ic) h += `<div><strong>Earned:</strong> ${Object.entries(state.items).map(([k,v]) => `<span class="tag">${k} (${v})</span>`).join('')}</div>`;
+  if (ac) h += `<div><strong>Allies:</strong> ${state.allies.map(a => `<span class="tag">${a}</span>`).join('')}</div>`;
+  if (fc) h += `<div><strong>Carrying:</strong> ${state.flags.map(f => `<span class="tag">${f}</span>`).join('')}</div>`;
+  return h + '</div>';
+}
+function render() {
+  const m = document.getElementById('main');
+  document.getElementById('state-display').innerHTML = renderState();
+  const s = SCENES[state.current];
+  if (!s) { m.innerHTML = `<p>Scene not found: ${state.current}</p>`; return; }
+  let h = '';
+  if (s.id) h += `<div class="passage-id">${s.id}</div>`;
+  if (s.meta) h += `<div class="scene-meta">${s.meta}</div>`;
+  h += `<h2 class="scene-title">${s.title}</h2><div class="scene-text">${s.text || ''}</div>`;
+  if (s.next && (!s.choices || s.choices.length === 0)) {
+    h += `<div class="choices"><button onclick="go('exit')">Continue to exit</button></div>`;
+  } else if (s.choices && s.choices.length > 0) {
+    h += '<div class="choices">';
+    s.choices.forEach(c => h += `<button onclick="go('${c.target}')">${c.label}${c.sub ? `<span class="sub">${c.sub}</span>` : ''}</button>`);
+    h += '</div>';
+  } else if (s.isEnd) {
+    h += `<div class="choices"><button onclick="restart()">Start over — try a different path</button></div>`;
+  }
+  m.innerHTML = h;
+}
+load();
+</script>
+</body>
+</html>

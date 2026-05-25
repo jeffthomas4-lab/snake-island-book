@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chayten's Region — 3-Deep CYOA Demo</title>
+<style>
+  :root { --paper: #faf6ed; --ink: #2b2419; --warm: #c97a3f; --water: #4a7d8c; --green: #6b8e4e; --gold: #c9a23f; --rule: rgba(43, 36, 25, 0.15); }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: var(--paper); color: var(--ink); font-family: 'Charter', 'Georgia', serif; line-height: 1.7; font-size: 18px; min-height: 100vh; }
+  .container { max-width: 720px; margin: 0 auto; padding: 28px 24px 80px; }
+  header { border-bottom: 2px solid var(--ink); padding-bottom: 16px; margin-bottom: 24px; display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 12px; }
+  header h1 { font-size: 20px; font-weight: normal; font-style: italic; }
+  .controls button { background: none; border: 1px solid var(--ink); color: var(--ink); padding: 5px 12px; cursor: pointer; font-family: inherit; font-size: 12px; border-radius: 3px; }
+  .controls button:hover { background: var(--ink); color: var(--paper); }
+  .state-strip { background: rgba(107, 142, 78, 0.08); border: 1px dashed var(--green); padding: 10px 14px; margin: 0 0 24px; font-size: 12px; border-radius: 3px; }
+  .state-strip strong { color: var(--green); }
+  .state-strip .tag { display: inline-block; background: rgba(107, 142, 78, 0.15); padding: 2px 7px; border-radius: 3px; margin: 0 3px 3px 0; font-size: 11px; }
+  .passage-id { font-family: 'Courier New', monospace; font-size: 11px; text-transform: uppercase; letter-spacing: 1.5px; color: var(--warm); margin-bottom: 4px; }
+  .scene-meta { font-size: 12px; text-transform: uppercase; letter-spacing: 1.5px; color: var(--water); margin-bottom: 6px; font-style: italic; }
+  .scene-title { font-size: 28px; font-weight: normal; margin-bottom: 20px; font-style: italic; line-height: 1.25; }
+  .scene-text { font-size: 17px; }
+  .scene-text p { margin-bottom: 14px; }
+  .choices { display: flex; flex-direction: column; gap: 12px; margin-top: 32px; padding-top: 22px; border-top: 1px solid var(--rule); }
+  .choices button { background: var(--paper); border: 1.5px solid var(--ink); padding: 14px 18px; text-align: left; cursor: pointer; font-family: inherit; font-size: 16px; color: var(--ink); border-radius: 5px; transition: all 0.15s ease; line-height: 1.4; }
+  .choices button:hover { background: var(--ink); color: var(--paper); transform: translateX(4px); }
+  .choices button .sub { display: block; font-size: 13px; color: var(--warm); margin-top: 4px; font-style: italic; }
+  .choices button:hover .sub { color: #f5c587; }
+  .demo-note { background: rgba(74,125,140,0.08); border-left: 3px solid var(--water); padding: 14px 18px; margin: 0 0 24px; border-radius: 0 4px 4px 0; font-size: 14px; line-height: 1.5; }
+  .demo-note strong { color: var(--water); }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>Chayten's Region — 3-Deep CYOA Demo</h1>
+    <div class="controls"><button onclick="restart()">Start over</button></div>
+  </header>
+  <div id="state-display"></div>
+  <main id="main"></main>
+</div>
+<script>
+const SCENES = {
+
+start: {
+  id: 'START', title: 'Chayten at the Driftwood Stage',
+  meta: 'A 3-deep CYOA demo for Chayten (13) — the connector, the protector, the performer',
+  text: `<div class="demo-note"><strong>27 ways through Chayten's region.</strong> She arrives at an amphitheater where an old otter named Otto is panicking because his lead actor sprained his whiskers. Your three choices each branch into three more. Click through and the state strip will show what Chayten brings back.</div>`,
+  choices: [{ label: 'Begin Chayten\'s region', target: 'p120' }],
+},
+
+p120: {
+  id: 'P-120', title: 'Arrival at the Driftwood Stage', meta: 'Chayten',
+  text: `<p>Chayten's raft slides onto a grassy hill above a half-moon of water. The raft is a small driftwood boat with her initials burned into the bow.</p>
+<p>Below is the strangest amphitheater she has ever seen. A natural bowl of grass curves down to a long flat stage of pale driftwood jutting over the water. The seats are stones &mdash; not stones placed there, <em>stones that grew there</em> &mdash; arranged in tidy rows. Some are bigger than her house. They are humming.</p>
+<p>On the stage, a dozen otters are running in a panic. One of them &mdash; old, gray-muzzled, wearing a velvet cape and a single small bandage wrapped around his whiskers &mdash; is sitting in the middle of the stage looking absolutely calm in the way of a man whose world is ending.</p>
+<p>He sees Chayten. He stands up very slowly. He says, in a voice like an entire theater season ending: "<em>You.</em> You with the EYES. Get DOWN here."</p>`,
+  choices: [{ label: 'Walk down to the stage', target: 'p121' }],
+},
+
+p121: {
+  id: 'P-121', title: 'The Be-a-Kid Moment', meta: 'Chayten — cared-for',
+  text: `<p>Otto bows. Then he winces, because bowing tugs his bandaged whiskers.</p>
+<p>"OTTO. Lead actor. Or <em>was</em>. The Stones go on in forty minutes. You will play the lead. Yes?"</p>
+<p>Chayten opens her mouth. She is about to say yes, because that's what she does.</p>
+<p>Otto holds up one paw. "Stop. Wait. Look at me."</p>
+<p>Otto sees, very clearly, the way Chayten has been holding herself &mdash; like a chaperone at someone else's party, like a sister who has misplaced her brother for the first time in seven years.</p>
+<p>"He is FINE," Otto says. "The small one. You can feel him. Yes?"</p>
+<p>Chayten checks. Aiden is fine. He is also somehow riding something that is not a horse.</p>
+<p>"Good. Now. You are not a sister right now. You are not a babysitter. For one hour, you are an <em>actor</em>. Do you accept the demotion?"</p>
+<p>Chayten laughs. It surprises her. "Yes."</p>
+<p>Otto looks at her for one more long second. "And child. Before I go. May I just sit here a moment? With you. Not to ask anything."</p>
+<p>Chayten blinks. Nobody has ever asked her that.</p>
+<p>She nods. Otto sits cross-legged beside her. He doesn't speak. He doesn't perform. He just sits with her the way a person sits with another person whose company is enough.</p>
+<p>Ten seconds. It is the most important ten seconds Chayten has experienced in a year.</p>
+<p>Otto stands. "<em>Excellent.</em> Now. The play is <em>The Tale of the Lost Brother.</em> Forty minutes. How would you like to begin?"</p>`,
+  choices: [{ label: 'Decide how to approach the play', target: 'p122' }],
+},
+
+p122: {
+  id: 'P-122', title: 'CHOICE 1 — How do you begin?', meta: 'First decision',
+  text: `<p>Forty minutes. A stage. An audience of giant Stones. A grieving old otter. And Chayten.</p>`,
+  choices: [
+    { label: 'Take the script and rehearse fast', target: 'p123', sub: 'You\'re a quick study. Get the lines down. Do the play.' },
+    { label: 'Ask Otto what the play is really about first', target: 'p124', sub: 'There\'s a story under the story.' },
+    { label: 'Notice the small otter shaking by the wardrobe trunk', target: 'p125', sub: 'Pickle. She\'s terrified. The play can wait.' },
+  ],
+},
+
+p123: {
+  id: 'P-123', title: 'CHOICE 2A — How do you rehearse?', meta: 'You took the script',
+  text: `<p>The script is soft from a thousand readings. Six scenes. Twenty minutes of stage time. A sister singing her lost brother home, every night, until she's old. Then she finds him.</p>
+<p>Twenty minutes to learn it. How do you focus?</p>`,
+  choices: [
+    { label: 'Rehearse alone, off in a corner', target: 'p123a', sub: 'You think best when nobody\'s watching you think.' },
+    { label: 'Ask the troupe to run lines with you', target: 'p123b', sub: 'Otters know this play. Lean on them.' },
+    { label: 'Memorize while watching the Stones warm up', target: 'p123c', sub: 'See your audience. Memorize for them.' },
+  ],
+},
+
+p124: {
+  id: 'P-124', title: 'CHOICE 2B — What\'s the play really about?', meta: 'You asked Otto',
+  text: `<p>Otto goes still. The other otters stop swirling. They all turn slightly to look at him.</p>
+<p>Otto sits. He pats the wood next to him. Chayten sits. He takes a long breath.</p>
+<p>"It is about my brother. Not the brother I had. The brother I <em>chose</em>. He was river. I was lake. We were raised together because his mother died and mine had room. We were brothers anyway. We were not blood. We were better than blood."</p>
+<p>"He was lost in a storm when we were small. The play says the sister sings him home. The truth is, I never sang him home. I just kept singing because I didn't know what else to do."</p>
+<p>"I have played this play seven hundred and twelve times. Every time, I am the brother who comes back at the end. Every time, I think &mdash; <em>what if this is the time he hears me.</em>"</p>
+<p>How do you respond?</p>`,
+  choices: [
+    { label: 'Just listen. Let him finish.', target: 'p124a', sub: 'He has more to say.' },
+    { label: '"Can I change the ending? Just one line."', target: 'p124b', sub: 'Rewrite the wrong ending with him.' },
+    { label: '"Let me play the brother. You\'ve played the sister long enough."', target: 'p124c', sub: 'Swap roles. Let him be sung home for once.' },
+  ],
+},
+
+p125: {
+  id: 'P-125', title: 'CHOICE 2C — Pickle is shaking', meta: 'You went to the small otter',
+  text: `<p>She is tiny. Half the size of the other otters. She holds a child-sized brown smock in both paws and stares at it like it might bite her.</p>
+<p>"I'm Chayten. What's your name?"</p>
+<p>"...Pickle."</p>
+<p>"Pickle. Are you in the play?"</p>
+<p>Pickle shakes her head. Then nods. Then shakes again. "They said I could be the brother. The little brother. But I can't, I can't go out there, my legs are &mdash; they don't &mdash;"</p>
+<p>What do you do?</p>`,
+  choices: [
+    { label: 'Sit beside Pickle quietly. No agenda.', target: 'p125a', sub: 'You don\'t have to fix her. Just be near her.' },
+    { label: 'Insist Otto cast Pickle in a real role', target: 'p125b', sub: 'Pickle deserves the brother part. Both halves of it.' },
+    { label: 'Trade roles — you play the small brother, Pickle plays the sister', target: 'p125c', sub: 'Swap. Give Pickle the lead. You take the smaller part.' },
+  ],
+},
+
+// =============== CHOICE 3 NODES ===============
+
+p123a: {
+  id: 'P-123A', title: 'CHOICE 3 — Alone in the dressing trunk', meta: 'Rehearsing solo',
+  text: `<p>You find an empty trunk room behind the stage. The script. Twenty minutes. You read it three times.</p>
+<p>Otto knocks. "Five minutes. Anything you need from me?"</p>`,
+  choices: [
+    { label: '"One run-through with you as the brother."', target: 'leaf_123a1', sub: 'Quick rehearsal with the man who knows it best.' },
+    { label: '"Tell me what your favorite line is."', target: 'leaf_123a2', sub: 'Find the line that matters to him. Make it land.' },
+    { label: '"Nothing. I\'m ready."', target: 'leaf_123a3', sub: 'Walk out cold. Trust the work.' },
+  ],
+},
+
+p123b: {
+  id: 'P-123B', title: 'CHOICE 3 — Running lines with the troupe', meta: 'Collaborative rehearsal',
+  text: `<p>Six otters crowd around. They each have an opinion about how the sister should be played. Three of them argue. Two are too shy to say anything. One named Pickle just watches you.</p>
+<p>Whose advice do you take?</p>`,
+  choices: [
+    { label: 'The loudest otter — he has thirty years of experience', target: 'leaf_123b1', sub: 'Veteran wisdom.' },
+    { label: 'The two shy ones — they\'ve been watching the play longest', target: 'leaf_123b2', sub: 'The quiet ones see more.' },
+    { label: 'Pickle, the small one watching you', target: 'leaf_123b3', sub: 'She hasn\'t spoken. But you think she would have a thought.' },
+  ],
+},
+
+p123c: {
+  id: 'P-123C', title: 'CHOICE 3 — Watching the Stones', meta: 'Memorizing in front of your audience',
+  text: `<p>The Stones are settling into their seats. The biggest ones in the back are humming. You read while watching them.</p>
+<p>One of the front-row Stones &mdash; a small one, with what looks like a crack down its face &mdash; is watching you back.</p>`,
+  choices: [
+    { label: 'Walk over and put your hand on the cracked Stone', target: 'leaf_123c1', sub: 'Touch the audience before the show.' },
+    { label: 'Read the climactic line aloud, to the Stones, before the play', target: 'leaf_123c2', sub: 'Test the line on its target.' },
+    { label: 'Memorize silently. Don\'t engage.', target: 'leaf_123c3', sub: 'Save the magic for the stage.' },
+  ],
+},
+
+p124a: {
+  id: 'P-124A', title: 'CHOICE 3 — Otto keeps going', meta: 'You listened',
+  text: `<p>Otto tells you the rest. The storm. The day he stopped looking. The years of singing into water that didn't answer. He cries. He wipes his eyes with his velvet cape. He apologizes.</p>
+<p>Then he says: "I'm done. I just needed someone to know. Will you play the sister now?"</p>`,
+  choices: [
+    { label: '"I\'ll play her as if I\'m singing TO your brother. Not for the Stones."', target: 'leaf_124a1', sub: 'The play is for him. Not the audience.' },
+    { label: '"I\'ll play her the way you would have if you weren\'t so tired."', target: 'leaf_124a2', sub: 'Carry his version. Let him rest.' },
+    { label: '"I\'ll play her the way my own little brother is going to need me to play her someday."', target: 'leaf_124a3', sub: 'Make it about your Aiden.' },
+  ],
+},
+
+p124b: {
+  id: 'P-124B', title: 'CHOICE 3 — Which line to change?', meta: 'You\'ll rewrite an ending',
+  text: `<p>Otto blinks. "Change it? Which line?"</p>
+<p>You think for a second.</p>`,
+  choices: [
+    { label: '"You came home" → "You were always with me"', target: 'leaf_124b1', sub: 'He was never gone. He just couldn\'t be reached.' },
+    { label: '"You came home" → "I never stopped listening for you"', target: 'leaf_124b2', sub: 'The sister didn\'t fail. She just kept the door open.' },
+    { label: '"You came home" → "I sang because I loved you, not because I expected you back"', target: 'leaf_124b3', sub: 'The song was the love. Not a transaction.' },
+  ],
+},
+
+p124c: {
+  id: 'P-124C', title: 'CHOICE 3 — Otto considers', meta: 'You offered to play the brother',
+  text: `<p>Otto stares at you. "You'd do that? Switch?"</p>
+<p>"Yes."</p>
+<p>"You'd let me &mdash; let me <em>be sung home</em> for once? In my own play?"</p>
+<p>What do you tell him?</p>`,
+  choices: [
+    { label: '"Yes. Tonight you\'re the brother. I\'ll sing you home."', target: 'leaf_124c1', sub: 'Take his pain.' },
+    { label: '"Only if you let yourself BELIEVE the singing this time."', target: 'leaf_124c2', sub: 'Make him receive what he\'s been refusing.' },
+    { label: '"Yes. And the Stones get to be the storm. They\'ll understand."', target: 'leaf_124c3', sub: 'Recast the play. Use what\'s in the room.' },
+  ],
+},
+
+p125a: {
+  id: 'P-125A', title: 'CHOICE 3 — Sitting beside Pickle', meta: 'No words yet',
+  text: `<p>You sit next to her. You don't talk. You don't fix her. You don't try to coax her out. After a while she leans against your side.</p>
+<p>The play is in twenty minutes. What do you do?</p>`,
+  choices: [
+    { label: 'Whisper, "You don\'t have to come. I\'ll do the play. I\'ll come find you after."', target: 'leaf_125a1', sub: 'Release her. Let her decide.' },
+    { label: 'Whisper, "Will you watch from the wings with me? Not on stage. Just near?"', target: 'leaf_125a2', sub: 'Bring her close without forcing her on.' },
+    { label: 'Whisper, "What\'s the line you wanted to say?"', target: 'leaf_125a3', sub: 'Let her say it once, here, where nobody else hears.' },
+  ],
+},
+
+p125b: {
+  id: 'P-125B', title: 'CHOICE 3 — How do you tell Otto?', meta: 'Pickle gets cast',
+  text: `<p>You walk back to Otto. "I'll do the play. But I want Pickle as the brother. Both scenes. Young AND old."</p>
+<p>Otto frowns. "Pickle is too small for the older scenes &mdash;"</p>
+<p>How do you push back?</p>`,
+  choices: [
+    { label: '"That\'s the POINT. The brother stayed small inside. She\'ll know."', target: 'leaf_125b1', sub: 'The reframe Otto needed to hear.' },
+    { label: '"You said it\'s been mis-cast for forty-three years. So fix it."', target: 'leaf_125b2', sub: 'Use his own grief against his cowardice.' },
+    { label: '"Either Pickle or I don\'t play. Your choice."', target: 'leaf_125b3', sub: 'Pure leverage. Risk it.' },
+  ],
+},
+
+p125c: {
+  id: 'P-125C', title: 'CHOICE 3 — Pickle as the sister', meta: 'You offered to swap',
+  text: `<p>Pickle's eyes get enormous. "You'd play the LITTLE one? But the sister has all the LINES."</p>
+<p>"You can say them. I'll do the small part. I'll be on stage the whole time, but I won't have to talk much. Deal?"</p>
+<p>Pickle thinks. "...Deal."</p>
+<p>How do you make sure Pickle can do it?</p>`,
+  choices: [
+    { label: 'Hold her paw the whole time. Never let go.', target: 'leaf_125c1', sub: 'Physical anchor.' },
+    { label: 'Stand slightly in front of her. Block the Stones\' direct stare.', target: 'leaf_125c2', sub: 'Shield her.' },
+    { label: 'Whisper her lines a half-second before she says them.', target: 'leaf_125c3', sub: 'Cue her. Be her safety net.' },
+  ],
+},
+
+// =============== 27 LEAF OUTCOMES ===============
+
+leaf_123a1: {
+  id: 'L-1', title: 'A Quick Run-Through', meta: 'Chayten 2A1a → Otto rehearses with her',
+  text: `<p>Otto reads the brother. Chayten reads the sister. They go through once, fast. He cries on the climactic line. So does she.</p>
+<p>The show goes well. Standard performance. Stones hum politely. Otto gives Chayten the Otter Mask. "Solid work, child. Solid."</p>
+<p>A small otter (Pickle, you'll learn later) hands her a silver fish. "For your brother."</p>`,
+  earns: { item: ['voice', 'base'] },
+  next: 'exit',
+},
+
+leaf_123a2: {
+  id: 'L-2', title: 'Otto\'s Favorite Line', meta: 'Chayten 2A1b → key line landed',
+  text: `<p>Otto says his favorite line is "I am still here, I am still here, I am still here, I never went away." He says it quietly. Almost to himself.</p>
+<p>On stage, Chayten delivers it with her whole chest. The Stones THUNDER. Otto, off-stage, has to be carried out by another otter because he's weeping so hard he can't stand.</p>
+<p>He gives her the Otter Mask afterward, his older, more loved one. "You found the line. You will speak with weight, now, your whole life."</p>`,
+  earns: { item: ['voice', 'enhanced'] },
+  next: 'exit',
+},
+
+leaf_123a3: {
+  id: 'L-3', title: 'Cold Read', meta: 'Chayten 2A1c → trust the work',
+  text: `<p>Chayten walks out cold. No rehearsal. She trusts what she remembers.</p>
+<p>It's a rough performance. She stumbles on three lines. But she keeps going. The Stones don't mind &mdash; the Stones admire courage more than polish. They hum at the end.</p>
+<p>Otto gives her the Otter Mask. "You went out without a net. That's an actor."</p>`,
+  earns: { item: ['voice', 'base'], flags: ['NoNet'] },
+  next: 'exit',
+},
+
+leaf_123b1: {
+  id: 'L-4', title: 'The Veteran\'s Advice', meta: 'Chayten 2A2a → loud otter wisdom',
+  text: `<p>The loud otter teaches Chayten the "thirty-year way" of playing the sister. Big gestures, projecting voice, theatrical sobs.</p>
+<p>It works. The performance is BIG. The Stones approve.</p>
+<p>Otto gives her the Otter Mask. "Classic. Classical. You played her like Helen in 1972."</p>
+<p>(Chayten does not know who Helen is. She nods anyway.)</p>`,
+  earns: { item: ['voice', 'base'] },
+  next: 'exit',
+},
+
+leaf_123b2: {
+  id: 'L-5', title: 'The Shy Otters\' Secret', meta: 'Chayten 2A2b → quiet wisdom',
+  text: `<p>The two shy otters whisper one piece of advice: "When she says she'll keep singing, don't sing it loud. Sing it like a promise. To one person. Specifically."</p>
+<p>Chayten does. She picks a single Stone in the front row and sings the promise straight to it.</p>
+<p>The Stone cracks. Not visibly &mdash; you can hear it. Like a small door opening.</p>
+<p>Otto gives her the Otter Mask, and a flake of stone the size of her thumbnail. "From the Stone. It chose you."</p>`,
+  earns: { item: ['voice', 'enhanced'], flags: ['StoneFlake'] },
+  next: 'exit',
+},
+
+leaf_123b3: {
+  id: 'L-6', title: 'Pickle\'s Quiet Thought', meta: 'Chayten 2A2c → noticed Pickle early',
+  text: `<p>Pickle whispers, very small: "Play her like she's tired. But not tired of singing. Just tired."</p>
+<p>It is the best note any director has ever given a sixth-grader. Chayten uses it.</p>
+<p>The performance is the best Otto has ever seen. The Stones thunder. Otto cries again.</p>
+<p>Pickle, encouraged, comes out from behind the wardrobe trunk for the first time in three weeks. Otto gives Chayten the Otter Mask &mdash; and ALSO promises Pickle a role next year.</p>`,
+  earns: { item: ['voice', 'enhanced'], allies: ['Pickle'], flags: ['NoticedPickleEarly'] },
+  next: 'exit',
+},
+
+leaf_123c1: {
+  id: 'L-7', title: 'The Cracked Stone', meta: 'Chayten 2A3a → touched the audience',
+  text: `<p>Chayten walks over and puts her hand on the cracked Stone. It is warm.</p>
+<p>It hums under her palm. Then, very quietly, it says: "<em>Thank you, child. I have not been touched in two hundred years.</em>"</p>
+<p>Chayten plays the sister to that Stone specifically. She SEES him cracked-but-still-here. Her performance is the most personal thing the Stones have ever witnessed.</p>
+<p>Afterward Otto gives her the Otter Mask. The cracked Stone hums goodbye.</p>`,
+  earns: { item: ['voice', 'enhanced'], flags: ['CrackedStone'] },
+  next: 'exit',
+},
+
+leaf_123c2: {
+  id: 'L-8', title: 'Pre-Show Test', meta: 'Chayten 2A3b → tested the line',
+  text: `<p>Chayten reads the climactic line to the Stones before the show. They go very quiet.</p>
+<p>The biggest Stone in the back says, in a voice like a quarry waking: "<strong>SAY IT LIKE YOU MEAN IT. DO NOT TEST US.</strong>"</p>
+<p>Chayten apologizes. Then she does the play, very seriously, very specifically, line by line.</p>
+<p>The Stones hum. Otto gives her the Mask. (He privately thinks she's the bravest actor he's ever directed.)</p>`,
+  earns: { item: ['voice', 'enhanced'], flags: ['StonesRespect'] },
+  next: 'exit',
+},
+
+leaf_123c3: {
+  id: 'L-9', title: 'Save It for the Stage', meta: 'Chayten 2A3c → professional restraint',
+  text: `<p>Chayten memorizes silently. She watches the Stones but doesn't engage. She saves the magic.</p>
+<p>The performance is clean. Professional. The Stones approve. Otto gives her the Otter Mask.</p>
+<p>"You have discipline, child. Rare. Most actors burn themselves out in warm-ups."</p>`,
+  earns: { item: ['voice', 'base'], flags: ['Discipline'] },
+  next: 'exit',
+},
+
+leaf_124a1: {
+  id: 'L-10', title: 'For the Brother, Not the Stones', meta: 'Chayten 2B1a → personal performance',
+  text: `<p>Chayten plays the sister singing to Otto's brother, specifically. Not to the audience.</p>
+<p>Otto, from the wings, hears his brother's name in every line. He sobs through the whole show. The Stones, sensing the depth, hum like distant thunder.</p>
+<p>Otto gives her his oldest Mask. "I haven't been able to play the play for what it is in seven hundred years. You played it for what it is in twenty minutes."</p>
+<p>Then: "I'm coming with you. To the lake-up-above. I haven't left in two hundred years. I'm leaving for THIS."</p>`,
+  earns: { item: ['voice', 'full'], allies: ['Otto'], flags: ['ChosenBrotherTheme'] },
+  next: 'exit',
+},
+
+leaf_124a2: {
+  id: 'L-11', title: 'Carry His Version', meta: 'Chayten 2B1b → relief for Otto',
+  text: `<p>Chayten plays the sister the way Otto would have played her in his prime &mdash; full, sincere, weighted.</p>
+<p>Otto watches from the wings. For the first time in centuries he relaxes. Someone else is carrying the play.</p>
+<p>After, he gives her his Mask. "I have been carrying this play alone for too long. You can carry it now. Come back and play her again."</p>`,
+  earns: { item: ['voice', 'enhanced'], allies: ['Otto'] },
+  next: 'exit',
+},
+
+leaf_124a3: {
+  id: 'L-12', title: 'For Aiden', meta: 'Chayten 2B1c → her own little brother',
+  text: `<p>Chayten plays the sister as the version of herself her actual little brother is going to need someday. Every line, she imagines herself singing for Aiden.</p>
+<p>The Stones don't just hum. They <em>sing back.</em> A low chorus they have not done in three hundred years.</p>
+<p>Otto gives her his oldest Mask AND a tiny silver fish for Aiden &mdash; he carved it from a Stone-flake. "For the small one. From someone who knows what it is to love a brother."</p>`,
+  earns: { item: ['voice', 'full'], allies: ['Otto'], flags: ['SilverFishForAiden', 'AidenAnchor'] },
+  next: 'exit',
+},
+
+leaf_124b1: {
+  id: 'L-13', title: 'You Were Always With Me', meta: 'Chayten 2B2a → rewritten ending',
+  text: `<p>Otto goes very still. Then he whispers: "I have been playing the wrong ending for seven hundred years."</p>
+<p>They rehearse the new ending. The performance is unforgettable. The Stones THUNDER. Otters in the wings carry each other out, weeping.</p>
+<p>Otto gives Chayten his Mask. "I will come with you. I have not left in two hundred years. I have to thank you in front of more witnesses than this troupe."</p>`,
+  earns: { item: ['voice', 'full'], allies: ['Otto'], flags: ['RewroteTheEnding'] },
+  next: 'exit',
+},
+
+leaf_124b2: {
+  id: 'L-14', title: 'Never Stopped Listening', meta: 'Chayten 2B2b → reframed grief',
+  text: `<p>Otto repeats the line. "I never stopped listening for you." He cries. "That is what I do. That is the whole thing."</p>
+<p>The performance lands hard. The Stones hum. Otto gives her his Mask. "You named the thing I have been doing. I can stop being ashamed of it now."</p>`,
+  earns: { item: ['voice', 'full'], allies: ['Otto'], flags: ['NamedTheGrief'] },
+  next: 'exit',
+},
+
+leaf_124b3: {
+  id: 'L-15', title: 'The Love, Not the Transaction', meta: 'Chayten 2B2c → philosophical rewrite',
+  text: `<p>Otto is quiet for a long time. "You're saying the singing wasn't FOR him."</p>
+<p>"It was for you. To say you loved him. Whether or not he ever heard it."</p>
+<p>Otto: "I have been treating love like a transaction for seven hundred years. <em>If I sing enough, he comes back.</em> No. The singing IS the love."</p>
+<p>He gives her his Mask. He gives her his bandage. (Symbolic. His whiskers heal during the performance.) "Take both. Use them when you need to remind a grown-up that love isn't math."</p>`,
+  earns: { item: ['voice', 'full'], allies: ['Otto'], flags: ['LoveNotMath'] },
+  next: 'exit',
+},
+
+leaf_124c1: {
+  id: 'L-16', title: 'You Sing Him Home', meta: 'Chayten 2C1a → swap and sing',
+  text: `<p>Chayten plays the brother. Otto plays the sister, for the first time. Chayten sings him home at the end of the play.</p>
+<p>Otto, in the wings of his own story, finally hears himself sung home. He sobs. The Stones hum so loud that the dock-up-above (Chayten will learn later) physically shook for thirty seconds.</p>
+<p>Otto gives her his oldest Mask. "I have been waiting for someone to do that for me my whole life. Take this. Use it when someone needs to be sung home."</p>`,
+  earns: { item: ['voice', 'full'], allies: ['Otto'], flags: ['SungHome'] },
+  next: 'exit',
+},
+
+leaf_124c2: {
+  id: 'L-17', title: 'Believe the Singing', meta: 'Chayten 2C1b → make him receive it',
+  text: `<p>Chayten makes Otto promise. He promises. They play it. At the climax, Otto &mdash; in the sister role, but now WITH the brother's burden &mdash; lets himself believe Chayten's singing.</p>
+<p>He BELIEVES. Tears stream. He says afterward that for one second of the play he felt his actual brother in the room.</p>
+<p>He gives her his Mask. "You taught me how to receive. Take this. You'll need it at the dock."</p>`,
+  earns: { item: ['voice', 'full'], allies: ['Otto'], flags: ['TaughtToReceive'] },
+  next: 'exit',
+},
+
+leaf_124c3: {
+  id: 'L-18', title: 'The Stones Are the Storm', meta: 'Chayten 2C1c → recast the world',
+  text: `<p>The Stones become the storm. They rumble low through the play, then crescendo, then quiet. Chayten plays the brother. Otto, the sister.</p>
+<p>It is the most fully-realized performance of the play in eight hundred years. The Stones afterward stand up for the first time in recorded history. They walk slowly to the back of the amphitheater and rest themselves. (Stones tire. Who knew.)</p>
+<p>Otto gives her his Mask. "You used the room. That's what a real director does." He stops. "I should know. I was one."</p>`,
+  earns: { item: ['voice', 'full'], allies: ['Otto'], flags: ['StonesStood'] },
+  next: 'exit',
+},
+
+leaf_125a1: {
+  id: 'L-19', title: 'Release Pickle', meta: 'Chayten 2C2a → no pressure',
+  text: `<p>"You don't have to come. I'll do the play. I'll come find you after." Pickle relaxes against you. She doesn't go on. You play the lead with one less otter on stage.</p>
+<p>After the play, Pickle gives you a small silver fish. "For your brother. I knew you had one. You said his name in your sleep three minutes ago."</p>
+<p>Otto gives you the Mask.</p>`,
+  earns: { item: ['voice', 'base'], flags: ['SilverFishForAiden'] },
+  next: 'exit',
+},
+
+leaf_125a2: {
+  id: 'L-20', title: 'Watch From the Wings', meta: 'Chayten 2C2b → near but not on',
+  text: `<p>Pickle stands with you in the wings the entire play. She holds your hand between scenes. She mouths the lines you say.</p>
+<p>After, she whispers, "Next year I'll do it. Because YOU stood with me."</p>
+<p>Otto gives you the Mask. He looks at Pickle differently. "She'll do it. I see now."</p>`,
+  earns: { item: ['voice', 'enhanced'], allies: ['Pickle'] },
+  next: 'exit',
+},
+
+leaf_125a3: {
+  id: 'L-21', title: 'Just Say Your Line', meta: 'Chayten 2C2c → private rehearsal',
+  text: `<p>Pickle whispers her line, just to you, in the dressing room: "I am still here, I am still here, I am still here, I never went away."</p>
+<p>Then, encouraged by saying it once where no one else heard, she says: "I'll come do it on stage. If you go first."</p>
+<p>She comes out. She delivers the line. The Stones THUNDER for her.</p>
+<p>Otto, weeping, gives Chayten his Mask. "She has not spoken in front of an audience in three years. You unlocked her."</p>`,
+  earns: { item: ['voice', 'full'], allies: ['Pickle'], flags: ['UnlockedPickle'] },
+  next: 'exit',
+},
+
+leaf_125b1: {
+  id: 'L-22', title: 'The Reframe', meta: 'Chayten 2C2-something → casting reframe',
+  text: `<p>"The brother stayed small inside. She'll know."</p>
+<p>Otto stops. His face changes. "I have been &mdash; oh. I have been mis-casting that role for forty-three years."</p>
+<p>He recasts. Pickle plays the brother both halves. The performance is heartbreaking. The Stones speak: "<strong>SHE SAW THE SMALL ONE FIRST. THAT IS A REAL THING.</strong>"</p>
+<p>Otto gives Chayten his Mask. Pickle comes with her.</p>`,
+  earns: { item: ['voice', 'full'], allies: ['Otto', 'Pickle'], flags: ['ValuedForPresence', 'CastingReframe'] },
+  next: 'exit',
+},
+
+leaf_125b2: {
+  id: 'L-23', title: 'Use His Own Grief', meta: 'Chayten 2C-b → leverage Otto',
+  text: `<p>"You said it's been mis-cast for forty-three years. So fix it."</p>
+<p>Otto winces. Then he laughs. "You are RUTHLESS. I love it. Pickle is the brother. Both halves. Reset the blocking."</p>
+<p>The play is fierce. Pickle, knowing the reframe came from Chayten's argument, gives EVERYTHING. The Stones thunder.</p>
+<p>Otto gives Chayten his Mask. Pickle gives her a silver fish for Aiden.</p>`,
+  earns: { item: ['voice', 'full'], allies: ['Otto', 'Pickle'], flags: ['ValuedForPresence'] },
+  next: 'exit',
+},
+
+leaf_125b3: {
+  id: 'L-24', title: 'Pure Leverage', meta: 'Chayten 2C-c → ultimatum',
+  text: `<p>"Either Pickle or I don't play. Your choice."</p>
+<p>Otto blinks. Then: "...You'd really walk?"</p>
+<p>Chayten nods. She would. Otto sees it.</p>
+<p>"Pickle is the brother. Both halves. RESET."</p>
+<p>The play happens. Pickle is electrifying because she knows what was risked for her. The Stones speak. Otto gives Chayten his Mask.</p>
+<p>(Privately, Otto thinks: I have found an actor with EDGES. Rare and wonderful.)</p>`,
+  earns: { item: ['voice', 'full'], allies: ['Otto', 'Pickle'], flags: ['ChaytenHasEdges'] },
+  next: 'exit',
+},
+
+leaf_125c1: {
+  id: 'L-25', title: 'Hold Her Paw', meta: 'Chayten 2C3a → physical anchor',
+  text: `<p>You play the small brother. Pickle plays the sister. You hold her paw through every scene. You don't let go, not even when the blocking calls for distance.</p>
+<p>Pickle, anchored, delivers the lead role like she has been waiting her whole life to do it. (She has.) Stones thunder.</p>
+<p>Otto gives you the Mask. Pickle says, "I want to come with you."</p>`,
+  earns: { item: ['voice', 'full'], allies: ['Pickle'], flags: ['HeldHerPaw'] },
+  next: 'exit',
+},
+
+leaf_125c2: {
+  id: 'L-26', title: 'Block the Stare', meta: 'Chayten 2C3b → shield her',
+  text: `<p>You stand slightly in front of Pickle. You absorb the Stones' direct attention. Pickle delivers her lines into your back, basically, and you relay them with your body language.</p>
+<p>The audience reads it as choreography. They love it. They thunder.</p>
+<p>Otto gives you the Mask. "That blocking. We're keeping it. You invented stage direction tonight."</p>
+<p>Pickle comes with you.</p>`,
+  earns: { item: ['voice', 'enhanced'], allies: ['Pickle'], flags: ['InventedStaging'] },
+  next: 'exit',
+},
+
+leaf_125c3: {
+  id: 'L-27', title: 'Whisper Her Lines', meta: 'Chayten 2C3c → safety net',
+  text: `<p>You whisper Pickle's lines a half-second before she says them. She picks them up. She gains confidence with every line. By scene four she doesn't need the whispering anymore.</p>
+<p>She delivers the climactic line on her own. The Stones THUNDER. Pickle is crying. So are you.</p>
+<p>Otto gives you the Mask. Pickle gives you a silver fish for Aiden. "I learned to be brave because YOU whispered first. Tell him."</p>`,
+  earns: { item: ['voice', 'full'], allies: ['Pickle'], flags: ['SafetyNet', 'TaughtBravery'] },
+  next: 'exit',
+},
+
+exit: {
+  id: 'EXIT', title: 'The Troupe Sees Her Off', meta: 'Chayten — region complete',
+  text: `<p>The otters line up to wave her off. The Stones hum, low and warm.</p>
+<p>Chayten has the Otter Mask. She has, depending on her path, a silver fish for Aiden, an ally or two, and a feeling under her ribs that a play she helped fix was somehow also a play about her own life.</p>
+<p>Her driftwood boat is waiting in the water below the stage. She steps in. She heads back toward wherever Aiden is. She always does.</p>
+<p style="margin-top:32px; padding:16px; background:rgba(74,125,140,0.08); border-left:3px solid var(--water); border-radius:0 4px 4px 0; font-size:14px; line-height:1.5;"><strong>End of Chayten's region.</strong> 27 different ways through. Click "Start over" to try another. The state strip above shows what you brought back this time.</p>`,
+  isEnd: true,
+  choices: [],
+},
+
+}; // end SCENES
+
+let state = { current: 'start', items: {}, allies: [], flags: [], visited: [] };
+function save() { try { localStorage.setItem('chayten-demo-state', JSON.stringify(state)); } catch(e){} }
+function load() { try { const s = localStorage.getItem('chayten-demo-state'); if (s) state = JSON.parse(s); } catch(e) {} render(); }
+function go(target) {
+  const cur = SCENES[state.current];
+  if (cur && cur.earns) {
+    if (cur.earns.item) state.items[cur.earns.item[0]] = cur.earns.item[1];
+    if (cur.earns.allies) cur.earns.allies.forEach(a => { if (!state.allies.includes(a)) state.allies.push(a); });
+    if (cur.earns.flags) cur.earns.flags.forEach(f => { if (!state.flags.includes(f)) state.flags.push(f); });
+  }
+  if (cur && cur.next && target === 'exit') target = cur.next;
+  state.current = target;
+  if (!state.visited.includes(target)) state.visited.push(target);
+  save(); window.scrollTo(0, 0); render();
+}
+function restart() { state = { current: 'start', items: {}, allies: [], flags: [], visited: [] }; save(); render(); }
+function renderState() {
+  const ic = Object.keys(state.items).length, ac = state.allies.length, fc = state.flags.length;
+  if (ic === 0 && ac === 0 && fc === 0) return '';
+  let html = '<div class="state-strip">';
+  if (ic > 0) html += `<div><strong>Earned:</strong> ${Object.entries(state.items).map(([k,v]) => `<span class="tag">${k} (${v})</span>`).join('')}</div>`;
+  if (ac > 0) html += `<div><strong>Allies:</strong> ${state.allies.map(a => `<span class="tag">${a}</span>`).join('')}</div>`;
+  if (fc > 0) html += `<div><strong>Carrying:</strong> ${state.flags.map(f => `<span class="tag">${f}</span>`).join('')}</div>`;
+  html += '</div>';
+  return html;
+}
+function render() {
+  const main = document.getElementById('main');
+  document.getElementById('state-display').innerHTML = renderState();
+  const scene = SCENES[state.current];
+  if (!scene) { main.innerHTML = `<p>Scene not found: ${state.current}</p>`; return; }
+  let html = '';
+  if (scene.id) html += `<div class="passage-id">${scene.id}</div>`;
+  if (scene.meta) html += `<div class="scene-meta">${scene.meta}</div>`;
+  html += `<h2 class="scene-title">${scene.title}</h2>`;
+  html += `<div class="scene-text">${scene.text || ''}</div>`;
+  if (scene.next && (!scene.choices || scene.choices.length === 0)) {
+    html += `<div class="choices"><button onclick="go('exit')">Continue to exit</button></div>`;
+  } else if (scene.choices && scene.choices.length > 0) {
+    html += '<div class="choices">';
+    scene.choices.forEach(c => { html += `<button onclick="go('${c.target}')">${c.label}${c.sub ? `<span class="sub">${c.sub}</span>` : ''}</button>`; });
+    html += '</div>';
+  } else if (scene.isEnd) {
+    html += `<div class="choices"><button onclick="restart()">Start over — try a different path</button></div>`;
+  }
+  main.innerHTML = html;
+}
+load();
+</script>
+</body>
+</html>

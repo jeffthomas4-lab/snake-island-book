@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reid's Region — 3-Deep CYOA Demo</title>
+<style>
+  :root { --paper: #faf6ed; --ink: #2b2419; --warm: #c97a3f; --water: #4a7d8c; --green: #6b8e4e; --gold: #c9a23f; --rule: rgba(43, 36, 25, 0.15); }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { background: var(--paper); color: var(--ink); font-family: 'Charter', 'Georgia', serif; line-height: 1.7; font-size: 18px; min-height: 100vh; }
+  .container { max-width: 720px; margin: 0 auto; padding: 28px 24px 80px; }
+  header { border-bottom: 2px solid var(--ink); padding-bottom: 16px; margin-bottom: 24px; display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 12px; }
+  header h1 { font-size: 20px; font-weight: normal; font-style: italic; }
+  .controls button { background: none; border: 1px solid var(--ink); color: var(--ink); padding: 5px 12px; cursor: pointer; font-family: inherit; font-size: 12px; border-radius: 3px; }
+  .controls button:hover { background: var(--ink); color: var(--paper); }
+  .state-strip { background: rgba(107, 142, 78, 0.08); border: 1px dashed var(--green); padding: 10px 14px; margin: 0 0 24px; font-size: 12px; border-radius: 3px; }
+  .state-strip strong { color: var(--green); }
+  .state-strip .tag { display: inline-block; background: rgba(107, 142, 78, 0.15); padding: 2px 7px; border-radius: 3px; margin: 0 3px 3px 0; font-size: 11px; }
+  .passage-id { font-family: 'Courier New', monospace; font-size: 11px; text-transform: uppercase; letter-spacing: 1.5px; color: var(--warm); margin-bottom: 4px; }
+  .scene-meta { font-size: 12px; text-transform: uppercase; letter-spacing: 1.5px; color: var(--water); margin-bottom: 6px; font-style: italic; }
+  .scene-title { font-size: 28px; font-weight: normal; margin-bottom: 20px; font-style: italic; line-height: 1.25; }
+  .scene-text { font-size: 17px; }
+  .scene-text p { margin-bottom: 14px; }
+  .choices { display: flex; flex-direction: column; gap: 12px; margin-top: 32px; padding-top: 22px; border-top: 1px solid var(--rule); }
+  .choices button { background: var(--paper); border: 1.5px solid var(--ink); padding: 14px 18px; text-align: left; cursor: pointer; font-family: inherit; font-size: 16px; color: var(--ink); border-radius: 5px; transition: all 0.15s ease; line-height: 1.4; }
+  .choices button:hover { background: var(--ink); color: var(--paper); transform: translateX(4px); }
+  .choices button .sub { display: block; font-size: 13px; color: var(--warm); margin-top: 4px; font-style: italic; }
+  .choices button:hover .sub { color: #f5c587; }
+  .demo-note { background: rgba(74,125,140,0.08); border-left: 3px solid var(--water); padding: 14px 18px; margin: 0 0 24px; border-radius: 0 4px 4px 0; font-size: 14px; line-height: 1.5; }
+  .demo-note strong { color: var(--water); }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>Reid's Region — 3-Deep CYOA Demo</h1>
+    <div class="controls"><button onclick="restart()">Start over</button></div>
+  </header>
+  <div id="state-display"></div>
+  <main id="main"></main>
+</div>
+<script>
+const SCENES = {
+
+start: {
+  id: 'START', title: "Reid in Old Speak's Wood",
+  meta: 'A 3-deep CYOA demo for Reid (14) — quiet, hand-working, never asks',
+  text: `<div class="demo-note"><strong>27 ways through Reid's region.</strong> He lands in an ancient wood where a tree-person named Old Speak has been waiting a thousand years for a visitor who notices the quiet things. Your three choices each branch into three more.</div>`,
+  choices: [{ label: "Begin Reid's region", target: 'p140' }],
+},
+
+p140: {
+  id: 'P-140', title: 'Arrival in the Rocky Wood', meta: 'Reid',
+  text: `<p>Reid's raft slides up onto a beach of small flat stones. The raft has become a long log canoe, hollowed out, the inside smooth from many hands. He steps off without looking — his feet already know.</p>
+<p>The wood in front of him is ancient. Trunks wider than his arms could reach around three times. Bark so old it has its own bark. Light coming through the canopy in long slow shafts.</p>
+<p>He bends. He picks up a fallen branch. He starts whittling without deciding to.</p>
+<p>A voice from a stump says, "<em>FINALLY.</em>"</p>
+<p>The stump is not a stump. It is a person. Bark for skin, leaves growing where hair should be. He is enormous — twice Reid's size — but sitting down, so he doesn't seem scary. Just <em>large.</em></p>
+<p>"I'm OLD SPEAK," he says. "Or that's what people called me a thousand years ago. I might have a new name now. I haven't checked. Sit, sit. <em>Visit.</em>"</p>`,
+  choices: [{ label: 'Sit on the root', target: 'p141' }],
+},
+
+p141: {
+  id: 'P-141', title: 'The Just-Sit Moment', meta: 'Reid — cared-for',
+  text: `<p>Old Speak watches Reid whittle for a while.</p>
+<p>"You're doing the thing," he says.</p>
+<p>"What thing?"</p>
+<p>"The <em>working</em> thing. You always do the working thing. I can tell. I was a tree before I was a person — I've watched a thousand visitors and the working ones have a posture. Shoulders forward. Hands going. Eyes already on the next problem."</p>
+<p>Reid is quiet. He doesn't know what to say. He IS doing the working thing. He doesn't know how to do other things.</p>
+<p>"Put the stick down. Just for a minute."</p>
+<p>Reid puts the stick down. He looks up. The canopy is a hundred feet above him. A bird he can't identify is moving from branch to branch without making a sound.</p>
+<p>"That bird is called Listen. She's the only one of her kind. She doesn't sing. She only listens. She's been listening to this wood for two hundred years."</p>
+<p>The bird watches Reid back.</p>
+<p>"I am ALSO listening. I have been listening to you since you stepped off your boat. You came in quiet. You don't take up extra room. You start working before you're asked because you don't want anyone to have to ask. That is a rare way to be, child."</p>
+<p>Reid feels his face get warm.</p>
+<p>"I see you. Most don't. I just wanted to say so."</p>
+<p>Reid swallows. Then he picks up the stick again, but slower this time.</p>`,
+  choices: [{ label: 'Make a staff', target: 'p142' }],
+},
+
+p142: {
+  id: 'P-142', title: 'CHOICE 1 — Which wood do you take?', meta: 'First decision',
+  text: `<p>Old Speak says, "Now then. You're here to make a STAFF. The wood under your hand wants to become one. The wood always wants to become whatever the maker wants. That is a wood thing."</p>
+<p>He gestures. Three pieces of wood lie at Reid's feet that weren't there a moment ago. Heavy maple. Light willow. A piece of dark driftwood the color of wet basalt.</p>
+<p>"Take one. Carve it. The staff you carve will be what you need it to be."</p>`,
+  choices: [
+    { label: 'Take the maple. Carve fast, the way you know.', target: 'p143', sub: "Honest work. Done in twenty minutes. Maple won't lie to you." },
+    { label: 'Ask Old Speak to teach you a technique you don\'t know yet', target: 'p144', sub: "Costs time. Learn something only Old Speak knows." },
+    { label: 'Ask about the driftwood — where it came from', target: 'p145', sub: "There's a story in that wood. You can feel it." },
+  ],
+},
+
+// CHOICE 2 NODES
+
+p143: {
+  id: 'P-143', title: 'CHOICE 2A — What kind of staff?', meta: 'You chose the maple',
+  text: `<p>Reid picks up the maple. He knows maple. Twenty walking sticks over twenty summers. His hands know the grain.</p>
+<p>Old Speak watches. "What kind of staff are you making, child? Maple will make any of them. It's an obliging wood."</p>`,
+  choices: [
+    { label: 'A walking staff. Light, smooth, for the trail home.', target: 'p143a', sub: "The simple version. Maple's best work." },
+    { label: 'A lever staff. Heavier at the base, for prying things up.', target: 'p143b', sub: "Useful. You're thinking about something at home." },
+    { label: 'A showpiece. Carved with patterns. Worth keeping on a wall.', target: 'p143c', sub: "More time. The maple gets to show off." },
+  ],
+},
+
+p144: {
+  id: 'P-144', title: 'CHOICE 2B — What do you think about?', meta: 'You asked for the technique',
+  text: `<p>Old Speak's whole face does something. His leaves brighten. The bark at the corners of his mouth crinkles upward.</p>
+<p>"<em>YES.</em>"</p>
+<p>He shows Reid the technique. It is not what Reid expected. The technique is not about how you cut. It is about <em>what you think</em> while you cut.</p>
+<p>"The wood is listening. If you carve and you think about nothing, the wood will be nothing. If you carve and you think about WHERE you are and WHO you love and WHAT this staff is for — the wood will hold all of it. Forever."</p>
+<p>Reid takes the driftwood. His hand went to it without deciding.</p>
+<p>"What do you think about?"</p>`,
+  choices: [
+    { label: 'The dock at home', target: 'p144a', sub: "A specific place. The boards under your feet." },
+    { label: 'The cousins', target: 'p144b', sub: "Specific people. Specific moments." },
+    { label: 'The whole lake', target: 'p144c', sub: "All of it at once. The water and what it holds." },
+  ],
+},
+
+p145: {
+  id: 'P-145', title: 'CHOICE 2C — How do you honor it?', meta: 'You asked about the driftwood',
+  text: `<p>Old Speak goes still. Then he laughs — a quiet laugh this time, not the shake-the-trees one.</p>
+<p>"Nobody has asked me that in a thousand years. They always ask if it's the <em>strongest</em> one. Nobody asks where it came from."</p>
+<p>He turns the wood slowly. "This came from the FIRST TREE in The Old Roar. The first one to grow when the floods stopped and the basalt cooled. It stood nine hundred years. It fell in a storm. The lake held it five hundred more. Then the lake gave it back to me. To hold. Until the right hands came for it."</p>
+<p>He sets the wood in front of Reid.</p>
+<p>"You are the right hands. How will you honor it while you carve?"</p>`,
+  choices: [
+    { label: 'In silence. Let the wood lead.', target: 'p145a', sub: "Say nothing. Listen with your hands." },
+    { label: 'Tell Old Speak a story while you carve', target: 'p145b', sub: "Give back. The wood likes hearing." },
+    { label: 'Hum a song you don\'t know the words to', target: 'p145c', sub: "Let your hum match the wood's hum." },
+  ],
+},
+
+// CHOICE 3 NODES — PATH A (MAPLE)
+
+p143a: {
+  id: 'P-143A', title: 'CHOICE 3 — How do you grip-carve?', meta: 'A walking staff',
+  text: `<p>You start on the grip. The walking staff lives or dies in the grip.</p>`,
+  choices: [
+    { label: 'Smooth all the way. Clean palm-feel.', target: 'leaf_143a1', sub: "Simple. The hand learns the wood." },
+    { label: 'Notch finger-grooves. Custom-fit your hand.', target: 'leaf_143a2', sub: "Slower. The staff is shaped for you alone." },
+    { label: 'Leave bark on the bottom six inches. Natural texture.', target: 'leaf_143a3', sub: "Wet hands won't slip. The wood stays alive a little longer." },
+  ],
+},
+
+p143b: {
+  id: 'P-143B', title: 'CHOICE 3 — How do you balance it?', meta: 'A lever staff',
+  text: `<p>You shape the base heavy. You're thinking about something at home — the dock, maybe, or the boat-shed door that sticks. You don't say so out loud.</p>`,
+  choices: [
+    { label: 'Heavy butt-end, light tip. Pure leverage.', target: 'leaf_143b1', sub: "Great for prying. Bad for walking." },
+    { label: 'Tapered both ends. Versatile.', target: 'leaf_143b2', sub: "A staff that does two jobs without complaining." },
+    { label: 'Find a stone. Harden the base by fire and stone.', target: 'leaf_143b3', sub: "Old Speak likes this. He grins." },
+  ],
+},
+
+p143c: {
+  id: 'P-143C', title: 'CHOICE 3 — What pattern do you carve?', meta: 'A showpiece',
+  text: `<p>You start carving patterns. Old Speak watches without comment.</p>`,
+  choices: [
+    { label: 'The eight cousins\' initials, all the way down', target: 'leaf_143c1', sub: "Family on a stick. They'll fight over who comes first." },
+    { label: 'A map of the lake — every cove, every cabin', target: 'leaf_143c2', sub: "The geography of your summers." },
+    { label: 'The constellations you can see from the back dock', target: 'leaf_143c3', sub: "What you look at when nobody else is up." },
+  ],
+},
+
+// CHOICE 3 NODES — PATH B (TECHNIQUE)
+
+p144a: {
+  id: 'P-144A', title: 'CHOICE 3 — Which dock moment?', meta: 'You\'re thinking of the dock',
+  text: `<p>You hold the dock in your head. The driftwood warms under your hand. Old Speak nods, almost imperceptibly. Which moment?</p>`,
+  choices: [
+    { label: 'The third plank that wobbles', target: 'leaf_144a1', sub: "The one that's been loose for three summers." },
+    { label: 'First jump of summer', target: 'leaf_144a2', sub: "The moment your foot leaves the wood." },
+    { label: 'Last sunset before going home', target: 'leaf_144a3', sub: "Sitting alone at the end of the boards." },
+  ],
+},
+
+p144b: {
+  id: 'P-144B', title: 'CHOICE 3 — Which cousin?', meta: 'You\'re thinking of family',
+  text: `<p>You hold a cousin in your head. The driftwood seems to listen — and to know who you're picturing before you do.</p>`,
+  choices: [
+    { label: "Aiden's first cast — the bobber landing right where you told him", target: 'leaf_144b1', sub: "Your seven-year-old cousin. Your shadow." },
+    { label: "Ella jumping off the end with her eyes closed and arms up", target: 'leaf_144b2', sub: "She trusts the water. You trust her." },
+    { label: 'All seven cousins at once, on the dock together', target: 'leaf_144b3', sub: "The whole crew. Hard to hold all of them at once." },
+  ],
+},
+
+p144c: {
+  id: 'P-144C', title: 'CHOICE 3 — What about the lake?', meta: 'You\'re thinking of the whole place',
+  text: `<p>You try to hold the lake itself. It's larger than your head. The driftwood seems to take some of it off your shoulders.</p>`,
+  choices: [
+    { label: 'The Old Roar itself — the floods that made it', target: 'leaf_144c1', sub: "What was here before the lake was a lake." },
+    { label: 'The shape of the cove — where it bends', target: 'leaf_144c2', sub: "The specific geography. The bend you know." },
+    { label: 'The water under the ice in winter', target: 'leaf_144c3', sub: "You've never seen it. But you know it's there." },
+  ],
+},
+
+// CHOICE 3 NODES — PATH C (DRIFTWOOD / HIDDEN)
+
+p145a: {
+  id: 'P-145A', title: 'CHOICE 3 — What kind of silence?', meta: 'Carve without speaking',
+  text: `<p>You begin. Old Speak honors your silence by holding his own. Even the Listen bird seems to hold still.</p>`,
+  choices: [
+    { label: 'Eyes closed. Full silence inside and out.', target: 'leaf_145a1', sub: "Your hands move on memory the wood lends you." },
+    { label: 'Eyes open. Listen to the wood the whole time.', target: 'leaf_145a2', sub: "You hear it humming before you finish." },
+    { label: 'Watch the Listen bird the whole time', target: 'leaf_145a3', sub: "She watches back. She is teaching, in her way." },
+  ],
+},
+
+p145b: {
+  id: 'P-145B', title: 'CHOICE 3 — What story?', meta: 'Tell a story as you carve',
+  text: `<p>You begin to tell. Old Speak leans forward. The wood under your hand seems to absorb the words.</p>`,
+  choices: [
+    { label: "The dock's whole history — your grandfather building it", target: 'leaf_145b1', sub: "The boards. The pilings. Every storm it survived." },
+    { label: "Aiden's first cast — every detail you can remember", target: 'leaf_145b2', sub: "The smaller story. The truer one." },
+    { label: "The summer Ella was a baby and you carried her to the water", target: 'leaf_145b3', sub: "She doesn't remember. You do." },
+  ],
+},
+
+p145c: {
+  id: 'P-145C', title: 'CHOICE 3 — What kind of hum?', meta: 'Sing without words',
+  text: `<p>You begin to hum. Old Speak closes his eyes. The Listen bird tilts her head.</p>`,
+  choices: [
+    { label: 'The C-130 hum from the world above', target: 'leaf_145c1', sub: "The plane sound. The one that started all this." },
+    { label: 'The wind through the cabin porch', target: 'leaf_145c2', sub: "The sound that's been there as long as you have." },
+    { label: 'A hum you make up on the spot', target: 'leaf_145c3', sub: "Something only you and the wood will ever hear." },
+  ],
+},
+
+// LEAVES — PATH A (MAPLE)
+
+leaf_143a1: {
+  id: 'L-1', title: 'A Smooth Walking Staff', meta: 'Clean grip, clean wood',
+  text: `<p>You finish in twenty minutes. The staff is six feet of clean maple, sanded smooth, warm under your palm. You lean on it. It holds.</p>
+<p>Old Speak nods. "That is a fine staff. It will not break easily. Maple is honest. So are you."</p>
+<p>He reaches into his bark and pulls out a tiny carved staff, the size of your finger. "A memory token. If you come back, hold it up. I forget faces."</p>`,
+  earns: { item: ['staff', 'base'] }, next: 'exit',
+},
+
+leaf_143a2: {
+  id: 'L-2', title: 'Custom-Fit to Your Hand', meta: 'Finger-grooves carved',
+  text: `<p>You take an extra twenty minutes to notch the grip. When you pick the staff up, it fits your palm like a glove fits a hand. Like the staff has been waiting for you.</p>
+<p>Old Speak watches. "That staff belongs only to you. Nobody else will ever pick it up and have it feel right. That is a thing maple does for the patient ones."</p>`,
+  earns: { item: ['staff', 'base'], flags: ['CustomGrip'] }, next: 'exit',
+},
+
+leaf_143a3: {
+  id: 'L-3', title: 'Bark on the Base', meta: 'Natural texture, wet-hand grip',
+  text: `<p>You leave bark on the bottom six inches. Old Speak grunts approvingly. "Good. That bark will keep your grip when the wood is wet. Sailors used to do that."</p>
+<p>"How did you know about sailors?"</p>
+<p>"I was a tree near a river. I have stories."</p>
+<p>He gives you the memory token. And a small piece of bark from his own arm. "A sailor's bark. For luck."</p>`,
+  earns: { item: ['staff', 'base'], flags: ['SailorsBark'] }, next: 'exit',
+},
+
+leaf_143b1: {
+  id: 'L-4', title: 'The Pry-Bar Staff', meta: 'Heavy at the base',
+  text: `<p>Your staff is bottom-heavy. Not great for walking. Excellent for prying. Old Speak studies it.</p>
+<p>"You're thinking of something at home that needs lifted. The boat-shed door? A planter? A board?"</p>
+<p>"A board."</p>
+<p>"Mm. Take this." He hands you a small iron wedge. "Use them together. The staff lifts. The wedge holds. Old carpenters' trick."</p>`,
+  earns: { item: ['staff', 'base'], flags: ['IronWedge'] }, next: 'exit',
+},
+
+leaf_143b2: {
+  id: 'L-5', title: 'Tapered Both Ends', meta: 'Versatile',
+  text: `<p>The staff tapers smoothly to both points. It walks. It pries. It can prop a sagging shelf. A good honest tool for a kid who finds work to do without being asked.</p>
+<p>Old Speak says, "Versatile. Like you. Take this." He gives you the memory token and a small leather strap. "Wrap it where you grip most. The leather will tell me, someday, which end you favored."</p>`,
+  earns: { item: ['staff', 'base'], flags: ['LeatherWrap'] }, next: 'exit',
+},
+
+leaf_143b3: {
+  id: 'L-6', title: 'Hardened by Fire and Stone', meta: 'The base set hard',
+  text: `<p>You find a flat stone. You hold the base in the small fire Old Speak conjures from his palm without warning. You roll the heated end against the stone. The wood densens. The base now rings when you tap it.</p>
+<p>Old Speak laughs, delighted. "That is a technique I did not teach you. You invented it. I will tell other visitors about this. Reid-of-the-Stone-and-Fire."</p>
+<p>He gives you the memory token AND a small piece of carved oak. "From me. A peer's token. I don't give those often."</p>`,
+  earns: { item: ['staff', 'enhanced'], flags: ['PeersToken'] }, next: 'exit',
+},
+
+leaf_143c1: {
+  id: 'L-7', title: 'Eight Initials Down the Shaft', meta: 'The cousins, carved',
+  text: `<p>You carve M, C, K, K, R, E, A — and your own R — down the length of the staff. The carving takes an hour. The staff is now a roster.</p>
+<p>Old Speak reads them. "Eight cousins. You put yourself <em>last</em>. Interesting choice."</p>
+<p>You shrug. He gives you the memory token. "Tell them, when they fight over the order, that the carver picks last because the carver knows everyone's already on the wood."</p>`,
+  earns: { item: ['staff', 'enhanced'], flags: ['CousinsRoster'] }, next: 'exit',
+},
+
+leaf_143c2: {
+  id: 'L-8', title: 'A Map of the Lake', meta: 'Coves and cabins, carved',
+  text: `<p>You carve the lake. Every cove. Every cabin. The Old Roar from above. Old Speak watches and corrects nothing — but he points to one spot near a cove and says quietly, "There. That is where the FIRST TREE stood. You should mark it."</p>
+<p>You mark it with a single dot.</p>
+<p>"Good. Take this." He gives you the memory token and a tiny pinch of soil in a pouch. "From the spot you marked. Plant it at home, in spring."</p>`,
+  earns: { item: ['staff', 'enhanced'], flags: ['FirstTreeSoil'] }, next: 'exit',
+},
+
+leaf_143c3: {
+  id: 'L-9', title: 'The Back-Dock Constellations', meta: 'What you watch alone at night',
+  text: `<p>You carve the constellations you can see from the back dock when everyone else has gone to bed. The Big Dipper. Cassiopeia. The W. The streak of the Milky Way.</p>
+<p>Old Speak studies them. "You sit out there alone. Often."</p>
+<p>"Yes."</p>
+<p>"Most kids would have carved a sun. You carved the night. That is rare." He gives you the memory token and a small piece of star-shaped quartz. "From me. For the back-dock kid."</p>`,
+  earns: { item: ['staff', 'enhanced'], flags: ['BackDockKid'] }, next: 'exit',
+},
+
+// LEAVES — PATH B (TECHNIQUE)
+
+leaf_144a1: {
+  id: 'L-10', title: 'The Wobbly Third Plank', meta: 'You thought of the loose board',
+  text: `<p>You think about the third plank as you carve. The driftwood opens for you. When you finish, the grain at the top of the staff shows three concentric rings — like the third plank, three down from shore.</p>
+<p>It hums when you hold it. Low. Like a struck bell, far away.</p>
+<p>Old Speak is very quiet. "I have not seen wood do that in seven hundred years." Then, standing — slowly, because he is enormous — he says, "I am coming with you."</p>`,
+  earns: { item: ['staff', 'enhanced'], allies: ['OldSpeak'] }, next: 'exit',
+},
+
+leaf_144a2: {
+  id: 'L-11', title: 'First Jump of Summer', meta: 'The moment your foot leaves wood',
+  text: `<p>You hold the first-jump moment in your mind — the held breath, the bare foot on warm wood, the push, the air, the cold. The driftwood seems to <em>jump</em> with you. The grain swirls at the middle.</p>
+<p>Old Speak whistles. "That staff has a SUMMER in it now. Anyone who holds it will feel braver about jumping in." He stands. "I am coming with you. I want to see the dock that taught a stick to jump."</p>`,
+  earns: { item: ['staff', 'enhanced'], allies: ['OldSpeak'], flags: ['SummerJump'] }, next: 'exit',
+},
+
+leaf_144a3: {
+  id: 'L-12', title: 'The Last Sunset', meta: 'Sitting alone at the end of the boards',
+  text: `<p>You hold the last sunset of summer. The wood absorbs the gold of it. The staff, when you finish, is lighter at the tip and darker at the base, gradient like a sky.</p>
+<p>"You put a GOODBYE into the wood," Old Speak says. "That is the bravest thing to put in. Most carvers avoid the sad parts. You leaned in."</p>
+<p>He stands. "I am coming with you. I want to see the dock that holds your goodbye-light."</p>`,
+  earns: { item: ['staff', 'enhanced'], allies: ['OldSpeak'], flags: ['GoodbyeLight'] }, next: 'exit',
+},
+
+leaf_144b1: {
+  id: 'L-13', title: "Aiden's First Cast", meta: 'The cork bobber, the perfect spot',
+  text: `<p>You think about Aiden's first cast. The bobber, the wrist-flick, the soft plunk where you told him to aim. The driftwood takes the moment and holds it.</p>
+<p>When you finish, the staff has a small notch near the top — the size and shape of a cork bobber. You didn't carve it. It appeared.</p>
+<p>Old Speak says, "That child is on the staff now. He will be near you whenever you hold it." He rises. "I am coming. I want to meet him."</p>`,
+  earns: { item: ['staff', 'enhanced'], allies: ['OldSpeak'], flags: ['AidenInTheWood'] }, next: 'exit',
+},
+
+leaf_144b2: {
+  id: 'L-14', title: "Ella Jumping with Her Eyes Closed", meta: 'Arms up, trusting the water',
+  text: `<p>You hold Ella mid-jump — arms straight up, eyes closed, perfect trust. The driftwood lifts in your hands. You feel the leap of it.</p>
+<p>The finished staff has a long elegant curve to it, like a body in flight. Old Speak's eyes widen.</p>
+<p>"That cousin of yours — the jumping one — she has TAUGHT the wood something. About trust." He stands. "I am coming with you. I want to watch her jump."</p>`,
+  earns: { item: ['staff', 'enhanced'], allies: ['OldSpeak'], flags: ['EllaTrust'] }, next: 'exit',
+},
+
+leaf_144b3: {
+  id: 'L-15', title: 'All Seven, Together', meta: 'The whole crew at once',
+  text: `<p>You try to hold all seven cousins at once. It's hard. They keep slipping. You hold one, then another. Eventually you hold them as a CROWD — not as individuals but as the FEELING of being one of eight.</p>
+<p>The staff finishes with eight knots running its length. You didn't plan them. The wood found them.</p>
+<p>Old Speak counts. "Eight knots. Including you." He rises. "I am coming. I want to see the seven who fit on one stick with you."</p>`,
+  earns: { item: ['staff', 'enhanced'], allies: ['OldSpeak'], flags: ['EightKnots'] }, next: 'exit',
+},
+
+leaf_144c1: {
+  id: 'L-16', title: 'The Floods That Made the Lake', meta: 'You thought of the Old Roar itself',
+  text: `<p>You think about the floods. Water tearing through the basalt. The lake being CARVED. You're holding ten thousand years in your head.</p>
+<p>The driftwood RESPONDS. It darkens in your hand. The grain ripples like water frozen mid-current.</p>
+<p>Old Speak goes very still. "Child. You just put the OLD ROAR itself into the staff. That is a flood-staff now. It will hold." He stands. "I am coming with you. I have wanted to see what built me, used."</p>`,
+  earns: { item: ['staff', 'full'], allies: ['OldSpeak'], flags: ['FloodStaff'] }, next: 'exit',
+},
+
+leaf_144c2: {
+  id: 'L-17', title: 'The Shape of the Cove', meta: 'Where the lake bends',
+  text: `<p>You hold the cove's specific shape — the bend, the rocky point, the depth where the bottom drops.</p>
+<p>The driftwood curves slightly under your hands. When finished, the staff has the cove's exact bend in it. A walking-staff that is also a map of one place.</p>
+<p>Old Speak is impressed. "That is GEOGRAPHY in the wood. Most carvers think too big. You thought EXACT. That is harder." He stands. "I am coming with you. I want to see the cove that taught a stick to bend right."</p>`,
+  earns: { item: ['staff', 'enhanced'], allies: ['OldSpeak'], flags: ['CoveShape'] }, next: 'exit',
+},
+
+leaf_144c3: {
+  id: 'L-18', title: 'The Water Under the Ice', meta: "What you've never seen but know",
+  text: `<p>You hold the water under the winter ice — what you have never seen but know is there. Dark. Slow. Alive.</p>
+<p>The driftwood becomes COOL in your hand. The staff hums lower than the others. Like a chord pulled from the bottom of the lake.</p>
+<p>Old Speak whispers, "You imagined what you have not seen. You held it as REAL. That is the technique I cannot teach. You found it without me." He stands. "I am coming. I want to know the child who imagines winter water in summer."</p>`,
+  earns: { item: ['staff', 'full'], allies: ['OldSpeak'], flags: ['WinterWater'] }, next: 'exit',
+},
+
+// LEAVES — PATH C (DRIFTWOOD / HIDDEN)
+
+leaf_145a1: {
+  id: 'L-19', title: 'Eyes Closed, Hands Knowing', meta: 'Full silence',
+  text: `<p>You close your eyes. Your hands move on their own. The driftwood remembers what to become.</p>
+<p>When you open your eyes, the staff is finished. You don't remember carving it. The wood remembers. It hums softly in your hands.</p>
+<p>Old Speak weeps amber sap. "You let the wood lead. Most people cannot stop leading long enough for that. You can. That is the gift."</p>
+<p>The forest itself bends slightly toward you. Not to the staff. To the boy who let the wood lead.</p>`,
+  earns: { item: ['staff', 'full'], allies: ['OldSpeak'], flags: ['DockHealing', 'AncientWitness'] }, next: 'exit',
+},
+
+leaf_145a2: {
+  id: 'L-20', title: 'Listening with Your Eyes Open', meta: 'Watching and hearing',
+  text: `<p>You watch the wood the whole time you carve. You start to hear it — not a sound exactly, but a kind of low-frequency permission. The wood telling you when to lift the blade and when to press.</p>
+<p>The staff finishes. It hums. Old Speak weeps amber sap.</p>
+<p>"You HEARD it. Most don't. Most carve over the top of the wood's voice. You let it through." The Listen bird flies down and lands on your shoulder for the rest of the carving.</p>`,
+  earns: { item: ['staff', 'full'], allies: ['OldSpeak'], flags: ['DockHealing', 'ListenBirdLanded'] }, next: 'exit',
+},
+
+leaf_145a3: {
+  id: 'L-21', title: 'Under the Listen Bird\'s Eye', meta: 'A teaching by watching',
+  text: `<p>You watch the Listen bird. She watches you. Without a sound, she teaches you when to cut deeper and when to lift away. You learn a craft by being watched.</p>
+<p>The finished staff hums. The bird tilts her head — approval, as best you can read it.</p>
+<p>Old Speak says, "She has not taught a human in two hundred years. She thinks you are worthy." He weeps a single amber tear. "I do, too."</p>`,
+  earns: { item: ['staff', 'full'], allies: ['OldSpeak', 'Listen'], flags: ['DockHealing'] }, next: 'exit',
+},
+
+leaf_145b1: {
+  id: 'L-22', title: "The Dock's Whole History", meta: 'Your grandfather building it',
+  text: `<p>You tell the dock's whole history — your grandfather setting the first piling, the storm of '78, the third plank that's always wobbled, every summer of your life.</p>
+<p>The driftwood absorbs every sentence. The staff finishes with three concentric rings near the top — like the third plank, three down from shore. When you set it down, it <em>hums.</em></p>
+<p>Old Speak weeps amber sap. "You bonded the wood to your dock by NAMING it. When you plant this at the base of the third piling, the wood will <em>root</em>. Your dock will stand."</p>
+<p>The whole forest bends toward you.</p>`,
+  earns: { item: ['staff', 'full'], allies: ['OldSpeak'], flags: ['DockHealing', 'AncientWitness', 'GrandfathersDock'] }, next: 'exit',
+},
+
+leaf_145b2: {
+  id: 'L-23', title: "Aiden's First Cast, Every Detail", meta: 'The small story, the true one',
+  text: `<p>You tell about Aiden — the rod too big for him, the line knotting, you patiently re-tying it, the moment he stopped shaking and cast clean, the bobber landing right where you told him to aim.</p>
+<p>Old Speak listens through all of it. When you finish carving, there is a small cork-bobber-shaped notch near the top of the staff.</p>
+<p>"That child is in the wood now. He will be near this staff wherever it goes. He will be SAFER because this staff exists." Amber sap on his bark. "Come. I am walking with you."</p>`,
+  earns: { item: ['staff', 'full'], allies: ['OldSpeak'], flags: ['DockHealing', 'AidenSafe'] }, next: 'exit',
+},
+
+leaf_145b3: {
+  id: 'L-24', title: 'The Summer Ella Was a Baby', meta: 'You carried her to the water',
+  text: `<p>You tell about the summer Ella was a baby. You were seven. Your aunt let you carry her to the lake. Just to the shallows. Her toes touched water for the first time. She didn't cry. She <em>laughed.</em></p>
+<p>Old Speak laughs too — softly. The driftwood, finished, has a tiny dimpled shape near the base. The shape of a baby's foot.</p>
+<p>"You gave a cousin her first lake. The wood remembers that for you, so you don't have to anymore." Amber sap. "Come. I am walking with you."</p>`,
+  earns: { item: ['staff', 'full'], allies: ['OldSpeak'], flags: ['DockHealing', 'EllasFirstLake'] }, next: 'exit',
+},
+
+leaf_145c1: {
+  id: 'L-25', title: 'The C-130 Hum', meta: 'The plane that started this',
+  text: `<p>You hum the low steady drone of the C-130 — the airplane sound that has been the background music of your summers, the sound that started this whole adventure.</p>
+<p>The driftwood responds to the hum. The grain ripples in time with it. When you finish, the staff hums the same drone back at you.</p>
+<p>Old Speak weeps amber. "You hummed the SKY into the wood. The plane will hear it when it flies over. It will know you put it in." The whole forest bends slightly.</p>`,
+  earns: { item: ['staff', 'full'], allies: ['OldSpeak'], flags: ['DockHealing', 'AncientWitness', 'SkyHum'] }, next: 'exit',
+},
+
+leaf_145c2: {
+  id: 'L-26', title: 'The Cabin-Porch Wind', meta: 'The sound that\'s been there as long as you have',
+  text: `<p>You hum the wind through the cabin porch. The chimes, the slow creak of the screen door, the rustle in the pines.</p>
+<p>The driftwood seems to <em>breathe</em> with you. When finished, the staff smells faintly of pine sap and lake air. As if you carved a porch into a stick.</p>
+<p>Old Speak's amber tears. "You put HOME in the wood. The most powerful ingredient. Come. Let me see this porch you carry inside you."</p>`,
+  earns: { item: ['staff', 'full'], allies: ['OldSpeak'], flags: ['DockHealing', 'PorchInTheWood'] }, next: 'exit',
+},
+
+leaf_145c3: {
+  id: 'L-27', title: 'A Hum Only You Know', meta: 'Made up on the spot',
+  text: `<p>You hum something you've never hummed before. You don't know where it came from. It just arrived. Slow. Five notes. A small held silence between the fourth and fifth.</p>
+<p>The driftwood goes warm. Then cool. Then warm again. The Listen bird flies down and joins you — not singing, just <em>being near</em> your hum.</p>
+<p>The staff, when finished, hums YOUR five notes back. Forever.</p>
+<p>Old Speak openly cries. "You composed something. You — who does not write things down, who does not play an instrument, who does not <em>sing</em> — you composed. The wood will carry it forever. Come, child. The world should meet the boy who made up a song without meaning to."</p>
+<p>Every tree in the wood bends toward you.</p>`,
+  earns: { item: ['staff', 'full'], allies: ['OldSpeak', 'Listen'], flags: ['DockHealing', 'AncientWitness', 'ReidsSong'] }, next: 'exit',
+},
+
+exit: {
+  id: 'EXIT', title: 'Old Speak Walks Him to the Beach', meta: 'Reid — region complete',
+  text: `<p>The log canoe is where Reid left it. The Listen bird watches from the upper branches.</p>
+<p>Old Speak — if he is coming — wades into the shallows beside the canoe, his bark feet making their own small wake. The canopy of every tree on the bank reaches slightly toward him as he passes.</p>
+<p>Before Reid pushes off, Old Speak puts one heavy bark hand on his shoulder. His voice is small. Just for him.</p>
+<p>"Child. The thing you do — working quietly, never asking — most people don't see it. I do. The wood does. The bird does. <em>You</em> should know that you are not invisible. You are noticed. By the oldest things."</p>
+<p>Reid nods. He doesn't quite trust himself to speak. He files it under things he will think about later, for the rest of his life.</p>
+<p>He pushes off. He paddles toward the sound of the C-130, faint and far, somewhere up in the world above.</p>
+<p style="margin-top:32px; padding:16px; background:rgba(74,125,140,0.08); border-left:3px solid var(--water); border-radius:0 4px 4px 0; font-size:14px; line-height:1.5;"><strong>End of Reid's region.</strong> 27 different ways through. Click "Start over" to try another.</p>`,
+  isEnd: true, choices: [],
+},
+
+}; // end SCENES
+
+let state = { current: 'start', items: {}, allies: [], flags: [], visited: [] };
+function save() { try { localStorage.setItem('reid-demo-state', JSON.stringify(state)); } catch(e){} }
+function load() { try { const s = localStorage.getItem('reid-demo-state'); if (s) state = JSON.parse(s); } catch(e) {} render(); }
+function go(t) {
+  const c = SCENES[state.current];
+  if (c && c.earns) {
+    if (c.earns.item) state.items[c.earns.item[0]] = c.earns.item[1];
+    if (c.earns.allies) c.earns.allies.forEach(a => { if (!state.allies.includes(a)) state.allies.push(a); });
+    if (c.earns.flags) c.earns.flags.forEach(f => { if (!state.flags.includes(f)) state.flags.push(f); });
+  }
+  if (c && c.next && t === 'exit') t = c.next;
+  state.current = t;
+  if (!state.visited.includes(t)) state.visited.push(t);
+  save(); window.scrollTo(0, 0); render();
+}
+function restart() { state = { current: 'start', items: {}, allies: [], flags: [], visited: [] }; save(); render(); }
+function renderState() {
+  const ic = Object.keys(state.items).length, ac = state.allies.length, fc = state.flags.length;
+  if (ic + ac + fc === 0) return '';
+  let h = '<div class="state-strip">';
+  if (ic) h += `<div><strong>Earned:</strong> ${Object.entries(state.items).map(([k,v]) => `<span class="tag">${k} (${v})</span>`).join('')}</div>`;
+  if (ac) h += `<div><strong>Allies:</strong> ${state.allies.map(a => `<span class="tag">${a}</span>`).join('')}</div>`;
+  if (fc) h += `<div><strong>Carrying:</strong> ${state.flags.map(f => `<span class="tag">${f}</span>`).join('')}</div>`;
+  return h + '</div>';
+}
+function render() {
+  const m = document.getElementById('main');
+  document.getElementById('state-display').innerHTML = renderState();
+  const s = SCENES[state.current];
+  if (!s) { m.innerHTML = `<p>Scene not found: ${state.current}</p>`; return; }
+  let h = '';
+  if (s.id) h += `<div class="passage-id">${s.id}</div>`;
+  if (s.meta) h += `<div class="scene-meta">${s.meta}</div>`;
+  h += `<h2 class="scene-title">${s.title}</h2><div class="scene-text">${s.text || ''}</div>`;
+  if (s.next && (!s.choices || s.choices.length === 0)) {
+    h += `<div class="choices"><button onclick="go('exit')">Continue to exit</button></div>`;
+  } else if (s.choices && s.choices.length > 0) {
+    h += '<div class="choices">';
+    s.choices.forEach(c => h += `<button onclick="go('${c.target}')">${c.label}${c.sub ? `<span class="sub">${c.sub}</span>` : ''}</button>`);
+    h += '</div>';
+  } else if (s.isEnd) {
+    h += `<div class="choices"><button onclick="restart()">Start over — try a different path</button></div>`;
+  }
+  m.innerHTML = h;
+}
+load();
+</script>
+</body>
+</html>

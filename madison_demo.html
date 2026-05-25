@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Madison's Region — 3-Deep CYOA Demo</title>
+<style>
+  :root {
+    --paper: #faf6ed;
+    --ink: #2b2419;
+    --warm: #c97a3f;
+    --water: #4a7d8c;
+    --green: #6b8e4e;
+    --gold: #c9a23f;
+    --rule: rgba(43, 36, 25, 0.15);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Charter', 'Georgia', serif;
+    line-height: 1.7;
+    font-size: 18px;
+    min-height: 100vh;
+  }
+  .container { max-width: 720px; margin: 0 auto; padding: 28px 24px 80px; }
+  header {
+    border-bottom: 2px solid var(--ink);
+    padding-bottom: 16px;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  header h1 { font-size: 20px; font-weight: normal; font-style: italic; }
+  .controls button {
+    background: none;
+    border: 1px solid var(--ink);
+    color: var(--ink);
+    padding: 5px 12px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 12px;
+    border-radius: 3px;
+  }
+  .controls button:hover { background: var(--ink); color: var(--paper); }
+  .state-strip {
+    background: rgba(107, 142, 78, 0.08);
+    border: 1px dashed var(--green);
+    padding: 10px 14px;
+    margin: 0 0 24px;
+    font-size: 12px;
+    border-radius: 3px;
+  }
+  .state-strip strong { color: var(--green); }
+  .state-strip .tag {
+    display: inline-block;
+    background: rgba(107, 142, 78, 0.15);
+    padding: 2px 7px;
+    border-radius: 3px;
+    margin: 0 3px 3px 0;
+    font-size: 11px;
+  }
+  .passage-id {
+    font-family: 'Courier New', monospace;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--warm);
+    margin-bottom: 4px;
+  }
+  .scene-meta {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--water);
+    margin-bottom: 6px;
+    font-style: italic;
+  }
+  .scene-title { font-size: 28px; font-weight: normal; margin-bottom: 20px; font-style: italic; line-height: 1.25; }
+  .scene-text { font-size: 17px; }
+  .scene-text p { margin-bottom: 14px; }
+  .choices {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 32px;
+    padding-top: 22px;
+    border-top: 1px solid var(--rule);
+  }
+  .choices button {
+    background: var(--paper);
+    border: 1.5px solid var(--ink);
+    padding: 14px 18px;
+    text-align: left;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 16px;
+    color: var(--ink);
+    border-radius: 5px;
+    transition: all 0.15s ease;
+    line-height: 1.4;
+  }
+  .choices button:hover { background: var(--ink); color: var(--paper); transform: translateX(4px); }
+  .choices button .sub {
+    display: block;
+    font-size: 13px;
+    color: var(--warm);
+    margin-top: 4px;
+    font-style: italic;
+  }
+  .choices button:hover .sub { color: #f5c587; }
+  .demo-note {
+    background: rgba(74,125,140,0.08);
+    border-left: 3px solid var(--water);
+    padding: 14px 18px;
+    margin: 0 0 24px;
+    border-radius: 0 4px 4px 0;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .demo-note strong { color: var(--water); }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>Madison's Region — 3-Deep CYOA Demo</h1>
+    <div class="controls"><button onclick="restart()">Start over</button></div>
+  </header>
+  <div id="state-display"></div>
+  <main id="main"></main>
+</div>
+
+<script>
+const SCENES = {
+
+start: {
+  id: 'START', title: 'Madison at the Quiet Pool',
+  meta: 'A 3-deep CYOA demo — your three choices each branch into three more',
+  text: `<div class="demo-note">
+<strong>This is a depth-test demo.</strong> Just Madison's region. You'll make three real choices, each opening into three more. There are 27 different ways through this region. The cookie tin you bring back is shaped by every choice you made. Click through one path, then "Start over" and try another. This is what one region feels like at true CYOA depth — if you approve, I scale this depth across the other seven kids.
+</div>
+<p style="text-align:center; font-style:italic; margin-bottom:14px;">For Madison (15) &mdash; oldest, strategist, brings the cookies.</p>`,
+  choices: [{ label: 'Begin Madison\'s region', target: 'p110' }],
+},
+
+// =============== ENTRY + CARED-FOR (always read) ===============
+
+p110: {
+  id: 'P-110', title: 'Arrival at the Quiet Pool', meta: 'Madison',
+  text: `<p>Madison's raft slides to a stop on the shore of a pool so still you could roll a coin across it. The raft is a wooden canoe now with her name carved into the side. Her tin of cookies is still in her lap, uncrushed.</p>
+<p>The pool is shaped like a heart, drawn by someone who'd never seen one. A heron stands in the shallows on one leg, looking at her like she's late.</p>
+<p>Three heads pop up out of the water. Three girls. Their hair drips upward instead of down.</p>
+<p>"Are you the cookie-bringer?" "She IS the cookie-bringer." The smallest is already chewing on something.</p>
+<p>"I'm Pip. That's Lark. The one chewing is Wren. Wren, what are you eating."</p>
+<p>Wren holds up pondweed mashed into the shape of a cookie. "It's my OWN recipe."</p>
+<p>"It's TERRIBLE," Pip says.</p>
+<p>Madison opens her tin. She's about to share. Then Lark says: "Wait. First &mdash; sit down."</p>`,
+  choices: [{ label: 'Sit down', target: 'p111' }],
+},
+
+p111: {
+  id: 'P-111', title: 'Float', meta: 'Madison — the cared-for moment',
+  text: `<p>"Sit DOWN. You've been holding it together for everyone for three days. We can tell."</p>
+<p>Wren tugs her hand. "Float."</p>
+<p>Pip shows her &mdash; the pool will hold you up, if you let it. The water here knows what tired is.</p>
+<p>Madison floats. Sixty seconds. Nobody asks her anything.</p>
+<p>Then the pool shows her a memory it has been saving. Three seconds. From underwater, eight pairs of legs at the end of the dock at home, bending and jumping, the water erupting with eight bodies arriving at once. The sound of the trip starting, every July of her whole life.</p>
+<p>The memory fades. Madison's eyes are wet. She is fifteen years old and someone is taking care of her.</p>
+<p>She sits up. Her hair drips upward, just a little. Pip nods. "Okay. NOW you can be in charge again."</p>
+<p>Pip says, "We have something to tell you. About the lake-up-above. About the man with the clipboards. The papers Drystone dropped in the lake &mdash; we caught them. They're in three pieces. One is here. Two are elsewhere."</p>`,
+  choices: [{ label: 'Decide how to approach this', target: 'p112' }],
+},
+
+// =============== CHOICE 1 (3 options) ===============
+
+p112: {
+  id: 'P-112', title: 'CHOICE 1 — How do you begin?', meta: 'First decision',
+  text: `<p>Three Sisters. A tin of cookies. The first piece of a map. Madison can feel three different ways to start.</p>`,
+  choices: [
+    { label: 'Share the cookies first', target: 'p113', sub: 'Open with kindness. See what the Sisters offer in return.' },
+    { label: 'Ask what they need from YOU first', target: 'p114', sub: 'There\'s a story under their offer. Find it.' },
+    { label: 'Notice that Wren has gone quiet', target: 'p115', sub: 'The smallest Sister stopped chewing. Something\'s wrong.' },
+  ],
+},
+
+// =============== CHOICE 2 NODES (3 second-level branches) ===============
+
+p113: {
+  id: 'P-113', title: 'CHOICE 2A — How do you share?', meta: 'You opened with the cookies',
+  text: `<p>Madison opens her tin. The Sisters lean in. Wren makes a sound somewhere between a hum and a squeak. The cookies smell like brown sugar and brisket smoke and home.</p>
+<p>Sisters watch you. They know how a person shares tells you who they are.</p>`,
+  choices: [
+    { label: 'One each, perfectly fair', target: 'p113a', sub: 'Fair is good. Fair is the right thing.' },
+    { label: 'The biggest one for Wren, the smallest', target: 'p113b', sub: 'Kindness to the one who needs it most.' },
+    { label: 'Hold one back — for the trip home, for Aiden', target: 'p113c', sub: 'Save something for someone else.' },
+  ],
+},
+
+p114: {
+  id: 'P-114', title: 'CHOICE 2B — At the beaver lodge', meta: 'You asked what they needed',
+  text: `<p>"What do you NEED?" Madison asks.</p>
+<p>Pip blinks. Lark blinks. "Most people don't ask us that."</p>
+<p>The other two map pieces are downstream, in the lodge of a grumpy beaver named Branch. He won't give them back. "He might say yes to YOU," Pip says. "He likes people who SIT."</p>
+<p>Madison walks downstream. The beaver lodge rises out of the water like a small cabin. Smoke comes out the top &mdash; smells like dried mint.</p>
+<p>Branch's grumpy face appears at the door. "What."</p>
+<p>How do you approach him?</p>`,
+  choices: [
+    { label: 'Knock and politely ask to come in', target: 'p114a', sub: 'Direct. Respectful. Honest.' },
+    { label: 'Notice his collection through the doorway and ask about a specific piece', target: 'p114b', sub: 'Curiosity disarms grumpy creatures.' },
+    { label: 'Sit on the bank outside his door, silent', target: 'p114c', sub: 'Wait him out. Let him come to you.' },
+  ],
+},
+
+p115: {
+  id: 'P-115', title: 'CHOICE 2C — Wren is crying', meta: 'You noticed Wren first',
+  text: `<p>Madison kneels. "Wren. Hey. What's the matter?"</p>
+<p>Pip and Lark go still.</p>
+<p>Wren says, voice so small Madison has to lean in: "She didn't sing last night."</p>
+<p>"Who didn't?"</p>
+<p>"The lady. The one who sings." Wren's tears are starting. They go <em>up</em> her face instead of down.</p>
+<p>What do you do?</p>`,
+  choices: [
+    { label: 'Wrap your arm around her, no words', target: 'p115a', sub: 'Just hold her. Let her cry the wrong direction.' },
+    { label: 'Ask gently about the lady who sings', target: 'p115b', sub: 'Find out who Wren is missing.' },
+    { label: 'Try singing three notes back to the lake yourself', target: 'p115c', sub: 'Call the lady. See if she answers.' },
+  ],
+},
+
+// =============== CHOICE 3 NODES (9 third-level branches) ===============
+
+p113a: {
+  id: 'P-113A', title: 'CHOICE 3 — Pip offers a gift', meta: 'You shared one each, fairly',
+  text: `<p>Pip nibbles her cookie. Lark inhales hers in two bites. Wren tries to make hers last by licking it.</p>
+<p>When the cookies are gone, the three Sisters look at each other. They nod in the way of people who have just received something and now have to give something back.</p>
+<p>"Fair is good. Fair is RIGHT," Pip says. "So &mdash; what do you want from us, cookie-bringer? Choose carefully. We only give one."</p>`,
+  choices: [
+    { label: 'A small river-stone that holds quiet', target: 'leaf_113a1', sub: 'Carry it. Squeeze it. It gives you ten seconds of silence anywhere, anytime.' },
+    { label: 'A song the lake remembers', target: 'leaf_113a2', sub: 'Hum it and someone half-asleep will wake up and listen.' },
+    { label: 'A name to call when you need help', target: 'leaf_113a3', sub: 'Whisper the name. One of us comes.' },
+  ],
+},
+
+p113b: {
+  id: 'P-113B', title: 'CHOICE 3 — Wren has something for you', meta: 'You gave the biggest to Wren',
+  text: `<p>Wren cries with joy. She turns the biggest cookie over in her hands like an artifact. She eats it in tiny careful bites for three full minutes.</p>
+<p>Then she scrambles up and runs to a hollow log at the edge of the pool. She comes back with three things in her tiny hands.</p>
+<p>"For you. Pick one. I MADE them."</p>`,
+  choices: [
+    { label: 'A pondweed-and-pebble bracelet', target: 'leaf_113b1', sub: 'Wren made it. It tickles. You will wear it forever.' },
+    { label: 'A song Wren learned from a snail', target: 'leaf_113b2', sub: 'It is a silly song. Snails do not sing well. But Wren is proud.' },
+    { label: 'A promise — that Wren will be brave when she\'s older, because of you', target: 'leaf_113b3', sub: 'You cannot hold a promise in your hand. You can carry it in your chest.' },
+  ],
+},
+
+p113c: {
+  id: 'P-113C', title: 'CHOICE 3 — Pip asks why', meta: 'You held one back',
+  text: `<p>Pip notices immediately. (Sisters notice. They have been counting since before they could count.)</p>
+<p>"You kept one. Why?"</p>
+<p>How do you answer?</p>`,
+  choices: [
+    { label: '"It\'s for my little cousin. He\'s going to be hungry."', target: 'leaf_113c1', sub: 'Honesty about someone you love.' },
+    { label: '"I always save one. For luck."', target: 'leaf_113c2', sub: 'A small superstition. Pip respects superstition.' },
+    { label: '"I didn\'t trust you yet."', target: 'leaf_113c3', sub: 'Honesty about caution. The most dangerous answer.' },
+  ],
+},
+
+p114a: {
+  id: 'P-114A', title: 'CHOICE 3 — Branch lets you in', meta: 'You knocked politely',
+  text: `<p>Branch is so surprised by manners that he sits Madison down on his tiny rocking chair and pours her a thimble of tea. The lodge is full of WONDERFUL trash: a spoon, a ceramic pig, sunglasses, two folded pieces of paper Madison's eyes go to and very deliberately away from.</p>
+<p>"You're here for the papers," Branch says.</p>
+<p>Madison doesn't lie. "Yes."</p>
+<p>"Why should I give them to you?"</p>`,
+  choices: [
+    { label: '"Because they don\'t belong to you. They belong to my family."', target: 'leaf_114a1', sub: 'Direct. Honest. The kind of answer Branch tests visitors with.' },
+    { label: '"Because the lake wants them out."', target: 'leaf_114a2', sub: 'You speak for the water.' },
+    { label: '"Because you\'re lonely, and I\'ll come back to visit."', target: 'leaf_114a3', sub: 'The truest answer. The hardest to give.' },
+  ],
+},
+
+p114b: {
+  id: 'P-114B', title: 'CHOICE 3 — The collection', meta: 'You noticed his trash',
+  text: `<p>Madison glances at the wall of wonderful objects. Each one was someone's. Each one ended up here. She picks one to ask about.</p>`,
+  choices: [
+    { label: 'The small ceramic pig', target: 'leaf_114b1', sub: 'Branch lights up. The pig has a whole story.' },
+    { label: 'The pair of sunglasses', target: 'leaf_114b2', sub: 'They belonged to a swimmer who left them on the rocks. Branch knows who.' },
+    { label: 'The spoon with the worn engraving', target: 'leaf_114b3', sub: 'The spoon was a wedding gift. Branch knows the marriage.' },
+  ],
+},
+
+p114c: {
+  id: 'P-114C', title: 'CHOICE 3 — Branch joins you outside', meta: 'You sat in silence',
+  text: `<p>You sit. The bank is warm. Branch watches you through a crack in his lodge door for twenty minutes. He has never seen a human be still this long.</p>
+<p>Finally he comes out. He sits beside you on the bank. He doesn't speak. After a long time he says: "Most humans talk first."</p>
+<p>How do you respond?</p>`,
+  choices: [
+    { label: 'Say nothing. Stay in the silence with him.', target: 'leaf_114c1', sub: 'Match his pace. Trust the quiet.' },
+    { label: '"Thank you for being patient."', target: 'leaf_114c2', sub: 'Acknowledge his gift.' },
+    { label: 'Tell him about your little brother back home', target: 'leaf_114c3', sub: 'Offer something of yourself first.' },
+  ],
+},
+
+p115a: {
+  id: 'P-115A', title: 'CHOICE 3 — Wren whispers a question', meta: 'You held her in silence',
+  text: `<p>Wren cries against your shoulder. The tears go up. Your shirt does not get wet. (Old Roar tears do not behave like real tears.)</p>
+<p>After a long time she whispers a question into your collarbone. You only catch the end of it. She asks it three different ways. You can only answer one.</p>`,
+  choices: [
+    { label: '"Will the lady come back tonight?"', target: 'leaf_115a1', sub: 'About the singer. About hope.' },
+    { label: '"Is your lake going to be okay?"', target: 'leaf_115a2', sub: 'About the future. About fear.' },
+    { label: '"Are you going to come back and see us?"', target: 'leaf_115a3', sub: 'About you. About being held in someone\'s memory.' },
+  ],
+},
+
+p115b: {
+  id: 'P-115B', title: 'CHOICE 3 — Calling the lady', meta: 'You asked about the singing',
+  text: `<p>Lark explains. The lady comes some nights. Sings here. The lake remembers her. They have been listening for years and they have never known who she is. But you might be able to call her.</p>
+<p>How?</p>`,
+  choices: [
+    { label: 'Dance on three stones (Madison\'s old ballet)', target: 'leaf_115b1', sub: 'Pip will raise the stones. Your body remembers more than you think.' },
+    { label: 'Sing the three notes Lark just sang', target: 'leaf_115b2', sub: 'Imitate. Hope she hears.' },
+    { label: 'Call her by her name', target: 'leaf_115b3', sub: 'You don\'t know her name. But you can guess.' },
+  ],
+},
+
+p115c: {
+  id: 'P-115C', title: 'CHOICE 3 — The lake didn\'t answer', meta: 'You sang the three notes',
+  text: `<p>The pool hums your notes back. But the lady doesn't answer. Wren's face falls.</p>
+<p>"Maybe she's not coming tonight," Wren whispers.</p>
+<p>You try something else.</p>`,
+  choices: [
+    { label: 'Add a fourth note — from a song your mom hums in the kitchen', target: 'leaf_115c1', sub: 'A song your mother sings when she thinks no one\'s listening.' },
+    { label: 'Sing a song from your ballet recital — full and loud', target: 'leaf_115c2', sub: 'You haven\'t sung this since you were nine. But you remember.' },
+    { label: 'Stop trying. Just listen.', target: 'leaf_115c3', sub: 'Maybe the lady was waiting for someone to stop performing.' },
+  ],
+},
+
+// =============== 27 LEAF OUTCOMES ===============
+
+leaf_113a1: {
+  id: 'L-1', title: 'The Quiet Stone', meta: 'Madison Path A1 → quiet stone',
+  text: `<p>Lark slips into the pool and comes up with a small lavender-colored stone, glowing very faintly. "For you. A <em>quiet stone.</em> Hold it when a place is too loud. It pulls the noise into itself and gives you back about ten seconds of quiet. Sisters made it. It only works if you got it from a sister."</p>
+<p>Madison closes her hand around it. It is exactly the kind of thing she didn't know she needed and has needed her whole life.</p>
+<p>Pip hands her the map piece. "You'll know what to say. With the quiet, you'll be able to think when nobody else can."</p>`,
+  earns: { item: ['map', 'base'], flags: ['QuietStone'] },
+  next: 'exit',
+},
+
+leaf_113a2: {
+  id: 'L-2', title: 'The Lake\'s Song', meta: 'Madison Path A2 → wake-up song',
+  text: `<p>Lark teaches her three notes. "Hum them quietly when you need someone half-asleep to wake up. The lake taught us this song. It works on people who have stopped listening. Especially grown-ups."</p>
+<p>Madison hums them once. The lake repeats them back. They are now hers.</p>
+<p>Pip hands her the map piece.</p>`,
+  earns: { item: ['map', 'base'], flags: ['LakeSong'] },
+  next: 'exit',
+},
+
+leaf_113a3: {
+  id: 'L-3', title: 'A Name to Call', meta: 'Madison Path A3 → sister-name',
+  text: `<p>Pip leans close and whispers a name into Madison's ear. The name is small. Madison cannot quite remember it after Pip pulls back, but she knows it is THERE, in her chest, ready to be said.</p>
+<p>"Whisper it when you need us. One of us will come. We don't know which one. The lake decides."</p>
+<p>Pip hands her the map piece. The name is heavier than the piece.</p>`,
+  earns: { item: ['map', 'base'], allies: ['LakeSisters'], flags: ['SisterName'] },
+  next: 'exit',
+},
+
+leaf_113b1: {
+  id: 'L-4', title: 'The Pondweed Bracelet', meta: 'Madison Path B1 → Wren\'s bracelet',
+  text: `<p>Wren's bracelet is the saddest, most beautiful thing Madison has ever been given. Three pondweed strands woven with five small pebbles. It tickles. She does not take it off.</p>
+<p>"Wear it ALWAYS," Wren says. "When you are scared, look at it. It means a Sister loves you."</p>
+<p>Pip hands her the map piece.</p>`,
+  earns: { item: ['map', 'enhanced'], flags: ['WrenBracelet'] },
+  next: 'exit',
+},
+
+leaf_113b2: {
+  id: 'L-5', title: 'A Snail Song', meta: 'Madison Path B2 → silly song',
+  text: `<p>Wren sings it. It is in seven keys at once and contains the line "I AM A SHELL I AM A SHELL." It takes about ninety seconds. By the end Madison is laughing harder than she has laughed in months.</p>
+<p>"Sing it when you need to laugh. Or when you need to make a small person laugh."</p>
+<p>Pip hands her the map piece. Madison is still giggling.</p>`,
+  earns: { item: ['map', 'enhanced'], flags: ['SnailSong'] },
+  next: 'exit',
+},
+
+leaf_113b3: {
+  id: 'L-6', title: 'A Promise', meta: 'Madison Path B3 → Wren\'s vow',
+  text: `<p>Wren says, very seriously: "I am going to grow up. I am going to be BRAVE. Because YOU gave me the biggest cookie. And I am going to remember it forever."</p>
+<p>Madison's eyes prickle. You cannot hold a promise. But you can carry it in your chest.</p>
+<p>Pip hands her the map piece. Pip nods, like Madison has just made a Sister.</p>`,
+  earns: { item: ['map', 'enhanced'], flags: ['WrenPromise'] },
+  next: 'exit',
+},
+
+leaf_113c1: {
+  id: 'L-7', title: 'A Cookie for Aiden', meta: 'Madison Path C1 → cousin honesty',
+  text: `<p>Pip's whole face changes. She nods slowly. "You held back for someone else. That's not selfish. That's <em>shepherding.</em>"</p>
+<p>She hands Madison the map piece. Then she takes the held-back cookie, breaks off a small piece, and replaces it with a thumbnail-sized silver fish.</p>
+<p>"Give him the fish too. From the Sisters. He'll know what to do with it."</p>`,
+  earns: { item: ['map', 'enhanced'], flags: ['SisterFishForAiden'] },
+  next: 'exit',
+},
+
+leaf_113c2: {
+  id: 'L-8', title: 'For Luck', meta: 'Madison Path C2 → small superstition',
+  text: `<p>Pip grins. "Superstition. The Sisters approve of superstition." She takes the held-back cookie, breathes on it, hands it back. "Now it has Sister luck on it. Eat it when you've decided something hard."</p>
+<p>Madison tucks it carefully into the side of the tin. Pip hands her the map piece.</p>`,
+  earns: { item: ['map', 'base'], flags: ['LuckyCookie'] },
+  next: 'exit',
+},
+
+leaf_113c3: {
+  id: 'L-9', title: 'Honesty About Caution', meta: 'Madison Path C3 → trust-truth',
+  text: `<p>Pip goes very still. Then she throws her head back and LAUGHS. "She SAID it. She said it OUT LOUD. Sisters &mdash; we have a HONEST one."</p>
+<p>Lark and Wren are also laughing. Pip wipes her eyes. "We trust you MORE for saying you didn't trust us. That's how Sister-trust works. Backwards."</p>
+<p>She hands Madison the map piece. Then a second piece &mdash; one she hadn't said she had. "Bonus. For being brave."</p>`,
+  earns: { item: ['map', 'full'], flags: ['HonestyTrust'] },
+  next: 'exit',
+},
+
+leaf_114a1: {
+  id: 'L-10', title: 'The Papers Belong Home', meta: 'Madison Path 2B1-a → Branch testifies',
+  text: `<p>Branch nods slowly. "Honest. Direct. The kind of answer I was hoping for." He hands over both folded papers. Then: "I'm coming with you. I want to TESTIFY. I have been waiting two hundred years to testify against something."</p>
+<p>He clips a tiny bow tie on. Ready.</p>`,
+  earns: { item: ['map', 'enhanced'], allies: ['Branch'] },
+  next: 'exit',
+},
+
+leaf_114a2: {
+  id: 'L-11', title: 'You Speak for the Lake', meta: 'Madison Path 2B1-b → lake authority',
+  text: `<p>Branch is suspicious. "The lake doesn't usually <em>tell</em> people what it wants. The lake just IS. Do you actually know what the lake wants? Or are you guessing?"</p>
+<p>Madison thinks. "I'm guessing. But I'm guessing carefully. I think the lake wants to stay a lake."</p>
+<p>"That's a fair answer." He hands over the papers. "Don't speak for the lake again unless you mean it."</p>`,
+  earns: { item: ['map', 'enhanced'] },
+  next: 'exit',
+},
+
+leaf_114a3: {
+  id: 'L-12', title: 'You Promise to Come Back', meta: 'Madison Path 2B1-c → relationship truth',
+  text: `<p>Branch looks at her for a long time. Then his eyes get wet. (Beavers can cry. It's not a thing people know.) "You said the true thing. The thing nobody says. Loneliness."</p>
+<p>He hands her the papers AND a beaver-tooth charm on a thread. "Wear that. When you're back at the lake-up-above and you want to visit me again, hold it up to the water. I'll come."</p>
+<p>Then: "And I'm coming with you. To witness. To be NEAR people. I have been alone too long."</p>`,
+  earns: { item: ['map', 'full'], allies: ['Branch'], flags: ['BeaverToothCharm'] },
+  next: 'exit',
+},
+
+leaf_114b1: {
+  id: 'L-13', title: 'The Pig\'s Story', meta: 'Madison Path 2B2-a → ceramic pig',
+  text: `<p>Branch lights up. The pig used to belong to a little girl who lost it off a paddle boat in 1973. Branch found it. He has named it Glenda. He has spent fifty-two years apologizing to Glenda for not knowing how to return her.</p>
+<p>Madison says, "She'd want to be loved. By you. That's enough." Branch cries. He hands over the papers. "I needed to hear that. From someone."</p>`,
+  earns: { item: ['map', 'enhanced'], allies: ['Branch'] },
+  next: 'exit',
+},
+
+leaf_114b2: {
+  id: 'L-14', title: 'The Sunglasses', meta: 'Madison Path 2B2-b → swimmer\'s gift',
+  text: `<p>The sunglasses belonged to a college boy who left them on a rock at the cove in 1989 and never came back. Branch knows because he watched the boy's face when he realized they were gone.</p>
+<p>"Sometimes things end. That's what the sunglasses taught me." Branch hands over the papers. "You have to know that going in. Things end."</p>`,
+  earns: { item: ['map', 'base'], flags: ['EndingsWisdom'] },
+  next: 'exit',
+},
+
+leaf_114b3: {
+  id: 'L-15', title: 'The Spoon', meta: 'Madison Path 2B2-c → wedding spoon',
+  text: `<p>The spoon was a wedding gift in 1958. Branch has watched the couple through the lake water for decades. The marriage lasted forty-one years. The spoon got dropped off the dock by a grandchild. Branch caught it.</p>
+<p>"Love that lasts is a real thing," Branch says. "Don't let anyone tell you it isn't."</p>
+<p>He hands over the papers. And, after a moment, the spoon. "Take it. Show it to grown-ups who think nothing lasts."</p>`,
+  earns: { item: ['map', 'enhanced'], flags: ['WeddingSpoon'] },
+  next: 'exit',
+},
+
+leaf_114c1: {
+  id: 'L-16', title: 'Silence Together', meta: 'Madison Path 2B3-a → matched silence',
+  text: `<p>Madison says nothing. The two of them sit on the bank for another twenty minutes. The sun moves across the sky. A frog jumps. Once.</p>
+<p>Branch eventually speaks. "You're the first human in my life who didn't try to fill the quiet." He gets up. Goes inside. Comes back with both papers and a beaver-tooth charm. "Take both. Come visit. Don't bring words."</p>`,
+  earns: { item: ['map', 'full'], allies: ['Branch'], flags: ['BeaverToothCharm'] },
+  next: 'exit',
+},
+
+leaf_114c2: {
+  id: 'L-17', title: 'Thank You for Waiting', meta: 'Madison Path 2B3-b → acknowledgment',
+  text: `<p>Branch is moved. "Most people think I'm being slow. You knew I was being CAREFUL."</p>
+<p>He hands over the papers. "Most folks don't know the difference."</p>`,
+  earns: { item: ['map', 'enhanced'] },
+  next: 'exit',
+},
+
+leaf_114c3: {
+  id: 'L-18', title: 'Tell Him About Your Cousin', meta: 'Madison Path 2B3-c → offer first',
+  text: `<p>Madison tells Branch about Aiden. Just learned to swim. Talks to his fishing rod. Holds her hand under the water when he jumps.</p>
+<p>Branch listens hard. When she's done he says: "You love a small one. That's the most important thing a person can do."</p>
+<p>He hands over both papers AND a tiny carved beaver-toy. "For the small one. Tell him an old beaver thinks he's brave."</p>`,
+  earns: { item: ['map', 'enhanced'], flags: ['BeaverToyForAiden'] },
+  next: 'exit',
+},
+
+leaf_115a1: {
+  id: 'L-19', title: '"Will She Come Back?"', meta: 'Madison Path 2C1-a → answer hope',
+  text: `<p>"Yes," Madison says. She doesn't actually know. But she says yes. "She'll come back."</p>
+<p>Wren's wrong-direction tears stop. She believes Madison the way only the smallest people believe things &mdash; completely.</p>
+<p>Pip hands over all three map pieces. "You gave my sister hope. We give you everything."</p>`,
+  earns: { item: ['map', 'full'], flags: ['WrenBelief'] },
+  next: 'exit',
+},
+
+leaf_115a2: {
+  id: 'L-20', title: '"Will the Lake Be Okay?"', meta: 'Madison Path 2C1-b → answer about future',
+  text: `<p>"I don't know," Madison says. "But I'm going to fight for it."</p>
+<p>Wren stops crying because she has been TOLD THE TRUTH, which is what younger siblings actually want. Pip hands over the map pieces.</p>`,
+  earns: { item: ['map', 'enhanced'] },
+  next: 'exit',
+},
+
+leaf_115a3: {
+  id: 'L-21', title: '"Will You Come Back?"', meta: 'Madison Path 2C1-c → being held in memory',
+  text: `<p>"Yes," Madison says. "Every July of my life. I'll think about you every time it gets quiet."</p>
+<p>Wren stops crying. The Sisters are also crying now, which is awkward, because Sister-tears glow.</p>
+<p>Pip hands over all three map pieces AND a thread of pondweed Wren has been weaving. "For you. We're keeping you."</p>`,
+  earns: { item: ['map', 'full'], allies: ['LakeSisters'], flags: ['WrenBracelet'] },
+  next: 'exit',
+},
+
+leaf_115b1: {
+  id: 'L-22', title: 'Dance on the Stones', meta: 'Madison Path 2C2-a → ballet',
+  text: `<p>Pip raises three flat stones from the pool. Madison hasn't danced in a year. Her body remembers.</p>
+<p>Step. Turn. Land in fourth position, eyes closed.</p>
+<p>The pool hums three notes. Then &mdash; from far away &mdash; the lady answers. Operatic. Big. Beautiful. She is singing in The Old Roar tonight.</p>
+<p>Wren laughs through her wrong-direction tears. Pip presses both hands to her mouth. The whole map is now Madison's.</p>`,
+  earns: { item: ['map', 'full'], flags: ['CanyonSinger'] },
+  next: 'exit',
+},
+
+leaf_115b2: {
+  id: 'L-23', title: 'Sing the Three Notes', meta: 'Madison Path 2C2-b → vocal imitation',
+  text: `<p>Madison sings the three notes Lark just sang. Her voice is not Lark's. The pool hums them back faintly.</p>
+<p>From very far away, just barely &mdash; the lady answers. Once. Three notes. Then silence.</p>
+<p>"She's quiet tonight," Pip says. "But she heard you."</p>`,
+  earns: { item: ['map', 'enhanced'], flags: ['CanyonSinger'] },
+  next: 'exit',
+},
+
+leaf_115b3: {
+  id: 'L-24', title: 'Call Her by Name', meta: 'Madison Path 2C2-c → guessing the name',
+  text: `<p>Madison closes her eyes. She thinks of her mother's face. Her mother's name is Sarah. She says it out loud, into the canyon.</p>
+<p>"Sarah."</p>
+<p>The lake goes very still. Wren whispers, "<em>Oh.</em>"</p>
+<p>From very far away, a woman's voice says, quietly: "Yes?"</p>
+<p>Madison's mouth opens. Then closes. She does not say anything else.</p>
+<p>Pip hands her the map pieces. "You guessed right. We will not tell anyone."</p>`,
+  earns: { item: ['map', 'full'], flags: ['CanyonSinger', 'GuessedTheName'] },
+  next: 'exit',
+},
+
+leaf_115c1: {
+  id: 'L-25', title: 'A Note from Mom', meta: 'Madison Path 2C3-a → adds a kitchen song',
+  text: `<p>Madison adds a fourth note. A note from a song her mom hums while making coffee. Madison didn't know she remembered it.</p>
+<p>The lake stops. Then &mdash; far away &mdash; the lady answers with the SAME four notes.</p>
+<p>Wren whispers, "<em>She knows that song too.</em>"</p>
+<p>Madison sits down very suddenly. Pip hands her all three map pieces and does not comment on the look on her face.</p>`,
+  earns: { item: ['map', 'full'], flags: ['CanyonSinger', 'KitchenSong'] },
+  next: 'exit',
+},
+
+leaf_115c2: {
+  id: 'L-26', title: 'The Recital Song', meta: 'Madison Path 2C3-b → ballet recital song',
+  text: `<p>Madison sings the song from her old recital. Full voice. The kind of singing she stopped doing in fifth grade because singing felt embarrassing.</p>
+<p>The lake hums it back. The lady answers from somewhere very far away &mdash; the same song, full voice.</p>
+<p>Wren laughs out loud. Pip hands over all three map pieces.</p>`,
+  earns: { item: ['map', 'full'], flags: ['CanyonSinger', 'RecitalSong'] },
+  next: 'exit',
+},
+
+leaf_115c3: {
+  id: 'L-27', title: 'Just Listen', meta: 'Madison Path 2C3-c → stop trying',
+  text: `<p>Madison stops singing. She just sits beside Wren. She listens.</p>
+<p>The pool is quiet for a long time. Then &mdash; very softly, very far away &mdash; the lady starts to sing. She wasn't going to. But she heard someone stop performing, and that was enough.</p>
+<p>Wren says, "<em>Oh.</em>"</p>
+<p>Pip hands her all three map pieces. "She sings for the ones who don't ask. You knew that without being told."</p>`,
+  earns: { item: ['map', 'full'], flags: ['CanyonSinger', 'JustListened'] },
+  next: 'exit',
+},
+
+// =============== EXIT (always read) ===============
+
+exit: {
+  id: 'EXIT', title: 'The Sisters Wave Her Off', meta: 'Madison — region complete',
+  text: `<p>Madison walks back toward the meadow. The Sisters wave from the water. Their hair drips upward. Wren waves with both hands.</p>
+<p>Pip calls after her: "Tell our older sister hi."</p>
+<p>"Who's your older sister?"</p>
+<p>"The big one. The cove."</p>
+<p>Her canoe is waiting. She steps in. She has the Map. She has the things her specific choices earned. She has, somewhere in her bones, the start of a feeling about chosen family that she's going to need at the dock in about an hour.</p>
+<p>The canoe pushes off. The Sisters wave from the water.</p>
+<p style="margin-top:32px; padding:16px; background:rgba(74,125,140,0.08); border-left:3px solid var(--water); border-radius:0 4px 4px 0; font-size:14px; line-height:1.5;"><strong>End of Madison's region.</strong> Click "Start over" at the top to try a different path. There are <strong>27 different ways</strong> to walk through this region. The state strip above shows what you earned this time. In the full book, each kid's region would have this same depth, and your accumulated choices determine the showdown and ending.</p>`,
+  isEnd: true,
+  choices: [],
+},
+
+}; // end SCENES
+
+//==============================================================================
+// ENGINE
+//==============================================================================
+
+let state = {
+  current: 'start',
+  items: {},
+  allies: [],
+  flags: [],
+  visited: [],
+};
+
+function save() { try { localStorage.setItem('madison-demo-state', JSON.stringify(state)); } catch(e){} }
+
+function load() {
+  try {
+    const s = localStorage.getItem('madison-demo-state');
+    if (s) state = JSON.parse(s);
+  } catch(e) {}
+  render();
+}
+
+function go(target) {
+  const cur = SCENES[state.current];
+  // Apply earnings
+  if (cur && cur.earns) {
+    if (cur.earns.item) state.items[cur.earns.item[0]] = cur.earns.item[1];
+    if (cur.earns.allies) cur.earns.allies.forEach(a => { if (!state.allies.includes(a)) state.allies.push(a); });
+    if (cur.earns.flags) cur.earns.flags.forEach(f => { if (!state.flags.includes(f)) state.flags.push(f); });
+  }
+  // Handle 'next' from leaf scenes
+  if (cur && cur.next && target === 'exit') target = cur.next;
+  state.current = target;
+  if (!state.visited.includes(target)) state.visited.push(target);
+  save();
+  window.scrollTo(0, 0);
+  render();
+}
+
+function restart() {
+  state = { current: 'start', items: {}, allies: [], flags: [], visited: [] };
+  save();
+  render();
+}
+
+function renderState() {
+  const itemCount = Object.keys(state.items).length;
+  const allyCount = state.allies.length;
+  const flagCount = state.flags.length;
+  if (itemCount === 0 && allyCount === 0 && flagCount === 0) return '';
+  let html = '<div class="state-strip">';
+  if (itemCount > 0) {
+    const tags = Object.entries(state.items).map(([k,v]) => `<span class="tag">${k} (${v})</span>`).join('');
+    html += `<div><strong>Earned:</strong> ${tags}</div>`;
+  }
+  if (allyCount > 0) html += `<div><strong>Allies:</strong> ${state.allies.map(a => `<span class="tag">${a}</span>`).join('')}</div>`;
+  if (flagCount > 0) html += `<div><strong>Carrying:</strong> ${state.flags.map(f => `<span class="tag">${f}</span>`).join('')}</div>`;
+  html += '</div>';
+  return html;
+}
+
+function render() {
+  const main = document.getElementById('main');
+  document.getElementById('state-display').innerHTML = renderState();
+  const scene = SCENES[state.current];
+  if (!scene) { main.innerHTML = `<p>Scene not found: ${state.current}</p>`; return; }
+  let html = '';
+  if (scene.id) html += `<div class="passage-id">${scene.id}</div>`;
+  if (scene.meta) html += `<div class="scene-meta">${scene.meta}</div>`;
+  html += `<h2 class="scene-title">${scene.title}</h2>`;
+  html += `<div class="scene-text">${scene.text || ''}</div>`;
+  // Handle leaf scenes with 'next' but no 'choices'
+  if (scene.next && (!scene.choices || scene.choices.length === 0)) {
+    html += `<div class="choices"><button onclick="go('exit')">Continue to exit</button></div>`;
+  } else if (scene.choices && scene.choices.length > 0) {
+    html += '<div class="choices">';
+    scene.choices.forEach(c => {
+      const sub = c.sub ? `<span class="sub">${c.sub}</span>` : '';
+      html += `<button onclick="go('${c.target}')">${c.label}${sub}</button>`;
+    });
+    html += '</div>';
+  } else if (scene.isEnd) {
+    html += `<div class="choices"><button onclick="restart()">Start over — try a different path</button></div>`;
+  }
+  main.innerHTML = html;
+}
+
+load();
+</script>
+</body>
+</html>
