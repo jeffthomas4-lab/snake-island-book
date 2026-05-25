@@ -667,15 +667,31 @@ function renderState() {
 }
 
 function render() {
-  const main = document.getElementById('main');
+  const m = document.getElementById('main');
   document.getElementById('state-display').innerHTML = renderState();
-  const scene = SCENES[state.current];
-  if (!scene) { main.innerHTML = `<p>Scene not found: ${state.current}</p>`; return; }
-  let html = '';
-  if (scene.id) html += `<div class="passage-id">${scene.id}</div>`;
-  if (scene.meta) html += `<div class="scene-meta">${scene.meta}</div>`;
-  html += `<h2 class="scene-title">${scene.title}</h2>`;
-  html += `<div class="scene-text">${scene.text || ''}</div>`;
-  // Handle leaf scenes with 'next' but no 'choices'
-  if (scene.next && (!scene.choices || scene.choices.length === 0)) {
-    html += `<div class="choices"><button onclick="go('exit')">Continue to exit</b
+  const s = SCENES[state.current];
+  if (!s) { m.innerHTML = `<p>Scene not found: ${state.current}</p>`; return; }
+  let h = '';
+  if (s.id) h += `<div class="passage-id">${s.id}</div>`;
+  if (s.meta) h += `<div class="scene-meta">${s.meta}</div>`;
+  if (s.title) h += `<h2 class="scene-title">${s.title}</h2>`;
+  h += `<div class="scene-text">${s.text || ''}</div>`;
+  if (s.next && (!s.choices || s.choices.length === 0)) {
+    h += `<div class="choices"><button onclick="go('exit')">Continue to exit</button></div>`;
+  } else if (s.choices && s.choices.length > 0) {
+    h += '<div class="choices">';
+    s.choices.forEach(c => h += `<button onclick="go('${c.target}')">${c.label}${c.sub ? `<span class="sub">${c.sub}</span>` : ''}</button>`);
+    h += '</div>';
+  } else if (s.isEnd) {
+    h += `<div class="choices">
+      <button onclick="location.href='index.html?goto=showdown_intro'" style="background:#2b2419;color:#faf6ed;border-color:#2b2419;"><strong>Head to the Showdown &rarr;</strong><span class="sub" style="color:#f5c587;">End the book. Face Drystone with what you've earned.</span></button>
+      <button onclick="location.href='index.html?goto=hub'">&larr; Pick another cousin first</button>
+      <button onclick="restart()" style="opacity:0.7;font-size:13px;">Start over &mdash; try a different path in this region</button>
+    </div>`;
+  }
+  m.innerHTML = h;
+}
+load();
+</script>
+</body>
+</html>
