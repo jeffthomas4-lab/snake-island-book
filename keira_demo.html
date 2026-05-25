@@ -493,7 +493,7 @@ function render() {
     s.choices.forEach(c => h += `<button onclick="go('${c.target}')">${c.label}${c.sub ? `<span class="sub">${c.sub}</span>` : ''}</button>`);
     h += '</div>';
   } else if (s.isEnd) {
-    h += `<div class="choices"><button onclick="restart()">Start over — try a different path</button></div>`;
+    h += `<div class="choices"><button onclick="location.href='index.html'">← Back to pick another cousin (or head to the Showdown)</button><button onclick="restart()">Start over — try a different path in this region</button></div>`;
   }
   m.innerHTML = h;
 }
