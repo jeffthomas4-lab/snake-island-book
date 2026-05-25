@@ -78,7 +78,7 @@ Then Lark says: "Wait. First — sit down."
 
 *~300 words. Always read. This is the fix for the previous editor's note about Madison needing one moment of being taken care of, not just being useful.*
 
-Lark says it again. "Sit DOWN. You've been holding it together for everyone for three days. We can tell."
+Lark says it again. "Sit DOWN. You forgot to be a KID this week, didn't you. We can tell."
 
 Madison opens her mouth to say she's fine.
 
@@ -86,7 +86,7 @@ Pip says, "Don't."
 
 Wren tugs her hand. "Float."
 
-Madison doesn't quite understand. Pip puts a hand on her shoulder and shows her — the pool will hold you up, if you let it. The water here is the kind of water that knows what tired is.
+Madison doesn't quite understand. Pip puts a hand on her shoulder and shows her — the pool will hold you up, if you let it. The water here is the kind of water that knows what forgetting-to-play feels like.
 
 Madison sits. Then lies back. Then floats.
 
@@ -106,11 +106,11 @@ The memory fades.
 
 Madison's eyes are wet for a reason that has nothing to do with the Sisters. The pool gave her *that.* For no reason. As a gift. Because she was floating.
 
-She is fifteen years old and someone is taking care of her.
+She is fifteen years old and somebody just gave her sixty seconds of being seven.
 
 When she sits back up, her hair is dripping upward, just a little, like the Sisters'.
 
-Pip nods. "Okay. NOW you can be in charge again."
+Pip nods. "Okay. Go back to being fifteen now. Carry the laugh with you."
 
 Madison laughs. It's a real laugh. The kind she usually saves for inside her own head.
 
@@ -480,10 +480,4 @@ Madison heads back toward the sound of the C-130, faint and far, somewhere up in
 
 **On word count:** Total ~2,800 words across all passages. A reader who picks Path A reads about 1,500 of those words. A reader who picks Path C reads about 1,750. Path B reads about 1,700. None of the paths is dramatically longer than the others — the reader doesn't feel "punished" for picking the short path.
 
-**On the wrapper variants:** I've added [VARIANT: STAY-TOGETHER / SPLIT / SOLO] tags at the key beats. These are conditional inserts — short paragraphs that swap in based on the reader's Strategy choice. The skeleton stays the same. This is how we keep the book manageable.
-
-**On Madison's dance (updated):** Originally drafted as Madison singing — wrong call, she's a dancer not a singer. Rewritten so the Lake Sisters raise three flat basalt stones from the pool and Madison dances across them: en pointe, a clean turn on the second stone, a fourth position close on the third. Her ballet history (from her character bible) is finally on the page. Iconic image — exactly the kind of thing Keira would later sketch in her notebook.
-
-**Bonus crossover:** The three basalt stones in Madison's dance are deliberately the same color as the basalt at home and the same shape as skip-stones. This sets up a quiet thread connecting Madison's region → Keira's Painted Cliff → Kellen's Skip-Stone Lake. When we draft Kellen and Keira, the basalt stones should rhyme without anyone calling it out.
-
-**On the Canyon Singer (updated, slightly more explicit):** Madison now remembers the exact night two summers ago, and remembers watching her mother's face the next morning — "her mother had been very busy looking at her coffee." Still doesn't name names. Still leaves the mystery intact. But any reader who knows the family lore (or any kid who reads it three times) will land on the right answer.
+**On the wrapper variants:** I've added [VARIANT: STAY-TOGETHER / SPLIT / SOLO] tags at the key beats. These are conditional inserts — short paragraphs that swap in based on the reader's Strategy choice. The skeleton stays the same. This is ho
