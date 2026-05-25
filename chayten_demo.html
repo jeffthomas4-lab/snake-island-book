@@ -26,6 +26,9 @@
   .choices button:hover { background: var(--ink); color: var(--paper); transform: translateX(4px); }
   .choices button .sub { display: block; font-size: 13px; color: var(--warm); margin-top: 4px; font-style: italic; }
   .choices button:hover .sub { color: #f5c587; }
+  figure.illus { margin: 0 0 24px; }
+  figure.illus img { width: 100%; height: auto; display: block; border-radius: 4px; box-shadow: 0 6px 24px rgba(43,36,25,0.18); }
+  figure.illus figcaption { font-size: 12px; color: var(--warm); text-align: center; font-style: italic; margin-top: 8px; letter-spacing: 0.5px; }
   .demo-note { background: rgba(74,125,140,0.08); border-left: 3px solid var(--water); padding: 14px 18px; margin: 0 0 24px; border-radius: 0 4px 4px 0; font-size: 14px; line-height: 1.5; }
   .demo-note strong { color: var(--water); }
 </style>
@@ -45,7 +48,7 @@ const SCENES = {
 start: {
   id: 'START', title: 'Chayten at the Driftwood Stage',
   meta: 'A 3-deep CYOA demo for Chayten (13) — the connector, the protector, the performer',
-  text: `<div class="demo-note"><strong>27 ways through Chayten's region.</strong> She arrives at an amphitheater where an old otter named Otto is panicking because his lead actor sprained his whiskers. Your three choices each branch into three more. Click through and the state strip will show what Chayten brings back.</div>`,
+  text: `<figure class="illus"><img src="images/chayten_region.webp" alt="Chayten at the Driftwood Stage — Otto the old otter, the standing-stone audience, the lake behind"><figcaption>Chayten at the Driftwood Stage — Otto the old otter, the standing-stone audience, the lake behind</figcaption></figure><div class="demo-note"><strong>27 ways through Chayten's region.</strong> She arrives at an amphitheater where an old otter named Otto is panicking because his lead actor sprained his whiskers. Your three choices each branch into three more. Click through and the state strip will show what Chayten brings back.</div>`,
   choices: [{ label: 'Begin Chayten\'s region', target: 'p120' }],
 },
 
@@ -543,17 +546,4 @@ function render() {
   html += `<h2 class="scene-title">${scene.title}</h2>`;
   html += `<div class="scene-text">${scene.text || ''}</div>`;
   if (scene.next && (!scene.choices || scene.choices.length === 0)) {
-    html += `<div class="choices"><button onclick="go('exit')">Continue to exit</button></div>`;
-  } else if (scene.choices && scene.choices.length > 0) {
-    html += '<div class="choices">';
-    scene.choices.forEach(c => { html += `<button onclick="go('${c.target}')">${c.label}${c.sub ? `<span class="sub">${c.sub}</span>` : ''}</button>`; });
-    html += '</div>';
-  } else if (scene.isEnd) {
-    html += `<div class="choices"><button onclick="location.href='index.html?goto=showdown_intro'" style="background:#2b2419;color:#faf6ed;border-color:#2b2419;"><strong>Head to the Showdown →</strong><span class="sub" style="color:#f5c587;">End the book. Face Drystone with what you\'ve earned.</span></button><button onclick="location.href='index.html?goto=hub'">← Pick another cousin first</button><button onclick="restart()" style="opacity:0.7;font-size:13px;">Start over — try a different path in this region</button></div>`;
-  }
-  main.innerHTML = html;
-}
-load();
-</script>
-</body>
-</html>
+    html += `<div class="choices"><button onc

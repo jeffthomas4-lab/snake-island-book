@@ -26,6 +26,9 @@
   .choices button:hover { background: var(--ink); color: var(--paper); transform: translateX(4px); }
   .choices button .sub { display: block; font-size: 13px; color: var(--warm); margin-top: 4px; font-style: italic; }
   .choices button:hover .sub { color: #f5c587; }
+  figure.illus { margin: 0 0 24px; }
+  figure.illus img { width: 100%; height: auto; display: block; border-radius: 4px; box-shadow: 0 6px 24px rgba(43,36,25,0.18); }
+  figure.illus figcaption { font-size: 12px; color: var(--warm); text-align: center; font-style: italic; margin-top: 8px; letter-spacing: 0.5px; }
   .demo-note { background: rgba(74,125,140,0.08); border-left: 3px solid var(--water); padding: 14px 18px; margin: 0 0 24px; border-radius: 0 4px 4px 0; font-size: 14px; line-height: 1.5; }
   .demo-note strong { color: var(--water); }
 </style>
@@ -45,7 +48,7 @@ const SCENES = {
 start: {
   id: 'START', title: 'Ella at the Bright Water Court',
   meta: 'A 3-deep CYOA demo for Ella (10) — the deciding face',
-  text: `<div class="demo-note"><strong>27 ways through Ella's region.</strong> She arrives at a moss-circle court where the new queen, Marigold, has been queen for one week and is pretty sure she's bad at it. A fox is about to walk in with a forged scroll. Your three choices each branch into three more.</div>`,
+  text: `<figure class="illus"><img src="images/ella_region.webp" alt="Ella at the Bright Water Court — Marigold the frog-queen on her mossy throne, frogs arguing"><figcaption>Ella at the Bright Water Court — Marigold the frog-queen on her mossy throne, frogs arguing</figcaption></figure><div class="demo-note"><strong>27 ways through Ella's region.</strong> She arrives at a moss-circle court where the new queen, Marigold, has been queen for one week and is pretty sure she's bad at it. A fox is about to walk in with a forged scroll. Your three choices each branch into three more.</div>`,
   choices: [{ label: "Begin Ella's region", target: 'p170' }],
 },
 
@@ -514,11 +517,4 @@ function render() {
     s.choices.forEach(c => h += `<button onclick="go('${c.target}')">${c.label}${c.sub ? `<span class="sub">${c.sub}</span>` : ''}</button>`);
     h += '</div>';
   } else if (s.isEnd) {
-    h += `<div class="choices"><button onclick="location.href='index.html?goto=showdown_intro'" style="background:#2b2419;color:#faf6ed;border-color:#2b2419;"><strong>Head to the Showdown →</strong><span class="sub" style="color:#f5c587;">End the book. Face Drystone with what you\'ve earned.</span></button><button onclick="location.href='index.html?goto=hub'">← Pick another cousin first</button><button onclick="restart()" style="opacity:0.7;font-size:13px;">Start over — try a different path in this region</button></div>`;
-  }
-  m.innerHTML = h;
-}
-load();
-</script>
-</body>
-</html>
+    h += `<div class="choices"><button onclick="location.href='index.html?goto=showdown_intro'"

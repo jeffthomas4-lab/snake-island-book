@@ -112,6 +112,9 @@
     font-style: italic;
   }
   .choices button:hover .sub { color: #f5c587; }
+  figure.illus { margin: 0 0 24px; }
+  figure.illus img { width: 100%; height: auto; display: block; border-radius: 4px; box-shadow: 0 6px 24px rgba(43,36,25,0.18); }
+  figure.illus figcaption { font-size: 12px; color: var(--warm); text-align: center; font-style: italic; margin-top: 8px; letter-spacing: 0.5px; }
   .demo-note {
     background: rgba(74,125,140,0.08);
     border-left: 3px solid var(--water);
@@ -140,7 +143,7 @@ const SCENES = {
 start: {
   id: 'START', title: 'Madison at the Quiet Pool',
   meta: 'A 3-deep CYOA demo — your three choices each branch into three more',
-  text: `<div class="demo-note">
+  text: `<figure class="illus"><img src="images/madison_region.webp" alt="Madison at the Quiet Pool — three water-girls, a heron, the heart-shaped pool"><figcaption>Madison at the Quiet Pool — three water-girls, a heron, the heart-shaped pool</figcaption></figure><div class="demo-note">
 <strong>This is a depth-test demo.</strong> Just Madison's region. You'll make three real choices, each opening into three more. There are 27 different ways through this region. The cookie tin you bring back is shaped by every choice you made. Click through one path, then "Start over" and try another. This is what one region feels like at true CYOA depth — if you approve, I scale this depth across the other seven kids.
 </div>
 <p style="text-align:center; font-style:italic; margin-bottom:14px;">For Madison (15) &mdash; oldest, strategist, brings the cookies.</p>`,
@@ -675,21 +678,4 @@ function render() {
   html += `<div class="scene-text">${scene.text || ''}</div>`;
   // Handle leaf scenes with 'next' but no 'choices'
   if (scene.next && (!scene.choices || scene.choices.length === 0)) {
-    html += `<div class="choices"><button onclick="go('exit')">Continue to exit</button></div>`;
-  } else if (scene.choices && scene.choices.length > 0) {
-    html += '<div class="choices">';
-    scene.choices.forEach(c => {
-      const sub = c.sub ? `<span class="sub">${c.sub}</span>` : '';
-      html += `<button onclick="go('${c.target}')">${c.label}${sub}</button>`;
-    });
-    html += '</div>';
-  } else if (scene.isEnd) {
-    html += `<div class="choices"><button onclick="location.href='index.html?goto=showdown_intro'" style="background:#2b2419;color:#faf6ed;border-color:#2b2419;"><strong>Head to the Showdown →</strong><span class="sub" style="color:#f5c587;">End the book. Face Drystone with what you\'ve earned.</span></button><button onclick="location.href='index.html?goto=hub'">← Pick another cousin first</button><button onclick="restart()" style="opacity:0.7;font-size:13px;">Start over — try a different path in this region</button></div>`;
-  }
-  main.innerHTML = html;
-}
-
-load();
-</script>
-</body>
-</html>
+    html += `<div class="choices"><button onclick="go('exit')">Continue to exit</b
