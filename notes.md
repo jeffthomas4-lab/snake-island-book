@@ -14,7 +14,7 @@ Hotel Sun Lakes, based on The Cove at Sun Lakes (thecoveatsunlakes.org). Four co
 - **Condo 1:** Carson (15) and Keira (10). Brother and sister. Both super kind and athletic.
 - **Condo 2:** Reid (14) and Ella (10).
 - **Condo 3:** Madison (15) and Kellen (12).
-- **Condo 4:** Aiden (6) and Chayten (13).
+- **Condo 4:** Aiden (7) and Chayten (13).
 
 ### Family structure (matters in the book)
 - House + Condo 1 + Condo 2 are blood-related (Uncle Bill family with two related families in 1 and 2). Carson, Keira, Reid, and Ella are first cousins.
@@ -69,9 +69,9 @@ In-book payoff: The Lake Sisters and Cliffy know why the water flows the way it 
 - **Carson (15):** Loves the entire week. Competitive AND fun. Protective older cousin to Aiden (Aiden has TWO Aiden-protectors: Chayten the sister, Carson the cousin). Branch trait: competing without losing kindness.
 - **Reid (14):** Gentle giant. Makes a stick from nearby wood every trip. Knowledgeable, calm. Branch trait: strength + craft + applied knowledge.
 - **Kellen (12):** Throws a ball constantly. Athletic, hides his intelligence. Branch trait: forced to reveal his mind, not just his body.
-- **Keira (9):** Does arts. Tall for her age, competes with the older kids despite being young. Branch trait: noticing what others miss; pattern recognition through the artist's eye.
+- **Keira (10):** Does arts. Tall for her age, competes with the older kids despite being young. Branch trait: noticing what others miss; pattern recognition through the artist's eye.
 - **Ella (10):** Puts on makeup. Princess energy, fierce protector. Branch trait: regal courage; standing up to something bigger.
-- **Aiden (6):** Wants to fish on the back dock. The youngest. Energetic, kind, gentle, knows right from wrong. Hasn't done the night swim yet. Branch trait: moral compass driving choices; wonder; kindness as power.
+- **Aiden (7):** Wants to fish on the back dock. The youngest. Energetic, kind, gentle, knows right from wrong. Hasn't done the night swim yet. Branch trait: moral compass driving choices; wonder; kindness as power.
 
 ---
 
