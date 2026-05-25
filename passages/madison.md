@@ -78,39 +78,37 @@ Then Lark says: "Wait. First — sit down."
 
 *~300 words. Always read. This is the fix for the previous editor's note about Madison needing one moment of being taken care of, not just being useful.*
 
-Lark says it again. "Sit DOWN. You forgot to be a KID this week, didn't you. We can tell."
+"Sit DOWN. Wait. Actually — STAND. We've been watching you walk down the bank. We can tell."
 
-Madison opens her mouth to say she's fine.
+Madison blinks. "Tell what?"
 
-Pip says, "Don't."
+Pip steps closer. "You're a DANCER. The way you carry your shoulders. The way your feet land when you walk. The way you turned your head to look at the heron and your whole spine came with you. We have been waiting for one of you to walk down here like that."
 
-Wren tugs her hand. "Float."
+Lark says, "And not a kid-who-takes-lessons dancer. You're the OTHER kind. The kind whose body BELIEVES it. We can see your hours."
 
-Madison doesn't quite understand. Pip puts a hand on her shoulder and shows her — the pool will hold you up, if you let it. The water here is the kind of water that knows what forgetting-to-play feels like.
+Madison goes very still. People at home say "oh you're such a good dancer" the way they say "you're so tall" — polite, general, not specific. The Sisters are being specific. They are talking about her hours.
 
-Madison sits. Then lies back. Then floats.
+Wren tugs her hand. "Show us. Please. The pool has been wanting to watch."
 
-For one minute — sixty whole seconds, no one counting but everyone knowing — Madison just floats.
+Pip raises one small wet hand. Three flat stones lift from the pool and hover an inch above the surface, forming a small triangular stage just within Madison's reach. The water around them goes glassy.
 
-The sky above the pool is so green it isn't a sky color. There are no clouds. There's a sound somewhere that might be wind or might be humming. The water is warm at her back and cool at her elbows. Wren puts a pondweed cookie on her stomach. Wren is very proud of this gesture.
+Madison hesitates — not because she's rusty, she's not, she danced yesterday in her room before bed — but because the audience matters and she is, suddenly, choosing what to show them.
 
-Nobody asks Madison anything.
+She picks the adagio. The hardest one she has. The one her teacher built FOR her last semester. Slow arms. The long arabesque that took her three months to hold cleanly. The turn that lives at the edge of what she can do.
 
-Nobody needs anything from her.
+She steps onto the first stone. Her body finds the count before her head does.
 
-Then the pool does something it has not done in a hundred years. It shows her a memory it has been saving.
+She dances three measures. They are very good measures. The arabesque is exactly as long as her teacher wants it. The turn lands clean.
 
-It is just a flash. Three seconds, no more. Madison sees the lake at home, from underwater — the wobbly shimmer of the surface, and above it, eight pairs of legs all in a row at the end of the dock. Eight pairs. Her cousins' legs. Her own legs. The legs are bending. The legs are jumping. The water erupts above her with eight bodies arriving at once and the sound is the sound of *the trip starting,* the way it has every July of her whole life.
+The three Sisters do not clap. They do not whistle. They WATCH the way the right audience watches — like every quarter-inch of movement matters to them.
 
-The memory fades.
+When she steps off the last stone, Pip says, quietly: "That was very good, Madison. Not for-your-age very good. Not for-a-cousin very good. Just very good."
 
-Madison's eyes are wet for a reason that has nothing to do with the Sisters. The pool gave her *that.* For no reason. As a gift. Because she was floating.
+Madison's eyes are wet. Nobody has ever said that exact sentence to her at exactly that pitch. Her ballet teacher means it but says it differently. Her family means it but says it the family way. The Sisters said it like dancers.
 
-She is fifteen years old and somebody just gave her sixty seconds of being seven.
+She sits down on the bank. Her hair drips upward, just a little. She catches sight of herself in the pool's reflection — fifteen years old, hair defying gravity, breath steady after three measures of work — and laughs out loud. The kind of laugh she usually saves for when nobody's watching. Wren grabs her own hair and flips it upward to match.
 
-When she sits back up, her hair is dripping upward, just a little, like the Sisters'.
-
-Pip nods. "Okay. Go back to being fifteen now. Carry the laugh with you."
+Pip nods. "Okay. Go back to your cousins now. Carry that with you. The pool will remember the way you moved over the stones. It doesn't forget good dancers."
 
 Madison laughs. It's a real laugh. The kind she usually saves for inside her own head.
 
