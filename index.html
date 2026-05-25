@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Old Roar — A Sun Lakes Story</title>
+<style>
+  :root {
+    --paper: #faf6ed;
+    --ink: #2b2419;
+    --warm: #c97a3f;
+    --water: #4a7d8c;
+    --green: #6b8e4e;
+    --gold: #c9a23f;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Charter', 'Georgia', serif;
+    line-height: 1.6;
+    min-height: 100vh;
+  }
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 60px 30px 80px;
+  }
+  header {
+    text-align: center;
+    margin-bottom: 50px;
+    border-bottom: 3px double var(--ink);
+    padding-bottom: 32px;
+  }
+  h1 {
+    font-size: 52px;
+    font-weight: normal;
+    font-style: italic;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+  }
+  .subtitle {
+    color: var(--warm);
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-style: italic;
+  }
+  .intro {
+    font-size: 18px;
+    margin-bottom: 50px;
+    text-align: center;
+    color: rgba(43, 36, 25, 0.75);
+  }
+  .three-ways {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-bottom: 60px;
+  }
+  .three-ways a {
+    display: block;
+    background: rgba(255, 255, 255, 0.5);
+    border: 1.5px solid var(--ink);
+    border-radius: 6px;
+    padding: 24px 28px;
+    text-decoration: none;
+    color: var(--ink);
+    transition: all 0.15s ease;
+  }
+  .three-ways a:hover {
+    background: var(--ink);
+    color: var(--paper);
+    transform: translateX(4px);
+  }
+  .three-ways a:hover .label {
+    color: var(--paper);
+  }
+  .three-ways .label {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--warm);
+    display: block;
+    margin-bottom: 4px;
+  }
+  .three-ways .title {
+    font-size: 22px;
+    font-style: italic;
+    margin-bottom: 6px;
+  }
+  .three-ways .desc {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .kids-list {
+    background: rgba(74, 125, 140, 0.06);
+    border-left: 3px solid var(--water);
+    padding: 24px 28px;
+    margin-bottom: 40px;
+    border-radius: 0 6px 6px 0;
+  }
+  .kids-list h2 {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--water);
+    font-weight: normal;
+    margin-bottom: 14px;
+    font-style: italic;
+  }
+  .kids-list ul {
+    list-style: none;
+    padding: 0;
+  }
+  .kids-list li {
+    padding: 5px 0;
+    font-size: 15px;
+  }
+  .kids-list li strong {
+    color: var(--ink);
+  }
+  footer {
+    text-align: center;
+    margin-top: 60px;
+    padding-top: 30px;
+    border-top: 1px solid rgba(43, 36, 25, 0.15);
+    font-size: 13px;
+    color: rgba(43, 36, 25, 0.5);
+    font-style: italic;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>The Old Roar</h1>
+    <div class="subtitle">A Sun Lakes Story</div>
+  </header>
+
+  <p class="intro">
+    A choose-your-own-adventure book about eight cousins at Hotel Sun Lakes,<br>
+    the magical world that lives under the lake, and what it means to belong to a place.
+  </p>
+
+  <div class="three-ways">
+    <a href="reading_copy.html">
+      <span class="label">★ Recommended ★</span>
+      <div class="title">Read the Book</div>
+      <div class="desc">The full reading copy. Every chapter, every path, both endings. ~50,000 words. Best for reading aloud to a kid, or reading end-to-end yourself.</div>
+    </a>
+    <a href="prototype.html">
+      <span class="label">Interactive</span>
+      <div class="title">Play the Adventure</div>
+      <div class="desc">Click-through CYOA prototype. Make real choices. State tracking, multiple endings. Best for testing how the branches feel and replay value.</div>
+    </a>
+    <a href="bingo_card.html">
+      <span class="label">Printable</span>
+      <div class="title">Sun Lakes Bingo Card</div>
+      <div class="desc">Print this out for the real trip. 5×5 family-activity card. Center space is the synchronized jump-in. Five-in-a-row earns a prize.</div>
+    </a>
+  </div>
+
+  <div class="kids-list">
+    <h2>The eight cousins</h2>
+    <ul>
+      <li><strong>Madison</strong> (15) &mdash; strategist, the oldest, brings the cookies</li>
+      <li><strong>Carson</strong> (15) &mdash; competitor, the rally point, big heart</li>
+      <li><strong>Reid</strong> (14) &mdash; gentle giant, craftsman, the calm center</li>
+      <li><strong>Chayten</strong> (13) &mdash; connector, performer, fierce sister</li>
+      <li><strong>Kellen</strong> (12) &mdash; athlete and thinker, played whole</li>
+      <li><strong>Keira</strong> (10) &mdash; artist, climber, sees what others miss</li>
+      <li><strong>Ella</strong> (10) &mdash; courage in a small package, deciding face</li>
+      <li><strong>Aiden</strong> (7) &mdash; wonder, kindness, just learned to swim</li>
+    </ul>
+  </div>
+
+  <footer>
+    Private family book &mdash; please don't share publicly.
+  </footer>
+</div>
+</body>
+</html>

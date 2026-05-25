@@ -1,0 +1,24 @@
+# Operating system junk
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Editor temp files
+*.tmp
+*.bak
+*.swp
+*.swo
+*~
+~$*
+
+# Editor / IDE directories
+.vscode/
+.idea/
+*.sublime-*
+
+# Logs
+*.log
+
+# Local environment
+.env
