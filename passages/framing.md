@@ -1,22 +1,22 @@
-# The Framing Chapter — Sun Lakes Arrival to The Old Roar (v3)
+# The Framing Chapter, Sun Lakes Arrival to The Old Roar (v3)
 
 **Passages:** P-001 through P-012
 **Read order:** Always sequential. P-012 is the first real branch.
 
-Target ~3,500 words total. This is Act 1 — the family-at-peace, the threat, the portal, the arrival, the choice.
+Target ~3,500 words total. This is Act 1, the family-at-peace, the threat, the portal, the arrival, the choice.
 
 ---
 
 ## Structure overview
 
 ```
-P-001  The Synchronized Jump        (NEW — opening ritual, all 8 kids together)
+P-001  The Synchronized Jump        (NEW, opening ritual, all 8 kids together)
 P-002  Drystone arrives                (dock threat, sign goes up)
 P-003  The kids can't fix this      (false starts, adults busy)
 P-004  Drift to the sunroom         (unicorn raft bobbing in no wind)
 P-005  The C-130                    (portal triggers)
 P-010  Eight rafts land in the meadow
-P-011  The Harbor Keeper            (replaces Tomby — Uncle Bill echo)
+P-011  The Harbor Keeper            (replaces Tomby, Uncle Bill echo)
 P-012  The Strategy Choice          ← FIRST REAL BRANCH
        A. Stay together   → P-100
        B. Split in two    → P-200
@@ -25,19 +25,19 @@ P-012  The Strategy Choice          ← FIRST REAL BRANCH
 
 ---
 
-## P-001 — THE SYNCHRONIZED JUMP
+## P-001, THE SYNCHRONIZED JUMP
 
-*~700 words. Opening ritual. The best prose in the book has to be this — it's the first thing the reader meets.*
+*~700 words. Opening ritual. The best prose in the book has to be this, it's the first thing the reader meets.*
 
 The truck doors open at the same time.
 
-It is the third of July. The drive from the western side of the state took most of the day. The last twenty minutes was the long winding downhill road — narrow, no shoulder, dropping into the canyon — and you'd miss the turn entirely except for the dented unmarked mailbox at the top of it. Every year somebody in the lead car panics that they've gone past. They haven't. There it is.
+It is the third of July. The drive from the western side of the state took most of the day. The last twenty minutes was the long winding downhill road, narrow, no shoulder, dropping into the canyon, and you'd miss the turn entirely except for the dented unmarked mailbox at the top of it. Every year somebody in the lead car panics that they've gone past. They haven't. There it is.
 
 The dirt parking lot is at the bottom of the hill. Eight kids tumble out of four cars, into dust and dry grass and the smell of warm rock. Sun Lakes sits below them. The cove is the bluest it's ever been.
 
-The grown-ups are still in the parking lot arguing about who made the best time. (The mom from Madison and Kellen's car insists she did. The dad from Carson and Keira's car disagrees on principle. Uncle Bill, sitting on the tailgate of his truck, is refereeing badly.) They are also arguing about what time to start the pizza for tonight. Pizza is the first-night dinner. It has been the first-night dinner for as long as any of them can remember. The argument isn't about whether — it's about *when* to put the first one in the oven, which depends on how hungry the kids are, which depends on how cold the lake is, which depends on a thousand things nobody is going to actually figure out before someone just goes ahead and turns on the oven.
+The grown-ups are still in the parking lot arguing about who made the best time. (The mom from Madison and Kellen's car insists she did. The dad from Carson and Keira's car disagrees on principle. Uncle Bill, putting his boat in the water, is refereeing badly across the parking lot.) They are also arguing about what time to start the pizza for tonight. Pizza is the first-night dinner. It has been the first-night dinner for as long as any of them can remember. The argument isn't about whether, it's about *when* to put the first one in the oven, which depends on how hungry the kids are, which depends on how cold the lake is, which depends on a thousand things nobody is going to actually figure out before someone just goes ahead and turns on the oven.
 
-The dock is still there. (Reid checks. He always checks. He noticed last summer that the third plank wobbles. This summer the wobble is a little worse. He doesn't tell anyone. He never does. But he files the difference under the same heading he files everything: *things that get smaller every year if you don't pay attention.*)
+The dock is still there. (Reid checks. He always checks. He noticed last summer that the third plank wobbles. This summer the wobble is a little worse. He doesn't tell anyone. He never does. He just files it away with everything else he notices and never mentions.)
 
 The kids run. Not toward the condos. Not toward the bags. Toward the dock.
 
@@ -47,7 +47,7 @@ When you arrive at Sun Lakes, you put your bag down and you run to the dock and 
 
 Madison hits the dock first, because she's the oldest and her legs are longest. She kicks her sandals off as she runs and they land in the grass behind her. Carson is next, a half-step behind. Then Reid, then Chayten and Kellen at a near-tie, then Keira (whose legs are catching up to the older kids each year and who is going to be faster than all of them in two more summers), then Ella in her bright pink swimsuit, then Aiden, last, the smallest, his bare feet slapping the wood.
 
-This year is different for Aiden. He learned to swim this spring. *Really* learned. He spent six weekends at the YMCA pool with his mom and now he can do an entire lap. He still wears his bright orange life jacket every time he hits the water — Mom's rule, and his rule too. Buckled tight at the chest, leg-strap clipped, the way she showed him. Last summer he was the kid the grown-ups had to bring in, careful, double-checked, with the jacket on backwards because nobody had shown him yet. This year he knows how to buckle it himself, and he is running to the end of the dock with the rest of them, and nobody is reaching for him because nobody has to. He is going to jump in with his cousins. By himself. For the first time. And nobody is going to ask if he's sure.
+This year is different for Aiden. He learned to swim this spring. *Really* learned. He spent six weekends at the local pool with his mom and now he can do an entire lap. He still wears his bright orange life jacket every time he hits the water, Mom's rule, and his rule too. Buckled tight at the chest, leg-strap clipped, the way she showed him. Last summer he was the kid the grown-ups had to bring in, careful, double-checked, with the jacket on backwards because nobody had shown him yet. This year he knows how to buckle it himself, and he is running to the end of the dock with the rest of them, and nobody is reaching for him because nobody has to. He is going to jump in with his cousins. By himself. For the first time. And nobody is going to ask if he's sure.
 
 He is sure.
 
@@ -89,7 +89,7 @@ Aiden, breathing through his nose because his sister's hand is still around his 
 
 The grown-ups are walking down the path now, carrying bags, still arguing about coolers and pizza times. They look up and they see eight kids in the water and they smile at each other in the specific way grown-ups smile when they have done one thing right.
 
-Tonight is pizza night. The big house won't smell of brisket until tomorrow, or the night after — Uncle Bill's BBQ does its slow work for the middle of the trip. But the porch and the side yard still hold the *ghost* of brisket from years past. The wood is soaked in it. The siding is. The cushions on the deck chairs are. Even after a year of rain and snow and canyon wind, the place still smells faintly of every brisket Uncle Bill has ever cooked here. Memory has a smell. So does Sun Lakes.
+Tonight is pizza night. The big house won't smell of brisket until tomorrow, or the night after, the dads' BBQ does its slow work for the middle of the trip (two of them tend it, the ones who care about brisket the way other people care about cars). But the porch and the side yard still hold the *ghost* of brisket from years past. The wood is soaked in it. The siding is. The cushions on the deck chairs are. Even after a year of rain and snow and canyon wind, the place still smells faintly of every brisket the dads have ever cooked here. Memory has a smell. So does Sun Lakes.
 
 The bats are not yet out. They will be, tonight, after sunset, swooping low to eat the canyon mosquitoes. The wind is not yet howling. It will, after dark, when the canyon breathes the cold air down from Grand Coulee Dam.
 
@@ -103,7 +103,7 @@ The summer always starts this way.
 
 ---
 
-## P-002 — CRUMB ARRIVES
+## P-002, CRUMB ARRIVES
 
 *~500 words.*
 
@@ -111,21 +111,21 @@ It happens later in the afternoon.
 
 The kids have done the things kids do at Sun Lakes in the first hours: unpacked into the same condos they always have (each family has the same condo every year; nobody decided this, it just is), grabbed snacks from the cooler, and scattered. The pizza dough is rising on the counter in the big house. The grown-ups are still in there laughing at something none of the kids will ever know.
 
-Madison is reading on the grass with a tin of cookies beside her. She always brings cookies on the first day &mdash; or, some years, makes them during the trip. This was a bring-them year. She made them last night. They are oatmeal-chocolate-chip and they have a small amount of cinnamon in them that nobody but Aiden ever names.
+Madison is reading on the grass with a tin of cookies beside her. She always brings cookies on the first day, or, some years, makes them during the trip. This was a bring-them year. She made them last night. They are chocolate-chip and they have a small amount of cinnamon in them that nobody but Aiden ever names.
 
 Chayten is paddle-boarding back from the back dock with Aiden, who is sitting cross-legged on the front of the board holding a fishing rod and talking to it.
 
 Reid is at the edge of the main dock, whittling a stick.
 
-Kellen is in the grass taking shadow swings with a baseball bat. He is not hitting anything. He is doing the thing where you look out at the far-off island on the other side of the lake and you visualize the perfect arc &mdash; pitch in, weight back, hips through, contact, follow-through, the ball sailing all the way across the cove and landing on that island. He has hit that island in his head about forty times today. He is going to keep hitting it.
+Kellen is in the grass taking shadow swings with a baseball bat. He is not hitting anything. He is doing the thing where you look out at the far-off island on the other side of the lake and you visualize the perfect arc, pitch in, weight back, hips through, contact, follow-through, the ball sailing all the way across the cove and landing on that island. He has hit that island in his head about forty times today. He is going to keep hitting it.
 
 Carson is on the grass with a putter, hyping a mini-golf rematch for after dinner.
 
 Keira is sketching the lake in a notebook with a small soft pencil.
 
-Ella is sitting on the porch with her chin on her hands. She is just sitting. She is not putting on makeup, not playing a game, not doing anything in particular. She is *with her cousins.* All week. No school. No piano. No one telling her what's next. She is thinking about exactly nothing, and it is the best feeling she has had all year.
+Ella is sitting on the porch with her chin on her hands. She is just sitting. She is not putting on makeup, not playing a game, not doing anything in particular. She is *with her cousins.* All week. No school. No one telling her what's next. She is thinking about exactly nothing, and it is the best feeling she has had all year.
 
-Aiden is, as established, talking to his fishing rod. ("Wait. *Wait.* Fish are in WATER. How am I going to fish? I can't fish from the dock. I have to be IN the water. But if I'm in the water I'll scare the fish. This is &mdash; Chayten. CHAYTEN. How do people FISH.")
+Aiden is, as established, talking to his fishing rod. ("Wait. *Wait.* Fish are in WATER. How am I going to fish? I can't fish from the dock. I have to be IN the water. But if I'm in the water I'll scare the fish. This is, Chayten. CHAYTEN. How do people FISH.")
 
 The man arrives in a white pickup truck.
 
@@ -140,8 +140,8 @@ The man does not introduce himself. He pulls out a sign on a metal stake and ham
 The sign reads:
 
 > COMING SOON
-> DRIEDMORE DATA CENTER — WEST CASCADIA HUB
-> GROUNDBREAKING JULY 4 — 12:00 NOON
+> DRIEDMORE DATA CENTER, WEST CASCADIA HUB
+> GROUNDBREAKING JULY 4, 12:00 NOON
 > THIS COVE IS UNDER CONTRACT TO DRIEDMORE PROPERTIES
 
 Madison sets her book down. She walks over. She reads it twice. She knows what a data center is. She knows what they need.
@@ -160,7 +160,7 @@ Reid says, quietly, "My family has come here for years. Why are the other people
 
 Drystone laughs. "Selling? Sweetheart, the people who own this place have a dock with NO foundation. The water's eaten the ground out from under it. They can't AFFORD the geological work. Driedmore is RESCUING them. We're the good guys here."
 
-(The rental families who come every summer — Madison's family, Reid's, Chayten's, Carson's, Keira's, Ella's, Aiden's, Kellen's — don't own a square inch of Sun Lakes. They have rented the condos every July for as long as the kids have been alive. The cove belongs to the family who runs it. The rental families just *belong* to the cove. There's a difference. There's not really a difference.)
+(The rental families who come every summer, Madison's family, Reid's, Chayten's, Carson's, Keira's, Ella's, Aiden's, Kellen's, don't own a square inch of Sun Lakes. They have rented the condos every July for as long as the kids have been alive. The cove belongs to the family who runs it. The rental families just *belong* to the cove. There's a difference. There's not really a difference.)
 
 He scans something on his tablet. He does not look at any of the kids' faces.
 
@@ -170,7 +170,7 @@ He leaves.
 
 ---
 
-## P-003 — THE KIDS CAN'T FIX THIS
+## P-003, THE KIDS CAN'T FIX THIS
 
 *~300 words.*
 
@@ -180,9 +180,9 @@ Reid looks at the dock. The third plank is wobbling under his weight more than i
 
 The kids try the obvious things.
 
-Madison wants to find the adults. The adults are inside, finishing the lunch dishes and starting prep for tonight's brisket. Uncle Bill is asleep on the couch in the sunroom. (Bill has been up since four AM. He is allowed.) Madison does not wake him. She also realizes, as she's standing outside the door, that her own mother has been talking about "the situation" all week on the phone. The grown-ups already KNOW about Driedmore. They have been talking about it for weeks. They have been quietly considering it because of the dock.
+Madison wants to find the adults. The adults are inside, finishing the lunch dishes and starting prep for tonight's brisket. Uncle Bill is out back, telling somebody a long story about the boat. Madison does not interrupt him. She also realizes, as she's standing outside the door, that her own mother has been talking about "the situation" all week on the phone. The grown-ups already KNOW about Driedmore. They have been talking about it for weeks. They have been quietly considering it because of the dock.
 
-Reid suggests pulling the sign down. Carson says no — that's not how you win. That just makes them put up another sign and now you also have a vandalism charge.
+Reid suggests pulling the sign down. Carson says no, that's not how you win. That just makes them put up another sign and now you also have a vandalism charge.
 
 Kellen suggests calling somebody. Keira points out they don't know who.
 
@@ -202,7 +202,7 @@ There's no wind.
 
 ---
 
-## P-004 — DRIFT TO THE SUNROOM
+## P-004, DRIFT TO THE SUNROOM
 
 *~300 words.*
 
@@ -214,7 +214,7 @@ Aiden walks in first. Aiden is seven and has not yet learned to be afraid of wei
 
 The other seven follow.
 
-The sunroom is warm — warmer than the rest of the house. The sun has been on it all afternoon and the wall of windows has trapped the heat. The plastic of the inflatables is warm against the skin. The smell is the specific smell of Sun Lakes in July: the deep-soaked brisket-memory of the side yard, sunscreen on the kids' shoulders, lake water still on their suits, warm plastic, the faint sourdough smell of pizza dough rising in the kitchen, and one other smell that nobody can name — cold and wet and faintly green, like cave water on a hot day, even though there is no cave water in the sunroom.
+The sunroom is warm, warmer than the rest of the house. The sun has been on it all afternoon and the wall of windows has trapped the heat. The plastic of the inflatables is warm against the skin. The smell is the specific smell of Sun Lakes in July: the deep-soaked brisket-memory of the side yard, sunscreen on the kids' shoulders, lake water still on their suits, warm plastic, the faint sourdough smell of pizza dough rising in the kitchen, and one other smell that nobody can name, cold and wet and faintly green, like cave water on a hot day, even though there is no cave water in the sunroom.
 
 Madison says, "Is that smell new?"
 
@@ -236,7 +236,7 @@ Outside, somewhere up the canyon, a sound begins. It is far off and getting clos
 
 The C-130.
 
-It comes through the canyon a couple of times during their week here. Not every day. Just a handful of times during the trip, the giant gray cargo plane swinging low between the cliffs because the canyon is the perfect training run. The kids look forward to it. The grown-ups pretend not to. When somebody yells *PLANE!* every kid in earshot drops what they're doing and runs to the deck to watch.
+It comes through the canyon a couple of times during their week here. Not every day. Just a handful of times during the trip, the giant gray cargo plane swinging low between the cliffs because the canyon is the perfect training run. The kids look forward to it. The grown-ups also look forward to it. The grown-ups pretend they don't, but they do, every single one of them. When somebody yells *PLANE!* every kid in earshot drops what they're doing and runs to the deck to watch, and every grown-up in earshot drifts to the same deck a few seconds later, all of them with the same dumb happy face when the plane comes around the bend.
 
 But today is different. Today the sunroom is *humming.*
 
@@ -244,7 +244,7 @@ But today is different. Today the sunroom is *humming.*
 
 ---
 
-## P-005 — THE C-130
+## P-005, THE C-130
 
 *~400 words.*
 
@@ -252,7 +252,7 @@ The C-130 thunders past.
 
 It is so loud the windows rattle. The frame of the sunroom shakes. The pile of inflatables shifts. Aiden grabs Chayten's hand. Reid grins. Carson covers his ears and laughs. Keira instinctively shields her sketchbook even though it's already closed. Ella's hand mirror falls off the windowsill and onto the carpet without breaking.
 
-The plane is huge. Through the sunroom windows, the kids can see it for a full second — gray and low and almost stupidly close to the cliffs — and then it is past, the sound trailing behind it as it disappears around the bend.
+The plane is huge. Through the sunroom windows, the kids can see it for a full second, gray and low and almost stupidly close to the cliffs, and then it is past, the sound trailing behind it as it disappears around the bend.
 
 The sunroom is still humming.
 
@@ -276,7 +276,7 @@ The unicorn raft lifts off the floor.
 
 The walls of the sunroom go away.
 
-The lake outside is no longer the lake outside. There is a bigger water. A *louder* water. Madison can hear it — a big sound, far off, like a waterfall. Like the BIGGEST waterfall.
+The lake outside is no longer the lake outside. There is a bigger water. A *louder* water. Madison can hear it, a big sound, far off, like a waterfall. Like the BIGGEST waterfall.
 
 Each raft starts to slide off in a different direction. The kids try to call to each other but the wind is loud. Aiden, on his unicorn, is laughing. Madison, in her canoe, is shouting instructions. Reid is calmly steering. Carson is whooping. Kellen is grinning. Keira is open-mouthed. Ella is sitting perfectly straight with her hands folded in her lap as if she has been waiting for a royal carriage and one has finally arrived.
 
@@ -290,23 +290,23 @@ The rafts pull them through. The sunroom is far behind them. The bigger water is
 
 ---
 
-## P-010 — EIGHT RAFTS LAND IN THE MEADOW
+## P-010, EIGHT RAFTS LAND IN THE MEADOW
 
 *~250 words.*
 
 The rafts land together.
 
-Not where they were heading separately — somewhere new. A green meadow under a sky that is the color of green water seen from underneath. The grass is the brightest green any of the kids have ever seen. The air smells like rain that has not happened.
+Not where they were heading separately, somewhere new. A green meadow under a sky that is the color of green water seen from underneath. The grass is the brightest green any of the kids have ever seen. The air smells like rain that has not happened.
 
 They climb off their rafts. They stand in a loose group. They check that everyone is here. Madison counts heads. Eight. Good.
 
-A roaring sound is filling the meadow from every direction. It is the sound Madison heard from her canoe — bigger, louder, more present. It is a waterfall. It is *every* waterfall.
+A roaring sound is filling the meadow from every direction. It is the sound Madison heard from her canoe, bigger, louder, more present. It is a waterfall. It is *every* waterfall.
 
 In front of them, where the meadow falls away, they can see why.
 
 Dry Falls is wet.
 
-Dry Falls — the enormous cliff at the head of the canyon, the one that is in every school field trip the kids have ever taken in this part of the state, the one that has been a *dry* falls for fifteen thousand years — is *roaring.* Water coming over the lip in a sheet a thousand feet wide. The sound is the sound of geology happening.
+Dry Falls, the enormous cliff at the head of the canyon, the one that is in every school field trip the kids have ever taken in this part of the state, the one that has been a *dry* falls for fifteen thousand years, is *roaring.* Water coming over the lip in a sheet a thousand feet wide. The sound is the sound of geology happening.
 
 Aiden whispers, "*Oh.*"
 
@@ -322,13 +322,13 @@ The eight kids turn.
 
 ---
 
-## P-011 — THE HARBOR KEEPER
+## P-011, THE HARBOR KEEPER
 
 *~700 words. Replaces Tomby. This is the Uncle Bill echo without ever being Uncle Bill. The reader feels the echo. The kids slowly start to wonder.*
 
 He is sitting on a log at the edge of the meadow.
 
-He is large. Not big-as-a-tree-being large, not big-as-a-mammoth large. Just *human* large — broad shouldered, a little stooped, the size of a grown-up uncle who has spent a lifetime carrying things. He has a beard the color of cedar bark. He is wearing what looks like a faded denim shirt and suspenders. He has work boots. He has a beat-up canvas hat pushed back on his head.
+He is large. Not big-as-a-tree-being large, not big-as-a-mammoth large. Just *human* large, broad shouldered, a little stooped, the size of a grown-up uncle who has spent a lifetime carrying things. He has a beard the color of cedar bark. He is wearing what looks like a faded denim shirt and suspenders. He has work boots. He has a beat-up canvas hat pushed back on his head.
 
 He is whittling.
 
@@ -340,7 +340,7 @@ He smiles.
 
 The smile is *specifically familiar.*
 
-Reid notices it first, in the part of his brain that notices things without telling anyone. The smile is one he has seen before. He can't quite place where.
+Reid notices it first, in the part of his brain that notices things without telling anyone. The smile is Uncle Bill's smile. The exact one Uncle Bill uses when he is about to give them a small job to do and is going to enjoy watching them do it. Reid does not say so out loud. He just keeps watching the Harbor Keeper's hands.
 
 The man says, "Sit down, sit down. Don't stand around looking like you got off a bus."
 
@@ -370,7 +370,7 @@ He stands up. He stretches. His knees crack like old wood.
 
 "Each of you can earn something here. Something that will help up there. There are eight things to find, one per kid. None of you can earn another kid's thing. Each one is shaped for you specifically. The Old Roar already knows what you need. You'll find it because the world will lead you to it."
 
-He turns and gestures across the meadow. The grass behind him opens out into eight different regions, visible all at once — a quiet pool, a driftwood stage, a wide grassy plain, a rocky woodland, a long flat lake, a basalt cliff, a moss circle, a meadow with a sideways-growing rainbow.
+He turns and gestures across the meadow. The grass behind him opens out into eight different regions, visible all at once, a quiet pool, a driftwood stage, a wide grassy plain, a rocky woodland, a long flat lake, a basalt cliff, a moss circle, a meadow with a sideways-growing rainbow.
 
 The Harbor Keeper says, "*But.* There's a thing about time."
 
@@ -392,58 +392,4 @@ He fans the cards. Holds them up.
 
 He puts the cards back in his pocket.
 
-He says, "You want to play gin rummy after, that's fine by me. I've got time."
-
-He winks at no one in particular.
-
-Reid is staring at him. He still can't place the smile.
-
-> **Continue to P-012.**
-
----
-
-## P-012 — THE STRATEGY CHOICE
-
-*~200 words. The first real branch.*
-
-The Harbor Keeper steps back. He sits down on his log. He picks up his whittling.
-
-He waits.
-
-The eight kids look at each other.
-
-Madison says, "We have to decide."
-
-Carson says, "What do you guys think?"
-
-Aiden, who is seven, says, "Whatever Madison says."
-
-Madison says, "It's not just my call, buddy. We all decide."
-
-The eight kids stand in a loose huddle. The Harbor Keeper is whittling on his log, not watching them, giving them space. Dry Falls is roaring in the distance.
-
-Madison says, "Okay. Three choices. We stay together and go deep on four places. Or we split into two groups and cover all eight. Or each of us goes alone — all eight regions, deepest possible."
-
-> **If the eight kids decide to STAY TOGETHER, turn to P-100.** *(Four regions deep. All 8 along. Safest. Most support.)*
->
-> **If the eight kids decide to SPLIT INTO TWO GROUPS, turn to P-200.** *(Eight regions covered. Groups of four. Balanced.)*
->
-> **If the eight kids decide that EACH GOES ALONE, turn to P-300.** *(Eight regions, deepest possible. Hardest. Bravest.)*
-
----
-
-## Editor notes
-
-**On P-001 (the synchronized jump):** This is the most important passage in the book to get right. It is the first thing the reader meets. It establishes the family-at-peace before any threat. The eight kids in motion, each doing their natural thing, then unified in the jump. The reader needs to feel *I want to keep reading about these kids* by the end of this passage. The bookend with the showdown coda's jump is the strongest structural beat in the book.
-
-**On the dinner cadence:** Brisket is named in P-001. Uncle Bill making it before sunrise is in P-001. Pulled pork sliders at lunch in P-002. The dinner rhythm from notes.md (pizza night, hamburger night, etc.) doesn't all need to fire in the opening — we can drop the specific dinner-of-the-day references into the framing if Jeff wants the calendar feeling more explicit. Flag for his call.
-
-**On the Harbor Keeper (P-011):** The Uncle Bill echo is in: the beard the color of cedar bark, the whittling (Reid recognizes the *smile* without placing it), the gin rummy reference, the deck of cards in the shirt pocket, the warm "lake family. Been too quiet around here" line, the way he knows everyone's name without being told. The reader who knows Uncle Bill personally will land on the echo immediately. The reader who doesn't will just feel a kind, familiar warmth. Both work. The Harbor Keeper is *never* explicitly identified with Uncle Bill — the magic stays oblique.
-
-**On Reid noticing the smile:** Reid is the right kid to plant the noticing. He notices things without telling anyone. The detail of "he can't quite place where" is the seed. If we want, later in Reid's region or in the showdown, Reid can remember where — Uncle Bill smiling at the dock during last summer's brisket. That's the payoff. (We don't have to do this — the seed is enough.)
-
-**On the "time for four" mechanic:** Delivered cleanly. Harbor Keeper says it out loud. No tokens. The arithmetic does the work: 1 group × 4 regions = 4 items (Strategy A). 2 groups × 4 regions = 8 items (B). 8 kids × 1 region = 8 items (C). Reader can count in their head.
-
-**On the visible eight regions:** P-011 has the meadow opening out into all eight regions visible at once. This is a deliberate worldbuilding choice — the kids see what's possible. It also gives a print-book illustrator a great wide spread.
-
-**On word count:** Total ~3,150. A little under target but tight. Cleaner is better.
+He says, "You want to play gin rummy after, that's fine by me. I've got tim

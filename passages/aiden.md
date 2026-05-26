@@ -1,13 +1,13 @@
-# Aiden's Region — The Unicorn Meadow
+# Aiden's Region, The Unicorn Meadow
 
 **Region ID:** R-AIDEN
 **Passages:** P-180 through P-186
 **Focal kid:** Aiden (7)
-**Item earned:** Pegasus (always — locked) + path-specific extras
+**Item earned:** Pegasus (always, locked) + path-specific extras
 **Possible allies:** Hush (Path B), Pegasus (always)
 **Possible flags:** CanyonSingerOttersConfirm, HushAtShowdown
 
-This region is restructured from the v2 draft. Pegasus *always* crosses with Aiden — the locked crossover rule. The three paths differ in what ELSE comes back: a friend (Path B), a deeper family-secret confirmation (Path C), or just the unicorn (Path A).
+This region is restructured from the v2 draft. Pegasus *always* crosses with Aiden, the locked crossover rule. The three paths differ in what ELSE comes back: a friend (Path B), a deeper family-secret confirmation (Path C), or just the unicorn (Path A).
 
 ---
 
@@ -15,7 +15,7 @@ This region is restructured from the v2 draft. Pegasus *always* crosses with Aid
 
 ```
 P-180  Entry: arrival in the Unicorn Meadow
-P-181  The exactly-right moment            (Aiden's cared-for beat — Pegasus picked HIM)
+P-181  The exactly-right moment            (Aiden's cared-for beat, Pegasus picked HIM)
 P-182  Aiden's choice                       (which path to find Ripple)
        ├─ A. The Meadow of Bells (easy)     → P-183 → Pegasus (base)
        ├─ B. The Cliffside (medium, meet Hush) → P-184 → Pegasus + Hush ally
@@ -27,7 +27,7 @@ Target ~2,600 words.
 
 ---
 
-## P-180 — ARRIVAL IN THE UNICORN MEADOW
+## P-180, ARRIVAL IN THE UNICORN MEADOW
 
 *~350 words. Slight variant per wrapper.*
 
@@ -51,13 +51,13 @@ She lands gently in a meadow. The grass is greener than grass should be. Aiden s
 
 [VARIANT: STAY-TOGETHER. *The other seven kids are landing in the meadow too, their rafts coming down softly around him. Carson catches Aiden's hand as he slides off, automatic. Chayten is already looking around to make sure he's okay. He waves at both of them. He's fine. He is FANTASTIC. He is also, he realizes, the only one of them on an actual unicorn.*]
 
-[VARIANT: SPLIT. *Three other kids are with him. Chayten is one of them — she came in his group on purpose, and she is standing close enough that he can grab her hand without reaching. Carson is the second; he is the cousin who always lifts Aiden onto things, and Aiden can already tell he wants to be the one to lift him onto Pegasus the first time. Reid is the third, calm as he always is, watching the meadow.*]
+[VARIANT: SPLIT. *Three other kids are with him. Chayten is one of them, she came in his group on purpose, and she is standing close enough that he can grab her hand without reaching. Carson is the second; he is the cousin who always lifts Aiden onto things, and Aiden can already tell he wants to be the one to lift him onto Pegasus the first time. Reid is the third, calm as he always is, watching the meadow.*]
 
 [VARIANT: SOLO. *Just him. He should be scared. He isn't. Chayten is somewhere else and Carson is somewhere else and even Madison is somewhere else, and he is alone on a green meadow with a unicorn that just turned real, and the only thing he can think is: somebody trusted me with this. He has never been trusted with something this big. He stands up a little straighter.*]
 
 Pegasus bows her head so they're eye to eye.
 
-"I have been waiting for a rider for two hundred years," she says. "Did you know that? Do you want to know why? Because no one else FIT. The riders were too BIG. Or too TALL. Or too OLD. Or they didn't believe in unicorns enough. And then today I felt a small boy climbing onto me in a sunroom and I thought — *OH. There he is.*"
+"I have been waiting for a rider for two hundred years," she says. "Did you know that? Do you want to know why? Because no one else FIT. The riders were too BIG. Or too TALL. Or too OLD. Or they didn't believe in unicorns enough. And then today I felt a small boy climbing onto me in a sunroom and I thought, *OH. There he is.*"
 
 She tells him her name. She has never said it out loud before.
 
@@ -71,7 +71,7 @@ Aiden laughs. Pegasus is delighted.
 
 ---
 
-## P-181 — THE EXACTLY-RIGHT MOMENT
+## P-181, THE EXACTLY-RIGHT MOMENT
 
 *~250 words. Always read.*
 
@@ -109,7 +109,7 @@ Aiden climbs on.
 
 ---
 
-## P-182 — AIDEN'S CHOICE
+## P-182, AIDEN'S CHOICE
 
 *~150 words. The real branch.*
 
@@ -123,7 +123,7 @@ Pegasus says, "The hole is in one of THREE places. I know it's in one of them. I
 
 ---
 
-## P-183 — PATH A: THE MEADOW OF BELLS (BASE)
+## P-183, PATH A: THE MEADOW OF BELLS (BASE)
 
 *~550 words. Yields Pegasus (base).*
 
@@ -139,7 +139,7 @@ They can hear a baby otter crying.
 
 Aiden grips her mane. Pegasus folds her wings and dives.
 
-Down they go. The hole opens out into a glittering cave. Crystals glow on the walls. Sitting in the middle of the cave is Ripple the otter — three weeks old, fuzzy, scared, small enough to fit in Aiden's two hands.
+Down they go. The hole opens out into a glittering cave. Crystals glow on the walls. Sitting in the middle of the cave is Ripple the otter, three weeks old, fuzzy, scared, small enough to fit in Aiden's two hands.
 
 She has been crying for what looks like hours.
 
@@ -151,7 +151,7 @@ Ripple sniffs his hand. Then she climbs into his pocket and stays there.
 
 Pegasus lifts her horn to glow. Of the four doors at the back of the cave, one glows back. That's the way out.
 
-They fly up the passage. They surface in the meadow. Ripple's mother is waiting — frantic, then sobbing, then squeaking with relief. She touches her nose to Aiden's nose.
+They fly up the passage. They surface in the meadow. Ripple's mother is waiting, frantic, then sobbing, then squeaking with relief. She touches her nose to Aiden's nose.
 
 "You saved her," she says. "Thank you."
 
@@ -183,7 +183,7 @@ Aiden laughs all the way home.
 
 ---
 
-## P-184 — PATH B: THE CLIFFSIDE (ENHANCED — A REAL CHOICE)
+## P-184, PATH B: THE CLIFFSIDE (ENHANCED, A REAL CHOICE)
 
 *~700 words. Yields Pegasus + Hush + a cost. This is where the path actually tests Aiden.*
 
@@ -245,7 +245,7 @@ Then he says, quietly: "Pegasus, you said I was exactly right. I think being exa
 
 Pegasus closes her eyes.
 
-Aiden says, "But — can I think for one more second?"
+Aiden says, "But, can I think for one more second?"
 
 Pegasus says, "Take all the seconds."
 
@@ -253,7 +253,7 @@ Aiden thinks. He looks at Hush. Then he says: "Hush. Could you come for one day?
 
 Hush sits up. He looks at Pegasus. Pegasus looks surprised, then *delighted.*
 
-"You — you could leave for ONE DAY?" Pegasus asks Hush. "Not forever?"
+"You, you could leave for ONE DAY?" Pegasus asks Hush. "Not forever?"
 
 Hush considers. "One day is forty-eight hours less than five hundred years. I think I can do one day."
 
@@ -261,9 +261,9 @@ Pegasus says, "Then the door stays open for that day. Magic permits a visit. It 
 
 Aiden laughs. He has solved a problem that wasn't supposed to have a solution.
 
-Hush attaches to Aiden's shoulder. He has gone from sad-grumpy to *brave* in the space of about three minutes. He sits up straighter on Aiden's shoulder than he has sat in five centuries. He even tries a small spike-stretch — for the first time in his life, he wants to be slightly more impressive.
+Hush attaches to Aiden's shoulder. He has gone from sad-grumpy to *brave* in the space of about three minutes. He sits up straighter on Aiden's shoulder than he has sat in five centuries. He even tries a small spike-stretch, for the first time in his life, he wants to be slightly more impressive.
 
-"Look," he whispers to Aiden, awed at himself. "I am — I am DOING things. I never DO things. You made me do things."
+"Look," he whispers to Aiden, awed at himself. "I am, I am DOING things. I never DO things. You made me do things."
 
 Aiden says, matter-of-factly, "You did. You were always going to. You just needed someone to ask."
 
@@ -271,7 +271,7 @@ Hush thinks about that for a long moment. It is the kind of moment a small creat
 
 Pegasus bumps Aiden's forehead with her horn.
 
-"You found the third option," she says. "Most adults can't. Most children can. You just did. And look — you made him brave just by treating him like he already was."
+"You found the third option," she says. "Most adults can't. Most children can. You just did. And look, you made him brave just by treating him like he already was."
 
 Aiden grins. He didn't think he had made anyone brave. But he had.
 
@@ -285,19 +285,19 @@ They surface in the meadow. Ripple's mother weeps. Hush rides Aiden's shoulder. 
 
 ---
 
-## P-185 — PATH C: THE RIVER'S BEND (HIDDEN — A HARDER CHOICE)
+## P-185, PATH C: THE RIVER'S BEND (HIDDEN, A HARDER CHOICE)
 
 *~700 words. Yields Pegasus + Canyon Singer confirmation + a real cost paid up front.*
 
 Pegasus flies them to the River's Bend. The river is wide and warm. The otters have been waiting.
 
-A tea party on a flat rock in the middle of the river. Tiny driftwood table. Teapot the size of a thimble. Ripple's mother is there — calm. The otters have been keeping her company.
+A tea party on a flat rock in the middle of the river. Tiny driftwood table. Teapot the size of a thimble. Ripple's mother is there, calm. The otters have been keeping her company.
 
 "We knew you would come. Have tea before you rescue her."
 
 Aiden looks at Pegasus. Pegasus shrugs. "We have a few minutes."
 
-But the head otter — a small grey-muzzled creature wearing a kelp necklace, who introduces herself as Aunt Stream — does not look like a creature offering small talk.
+But the head otter, a small grey-muzzled creature wearing a kelp necklace, who introduces herself as Aunt Stream, does not look like a creature offering small talk.
 
 "Child. Before we begin. There is something you need to know about the river. The rescue is not free."
 
@@ -313,7 +313,7 @@ Aunt Stream looks at him kindly. "You have the unicorn."
 
 Aiden's chin starts to wobble.
 
-"No. Not her staying. Not her belonging to you. The river will not take a creature. The river takes a *promise.* Pegasus is a unicorn. Unicorns belong to the whole world, not to one boy. If you bring her home, you have to promise that she gets to come back. Not just to visit. She gets to come *back* — when the work at your lake is done. She does not stay with you forever."
+"No. Not her staying. Not her belonging to you. The river will not take a creature. The river takes a *promise.* Pegasus is a unicorn. Unicorns belong to the whole world, not to one boy. If you bring her home, you have to promise that she gets to come back. Not just to visit. She gets to come *back*, when the work at your lake is done. She does not stay with you forever."
 
 Aiden looks at Pegasus. Pegasus is looking back at him.
 
@@ -353,7 +353,7 @@ Aiden, quietly: "I didn't let you go. I let you visit other people. That's diffe
 
 Pegasus laughs the loudest unicorn laugh in two hundred years.
 
-[CROSSOVER HOOK: *Above the river, the basalt cliffs are visibly streaked with color — blue, orange, green — that wasn't there an hour ago. "The painter girl woke them," Aunt Stream says. "Big day."*]
+[CROSSOVER HOOK: *Above the river, the basalt cliffs are visibly streaked with color, blue, orange, green, that wasn't there an hour ago. "The painter girl woke them," Aunt Stream says. "Big day."*]
 
 **→ Exit to P-186.**
 
@@ -361,7 +361,7 @@ Pegasus laughs the loudest unicorn laugh in two hundred years.
 
 ---
 
-## P-186 — EXIT
+## P-186, EXIT
 
 *~200 words. Always read.*
 
@@ -371,7 +371,7 @@ The sky is purple-gold. The C-130 is rumbling somewhere up ahead, calling them h
 
 [VARIANT: PATH B. *Pegasus flies. Hush is on Aiden's shoulder, hanging on with both small paws. He whispers "LOOK at the SKY" every few minutes because the sky is the most beautiful thing he has ever seen and he wants to make sure Aiden notices.*]
 
-[VARIANT: PATH C. *Pegasus flies. Aiden hears, faintly under the wind, the start of a song coming from below — Aunt Stream's promised song, the lake carrying it. He smiles. He won't tell anyone yet. He's been told to wait.*]
+[VARIANT: PATH C. *Pegasus flies. Aiden hears, faintly under the wind, the start of a song coming from below, Aunt Stream's promised song, the lake carrying it. He smiles. He won't tell anyone yet. He's been told to wait.*]
 
 He has Pegasus. He has, maybe, a friend on his shoulder, or a song in his ears, or just a unicorn at his back.
 
@@ -393,11 +393,11 @@ Aiden says, "Yeah."
 
 **On Pegasus always crossing:** Locked. Per the crossover rule, Pegasus is the one ally who *always* comes back with the kid. Aiden's branch is the engine of the whole book. Even on Path A (the easy path) Pegasus still comes home. This is non-negotiable.
 
-**On "the exactly-right moment" (P-181):** Aiden's cared-for beat. Pegasus tells him — directly, before the quest starts — *you are not too small. You are not too young. I picked you. The world is going to tell you you're too little for the rest of your life. The world is going to be wrong.* This is the most important thing the book says to its youngest reader. Worth being explicit.
+**On "the exactly-right moment" (P-181):** Aiden's cared-for beat. Pegasus tells him, directly, before the quest starts, *you are not too small. You are not too young. I picked you. The world is going to tell you you're too little for the rest of your life. The world is going to be wrong.* This is the most important thing the book says to its youngest reader. Worth being explicit.
 
 **On Path C (Canyon Singer confirmation):** This is the deepest payoff for the whole book's easter egg. Aunt Stream confirms what Madison's Path C suggested: *the lake has been carrying that voice across the worlds. Your mother is shyer than she pretends.* This is the most explicit the book ever gets about the Canyon Singer. It STILL doesn't name names. But the kid reading it will land on the answer, and any adult reader who knows the family lore gets the full reveal here.
 
-**On the otter family connection (Path C):** Aunt Stream is Otto's cousin. The Driftwood Players are family. The otter network across The Old Roar is real and connected, which echoes the chosen-family theme one more time before the showdown. This also sets up Aiden being proud of Chayten — a small reciprocal beat to Chayten being proud of him in her region.
+**On the otter family connection (Path C):** Aunt Stream is Otto's cousin. The Driftwood Players are family. The otter network across The Old Roar is real and connected, which echoes the chosen-family theme one more time before the showdown. This also sets up Aiden being proud of Chayten, a small reciprocal beat to Chayten being proud of him in her region.
 
 **On crossovers:** Path A: Reid's tree-being walking (bells ring a deep chord). Path B: Kellen's stones skipping across the sky (a small cool image). Path C: Keira's color canyon (visible above the river). Same rotation.
 

@@ -1,4 +1,4 @@
-# Carson's Region — The Coulee Games
+# Carson's Region, The Coulee Games
 
 **Region ID:** R-CARSON
 **Passages:** P-130 through P-136
@@ -13,7 +13,7 @@
 
 ```
 P-130  Entry: arrival on the Coulee Plains       (always read, slight variant per wrapper)
-P-131  The go-hard moment                        (always read — Carson's parallel to Madison's float)
+P-131  The go-hard moment                        (always read, Carson's parallel to Madison's float)
 P-132  Carson's choice                           (the real branch)
        ├─ A. Just race straight                  → P-133 → Charm (base)
        ├─ B. Race AND gather the babies          → P-134 → Charm (enhanced) + Big Coulee ally
@@ -25,7 +25,7 @@ Target ~2,800 words.
 
 ---
 
-## P-130 — ARRIVAL ON THE COULEE PLAINS
+## P-130, ARRIVAL ON THE COULEE PLAINS
 
 *~350 words. Slight variant per wrapper.*
 
@@ -63,7 +63,7 @@ She is, he realizes, the loudest creature he has ever met. He likes her immediat
 
 ---
 
-## P-131 — THE GO-HARD MOMENT
+## P-131, THE GO-HARD MOMENT
 
 *~300 words. Always read.*
 
@@ -99,7 +99,7 @@ Big Coulee straightens up. "*EXCELLENT.* Then we have a RACE. Choose your path."
 
 ---
 
-## P-132 — CARSON'S CHOICE
+## P-132, CARSON'S CHOICE
 
 *~150 words. The real branch.*
 
@@ -107,15 +107,15 @@ Big Coulee paws the ground.
 
 "How do you want to race?" she asks. "I am open to RULES, child. I love a rule. Make ONE."
 
-> **If you say "just race — straight to the finish line, fastest one wins," turn to P-133.** *(Honest competition. She might destroy you. Worth it.)*
+> **If you say "just race, straight to the finish line, fastest one wins," turn to P-133.** *(Honest competition. She might destroy you. Worth it.)*
 >
-> **If you say "race AND we gather your babies along the way — most babies at the end wins," turn to P-134.** *(Smart competitive. You might actually win this one.)*
+> **If you say "race AND we gather your babies along the way, most babies at the end wins," turn to P-134.** *(Smart competitive. You might actually win this one.)*
 >
 > **If you stop and look at Tuft and Tumble, who are anxious and bumping into each other, and say "race in twenty. Let's settle them first," turn to P-135.** *(You give up your race-prep time. There's something here worth more than a head start.)*
 
 ---
 
-## P-133 — PATH A: RACE STRAIGHT (BASE)
+## P-133, PATH A: RACE STRAIGHT (BASE)
 
 *~600 words. Yields Charm (base). No physical ally.*
 
@@ -153,7 +153,7 @@ Big Coulee thunders back to him. She is delighted. She picks him up in her trunk
 
 "CHILD," she says. "You ran like you MEANT it. That is rare and that is GOOD."
 
-Pip-Pip presents the prize from her clipboard: a small, smooth piece of polished mammoth tusk on a leather cord. The Tusk-Charm. "Carved from my own great-grandmother's tusk," Big Coulee says. "Whoever wears this — when you stand somewhere and ask people to stand with you, they will. It works because they already wanted to. The charm just makes the asking visible."
+Pip-Pip presents the prize from her clipboard: a small, smooth piece of polished mammoth tusk on a leather cord. The Tusk-Charm. "Carved from my own great-grandmother's tusk," Big Coulee says. "Whoever wears this, when you stand somewhere and ask people to stand with you, they will. It works because they already wanted to. The charm just makes the asking visible."
 
 Carson loops the cord around his neck. The charm is warm against his collarbone.
 
@@ -171,7 +171,7 @@ Carson says, "Deal."
 
 ---
 
-## P-134 — PATH B: RACE AND GATHER (ENHANCED)
+## P-134, PATH B: RACE AND GATHER (ENHANCED)
 
 *~700 words. Yields Charm (enhanced) + Big Coulee ally.*
 
@@ -193,15 +193,15 @@ Pip-Pip drops the flag.
 
 Carson sprints. Big Coulee thunders. They peel off in different directions.
 
-Carson finds the first baby in a patch of wildflowers — a small mammoth so covered in pollen she sneezes when he picks her up. He tucks her under his arm. Two more are stuck in a bramble together. He frees them. They cling to his legs and waddle behind him.
+Carson finds the first baby in a patch of wildflowers, a small mammoth so covered in pollen she sneezes when he picks her up. He tucks her under his arm. Two more are stuck in a bramble together. He frees them. They cling to his legs and waddle behind him.
 
-By the time he reaches the far pole, he has four babies — one under each arm, two clinging to his back. He turns. Big Coulee is coming the other way with three babies on her broad back and one in her trunk.
+By the time he reaches the far pole, he has four babies, one under each arm, two clinging to his back. He turns. Big Coulee is coming the other way with three babies on her broad back and one in her trunk.
 
 She sees him. She brakes hard. She trumpets, "CHILD. YOU ARE TIED WITH ME."
 
 Carson is laughing too hard to answer.
 
-The last baby — the smallest, no bigger than a loaf of bread — is sitting in the middle of the field, very confused, eating a flower. Carson and Big Coulee both stop.
+The last baby, the smallest, no bigger than a loaf of bread, is sitting in the middle of the field, very confused, eating a flower. Carson and Big Coulee both stop.
 
 They look at each other.
 
@@ -241,7 +241,7 @@ Carson laughs. He puts the flower crown back on her head.
 
 ---
 
-## P-135 — PATH C: SETTLE THE BABIES FIRST (HIDDEN)
+## P-135, PATH C: SETTLE THE BABIES FIRST (HIDDEN)
 
 *~700 words. Yields Charm (full) + BigCoulee, Tuft, Tumble as allies + ChampionAndFriend flag.*
 
@@ -249,7 +249,7 @@ Carson is about to say something competitive.
 
 Then he looks at Tuft and Tumble.
 
-The two baby mammoths are bumping into each other. Their trunks are tangled. One of them — Tumble, he thinks — is making a small worried sound. The other is trying to nurse on Big Coulee's leg and is being gently kicked off because Big Coulee is in race mode.
+The two baby mammoths are bumping into each other. Their trunks are tangled. One of them, Tumble, he thinks, is making a small worried sound. The other is trying to nurse on Big Coulee's leg and is being gently kicked off because Big Coulee is in race mode.
 
 Tuft and Tumble are scared. They don't want their mom to leave.
 
@@ -263,7 +263,7 @@ Big Coulee snorts. "Child. The race is in THIRTY MINUTES. I have been TRAINING."
 
 Big Coulee stops. She looks at her babies. She had not, in fact, noticed.
 
-She lowers herself to the ground (slowly — mammoths take a minute to lower themselves) so her huge belly is on the grass and she is no taller than the babies. She gathers them in her trunk. Tuft and Tumble bury themselves in her side.
+She lowers herself to the ground (slowly, mammoths take a minute to lower themselves) so her huge belly is on the grass and she is no taller than the babies. She gathers them in her trunk. Tuft and Tumble bury themselves in her side.
 
 Carson kneels next to them.
 
@@ -283,7 +283,7 @@ Carson shrugs. He has a six-year-old cousin. He knows what scared looks like.
 
 They spend ten minutes calming the babies down. By the time they're done, Tuft and Tumble are leaning against Carson, half-asleep, breathing slow. Big Coulee is also calmer than she has been all morning.
 
-The race goes ahead. Big Coulee runs. Carson runs. Big Coulee wins by a lot — Carson lost his prep time and his legs feel like wet noodles by the halfway mark. He finishes thirty seconds behind. He laughs the whole way.
+The race goes ahead. Big Coulee runs. Carson runs. Big Coulee wins by a lot, Carson lost his prep time and his legs feel like wet noodles by the halfway mark. He finishes thirty seconds behind. He laughs the whole way.
 
 Big Coulee thunders to him, scoops him up in her trunk, and brings him to where Tuft and Tumble are watching from the side.
 
@@ -303,7 +303,7 @@ Carson can't quite speak.
 
 Tuft puts her trunk on his shoulder. Tumble headbutts his hip gently.
 
-[CROSSOVER HOOK: *If the reader has played Aiden's branch, a small bright shape passes overhead — a unicorn, faintly visible, with a small boy on her back. Big Coulee looks up. "Oh," she says, delighted. "He found his rider."*]
+[CROSSOVER HOOK: *If the reader has played Aiden's branch, a small bright shape passes overhead, a unicorn, faintly visible, with a small boy on her back. Big Coulee looks up. "Oh," she says, delighted. "He found his rider."*]
 
 Big Coulee walks him back to his boat. Tuft and Tumble walk beside him, one on each side.
 
@@ -313,7 +313,7 @@ Big Coulee walks him back to his boat. Tuft and Tumble walk beside him, one on e
 
 ---
 
-## P-136 — EXIT: BIG COULEE WALKS HIM TO HIS RAFT
+## P-136, EXIT: BIG COULEE WALKS HIM TO HIS RAFT
 
 *~250 words. Always read. Slight variant per path.*
 
@@ -329,7 +329,7 @@ Before he climbs back onto the boat-on-wheels, Big Coulee stops him.
 
 She lowers her head one more time. Her voice is small. Just for him.
 
-"Child. The thing you did today — running hard, AND stopping for the babies, AND letting it tie, AND not pretending I was easier than I was — that's not just being a good competitor. That's a thing you do all the time, isn't it. At home. With the small one. The fishing kid."
+"Child. The thing you did today, running hard, AND stopping for the babies, AND letting it tie, AND not pretending I was easier than I was, that's not just being a good competitor. That's a thing you do all the time, isn't it. At home. With the small one. The fishing kid."
 
 Carson is quiet.
 
@@ -353,11 +353,11 @@ He heads back toward the meadow, toward whoever is waiting, toward the sound of 
 
 ## Editor notes
 
-**On "the go-hard moment" (P-131):** This is Carson's parallel to Madison's float and Chayten's demotion. Big Coulee specifically notices he's been holding himself in — being polite, soft, careful, the way an older cousin learns to be — and gives him permission to compete for real. The cared-for thing for Carson is the opposite of comfort: it's *being asked to GO HARD without softening.* That's what he never gets at home with the younger kids around.
+**On "the go-hard moment" (P-131):** This is Carson's parallel to Madison's float and Chayten's demotion. Big Coulee specifically notices he's been holding himself in, being polite, soft, careful, the way an older cousin learns to be, and gives him permission to compete for real. The cared-for thing for Carson is the opposite of comfort: it's *being asked to GO HARD without softening.* That's what he never gets at home with the younger kids around.
 
 **On the competition-is-good editor note:** Big Coulee's "thirty competitors all held back" speech directly addresses the previous editor's flag. The book is saying out loud: *holding back to be polite is its own kind of disrespect.* That's a healthy message for competitive kids. Path A celebrates a full-effort losing race. Path B celebrates strategy. Path C celebrates noticing what matters more than the win. All three paths honor competition. None of them moralize against it.
 
-**On Tuft and Tumble:** They become physical allies on Path C — small enough that they're "visible only to kids and Drystone" per the locked crossover rule. Big Coulee is huge and follows the same rule (Drystone sees a mammoth on the dock; the other adults see nothing). This is when Drystone starts to genuinely question his sanity.
+**On Tuft and Tumble:** They become physical allies on Path C, small enough that they're "visible only to kids and Drystone" per the locked crossover rule. Big Coulee is huge and follows the same rule (Drystone sees a mammoth on the dock; the other adults see nothing). This is when Drystone starts to genuinely question his sanity.
 
 **On the chosen-family theme:** Big Coulee's "I will look out for yours" line in Path C is a chosen-family beat with a non-human creature. The thematic argument is *anyone who shows up for you becomes family.* This compounds with Madison's Lake Sisters ("the lake itself is family to us") and Chayten's Otto ("we were not blood, we were better than blood").
 
@@ -365,4 +365,4 @@ He heads back toward the meadow, toward whoever is waiting, toward the sound of 
 
 **On word count:** Total ~2,800. Path A reader: ~1,500. Path B: ~1,650. Path C: ~1,700. Same shape.
 
-**Open structural note:** I made Big Coulee's pre-race "you've been holding yourself in" speech quite specific. If you'd rather it lands more lightly — less direct emotional content from the mammoth, more action — flag it and I'll trim.
+**Open structural note:** I made Big Coulee's pre-race "you've been holding yourself in" speech quite specific. If you'd rather it lands more lightly, less direct emotional content from the mammoth, more action, flag it and I'

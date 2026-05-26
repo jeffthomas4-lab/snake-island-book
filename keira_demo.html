@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Keira's Region — 3-Deep CYOA Demo</title>
+<title>Keira's Region, 3-Deep CYOA Demo</title>
 <style>
   :root { --paper: #faf6ed; --ink: #2b2419; --warm: #c97a3f; --water: #4a7d8c; --green: #6b8e4e; --gold: #c9a23f; --rule: rgba(43, 36, 25, 0.15); }
   * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -36,7 +36,7 @@
 <body>
 <div class="container">
   <header>
-    <h1>Keira's Region — 3-Deep CYOA Demo</h1>
+    <h1>Keira's Region, 3-Deep CYOA Demo</h1>
     <div class="controls"><button onclick="restart()">Start over</button></div>
   </header>
   <div id="state-display"></div>
@@ -47,8 +47,8 @@ const SCENES = {
 
 start: {
   id: 'START', title: 'Keira at the Painted Cliff',
-  meta: 'A 3-deep CYOA demo for Keira (10) — artist\'s eye, climber\'s body',
-  text: `<figure class="illus"><img src="images/keira_region.webp" alt="Keira at the Painted Cliff — Cliffy the sleeping basalt giant, a tiny mouse with spectacles"><figcaption>Keira at the Painted Cliff — Cliffy the sleeping basalt giant, a tiny mouse with spectacles</figcaption></figure><div class="demo-note"><strong>27 ways through Keira's region.</strong> She lands at a thousand-foot basalt cliff who has been asleep for five hundred years and would very much like to wake up. A small mouse with spectacles takes notes. Your three choices each branch into three more.</div>`,
+  meta: 'A 3-deep CYOA demo for Keira (10), artist\'s eye, climber\'s body',
+  text: `<figure class="illus"><img src="images/keira_region.webp" alt="Keira at the Painted Cliff, Cliffy the sleeping basalt giant, a tiny mouse with spectacles"><figcaption>Keira at the Painted Cliff, Cliffy the sleeping basalt giant, a tiny mouse with spectacles</figcaption></figure><div class="demo-note"><strong>27 ways through Keira's region.</strong> She lands at a thousand-foot basalt cliff who has been asleep for five hundred years and would very much like to wake up. A small mouse with spectacles takes notes. Your three choices each branch into three more.</div>`,
   choices: [{ label: "Begin Keira's region", target: 'p160' }],
 },
 
@@ -57,7 +57,7 @@ p160: {
   text: `<p>Keira's raft slides up to the foot of an enormous cliff. Her raft is now a flat wooden one with a small easel bolted to it, brushes in a leather holder, paints in glass jars. The colors are colors Keira doesn't have names for. She wants names for them immediately.</p>
 <p>The cliff in front of her is gigantic. Black basalt columns rising hundreds of feet up. Perfectly hexagonal, the way good basalt always is.</p>
 <p>She tilts her head. The cliff has a face. She tilts the other way. The cliff is <em>breathing.</em></p>
-<p>A small sound — like snoring? But the snore is <em>colored.</em> Pale blue with flecks of orange.</p>
+<p>A small sound, like snoring? But the snore is <em>colored.</em> Pale blue with flecks of orange.</p>
 <p>A small voice says, "You're not supposed to be able to see that. I'm UP HERE. Look at the third column from the left."</p>
 <p>The third basalt column has eyes. The eyes are closed.</p>
 <p>"I haven't had a visitor in five hundred years. Are you a visitor or are you a dream? I get them confused."</p>
@@ -68,7 +68,7 @@ p160: {
 },
 
 p161: {
-  id: 'P-161', title: 'The Both-At-Once Moment', meta: 'Keira — cared-for',
+  id: 'P-161', title: 'The Both-At-Once Moment', meta: 'Keira, cared-for',
   text: `<p>Before Keira even picks up a brush, the cliff opens one eye, just a crack.</p>
 <p>He looks at her. Closes it again. "Huh."</p>
 <p>"What?"</p>
@@ -80,8 +80,8 @@ p161: {
 <p>"Good. Now. Please paint me awake. I have been BORED for two hundred of the last five hundred years and I would like to see the sky again."</p>
 <p>He yawns purple. Keira opens her paint jars.</p>
 <p>The paints <em>move</em> when she opens them. They lean toward her. They are excited to be used.</p>
-<p>And then she notices something. Something nobody else has ever noticed. A faint line of orange — almost invisible — running down the seam between two basalt columns of Cliffy's cheek. She tilts her head. The orange brightens. She tilts the other way. There's blue down by his jaw. Green near his eye. The colors have been THERE the whole time. Five hundred years\' worth of color, waiting under the black.</p>
-<p>The moment she SEES them, they get brighter. Not because she painted them. Because she <em>looked.</em> A small patch of orange becomes a stroke. The stroke becomes a vein. Cliffy gasps softly — he feels it.</p>
+<p>And then she notices something. Something nobody else has ever noticed. A faint line of orange, almost invisible, running down the seam between two basalt columns of Cliffy's cheek. She tilts her head. The orange brightens. She tilts the other way. There's blue down by his jaw. Green near his eye. The colors have been THERE the whole time. Five hundred years\' worth of color, waiting under the black.</p>
+<p>The moment she SEES them, they get brighter. Not because she painted them. Because she <em>looked.</em> A small patch of orange becomes a stroke. The stroke becomes a vein. Cliffy gasps softly, he feels it.</p>
 <p>"Child," he whispers. "What are you doing to me?"</p>
 <p>"Nothing. I just <em>saw</em> them."</p>
 <p>"Oh," he says, very quietly. "Oh, oh, oh."</p>`,
@@ -89,7 +89,7 @@ p161: {
 },
 
 p162: {
-  id: 'P-162', title: 'CHOICE 1 — How do you begin?', meta: 'First decision',
+  id: 'P-162', title: 'CHOICE 1, How do you begin?', meta: 'First decision',
   text: `<p>The cliff yawns one more time. Now the yawn is lavender with green flecks. The colors drift. He says, "How would you like to begin?"</p>`,
   choices: [
     { label: '"I\'ll just start painting and see what happens."', target: 'p163', sub: "Bold. Trust the brush. Let color lead." },
@@ -101,17 +101,17 @@ p162: {
 // CHOICE 2 NODES
 
 p163: {
-  id: 'P-163', title: 'CHOICE 2A — Which color leads?', meta: 'You chose to paint first',
+  id: 'P-163', title: 'CHOICE 2A, Which color leads?', meta: 'You chose to paint first',
   text: `<p>Keira shrugs and reaches for a jar. The paint inside leans toward her hand. Three jars are particularly eager. Which one leads?</p>`,
   choices: [
-    { label: 'Lead with ORANGE — warm, eager, awake', target: 'p163a', sub: "The color that has been waiting to be picked." },
-    { label: 'Lead with BLUE — cool, deep, like a held breath', target: 'p163b', sub: "Calm color. The wake-up will be slow." },
+    { label: 'Lead with ORANGE, warm, eager, awake', target: 'p163a', sub: "The color that has been waiting to be picked." },
+    { label: 'Lead with BLUE, cool, deep, like a held breath', target: 'p163b', sub: "Calm color. The wake-up will be slow." },
     { label: 'Lead with the color you don\'t have a name for', target: 'p163c', sub: "Let it choose. You'll find out what it is by using it." },
   ],
 },
 
 p164: {
-  id: 'P-164', title: 'CHOICE 2B — What concept do you paint?', meta: 'You asked what he wants',
+  id: 'P-164', title: 'CHOICE 2B, What concept do you paint?', meta: 'You asked what he wants',
   text: `<p>Cliffy is quiet for a long time. "Nobody has ever asked me that."</p>
 <p>You wait.</p>
 <p>"I don't think I know what I look like. I've been asleep so long. What does the world look like now? What's NEW? What would I want to wear?"</p>
@@ -119,38 +119,38 @@ p164: {
 <p>"What about painting an IDEA?" you say. "Something nobody has painted on you before?"</p>
 <p>He goes very still. "Yes. What idea?"</p>`,
   choices: [
-    { label: 'KINDNESS — two hands reaching for each other', target: 'p164a', sub: "Soft warmth. He'll cry." },
-    { label: 'COURAGE — a small thing standing tall', target: 'p164b', sub: "Strength painted small. He'll straighten." },
-    { label: 'REST — paint the shape of sleep itself', target: 'p164c', sub: "He's been so tired. Let him see his own rest." },
+    { label: 'KINDNESS, two hands reaching for each other', target: 'p164a', sub: "Soft warmth. He'll cry." },
+    { label: 'COURAGE, a small thing standing tall', target: 'p164b', sub: "Strength painted small. He'll straighten." },
+    { label: 'REST, paint the shape of sleep itself', target: 'p164c', sub: "He's been so tired. Let him see his own rest." },
   ],
 },
 
 p165: {
-  id: 'P-165', title: 'CHOICE 2C — How do you climb?', meta: 'You chose to climb first',
+  id: 'P-165', title: 'CHOICE 2C, How do you climb?', meta: 'You chose to climb first',
   text: `<p>Keira looks up. Up. Up. She says, "I'm going to climb up first. I want to see what you've been dreaming."</p>
 <p>Cliffy makes a sound that is somewhere between a yawn and a laugh. "Climb me? CLIMB me? No one climbs me. I am a CLIFF. I am hundreds of feet tall."</p>
 <p>You are already finding the first seam. How do you go?</p>`,
   choices: [
     { label: 'Climb fast. Get to the top before he can object.', target: 'p165a', sub: "Athlete mode. The brush in your teeth." },
-    { label: 'Climb carefully — map the seams as you go', target: 'p165b', sub: "Planner mode. Notice the geometry." },
-    { label: 'Stop on each ledge — look at what you can see', target: 'p165c', sub: "Both halves at once. Climb AND see." },
+    { label: 'Climb carefully, map the seams as you go', target: 'p165b', sub: "Planner mode. Notice the geometry." },
+    { label: 'Stop on each ledge, look at what you can see', target: 'p165c', sub: "Both halves at once. Climb AND see." },
   ],
 },
 
-// CHOICE 3 NODES — PATH A (PAINT FIRST)
+// CHOICE 3 NODES, PATH A (PAINT FIRST)
 
 p163a: {
-  id: 'P-163A', title: 'CHOICE 3 — How do you place the orange?', meta: 'Orange leads',
+  id: 'P-163A', title: 'CHOICE 3, How do you place the orange?', meta: 'Orange leads',
   text: `<p>The orange leaps from the jar. It catches on your brush. It is <em>eager.</em> Where does it want to go?</p>`,
   choices: [
     { label: 'A sunrise across his forehead', target: 'leaf_163a1', sub: "The color of a morning he hasn't seen in centuries." },
     { label: 'A single orange leaf above each closed eye', target: 'leaf_163a2', sub: "Small. Precise. Two little doors." },
-    { label: 'Orange ALL OVER — be audacious', target: 'leaf_163a3', sub: "Cover the whole face. Paint him the color of waking." },
+    { label: 'Orange ALL OVER, be audacious', target: 'leaf_163a3', sub: "Cover the whole face. Paint him the color of waking." },
   ],
 },
 
 p163b: {
-  id: 'P-163B', title: 'CHOICE 3 — How do you place the blue?', meta: 'Blue leads',
+  id: 'P-163B', title: 'CHOICE 3, How do you place the blue?', meta: 'Blue leads',
   text: `<p>The blue is calm in the jar. It rises onto your brush without urgency. Where does it want to go?</p>`,
   choices: [
     { label: 'A calm river across his chest', target: 'leaf_163b1', sub: "A long horizontal stroke. The shape of slow water." },
@@ -160,7 +160,7 @@ p163b: {
 },
 
 p163c: {
-  id: 'P-163C', title: 'CHOICE 3 — How do you use the unnamed color?', meta: 'Let the strange color lead',
+  id: 'P-163C', title: 'CHOICE 3, How do you use the unnamed color?', meta: 'Let the strange color lead',
   text: `<p>You pick up a jar of color you do not have a word for. It is somewhere between green and pink and not-quite-purple. It rises onto your brush warm and slightly humming.</p>`,
   choices: [
     { label: 'Paint a pattern only you can see', target: 'leaf_163c1', sub: "Trust your eye. Don't explain it to anyone." },
@@ -169,101 +169,101 @@ p163c: {
   ],
 },
 
-// CHOICE 3 NODES — PATH B (ASK WHAT)
+// CHOICE 3 NODES, PATH B (ASK WHAT)
 
 p164a: {
-  id: 'P-164A', title: 'CHOICE 3 — How does kindness look?', meta: 'You\'ll paint kindness',
+  id: 'P-164A', title: 'CHOICE 3, How does kindness look?', meta: 'You\'ll paint kindness',
   text: `<p>"Kindness," Cliffy says, slowly. "I haven't thought about that in five hundred years."</p>
 <p>You start to imagine. How will kindness look on him?</p>`,
   choices: [
-    { label: 'Two hands reaching — fingertips never quite touching', target: 'leaf_164a1', sub: "The reach is the thing. Painted in warm gold." },
-    { label: 'One small hand holding one small hand — specific, two kids', target: 'leaf_164a2', sub: "Real kindness is between two real people." },
-    { label: 'A circle of eight hands — the whole crew, joined', target: 'leaf_164a3', sub: "Kindness as a CIRCLE. None of them at the center." },
+    { label: 'Two hands reaching, fingertips never quite touching', target: 'leaf_164a1', sub: "The reach is the thing. Painted in warm gold." },
+    { label: 'One small hand holding one small hand, specific, two kids', target: 'leaf_164a2', sub: "Real kindness is between two real people." },
+    { label: 'A circle of eight hands, the whole crew, joined', target: 'leaf_164a3', sub: "Kindness as a CIRCLE. None of them at the center." },
   ],
 },
 
 p164b: {
-  id: 'P-164B', title: 'CHOICE 3 — How does courage look?', meta: 'You\'ll paint courage',
+  id: 'P-164B', title: 'CHOICE 3, How does courage look?', meta: 'You\'ll paint courage',
   text: `<p>"Courage," Cliffy says, slowly. "Show me."</p>`,
   choices: [
     { label: 'A small kid standing alone, eyes up at the sky', target: 'leaf_164b1', sub: "Courage is small. It's looking up anyway." },
-    { label: 'A wave breaking against rock — and the rock unmoved', target: 'leaf_164b2', sub: "Courage as not-flinching. He'll like this." },
+    { label: 'A wave breaking against rock, and the rock unmoved', target: 'leaf_164b2', sub: "Courage as not-flinching. He'll like this." },
     { label: 'Eyes wide open in the dark', target: 'leaf_164b3', sub: "Painted with the unnamed color. Pure willingness." },
   ],
 },
 
 p164c: {
-  id: 'P-164C', title: 'CHOICE 3 — How does rest look?', meta: 'You\'ll paint rest',
-  text: `<p>"REST," Cliffy says — wistfully. "Oh. Oh, that one."</p>`,
+  id: 'P-164C', title: 'CHOICE 3, How does rest look?', meta: 'You\'ll paint rest',
+  text: `<p>"REST," Cliffy says, wistfully. "Oh. Oh, that one."</p>`,
   choices: [
     { label: 'A figure curled small under a tree', target: 'leaf_164c1', sub: "Rest as taking up less room than usual." },
     { label: 'A circle of friends sleeping near each other', target: 'leaf_164c2', sub: "Rest as not-being-alone." },
-    { label: 'Just the shape of breathing — lines on his chest', target: 'leaf_164c3', sub: "Rest as a wave. In, out. Painted in blue." },
+    { label: 'Just the shape of breathing, lines on his chest', target: 'leaf_164c3', sub: "Rest as a wave. In, out. Painted in blue." },
   ],
 },
 
-// CHOICE 3 NODES — PATH C (CLIMB FIRST)
+// CHOICE 3 NODES, PATH C (CLIMB FIRST)
 
 p165a: {
-  id: 'P-165A', title: 'CHOICE 3 — Fast climb. What do you do at the top?', meta: 'You climbed fast',
+  id: 'P-165A', title: 'CHOICE 3, Fast climb. What do you do at the top?', meta: 'You climbed fast',
   text: `<p>You go fast. Cliffy doesn't realize you're actually doing this until you're fifty feet up. He goes very still so as not to dislodge you. You are at the top before he finishes saying "You are TEN."</p>
-<p>From the top you can see the canyon's hidden color — veins of blue, orange, green, all under the surface of every basalt cliff. He has been dreaming color this whole time.</p>`,
+<p>From the top you can see the canyon's hidden color, veins of blue, orange, green, all under the surface of every basalt cliff. He has been dreaming color this whole time.</p>`,
   choices: [
-    { label: 'Paint the veins you see — give him back his own color', target: 'leaf_165a1', sub: "Use his colors. The canyon will wake." },
+    { label: 'Paint the veins you see, give him back his own color', target: 'leaf_165a1', sub: "Use his colors. The canyon will wake." },
     { label: 'Paint a small bright sun on his very crown', target: 'leaf_165a2', sub: "A crown of light. He'll feel it." },
-    { label: 'Just touch the top — don\'t paint. Come back down.', target: 'leaf_165a3', sub: "The climb was the gift. Painting will happen below." },
+    { label: 'Just touch the top, don\'t paint. Come back down.', target: 'leaf_165a3', sub: "The climb was the gift. Painting will happen below." },
   ],
 },
 
 p165b: {
-  id: 'P-165B', title: 'CHOICE 3 — Careful climb. What do you find?', meta: 'You mapped the seams',
-  text: `<p>You climb deliberately. You notice the seams. You notice the basalt grain. You notice — wait. There's a pattern in the way the columns join. As if the cliff were carved deliberately. As if Cliffy is HIDING something in his own geometry.</p>`,
+  id: 'P-165B', title: 'CHOICE 3, Careful climb. What do you find?', meta: 'You mapped the seams',
+  text: `<p>You climb deliberately. You notice the seams. You notice the basalt grain. You notice, wait. There's a pattern in the way the columns join. As if the cliff were carved deliberately. As if Cliffy is HIDING something in his own geometry.</p>`,
   choices: [
     { label: 'Find a hidden seam. Paint into the seam itself.', target: 'leaf_165b1', sub: "Color in the cracks. Light from inside." },
-    { label: 'Notice the hexagons have grain — paint along the grain', target: 'leaf_165b2', sub: "The basalt has direction. Honor it." },
-    { label: 'Realize the seams form a face — paint inside the face', target: 'leaf_165b3', sub: "His REAL face. Hidden until now." },
+    { label: 'Notice the hexagons have grain, paint along the grain', target: 'leaf_165b2', sub: "The basalt has direction. Honor it." },
+    { label: 'Realize the seams form a face, paint inside the face', target: 'leaf_165b3', sub: "His REAL face. Hidden until now." },
   ],
 },
 
 p165c: {
-  id: 'P-165C', title: 'CHOICE 3 — Climb-and-look. Where do you stop?', meta: 'Both halves at once',
+  id: 'P-165C', title: 'CHOICE 3, Climb-and-look. Where do you stop?', meta: 'Both halves at once',
   text: `<p>You climb. You stop on each ledge. You look. You climb again. The mouse with spectacles is below biting his tiny knuckles. The paints in the jars are watching too. Where do you stop and what do you see?</p>`,
   choices: [
-    { label: 'Twenty feet up — discover veins of color near his throat', target: 'leaf_165c1', sub: "Paint them visible. Small reveal, big effect." },
-    { label: 'A hundred feet up — see a small face in the rock beside you', target: 'leaf_165c2', sub: "A face nobody knows. Paint it just for it." },
-    { label: 'All the way to the top — look across at the opposite wall', target: 'leaf_165c3', sub: "What's over there is enormous. And singing." },
+    { label: 'Twenty feet up, discover veins of color near his throat', target: 'leaf_165c1', sub: "Paint them visible. Small reveal, big effect." },
+    { label: 'A hundred feet up, see a small face in the rock beside you', target: 'leaf_165c2', sub: "A face nobody knows. Paint it just for it." },
+    { label: 'All the way to the top, look across at the opposite wall', target: 'leaf_165c3', sub: "What's over there is enormous. And singing." },
   ],
 },
 
-// LEAVES — PATH A (PAINT FIRST)
+// LEAVES, PATH A (PAINT FIRST)
 
 leaf_163a1: {
   id: 'L-1', title: 'A Sunrise Across His Forehead', meta: 'Orange morning',
-  text: `<p>You paint a wide sunrise across his forehead — orange at the bottom, lavender above, a thin gold ribbon where they meet. The paint goes on warm, like it knows it's a sunrise.</p>
-<p>Cliffy makes a small sound. Then a bigger one. Then he opens his eyes — both of them — and tilts his enormous head up toward where the actual sky is, as if checking your work against the real thing.</p>
+  text: `<p>You paint a wide sunrise across his forehead, orange at the bottom, lavender above, a thin gold ribbon where they meet. The paint goes on warm, like it knows it's a sunrise.</p>
+<p>Cliffy makes a small sound. Then a bigger one. Then he opens his eyes, both of them, and tilts his enormous head up toward where the actual sky is, as if checking your work against the real thing.</p>
 <p>"That is the FIRST MORNING I have seen in five hundred years," he whispers. "You gave me a SUNRISE."</p>
-<p>His basalt chest opens — not splits, opens, the way a wood box opens with a hinge nobody knew was there — and out of it he draws a brush. The handle is dark river wood, smooth from being held by many hands. The tip is a small contained light, no bigger than a match-flame, that doesn't flicker.</p>
+<p>His basalt chest opens, not splits, opens, the way a wood box opens with a hinge nobody knew was there, and out of it he draws a brush. The handle is dark river wood, smooth from being held by many hands. The tip is a small contained light, no bigger than a match-flame, that doesn't flicker.</p>
 <p>"The Truth Brush. You don't paint with it. You look through it. Anything hidden becomes visible. Lies turn yellow. Truth glows blue. Most painters never get to hold one. You are a painter who SEES." He places it in your palm. It is warmer than the morning.</p>`,
   earns: { item: ['brush', 'base'], flags: ['BothAtOnce', 'SunriseCliff'] }, next: 'exit',
 },
 
 leaf_163a2: {
   id: 'L-2', title: 'Two Orange Leaves', meta: 'Small precise wakeup',
-  text: `<p>One small orange leaf above each closed eye. The leaves seem to flutter on his face. He opens his eyes very slowly — the leaves don't smudge. They just lift, briefly, and settle as eyebrows.</p>
+  text: `<p>One small orange leaf above each closed eye. The leaves seem to flutter on his face. He opens his eyes very slowly, the leaves don't smudge. They just lift, briefly, and settle as eyebrows.</p>
 <p>"That was DELICATE work. Few are. Take the Brush." He hands it to her. "Use it for delicate things."</p>`,
   earns: { item: ['brush', 'base'], flags: ['BothAtOnce', 'OrangeLeaves'] }, next: 'exit',
 },
 
 leaf_163a3: {
   id: 'L-3', title: 'Orange Everywhere', meta: 'Audacious wakeup',
-  text: `<p>You cover his whole face in orange. Wide bold sweeping strokes, the way you paint when nobody is watching. Cliffy is briefly an enormous PUMPKIN. He looks at himself in the lake reflection and BURSTS into laughter — the laugh shakes the canyon.</p>
+  text: `<p>You cover his whole face in orange. Wide bold sweeping strokes, the way you paint when nobody is watching. Cliffy is briefly an enormous PUMPKIN. He looks at himself in the lake reflection and BURSTS into laughter, the laugh shakes the canyon.</p>
 <p>"I am ORANGE. I have NEVER been orange. I am DELIGHTED." He gives her the Brush and an enormous orange leaf as a bookmark. "From a tree that hasn't existed in three hundred years."</p>`,
   earns: { item: ['brush', 'enhanced'], flags: ['BothAtOnce', 'OrangeAllOver'] }, next: 'exit',
 },
 
 leaf_163b1: {
   id: 'L-4', title: 'A Blue River on His Chest', meta: 'Slow water',
-  text: `<p>You paint a long horizontal river of blue across his basalt chest. The river seems to flow. Cliffy looks down. His breath slows even more. He sighs deeply — the sigh is, surprisingly, the color of the river.</p>
+  text: `<p>You paint a long horizontal river of blue across his basalt chest. The river seems to flow. Cliffy looks down. His breath slows even more. He sighs deeply, the sigh is, surprisingly, the color of the river.</p>
 <p>"You painted a SLOW THING on me. I have BEEN a fast cliff for too long. Take the Brush. Use it slowly."</p>`,
   earns: { item: ['brush', 'base'], flags: ['BothAtOnce', 'BlueRiver'] }, next: 'exit',
 },
@@ -277,14 +277,14 @@ leaf_163b2: {
 
 leaf_163b3: {
   id: 'L-6', title: 'A Blue Moon on His Brow', meta: 'Single circle',
-  text: `<p>You paint a single round blue moon on his forehead. He opens his eyes. The moon stays — luminous, glowing faintly. He has been missing the moon for five hundred years.</p>
+  text: `<p>You paint a single round blue moon on his forehead. He opens his eyes. The moon stays, luminous, glowing faintly. He has been missing the moon for five hundred years.</p>
 <p>"I have my MOON back. Take the Brush. AND take this." (He pulls a tiny crescent of dried lichen from a crevice.) "Hold it up at night sometime. It will glow for the moon and tell her I said thank you."</p>`,
   earns: { item: ['brush', 'enhanced'], flags: ['BothAtOnce', 'BlueMoon'] }, next: 'exit',
 },
 
 leaf_163c1: {
   id: 'L-7', title: 'A Pattern Only You See', meta: 'Trust your eye',
-  text: `<p>You paint a swirling pattern across his cheekbones in the unnamed color. You can see the pattern clearly — it's somewhere between a flower and a galaxy. Cliffy can't quite see it but he can FEEL it.</p>
+  text: `<p>You paint a swirling pattern across his cheekbones in the unnamed color. You can see the pattern clearly, it's somewhere between a flower and a galaxy. Cliffy can't quite see it but he can FEEL it.</p>
 <p>"You painted something I can't see but I can feel," he says. "That is what artists do. Take the Brush. Don't ever stop painting things only you can see."</p>`,
   earns: { item: ['brush', 'enhanced'], flags: ['BothAtOnce', 'UnseenPattern'] }, next: 'exit',
 },
@@ -298,16 +298,16 @@ leaf_163c2: {
 
 leaf_163c3: {
   id: 'L-9', title: 'Madison\'s Color', meta: 'The color of your favorite person',
-  text: `<p>You think about Madison. Steady, kind, quiet, the older sister who notices things. The unnamed color becomes a deep warm green — the green of cool moss on a north-facing rock. You paint Madison's color in a wide stripe across Cliffy's heart.</p>
+  text: `<p>You think about Madison. Steady, kind, quiet, the older sister who notices things. The unnamed color becomes a deep warm green, the green of cool moss on a north-facing rock. You paint Madison's color in a wide stripe across Cliffy's heart.</p>
 <p>Cliffy opens his eyes. He looks down at his chest. He smiles. "That is the color of being SAFE. You love someone who makes you feel safe. Take the Brush. AND tell her she is the color of moss in the morning, when you get home. She'll know what you mean."</p>`,
   earns: { item: ['brush', 'full'], flags: ['BothAtOnce', 'MadisonsGreen'] }, next: 'exit',
 },
 
-// LEAVES — PATH B (ASK WHAT)
+// LEAVES, PATH B (ASK WHAT)
 
 leaf_164a1: {
   id: 'L-10', title: 'Two Hands Reaching', meta: 'The reach is the thing',
-  text: `<p>Up his basalt forearm, a long curving stroke of warm gold — a hand. Up his other forearm, the other hand, reaching. Their fingertips never quite touch.</p>
+  text: `<p>Up his basalt forearm, a long curving stroke of warm gold, a hand. Up his other forearm, the other hand, reaching. Their fingertips never quite touch.</p>
 <p>Cliffy is crying. His tears are pale blue paint. "That is the most beautiful thing that has ever been on me."</p>
 <p>He gives her a Truth Brush. "This was my mother's. You earned it." And: "If you call my name from somewhere with stone, my attention will travel. The basalt around your home will notice. I am there in spirit."</p>`,
   earns: { item: ['brush', 'enhanced'], flags: ['BothAtOnce', 'CliffyEcho'] }, next: 'exit',
@@ -316,27 +316,27 @@ leaf_164a1: {
 leaf_164a2: {
   id: 'L-11', title: 'Two Small Hands Holding', meta: 'Real kindness, specific',
   text: `<p>Two small hands, painted in warm gold, holding each other. You think of Aiden's hand in yours when he was three and the dock was wet. The painting holds that exact memory.</p>
-<p>Cliffy opens his eyes and sees. He weeps a single pale blue tear that runs the length of his face. "You painted a REAL kindness. Between two REAL kids. Most paintings of kindness are abstract. Yours is SPECIFIC. Take the Brush." And, quietly: "If you call my name, I will come in spirit. Whoever you painted — they are protected too. The basalt knows."</p>`,
+<p>Cliffy opens his eyes and sees. He weeps a single pale blue tear that runs the length of his face. "You painted a REAL kindness. Between two REAL kids. Most paintings of kindness are abstract. Yours is SPECIFIC. Take the Brush." And, quietly: "If you call my name, I will come in spirit. Whoever you painted, they are protected too. The basalt knows."</p>`,
   earns: { item: ['brush', 'enhanced'], flags: ['BothAtOnce', 'CliffyEcho', 'AidenProtected'] }, next: 'exit',
 },
 
 leaf_164a3: {
   id: 'L-12', title: 'A Circle of Eight Hands', meta: 'Kindness as a circle',
   text: `<p>You paint eight hands joined in a circle on his chest. Nobody at the center. Just the circle. The whole crew.</p>
-<p>Cliffy looks down at his own chest. He cries openly. The paint of the circle GLOWS faintly. "You painted a FAMILY. On me. The basalt has not held a family in five hundred years. Take the Brush. AND know this: as long as I am awake — and I am awake now — that circle of eight is under my protection. Any one of them in trouble, I will know. The stone will hum. I will send help."</p>`,
+<p>Cliffy looks down at his own chest. He cries openly. The paint of the circle GLOWS faintly. "You painted a FAMILY. On me. The basalt has not held a family in five hundred years. Take the Brush. AND know this: as long as I am awake, and I am awake now, that circle of eight is under my protection. Any one of them in trouble, I will know. The stone will hum. I will send help."</p>`,
   earns: { item: ['brush', 'full'], allies: ['Cliffy'], flags: ['BothAtOnce', 'CliffyEcho', 'EightProtected'] }, next: 'exit',
 },
 
 leaf_164b1: {
   id: 'L-13', title: 'A Small Kid Looking Up', meta: 'Courage is small',
   text: `<p>One small figure on his basalt arm. Eyes up. Tiny chin lifted. The figure is painted with the unnamed color so it almost glows.</p>
-<p>Cliffy opens his eyes. He sees it. His basalt face does something complicated. "I was that kid once. Before I became a cliff. You painted me. Take the Brush. AND if you ever need someone to LOOK UP for you — call me. I will look up alongside."</p>`,
+<p>Cliffy opens his eyes. He sees it. His basalt face does something complicated. "I was that kid once. Before I became a cliff. You painted me. Take the Brush. AND if you ever need someone to LOOK UP for you, call me. I will look up alongside."</p>`,
   earns: { item: ['brush', 'enhanced'], flags: ['BothAtOnce', 'LookUpCourage'] }, next: 'exit',
 },
 
 leaf_164b2: {
   id: 'L-14', title: 'A Wave Against Rock', meta: 'Courage as not-flinching',
-  text: `<p>A blue wave smashing against gray rock. The rock unmoved. The wave bright and high and dramatic. The rock — unmoved.</p>
+  text: `<p>A blue wave smashing against gray rock. The rock unmoved. The wave bright and high and dramatic. The rock, unmoved.</p>
 <p>Cliffy laughs. "That is ME. I am the ROCK. You painted me as I see myself on my best days. Take the Brush. AND remember: when something big comes at you, you can be the rock. Sometimes. Not always. But sometimes."</p>`,
   earns: { item: ['brush', 'enhanced'], flags: ['BothAtOnce', 'BeTheRock'] }, next: 'exit',
 },
@@ -357,20 +357,20 @@ leaf_164c1: {
 
 leaf_164c2: {
   id: 'L-17', title: 'Friends Sleeping Near Each Other', meta: 'Rest as not-alone',
-  text: `<p>A circle of seven small figures asleep, you among them — eight total — heads pointed toward the center, like spokes. Painted in soft blue and warm gold.</p>
-<p>Cliffy's eyes mist. "Rest with FAMILY around you. That is the deepest rest. I have not slept near anyone in five hundred years. Take the Brush. AND know that I have decided to nap near you when you go home — I will lean a tiny piece of my attention against your house. That counts."</p>`,
+  text: `<p>A circle of seven small figures asleep, you among them, eight total, heads pointed toward the center, like spokes. Painted in soft blue and warm gold.</p>
+<p>Cliffy's eyes mist. "Rest with FAMILY around you. That is the deepest rest. I have not slept near anyone in five hundred years. Take the Brush. AND know that I have decided to nap near you when you go home, I will lean a tiny piece of my attention against your house. That counts."</p>`,
   earns: { item: ['brush', 'enhanced'], allies: ['Cliffy'], flags: ['BothAtOnce', 'CliffyNaps'] }, next: 'exit',
 },
 
 leaf_164c3: {
   id: 'L-18', title: 'The Shape of Breathing', meta: 'Rest as a wave',
   text: `<p>You paint the shape of slow breathing on his chest. Just lines. In, out. In, out. A wave-shape across his sternum. Painted in blue.</p>
-<p>The lines actually MOVE. They rise and fall in time with his breath. Cliffy looks down. He laughs — slowly — and his breath, watching itself drawn on his own chest, becomes deeper than it has been in centuries.</p>
+<p>The lines actually MOVE. They rise and fall in time with his breath. Cliffy looks down. He laughs, slowly, and his breath, watching itself drawn on his own chest, becomes deeper than it has been in centuries.</p>
 <p>"You painted my BREATH on me. So I could see it. Take the Brush. AND when you cannot rest, look at your own chest. The lines I now have will be on you too, faintly. The basalt remembers everyone it has been painted by."</p>`,
   earns: { item: ['brush', 'full'], allies: ['Cliffy'], flags: ['BothAtOnce', 'BreathLines'] }, next: 'exit',
 },
 
-// LEAVES — PATH C (CLIMB FIRST)
+// LEAVES, PATH C (CLIMB FIRST)
 
 leaf_165a1: {
   id: 'L-19', title: 'Paint the Veins You See', meta: 'Give him back his own color',
@@ -383,9 +383,9 @@ leaf_165a1: {
 
 leaf_165a2: {
   id: 'L-20', title: 'A Sun on His Crown', meta: 'Crown of light',
-  text: `<p>You paint a bright small sun on the absolute top of his head — a crown. It catches the actual sun and reflects it down across the canyon. For a second, the whole canyon is double-lit.</p>
-<p>Cliffy opens his eyes. He feels the crown. He laughs — and the laugh sets off other cliffs laughing in echo. They have all been waiting for someone to crown one of them.</p>
-<p>"You made me a KING for a minute. Take the Brush. AND yes — I am coming with you. A crowned cliff cannot stay home. It would be rude."</p>`,
+  text: `<p>You paint a bright small sun on the absolute top of his head, a crown. It catches the actual sun and reflects it down across the canyon. For a second, the whole canyon is double-lit.</p>
+<p>Cliffy opens his eyes. He feels the crown. He laughs, and the laugh sets off other cliffs laughing in echo. They have all been waiting for someone to crown one of them.</p>
+<p>"You made me a KING for a minute. Take the Brush. AND yes, I am coming with you. A crowned cliff cannot stay home. It would be rude."</p>`,
   earns: { item: ['brush', 'full'], allies: ['Cliffy'], flags: ['BothAtOnce', 'CrownedCliff'] }, next: 'exit',
 },
 
@@ -401,7 +401,7 @@ leaf_165a3: {
 
 leaf_165b1: {
   id: 'L-22', title: 'Color Inside the Seam', meta: 'Light from the cracks',
-  text: `<p>You find a deep hidden seam. You push the brush IN — and paint color into the crack itself. From outside, the whole crack now glows.</p>
+  text: `<p>You find a deep hidden seam. You push the brush IN, and paint color into the crack itself. From outside, the whole crack now glows.</p>
 <p>You climb down. Cliffy looks at himself. The cracks in his basalt are now visible as bright LINES of color, like veins running through dark stone.</p>
 <p>"You showed my CRACKS as beautiful. I thought they were what made me ugly. Take the Brush. AND I am coming with you, because someone who paints cracks as beautiful is RARE."</p>`,
   earns: { item: ['brush', 'full'], allies: ['Cliffy'], flags: ['BothAtOnce', 'BeautifulCracks'] }, next: 'exit',
@@ -416,15 +416,15 @@ leaf_165b2: {
 
 leaf_165b3: {
   id: 'L-24', title: 'His REAL Face, Hidden in the Seams', meta: 'Paint inside the face',
-  text: `<p>You realize the seams in his basalt form a FACE — a different face than the one he shows. Older. Younger. Truer. You paint inside the hidden face — color where his real eyes are, color where his real mouth is.</p>
-<p>When Cliffy opens his eyes — both sets — he sees himself for the first time in centuries.</p>
+  text: `<p>You realize the seams in his basalt form a FACE, a different face than the one he shows. Older. Younger. Truer. You paint inside the hidden face, color where his real eyes are, color where his real mouth is.</p>
+<p>When Cliffy opens his eyes, both sets, he sees himself for the first time in centuries.</p>
 <p>"That is my REAL face. The one I had as a young cliff. You found it. NOBODY has found it. Take the Brush. AND of course I am coming with you. You knew me before I knew myself."</p>`,
   earns: { item: ['brush', 'full'], allies: ['Cliffy'], flags: ['BothAtOnce', 'CanyonWokeColor', 'HiddenFace'] }, next: 'exit',
 },
 
 leaf_165c1: {
   id: 'L-25', title: 'Veins at Twenty Feet', meta: 'Small reveal, big effect',
-  text: `<p>You stop twenty feet up. You see veins of color along Cliffy's throat — small, hidden, ancient. You paint them visible. A blue line, an orange line, a green line. They glow.</p>
+  text: `<p>You stop twenty feet up. You see veins of color along Cliffy's throat, small, hidden, ancient. You paint them visible. A blue line, an orange line, a green line. They glow.</p>
 <p>You climb down. From the ground, Cliffy now has a NECKLACE of color across his throat. He opens his eyes. He looks pleased in a way that goes all the way down.</p>
 <p>"A neck of color. I have always wanted to be CLOTHED. Take the Brush. AND I am coming with you. You DRESSED me. I owe you a walk."</p>`,
   earns: { item: ['brush', 'full'], allies: ['Cliffy'], flags: ['BothAtOnce', 'NecklaceOfColor'] }, next: 'exit',
@@ -434,27 +434,27 @@ leaf_165c2: {
   id: 'L-26', title: 'A Small Face at a Hundred Feet', meta: 'A face nobody knows',
   text: `<p>A hundred feet up, you see a small face in the rock just beside your hand. A tiny basalt being, no bigger than your fist, peeking out. Eyes closed. Sleeping for who knows how long.</p>
 <p>You paint just for it. A tiny orange flower above its head. Then you climb down without saying a word.</p>
-<p>Cliffy says, "You painted SOMEONE I didn't know was there. There are HUNDREDS of small ones in my face I have forgotten. Now they will all wake. Take the Brush. AND yes — I am coming. The whole population of my face is grateful."</p>`,
+<p>Cliffy says, "You painted SOMEONE I didn't know was there. There are HUNDREDS of small ones in my face I have forgotten. Now they will all wake. Take the Brush. AND yes, I am coming. The whole population of my face is grateful."</p>`,
   earns: { item: ['brush', 'full'], allies: ['Cliffy', 'SmallFaces'], flags: ['BothAtOnce', 'CanyonWokeColor'] }, next: 'exit',
 },
 
 leaf_165c3: {
   id: 'L-27', title: 'The Singer in the Opposite Wall', meta: 'The biggest secret',
   text: `<p>You climb all the way to the top. You stop. You look across the canyon at the opposite wall.</p>
-<p>For one second — just one — there is a FACE in the canyon wall. Made of veins. Blue and orange. A woman's face, the basalt arranged like cheekbones, the orange streaks shaped like an open mouth. The face is SINGING. You can't hear it from this far, but you can see the shape of the singing — mouth open, throat working, full of the joy of someone who didn't know anyone was listening.</p>
+<p>For one second, just one, there is a FACE in the canyon wall. Made of veins. Blue and orange. A woman's face, the basalt arranged like cheekbones, the orange streaks shaped like an open mouth. The face is SINGING. You can't hear it from this far, but you can see the shape of the singing, mouth open, throat working, full of the joy of someone who didn't know anyone was listening.</p>
 <p>The face fades into ordinary colored rock.</p>
-<p>You do not tell anyone. You know already this was meant for you. You have the artist's eye. The lake had been waiting for someone with an artist's eye to NOTICE. Someday — at home, at this lake, many summers from now — you will hear that face singing for real. You will not say.</p>
-<p>You paint Cliffy's eyes open using his colors. The canyon WAKES — color floods every basalt wall for miles. Every cliff in The Old Roar is humming.</p>
+<p>You do not tell anyone. You know already this was meant for you. You have the artist's eye. The lake had been waiting for someone with an artist's eye to NOTICE. Someday, at home, at this lake, many summers from now, you will hear that face singing for real. You will not say.</p>
+<p>You paint Cliffy's eyes open using his colors. The canyon WAKES, color floods every basalt wall for miles. Every cliff in The Old Roar is humming.</p>
 <p>Cliffy carries you down gently. "I am coming. The whole canyon is coming, in spirit if not in body. Take the Brush. The full one. Sunrise inside it."</p>`,
   earns: { item: ['brush', 'full'], allies: ['Cliffy'], flags: ['BothAtOnce', 'CanyonWokeColor', 'SawTheSinger'] }, next: 'exit',
 },
 
 exit: {
-  id: 'EXIT', title: 'The Raft Is Waiting', meta: 'Keira — region complete',
+  id: 'EXIT', title: 'The Raft Is Waiting', meta: 'Keira, region complete',
   text: `<p>The raft is waiting. The paints settle. The Truth Brush sits warm in her pocket.</p>
 <p>Before Keira pushes off, Cliffy lowers his giant slow face to her level. His voice is small. Just for her.</p>
-<p>"Child. The thing you did — being both the artist AND the climber, all at once, not picking — most of the world will try to make you choose. Don't ever choose. You get to be everything you are, at the same time, for the rest of your life. The cliff said so."</p>
-<p>Keira nods. She doesn't quite trust herself to speak. She files it under things she will think about later — and probably paint someday.</p>
+<p>"Child. The thing you did, being both the artist AND the climber, all at once, not picking, most of the world will try to make you choose. Don't ever choose. You get to be everything you are, at the same time, for the rest of your life. The cliff said so."</p>
+<p>Keira nods. She doesn't quite trust herself to speak. She files it under things she will think about later, and probably paint someday.</p>
 <p>She pushes off. She paddles toward the sound of the C-130, faint and far, somewhere up in the world above.</p>
 <p style="margin-top:32px; padding:16px; background:rgba(74,125,140,0.08); border-left:3px solid var(--water); border-radius:0 4px 4px 0; font-size:14px; line-height:1.5;"><strong>End of Keira's region.</strong> 27 different ways through. Click "Start over" to try another.</p>`,
   isEnd: true, choices: [],
@@ -507,7 +507,7 @@ function render() {
     h += `<div class="choices">
       <button onclick="location.href='index.html?goto=showdown_intro'" style="background:#2b2419;color:#faf6ed;border-color:#2b2419;"><strong>Head to the Showdown &rarr;</strong><span class="sub" style="color:#f5c587;">End the book. Face Drystone with what you've earned.</span></button>
       <button onclick="location.href='index.html?goto=hub'">&larr; Pick another cousin first</button>
-      <button onclick="restart()" style="opacity:0.7;font-size:13px;">Start over &mdash; try a different path in this region</button>
+      <button onclick="restart()" style="opacity:0.7;font-size:13px;">Start over, try a different path in this region</button>
     </div>`;
   }
   m.innerHTML = h;

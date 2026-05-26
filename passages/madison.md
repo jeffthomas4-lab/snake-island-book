@@ -1,4 +1,4 @@
-# Madison's Region — The Quiet Pool
+# Madison's Region, The Quiet Pool
 
 **Region ID:** R-MADISON
 **Passages:** P-110 through P-119
@@ -16,7 +16,7 @@ This is the v3 CYOA-structured draft of Madison's region. The old `branches/madi
 ```
 P-110  Entry: arrival at the Quiet Pool       (always read, slight variant per wrapper)
        ↓
-P-111  The cared-for moment                   (always read — fixes the editor note)
+P-111  The cared-for moment                   (always read, fixes the editor note)
        ↓
 P-112  Madison's choice                       (the real branch)
        ├─ A. Share the cookies (base)         → P-113 → Map (base)
@@ -30,7 +30,7 @@ Word counts target ~2,800 total for the region.
 
 ---
 
-## P-110 — ARRIVAL AT THE QUIET POOL
+## P-110, ARRIVAL AT THE QUIET POOL
 
 *~350 words. Slight variant per wrapper (group of 8 / group of 4 / solo).*
 
@@ -40,9 +40,9 @@ The raft is a wooden canoe now, with her name carved into the side: **MADISON**.
 
 The pool is shaped like a heart, if a heart had been drawn by someone who'd never seen one. Rocks at the edge. Cottonwoods leaning over the water. A heron standing on one leg in the shallows, looking at her like she's late.
 
-[VARIANT: STAY-TOGETHER. *The other seven kids are climbing out of their rafts behind her. Reid is already studying the rocks. Aiden is whispering something to a frog. Carson is sizing up the heron like he wants to race it. Madison turns and counts heads — eight. All present. Good.*]
+[VARIANT: STAY-TOGETHER. *The other seven kids are climbing out of their rafts behind her. Reid is already studying the rocks. Aiden is whispering something to a frog. Carson is sizing up the heron like he wants to race it. Madison turns and counts heads, eight. All present. Good.*]
 
-[VARIANT: SPLIT. *Three other kids are climbing out behind her — the group she came in with. They give her space. They know this one is hers.*]
+[VARIANT: SPLIT. *Three other kids are climbing out behind her, the group she came in with. They give her space. They know this one is hers.*]
 
 [VARIANT: SOLO. *She's alone. The other seven landed somewhere else. The silence is bigger than she expected. She steadies herself. Oldest kid. She knows what she's doing.*]
 
@@ -70,11 +70,11 @@ Madison opens her tin. The cookies inside smell like brown sugar and brisket smo
 
 She is about to share them.
 
-Then Lark says: "Wait. First — sit down."
+Then Lark says: "Wait. First, sit down."
 
 ---
 
-## P-111 — THE CARED-FOR MOMENT
+## P-111, THE CARED-FOR MOMENT
 
 *~300 words. Always read. This is the fix for the previous editor's note about Madison needing one moment of being taken care of, not just being useful.*
 
@@ -86,19 +86,19 @@ Pip steps closer. "You're a DANCER. We can tell from how you walk. The way your 
 
 Lark says, "We knew one of you would be. Pools know. We have been WAITING."
 
-Madison is a little surprised. She knows she's a good dancer — her teacher has told her, her family has told her, she has the trophies and the placements in her room that say so. But she has never met an audience this hungry for a dancer. The Sisters are looking at her the way people look at something they've been hoping to see for years.
+Madison is a little surprised. She knows she's a good dancer, her teacher has told her, her family has told her, she has the trophies and the placements in her room that say so. But she has never met an audience this hungry for a dancer. The Sisters are looking at her the way people look at something they've been hoping to see for years.
 
 Wren tugs her hand. "Can we see you do something? Please? We've been thinking about it for so long."
 
 Pip raises one small wet hand. Three flat stones lift from the pool and hover an inch above the surface, forming a small triangular stage just within Madison's reach. The water around them goes glassy.
 
-Madison thinks for one second. Then she picks the adagio — the one her teacher built FOR her last semester. The hardest one she does in studio. The long arabesque. The turn that took her three months to clean.
+Madison thinks for one second. Then she picks the adagio, the one her teacher built FOR her last semester. The hardest one she does in studio. The long arabesque. The turn that took her three months to clean.
 
 She steps onto the first stone. Her body knows what to do.
 
 She dances three measures. They are very good measures. The arabesque is exactly as long as it should be. The turn lands clean. She has danced this same sequence a hundred times. She has never danced it with this much attention from an audience.
 
-The three Sisters do not clap. They do not whistle. They WATCH the way an audience that has been waiting for years watches when the wait is finally over — with their full faces, with their breath held, with the quiet that says *please don't let this end*.
+The three Sisters do not clap. They do not whistle. They WATCH the way an audience that has been waiting for years watches when the wait is finally over, with their full faces, with their breath held, with the quiet that says *please don't let this end*.
 
 When she steps off the last stone, the pool ripples in a pattern around the three stones that looks, faintly, like a standing ovation made of water.
 
@@ -106,9 +106,9 @@ Pip whispers: "Thank you, Madison. That was BEAUTIFUL."
 
 Lark wipes a Sister-tear that goes up. "We don't get dancers. People don't dance for a pool. They dance for other people. You danced for us anyway."
 
-Madison feels something specific in her chest. Not surprise — she knew she could do it. Not the warmth of being praised — she gets praised, that's familiar. Something newer than that: the warmth of having SHARED something she loves with an audience that genuinely, specifically needed to see it. Her grace went somewhere today that it has never gone before. Three small water-girls had been waiting for years for it. She brought it.
+Madison feels something specific in her chest. Not surprise, she knew she could do it. Not the warmth of being praised, she gets praised, that's familiar. Something newer than that: the warmth of having SHARED something she loves with an audience that genuinely, specifically needed to see it. Her grace went somewhere today that it has never gone before. Three small water-girls had been waiting for years for it. She brought it.
 
-She sits down on the bank. Her hair drips upward, just a little. She catches sight of herself in the pool's reflection — fifteen years old, breath steady, all three Sisters still beaming at her — and laughs out loud. The laugh of someone who brought a gift and discovered the gift was exactly the right one.
+She sits down on the bank. Her hair drips upward, just a little. She catches sight of herself in the pool's reflection, fifteen years old, breath steady, all three Sisters still beaming at her, and laughs out loud. The laugh of someone who brought a gift and discovered the gift was exactly the right one.
 
 Pip nods. "Go back to your cousins now. We will remember today for a very long time. You were exactly what we had been hoping for."
 
@@ -124,13 +124,13 @@ She is, in fact, ready now.
 
 ---
 
-## P-112 — MADISON'S CHOICE
+## P-112, MADISON'S CHOICE
 
 *~150 words. The real branch.*
 
 Pip tells her the rest fast.
 
-The Lake Sisters have been watching the lake-up-above for years. They've seen Mr. Drystone's boats. They've seen him drop papers into the water — papers they were never meant to read. The papers sank. The Sisters caught them. They have them now.
+The Lake Sisters have been watching the lake-up-above for years. They've seen Mr. Drystone's boats. They've seen him drop papers into the water, papers they were never meant to read. The papers sank. The Sisters caught them. They have them now.
 
 But the papers are in three pieces, and only one piece is here at the pool. The other two are elsewhere.
 
@@ -148,7 +148,7 @@ Madison thinks for a second.
 
 ---
 
-## P-113 — PATH A: SHARE THE COOKIES, TAKE THE PIECE (BASE)
+## P-113, PATH A: SHARE THE COOKIES, TAKE THE PIECE (BASE)
 
 *~600 words. Yields Map (base version). No ally.*
 
@@ -176,7 +176,7 @@ Wren hands her something next. It is a small pondweed-and-pebble bracelet she ha
 
 Then Pip hands Madison the paper.
 
-It is a single sheet, water-warped at the edges, the ink swimming a little but readable. It shows the cove. It shows the data center building Drystone plans to put on the dry lakebed once the water is gone. It shows the drainage path — straight down the canyon, into the river system, away forever.
+It is a single sheet, water-warped at the edges, the ink swimming a little but readable. It shows the cove. It shows the data center building Drystone plans to put on the dry lakebed once the water is gone. It shows the drainage path, straight down the canyon, into the river system, away forever.
 
 It does NOT show the bank fraud. It does NOT show the lowballed appraisal. Those pieces are elsewhere.
 
@@ -220,7 +220,7 @@ She walks back to where the others are waiting (or back to her canoe, if solo) w
 
 ---
 
-## P-114 — PATH B: ASK WHAT THEY NEED FIRST (ENHANCED)
+## P-114, PATH B: ASK WHAT THEY NEED FIRST (ENHANCED)
 
 *~700 words. Yields Map (enhanced) + Branch the beaver as ally.*
 
@@ -240,7 +240,7 @@ The Sisters look at each other in the way sisters look at each other.
 
 Pip says, "The other two pieces of the map. We can't reach them."
 
-The first piece — the one Pip is holding — sank near the pool, easy to catch.
+The first piece, the one Pip is holding, sank near the pool, easy to catch.
 
 The other two sank farther downstream. Out past where the pool turns into a slow river. Out where a grumpy old beaver named **Branch** has been collecting interesting things in his lodge for two hundred years. Branch caught the other two pieces and he will not give them back. He says the river is his and what lands in the river is his.
 
@@ -282,7 +282,7 @@ She asks about the spoon.
 
 Branch lights up. He tells her about the spoon. The spoon takes nine minutes. Then he tells her about the ceramic pig. The pig takes longer.
 
-Forty minutes go by. (Time in The Old Roar is slower, but still — forty minutes is forty minutes. The Harbor Keeper said *time for four*. She's spending it.)
+Forty minutes go by. (Time in The Old Roar is slower, but still, forty minutes is forty minutes. The Harbor Keeper said *time for four*. She's spending it.)
 
 At the end of his stories, Branch is quiet for a long time. Then he says, "You're the first person in two hundred years who didn't ask me for the papers first."
 
@@ -308,7 +308,7 @@ Branch waddles to the door, picks up a small bow tie from his wall of trash, and
 
 ---
 
-## P-115 — PATH C: NOTICE WREN FIRST (HIDDEN)
+## P-115, PATH C: NOTICE WREN FIRST (HIDDEN)
 
 *~700 words. Yields Map (full) + CanyonSinger flag. Hardest to find. Most rewarding.*
 
@@ -340,7 +340,7 @@ Madison sits down on the bank. The wood is warm. "Tell me."
 
 The Sisters look at each other. Then Pip nods.
 
-Lark sings, very quietly, three notes. The pool hums them back. The three notes are beautiful — clear, full, the kind of voice that carries.
+Lark sings, very quietly, three notes. The pool hums them back. The three notes are beautiful, clear, full, the kind of voice that carries.
 
 "That's HER voice," Wren says. "She sings here some nights. Not all. Some. She's been singing here for as long as we've been here. We don't know who she is. The lake remembers her. We listen for her."
 
@@ -350,7 +350,7 @@ Because Madison knows that voice.
 
 She doesn't know HOW she knows it. She just does. Like the way she knows the smell of brisket smoke. Like the way she knows the sound of the C-130 a full second before it shows up over the canyon.
 
-She HAS heard this voice. Two summers ago. A hot July night, late, after the brisket was gone and the kids were supposed to be asleep. The sound came across the water from somewhere nobody could place — somebody, somewhere, singing opera. Big, beautiful, impossible. The grown-ups had laughed about it the next morning. They'd all pretended not to know who it was. The mystery had become a family joke.
+She HAS heard this voice. Two summers ago. A hot July night, late, after the brisket was gone and the kids were supposed to be asleep. The sound came across the water from somewhere nobody could place, somebody, somewhere, singing opera. Big, beautiful, impossible. The grown-ups had laughed about it the next morning. They'd all pretended not to know who it was. The mystery had become a family joke.
 
 But Madison had watched her mother's face that next morning. Her mother had been very busy looking at her coffee.
 
@@ -378,13 +378,13 @@ Lark says, "It's not loud. But it's real."
 
 Madison thinks for a second.
 
-Then she does the only thing she can do — the thing she's actually good at.
+Then she does the only thing she can do, the thing she's actually good at.
 
 Pip seems to know. She lifts a hand. Three flat stones rise up out of the pool, one after another, arranged in a line across the water. They are perfectly still. They are also, Madison notices, the same color as the basalt at home.
 
 Madison steps onto the first one. It holds.
 
-She hasn't danced in a year. Maybe more. But her body remembers — the way an old book remembers how to fall open at the right page.
+She hasn't danced in a year. Maybe more. But her body remembers, the way an old book remembers how to fall open at the right page.
 
 She steps to the second stone in one clean line, the way her old teacher used to drill it: head up, shoulders down, the foot finding the place before you trust it. She turns once on the second stone. She lands.
 
@@ -396,7 +396,7 @@ The pool hums.
 
 Three notes. Low. Then a long pause.
 
-And then — from somewhere far away, maybe under the pool, maybe somewhere on the other side of the canyon — three notes come back. Sung in answer. The voice is a woman's. Operatic. Big. Beautiful. She is singing in The Old Roar tonight after all. She is answering Madison's dance the way a singer answers a question.
+And then, from somewhere far away, maybe under the pool, maybe somewhere on the other side of the canyon, three notes come back. Sung in answer. The voice is a woman's. Operatic. Big. Beautiful. She is singing in The Old Roar tonight after all. She is answering Madison's dance the way a singer answers a question.
 
 Wren laughs through her wrong-direction tears.
 
@@ -430,7 +430,7 @@ She'll figure it out.
 
 ---
 
-## P-116 — EXIT: THE SISTERS WAVE HER OFF
+## P-116, EXIT: THE SISTERS WAVE HER OFF
 
 *~250 words. Always read. Slight variant per path.*
 
@@ -470,14 +470,14 @@ Madison heads back toward the sound of the C-130, faint and far, somewhere up in
 
 **On the "cared-for moment" (P-111):** The previous editor flagged that Madison risks becoming "the useful one." P-111 fixes this. The Sisters take care of HER before she takes care of anyone else. It happens regardless of which path the reader picks. It is not earned. It is offered.
 
-**On the three paths:** Path A is the fast path — works for younger readers, gets you the basic Map, takes maybe 6 minutes to read aloud. Path B costs you time (Branch's tea takes forty minutes in-world) but yields the enhanced Map AND a witness ally. Path C is the deepest — costs you nothing tangible but requires the reader to NOTICE WREN, which is the kind of choice Madison would actually make and the kind of empathy the book wants to reward.
+**On the three paths:** Path A is the fast path, works for younger readers, gets you the basic Map, takes maybe 6 minutes to read aloud. Path B costs you time (Branch's tea takes forty minutes in-world) but yields the enhanced Map AND a witness ally. Path C is the deepest, costs you nothing tangible but requires the reader to NOTICE WREN, which is the kind of choice Madison would actually make and the kind of empathy the book wants to reward.
 
 **On the Canyon Singer easter egg:** Reveal is deliberately oblique. Madison doesn't know who the voice belongs to. The reader who knows the family lore (Madison & Kellen's mom singing across the lake one summer) gets the chill. The reader who doesn't gets a beautiful mystery. Both work.
 
 **On the chosen-family theme:** The Lake Sisters' "the lake itself is family to us, which means it's family to you" line lands in all three paths but with different weights. Path C makes it explicit (the song carries across worlds, the lake itself remembers the family). This is the seed of what Drystone will try to peel apart at the showdown.
 
-**On crossover hooks:** Path A has one Pegasus crossover ([CROSSOVER HOOK] tag). When we draft the other branches, similar small hooks should appear in each — Big Coulee's cheers echoing from a valley, colored winds from Keira's cliff, a frog herald passing through. Light touch only. One per region max.
+**On crossover hooks:** Path A has one Pegasus crossover ([CROSSOVER HOOK] tag). When we draft the other branches, similar small hooks should appear in each, Big Coulee's cheers echoing from a valley, colored winds from Keira's cliff, a frog herald passing through. Light touch only. One per region max.
 
-**On word count:** Total ~2,800 words across all passages. A reader who picks Path A reads about 1,500 of those words. A reader who picks Path C reads about 1,750. Path B reads about 1,700. None of the paths is dramatically longer than the others — the reader doesn't feel "punished" for picking the short path.
+**On word count:** Total ~2,800 words across all passages. A reader who picks Path A reads about 1,500 of those words. A reader who picks Path C reads about 1,750. Path B reads about 1,700. None of the paths is dramatically longer than the others, the reader doesn't feel "punished" for picking the short path.
 
-**On the wrapper variants:** I've added [VARIANT: STAY-TOGETHER / SPLIT / SOLO] tags at the key beats. These are conditional inserts — short paragraphs that swap in based on the reader's Strategy choice. The skeleton stays the same. This is ho
+**On the wrapper variants:** I've added [VARIANT: STAY-TOGETHER / SPLIT / SOLO] tags at the key beats. These are conditional inserts, short paragraphs that swap in based on the reader's Strategy choice. The skeleton stays the same. This is ho

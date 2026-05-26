@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Aiden's Region — 3-Deep CYOA Demo</title>
+<title>Aiden's Region, 3-Deep CYOA Demo</title>
 <style>
   :root { --paper: #faf6ed; --ink: #2b2419; --warm: #c97a3f; --water: #4a7d8c; --green: #6b8e4e; --gold: #c9a23f; --rule: rgba(43, 36, 25, 0.15); }
   * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -36,7 +36,7 @@
 <body>
 <div class="container">
   <header>
-    <h1>Aiden's Region — 3-Deep CYOA Demo</h1>
+    <h1>Aiden's Region, 3-Deep CYOA Demo</h1>
     <div class="controls"><button onclick="restart()">Start over</button></div>
   </header>
   <div id="state-display"></div>
@@ -47,8 +47,8 @@ const SCENES = {
 
 start: {
   id: 'START', title: 'Aiden in the Unicorn Meadow',
-  meta: 'A 3-deep CYOA demo for Aiden (7) — the exactly-right one',
-  text: `<figure class="illus"><img src="images/aiden_region.webp" alt="Aiden in the Unicorn Meadow — Pegasus eye-to-eye with him, clouds shaped like a fish and a sandwich"><figcaption>Aiden in the Unicorn Meadow — Pegasus eye-to-eye with him, clouds shaped like a fish and a sandwich</figcaption></figure><div class="demo-note"><strong>27 ways through Aiden's region.</strong> The big plastic unicorn raft turned real. Her name is Pegasus (she picked it herself). A baby otter is in a magic hole and only a unicorn can save her. Three places it might be. Your three choices each branch into three more. Pegasus comes home every time.</div>`,
+  meta: 'A 3-deep CYOA demo for Aiden (7), the exactly-right one',
+  text: `<figure class="illus"><img src="images/aiden_region.webp" alt="Aiden in the Unicorn Meadow, Pegasus eye-to-eye with him, clouds shaped like a fish and a sandwich"><figcaption>Aiden in the Unicorn Meadow, Pegasus eye-to-eye with him, clouds shaped like a fish and a sandwich</figcaption></figure><div class="demo-note"><strong>27 ways through Aiden's region.</strong> The big plastic unicorn raft turned real. Her name is Pegasus (she picked it herself). A baby otter is in a magic hole and only a unicorn can save her. Three places it might be. Your three choices each branch into three more. Pegasus comes home every time.</div>`,
   choices: [{ label: "Begin Aiden's region", target: 'p180' }],
 },
 
@@ -58,7 +58,7 @@ p180: {
 <p>The big inflatable unicorn used to be plastic. Now she's real. Her mane is rainbow. Her hooves don't quite touch the ground.</p>
 <p>She turns her big head and looks at Aiden over her shoulder. "LOOK AT THIS!" (She points with her horn at a cloud shaped like a fish.) "AND LOOK AT THIS!" (Now she's pointing at a rainbow that's growing sideways.)</p>
 <p>She lands gently in a meadow. Grass greener than grass should be. Aiden slides off her back.</p>
-<p>She bows so they're eye to eye. "I have been waiting for a rider for two hundred years. Did you know that? Because no one else FIT. The riders were too BIG. Or too TALL. Or too OLD. Or they didn't believe in unicorns enough. And then today I felt a small boy climbing onto me in a sunroom and I thought — <em>OH. There he is.</em>"</p>
+<p>She bows so they're eye to eye. "I have been waiting for a rider for two hundred years. Did you know that? Because no one else FIT. The riders were too BIG. Or too TALL. Or too OLD. Or they didn't believe in unicorns enough. And then today I felt a small boy climbing onto me in a sunroom and I thought, <em>OH. There he is.</em>"</p>
 <p>She tells him her name. She has never said it out loud before. "Pegasus."</p>
 <p>"But Pegasus is a HORSE not a UNICORN."</p>
 <p>"I picked it MYSELF."</p>
@@ -67,7 +67,7 @@ p180: {
 },
 
 p181: {
-  id: 'P-181', title: 'The Exactly-Right Moment', meta: 'Aiden — cared-for',
+  id: 'P-181', title: 'The Exactly-Right Moment', meta: 'Aiden, cared-for',
   text: `<p>Pegasus gets serious. As serious as a unicorn whose mane is currently changing color can be.</p>
 <p>"Aiden. I need to tell you a thing. Sit down."</p>
 <p>Aiden sits in the grass. Pegasus folds her legs under her and lies down across from him. Her horn glows faintly.</p>
@@ -76,7 +76,7 @@ p181: {
 <p>Aiden's chin wobbles a little.</p>
 <p>Then Pegasus boops his nose with her horn. The horn is warm and slightly tickly. Aiden laughs.</p>
 <p>"Now. There's a problem in The Old Roar. A baby otter fell into a magic hole. Only a unicorn can save her. But I am too YOUNG to save her by myself. I need a rider. Will you ride with me?"</p>
-<p>Aiden thinks for a second longer than Pegasus expected. He is checking — quietly, the way his mom taught him — whether saying yes is the right kind of brave. Is anyone going to be sad if I do this. Is anyone in trouble if I do this. Does the small one in the hole need me right now more than anyone else does.</p>
+<p>Aiden thinks for a second longer than Pegasus expected. He is checking, quietly, the way his mom taught him, whether saying yes is the right kind of brave. Is anyone going to be sad if I do this. Is anyone in trouble if I do this. Does the small one in the hole need me right now more than anyone else does.</p>
 <p>Yes. Yes. Yes.</p>
 <p>"Yes," he says.</p>
 <p>Pegasus stands. She flicks her rainbow mane. She bows for him to climb on. She has carried two hundred years of riders in her imagination. None of them ever paused to check first. The pause is what tells her she picked right.</p>`,
@@ -84,7 +84,7 @@ p181: {
 },
 
 p182: {
-  id: 'P-182', title: 'CHOICE 1 — Which way first?', meta: 'First decision',
+  id: 'P-182', title: 'CHOICE 1, Which way first?', meta: 'First decision',
   text: `<p>Pegasus says, "The hole is in one of THREE places. I know it's in one of them. I don't know which. Which way do you want to go first?"</p>`,
   choices: [
     { label: 'The Meadow of Bells', target: 'p183', sub: "Easy. Pretty. Pretty fast." },
@@ -96,7 +96,7 @@ p182: {
 // CHOICE 2 NODES
 
 p183: {
-  id: 'P-183', title: 'CHOICE 2A — How do you find the hole?', meta: "The Meadow of Bells",
+  id: 'P-183', title: 'CHOICE 2A, How do you find the hole?', meta: "The Meadow of Bells",
   text: `<p>The meadow is a wide field where every flower is a tiny bell. When the wind blows, the meadow rings. Aiden gasps because it's beautiful.</p>
 <p>Somewhere down there is a hole with Ripple in it. How do you find it?</p>`,
   choices: [
@@ -107,10 +107,10 @@ p183: {
 },
 
 p184: {
-  id: 'P-184', title: 'CHOICE 2B — How do you greet Hush?', meta: 'The Cliffside',
-  text: `<p>Inside the cave, Ripple is crying. But there's another sound underneath — something smaller. A creature the size of a kitten sits in front of one of the four doors. Spikes that aren't actually pointy. Sad more than scary.</p>
+  id: 'P-184', title: 'CHOICE 2B, How do you greet Hush?', meta: 'The Cliffside',
+  text: `<p>Inside the cave, Ripple is crying. But there's another sound underneath, something smaller. A creature the size of a kitten sits in front of one of the four doors. Spikes that aren't actually pointy. Sad more than scary.</p>
 <p>"Don't go through my door. It's MY door. I LIVE here. Everyone always WANTS to go through. Nobody ever just SITS with me. I have been here for FIVE HUNDRED YEARS."</p>
-<p>His name is Hush. He starts to cry — tiny glowing tears.</p>
+<p>His name is Hush. He starts to cry, tiny glowing tears.</p>
 <p>How do you reach him?</p>`,
   choices: [
     { label: 'Just sit. Don\'t say anything. Be near him.', target: 'p184a', sub: "Sometimes presence is the gift. Don\'t talk." },
@@ -120,9 +120,9 @@ p184: {
 },
 
 p185: {
-  id: 'P-185', title: 'CHOICE 2C — How do you start the tea?', meta: "The River's Bend",
-  text: `<p>A tea party on a flat rock in the middle of the river. Tiny driftwood table. Teapot the size of a thimble. Ripple\'s mother is there — calm. The otters have been keeping her company.</p>
-<p>The head otter — grey-muzzled, wearing a kelp necklace — introduces herself as Aunt Stream. She does not look like a creature offering small talk.</p>
+  id: 'P-185', title: 'CHOICE 2C, How do you start the tea?', meta: "The River's Bend",
+  text: `<p>A tea party on a flat rock in the middle of the river. Tiny driftwood table. Teapot the size of a thimble. Ripple\'s mother is there, calm. The otters have been keeping her company.</p>
+<p>The head otter, grey-muzzled, wearing a kelp necklace, introduces herself as Aunt Stream. She does not look like a creature offering small talk.</p>
 <p>How do you begin?</p>`,
   choices: [
     { label: 'Ask the price up front. "What does the river want?"', target: 'p185a', sub: "You know there\'s a catch. Cut to it." },
@@ -131,42 +131,42 @@ p185: {
   ],
 },
 
-// CHOICE 3 NODES — PATH A (BELLS)
+// CHOICE 3 NODES, PATH A (BELLS)
 
 p183a: {
-  id: 'P-183A', title: 'CHOICE 3 — How do you follow the cry?', meta: 'You listen for Ripple',
-  text: `<p>You hear her — a small wet sob, somewhere to your left. What do you do?</p>`,
+  id: 'P-183A', title: 'CHOICE 3, How do you follow the cry?', meta: 'You listen for Ripple',
+  text: `<p>You hear her, a small wet sob, somewhere to your left. What do you do?</p>`,
   choices: [
-    { label: 'Follow exactly. Don\'t answer her — just go.', target: 'leaf_183a1', sub: "Speed. Get there." },
+    { label: 'Follow exactly. Don\'t answer her, just go.', target: 'leaf_183a1', sub: "Speed. Get there." },
     { label: 'Call back: "Hold on Ripple. We\'re coming."', target: 'leaf_183a2', sub: "Let her know help\'s on the way." },
     { label: 'Ask Pegasus to hum. Calm Ripple from a distance.', target: 'leaf_183a3', sub: "The unicorn\'s hum carries. Babies stop crying." },
   ],
 },
 
 p183b: {
-  id: 'P-183B', title: 'CHOICE 3 — Which big flower?', meta: 'Biggest bell-flower',
+  id: 'P-183B', title: 'CHOICE 3, Which big flower?', meta: 'Biggest bell-flower',
   text: `<p>The biggest flowers are spread across the meadow. Three stand out. Which?</p>`,
   choices: [
-    { label: 'The one with the deepest tone when wind hits it', target: 'leaf_183b1', sub: "The hole would muffle the high notes — deep = right." },
+    { label: 'The one with the deepest tone when wind hits it', target: 'leaf_183b1', sub: "The hole would muffle the high notes, deep = right." },
     { label: 'The one with petals slightly bent toward the ground', target: 'leaf_183b2', sub: "It\'s listening down. It knows." },
     { label: 'The one Pegasus\'s horn glows toward', target: 'leaf_183b3', sub: "Trust the unicorn. She knows magic-holes by sense." },
   ],
 },
 
 p183c: {
-  id: 'P-183C', title: 'CHOICE 3 — How do you talk to the bells?', meta: 'Ask the bells',
+  id: 'P-183C', title: 'CHOICE 3, How do you talk to the bells?', meta: 'Ask the bells',
   text: `<p>You stand in the meadow. You speak to the flowers themselves. Pegasus watches, amused. The bells lean toward you.</p>`,
   choices: [
     { label: 'Ask which bell knows where Ripple is', target: 'leaf_183c1', sub: "Direct question. Polite." },
-    { label: 'Compliment the bells first — they\'ll be helpful', target: 'leaf_183c2', sub: "Flowers love compliments. They\'ll spill." },
+    { label: 'Compliment the bells first, they\'ll be helpful', target: 'leaf_183c2', sub: "Flowers love compliments. They\'ll spill." },
     { label: 'Sing back at them', target: 'leaf_183c3', sub: "Match their ringing with your voice." },
   ],
 },
 
-// CHOICE 3 NODES — PATH B (HUSH)
+// CHOICE 3 NODES, PATH B (HUSH)
 
 p184a: {
-  id: 'P-184A', title: 'CHOICE 3 — How long do you sit?', meta: "Just sit. Don't talk.",
+  id: 'P-184A', title: 'CHOICE 3, How long do you sit?', meta: "Just sit. Don't talk.",
   text: `<p>You sit down across from Hush. You don\'t say anything. You just look at him kindly. Pegasus folds her legs and lies down beside you. Ripple, in the middle of the cave, goes quiet too. The whole cave holds.</p>`,
   choices: [
     { label: 'Sit quiet for a long, long time', target: 'leaf_184a1', sub: "Five minutes. Ten. He needs it." },
@@ -176,7 +176,7 @@ p184a: {
 },
 
 p184b: {
-  id: 'P-184B', title: 'CHOICE 3 — What do you ask him about?', meta: 'Listen to his five hundred years',
+  id: 'P-184B', title: 'CHOICE 3, What do you ask him about?', meta: 'Listen to his five hundred years',
   text: `<p>You ask Hush questions about himself. Nobody has done this. Ever. He starts to glow faintly. Which question matters most?</p>`,
   choices: [
     { label: '"Why are you here? What\'s the door for?"', target: 'leaf_184b1', sub: "Get the why. He\'ll feel important." },
@@ -186,19 +186,19 @@ p184b: {
 },
 
 p184c: {
-  id: 'P-184C', title: 'CHOICE 3 — What part of home do you describe?', meta: 'Tell Hush about your sunroom',
+  id: 'P-184C', title: 'CHOICE 3, What part of home do you describe?', meta: 'Tell Hush about your sunroom',
   text: `<p>You start telling Hush about the place you came from. He has never seen a sunroom. He doesn\'t know what couches are. He listens with both small ears alert. What part do you tell him about?</p>`,
   choices: [
-    { label: 'The unicorn raft — the one in the sunroom', target: 'leaf_184c1', sub: "He\'ll like that one. It\'s on-brand." },
+    { label: 'The unicorn raft, the one in the sunroom', target: 'leaf_184c1', sub: "He\'ll like that one. It\'s on-brand." },
     { label: 'Madison reading on the couch', target: 'leaf_184c2', sub: "A scene of safe quiet. He\'ll cry again." },
-    { label: 'The dock — and how it needs help', target: 'leaf_184c3', sub: "Tell him the real reason you\'re here." },
+    { label: 'The dock, and how it needs help', target: 'leaf_184c3', sub: "Tell him the real reason you\'re here." },
   ],
 },
 
-// CHOICE 3 NODES — PATH C (OTTERS)
+// CHOICE 3 NODES, PATH C (OTTERS)
 
 p185a: {
-  id: 'P-185A', title: 'CHOICE 3 — How do you phrase the price-question?', meta: 'Ask the price up front',
+  id: 'P-185A', title: 'CHOICE 3, How do you phrase the price-question?', meta: 'Ask the price up front',
   text: `<p>Aunt Stream sets her thimble down. She knew this question was coming. Which version do you ask?</p>`,
   choices: [
     { label: '"What does the river want from me?"', target: 'leaf_185a1', sub: "Open. You\'ll find out what the river values." },
@@ -208,26 +208,26 @@ p185a: {
 },
 
 p185b: {
-  id: 'P-185B', title: 'CHOICE 3 — How do you take the tea?', meta: 'Drink first, talk later',
+  id: 'P-185B', title: 'CHOICE 3, How do you take the tea?', meta: 'Drink first, talk later',
   text: `<p>You pick up the thimble. You sip. The tea tastes like cold spring water and warm honey at once. The otters watch you carefully. What do you do?</p>`,
   choices: [
     { label: 'Drink it slowly. Don\'t rush.', target: 'leaf_185b1', sub: "Respect the ceremony. They\'re grading manners." },
     { label: 'Compliment the tea sincerely', target: 'leaf_185b2', sub: "Aunt Stream brews it herself. She\'ll glow." },
-    { label: "Ask about Ripple's mother — see how she's holding up", target: 'leaf_185b3', sub: "Notice the grown-up in the room. They\'ll respect that." },
+    { label: "Ask about Ripple's mother, see how she's holding up", target: 'leaf_185b3', sub: "Notice the grown-up in the room. They\'ll respect that." },
   ],
 },
 
 p185c: {
-  id: 'P-185C', title: 'CHOICE 3 — Which otter do you pet first?', meta: 'Pet the otters',
-  text: `<p>You reach out — slowly, gently. Several otters lean toward your hand. Which one?</p>`,
+  id: 'P-185C', title: 'CHOICE 3, Which otter do you pet first?', meta: 'Pet the otters',
+  text: `<p>You reach out, slowly, gently. Several otters lean toward your hand. Which one?</p>`,
   choices: [
-    { label: 'Pet Aunt Stream first — honor the eldest', target: 'leaf_185c1', sub: "She\'s the matriarch. She\'ll know you\'re raised right." },
+    { label: 'Pet Aunt Stream first, honor the eldest', target: 'leaf_185c1', sub: "She\'s the matriarch. She\'ll know you\'re raised right." },
     { label: 'Pet the smallest baby otter', target: 'leaf_185c2', sub: "Tiny. Sweet. The other otters will melt." },
-    { label: 'Open your arms — hug them all at once', target: 'leaf_185c3', sub: "Audacious. They love this." },
+    { label: 'Open your arms, hug them all at once', target: 'leaf_185c3', sub: "Audacious. They love this." },
   ],
 },
 
-// LEAVES — PATH A (BELLS)
+// LEAVES, PATH A (BELLS)
 
 leaf_183a1: {
   id: 'L-1', title: 'Sprint to Ripple', meta: 'Pure speed',
@@ -247,7 +247,7 @@ leaf_183a2: {
 
 leaf_183a3: {
   id: 'L-3', title: 'Pegasus Hums', meta: 'A unicorn\'s calming song',
-  text: `<p>"Pegasus — can you hum? She\'s scared."</p>
+  text: `<p>"Pegasus, can you hum? She\'s scared."</p>
 <p>Pegasus hums. The sound is low and warm and travels through the meadow. The bells stop ringing to listen. Ripple\'s crying stops mid-sob. She comes to the top of the hole on her own and waits to be lifted out.</p>
 <p>Ripple\'s mother is stunned. "You used a HUM to call her up. Most rescuers descend. You drew her UP." She gives Aiden a tiny vial of clear river-water. "Drink one drop the next time someone you love is scared. It will help."</p>`,
   earns: { item: ['pegasus', 'base'], allies: ['Pegasus'], flags: ['CalmingVial'] }, next: 'exit',
@@ -263,14 +263,14 @@ leaf_183b1: {
 
 leaf_183b2: {
   id: 'L-5', title: 'The Listening Flower', meta: 'A bell bent toward the ground',
-  text: `<p>One flower\'s petals are slightly bent downward — as if it\'s been LISTENING. You walk to it. It lifts itself aside for you. The hole is exactly there.</p>
+  text: `<p>One flower\'s petals are slightly bent downward, as if it\'s been LISTENING. You walk to it. It lifts itself aside for you. The hole is exactly there.</p>
 <p>You go down. You bring Ripple up. Ripple\'s mother weeps. "You noticed a SMALL thing. Most rescuers don\'t. Take this." (A tiny seed.) "Plant it at home. It will grow a flower that bends down to listen wherever a child needs to be heard."</p>`,
   earns: { item: ['pegasus', 'base'], allies: ['Pegasus'], flags: ['ListeningSeed'] }, next: 'exit',
 },
 
 leaf_183b3: {
   id: 'L-6', title: "Trust Pegasus's Horn", meta: 'She knows magic-holes',
-  text: `<p>"Pegasus — which one?"</p>
+  text: `<p>"Pegasus, which one?"</p>
 <p>Her horn glows. It points without her moving. You walk to the flower it indicates. The hole opens.</p>
 <p>You rescue Ripple. Ripple\'s mother is impressed. "You TRUSTED the unicorn. Few riders do. They all think they know better. You knew when to follow."</p>
 <p>She gives him a tiny horseshoe-shaped charm. "For your shoe. Pegasus will know which kind of horseshoe you\'re wearing."</p>`,
@@ -280,7 +280,7 @@ leaf_183b3: {
 leaf_183c1: {
   id: 'L-7', title: 'Asking the Bells Politely', meta: 'Direct question',
   text: `<p>"Excuse me, bells. Which of you knows where Ripple is?"</p>
-<p>The whole meadow rings at once. The wave of sound MOVES — across the field — and stops at one specific flower. The flower opens. There\'s the hole.</p>
+<p>The whole meadow rings at once. The wave of sound MOVES, across the field, and stops at one specific flower. The flower opens. There\'s the hole.</p>
 <p>You rescue Ripple. Mom weeps. "You ASKED. Nobody asks. Take this." (A tiny bell on a piece of grass-twine.) "Around your wrist. Ring when you need the meadow."</p>`,
   earns: { item: ['pegasus', 'base'], allies: ['Pegasus'], flags: ['BellOnWrist'] }, next: 'exit',
 },
@@ -288,7 +288,7 @@ leaf_183c1: {
 leaf_183c2: {
   id: 'L-8', title: 'Complimenting the Meadow', meta: 'Flowers love compliments',
   text: `<p>"You are the most beautiful meadow I\'ve ever seen. Your ringing is the prettiest thing."</p>
-<p>The bells go ABSOLUTELY WILD. They ring in joy. The wave breaks over the entire meadow. They all open at once. You see all four magic holes (there are four scattered) — three are empty, one has Ripple. You go in.</p>
+<p>The bells go ABSOLUTELY WILD. They ring in joy. The wave breaks over the entire meadow. They all open at once. You see all four magic holes (there are four scattered), three are empty, one has Ripple. You go in.</p>
 <p>Ripple\'s mother weeps. "You made the meadow HAPPY. We will remember it forever. Take this." (A small ring of woven grass.) "It will smell like this meadow forever, even at home."</p>`,
   earns: { item: ['pegasus', 'base'], allies: ['Pegasus'], flags: ['MeadowRing'] }, next: 'exit',
 },
@@ -301,12 +301,12 @@ leaf_183c3: {
   earns: { item: ['pegasus', 'base'], allies: ['Pegasus'], flags: ['UnicornWhistle', 'SangARescue'] }, next: 'exit',
 },
 
-// LEAVES — PATH B (HUSH)
+// LEAVES, PATH B (HUSH)
 
 leaf_184a1: {
   id: 'L-10', title: 'Sitting with Hush a Long Time', meta: 'Just presence',
   text: `<p>You sit quietly. Five minutes. Ten. Hush slowly stops crying. He looks at you. You look at him.</p>
-<p>Pegasus says, very quietly, "Hush is bound to this cave. He cannot leave forever. But — what if he came for just ONE DAY?"</p>
+<p>Pegasus says, very quietly, "Hush is bound to this cave. He cannot leave forever. But, what if he came for just ONE DAY?"</p>
 <p>You ask Hush. Hush blinks. "One day is forty-eight hours less than five hundred years. I think I can do one day."</p>
 <p>He climbs onto your shoulder. He has gone from sad-grumpy to <em>brave</em> in the space of minutes. He sits up STRAIGHTER than he has sat in five centuries.</p>
 <p>"You made me do things," he whispers.</p>
@@ -367,7 +367,7 @@ leaf_184b3: {
 leaf_184c1: {
   id: 'L-16', title: 'Telling Hush About the Raft', meta: 'The unicorn raft in the sunroom',
   text: `<p>"In my sunroom we have a big plastic unicorn. I climb on her every day. Today she turned into Pegasus."</p>
-<p>Hush\'s eyes get HUGE. "She — she TURNED into Pegasus? From plastic? Is that — is that ALLOWED?"</p>
+<p>Hush\'s eyes get HUGE. "She, she TURNED into Pegasus? From plastic? Is that, is that ALLOWED?"</p>
 <p>Pegasus laughs. "Apparently, yes."</p>
 <p>"So things turn real in your sunroom? Things that were not real become real if you ride them?"</p>
 <p>"Sometimes."</p>
@@ -378,7 +378,7 @@ leaf_184c1: {
 leaf_184c2: {
   id: 'L-17', title: 'Madison Reading on the Couch', meta: 'A scene of safe quiet',
   text: `<p>"My cousin Madison reads on the couch. She always wears a sweater that\'s too big. She has snacks beside her. If you walk in, she lifts the blanket and you can sit under it with her."</p>
-<p>Hush starts to cry — not sad tears, longing ones. "Nobody has ever lifted a blanket for me."</p>
+<p>Hush starts to cry, not sad tears, longing ones. "Nobody has ever lifted a blanket for me."</p>
 <p>"Madison will. I know she will. If you come for one day. She lifts blankets for everyone."</p>
 <p>Hush is sold. The One Day plan happens. He spends his entire visit at Sun Lakes under Madison\'s too-big sweater. (Madison is, in fact, delighted.)</p>`,
   earns: { item: ['pegasus', 'base'], allies: ['Pegasus', 'Hush'], flags: ['HushAtShowdown', 'MadisonBlanket'] }, next: 'exit',
@@ -395,19 +395,19 @@ leaf_184c3: {
   earns: { item: ['pegasus', 'base'], allies: ['Pegasus', 'Hush'], flags: ['HushAtShowdown', 'HushMenacing'] }, next: 'exit',
 },
 
-// LEAVES — PATH C (OTTERS)
+// LEAVES, PATH C (OTTERS)
 
 leaf_185a1: {
   id: 'L-19', title: '"What Does the River Want?"', meta: 'Open question',
   text: `<p>Aunt Stream sets her thimble down. "Child. The river takes a PROMISE. You have the unicorn. The promise is this: she gets to come BACK. She belongs to the whole world, not to one boy. When her work at your lake is done, she returns to find the next rider. Maybe in a year. Maybe in ten."</p>
 <p>Aiden looks at Pegasus. She looks back. He says quietly, "I promise."</p>
-<p>The river thrums. The rescue hole opens. They retrieve Ripple. On the way back Aunt Stream says: "Do you ever hear singing? At your lake at night?" "Yes. Mom says it\'s nobody." Aunt Stream nods slowly. "It is somebody. Your mother is shyer than she pretends. Pass it on — gently. Not yet."</p>`,
+<p>The river thrums. The rescue hole opens. They retrieve Ripple. On the way back Aunt Stream says: "Do you ever hear singing? At your lake at night?" "Yes. Mom says it\'s nobody." Aunt Stream nods slowly. "It is somebody. Your mother is shyer than she pretends. Pass it on, gently. Not yet."</p>`,
   earns: { item: ['pegasus', 'base'], allies: ['Pegasus'], flags: ['AidenMadeThePromise', 'CanyonSingerOttersConfirm', 'MotherIsTheSinger'] }, next: 'exit',
 },
 
 leaf_185a2: {
   id: 'L-20', title: '"Do I Have Anything That Matters?"', meta: 'Humble',
-  text: `<p>Aunt Stream\'s whiskers twitch. "You do, child. You have a UNICORN. You have a LOVE for her so big it has filled this rock like steam. The river accepts that love AS the promise — that you will love her back to the world someday, when the time comes."</p>
+  text: `<p>Aunt Stream\'s whiskers twitch. "You do, child. You have a UNICORN. You have a LOVE for her so big it has filled this rock like steam. The river accepts that love AS the promise, that you will love her back to the world someday, when the time comes."</p>
 <p>You promise. The hole opens. You retrieve Ripple. On the way back Aunt Stream brings up the Singer. She tells you it was somebody. She tells you your mother. She tells you to pass it on gently when the time is right.</p>`,
   earns: { item: ['pegasus', 'base'], allies: ['Pegasus'], flags: ['AidenMadeThePromise', 'CanyonSingerOttersConfirm', 'MotherIsTheSinger', 'LoveAsPromise'] }, next: 'exit',
 },
@@ -417,7 +417,7 @@ leaf_185a3: {
   text: `<p>Aunt Stream\'s eyes mist. "Child. Most adults wouldn\'t say that. Most adults BARGAIN. You said yes before the price."</p>
 <p>"The price is a PROMISE. The unicorn returns to the world someday. She is not yours forever. She is yours for NOW."</p>
 <p>"That\'s okay. I promise."</p>
-<p>The river thrums. The hole opens. The rescue. Aunt Stream tells you about the Singer. She also gives you a tiny otter-carved button — "for your courage. Pin it where you can feel it."</p>`,
+<p>The river thrums. The hole opens. The rescue. Aunt Stream tells you about the Singer. She also gives you a tiny otter-carved button, "for your courage. Pin it where you can feel it."</p>`,
   earns: { item: ['pegasus', 'base'], allies: ['Pegasus'], flags: ['AidenMadeThePromise', 'CanyonSingerOttersConfirm', 'MotherIsTheSinger', 'OtterButton'] }, next: 'exit',
 },
 
@@ -447,7 +447,7 @@ leaf_185b3: {
 
 leaf_185c1: {
   id: 'L-25', title: 'Petting Aunt Stream First', meta: 'Honor the eldest',
-  text: `<p>You reach for Aunt Stream first. She closes her eyes and PURRS — otters can purr. The whole tea party softens.</p>
+  text: `<p>You reach for Aunt Stream first. She closes her eyes and PURRS, otters can purr. The whole tea party softens.</p>
 <p>"You knew to come to me first. Most children pick the smallest cute one. You honored the eldest. That is a HOME training."</p>
 <p>The price. The promise. The rescue. The Singer reveal. And Aunt Stream presses her forehead to yours. "You are an otter now. Honorary. The river network is yours."</p>`,
   earns: { item: ['pegasus', 'base'], allies: ['Pegasus', 'AuntStream'], flags: ['AidenMadeThePromise', 'CanyonSingerOttersConfirm', 'MotherIsTheSinger', 'HonoraryOtter'] }, next: 'exit',
@@ -457,7 +457,7 @@ leaf_185c2: {
   id: 'L-26', title: 'The Smallest Baby Otter', meta: 'Tiny. Sweet.',
   text: `<p>You pet the smallest baby otter. It MELTS into your palm. The other otters openly coo. Aunt Stream pretends to be unaffected and is, in fact, affected.</p>
 <p>The price. The promise. The rescue. The Singer reveal.</p>
-<p>And — as you leave — the baby otter you petted runs after you. "Can he come for one day?" his mother asks. "He has been asking to see a sunroom." You agree. He rides home in your pocket beside Ripple\'s wooden-otter charm.</p>`,
+<p>And, as you leave, the baby otter you petted runs after you. "Can he come for one day?" his mother asks. "He has been asking to see a sunroom." You agree. He rides home in your pocket beside Ripple\'s wooden-otter charm.</p>`,
   earns: { item: ['pegasus', 'base'], allies: ['Pegasus', 'SmallOtter'], flags: ['AidenMadeThePromise', 'CanyonSingerOttersConfirm', 'MotherIsTheSinger', 'BabyOtterFollows'] }, next: 'exit',
 },
 
@@ -465,12 +465,12 @@ leaf_185c3: {
   id: 'L-27', title: 'Open Arms', meta: 'Hug them all',
   text: `<p>You open your arms wide. Every otter at the tea party piles into them. It is a heap of otters. Aunt Stream is on top. The smallest one is at the bottom and is profoundly content there. Pegasus has to wait for the pile to disperse before she can move.</p>
 <p>The price is paid. The promise is made. The rescue happens. The Singer reveal happens.</p>
-<p>And Aunt Stream, before you leave, formally inducts Aiden into THE BEND — the river\'s otter network. "Any otter, anywhere in The Old Roar, will come if you call. You are FAMILY now. So is Chayten. So is Madison. So are all eight."</p>`,
+<p>And Aunt Stream, before you leave, formally inducts Aiden into THE BEND, the river\'s otter network. "Any otter, anywhere in The Old Roar, will come if you call. You are FAMILY now. So is Chayten. So is Madison. So are all eight."</p>`,
   earns: { item: ['pegasus', 'base'], allies: ['Pegasus', 'AuntStream', 'TheBend'], flags: ['AidenMadeThePromise', 'CanyonSingerOttersConfirm', 'MotherIsTheSinger', 'FormalInduction'] }, next: 'exit',
 },
 
 exit: {
-  id: 'EXIT', title: 'Flying Toward the C-130', meta: 'Aiden — region complete',
+  id: 'EXIT', title: 'Flying Toward the C-130', meta: 'Aiden, region complete',
   text: `<p>The sky is purple-gold. The C-130 is rumbling somewhere up ahead, calling him home.</p>
 <p>Aiden has Pegasus. He has, maybe, a friend on his shoulder, or a song in his ears, or just a unicorn at his back. He always has Pegasus.</p>
 <p>Pegasus says, "LOOK AT THIS!" She is pointing at the sun coming through the canyon.</p>
@@ -529,7 +529,7 @@ function render() {
     h += `<div class="choices">
       <button onclick="location.href='index.html?goto=showdown_intro'" style="background:#2b2419;color:#faf6ed;border-color:#2b2419;"><strong>Head to the Showdown &rarr;</strong><span class="sub" style="color:#f5c587;">End the book. Face Drystone with what you've earned.</span></button>
       <button onclick="location.href='index.html?goto=hub'">&larr; Pick another cousin first</button>
-      <button onclick="restart()" style="opacity:0.7;font-size:13px;">Start over &mdash; try a different path in this region</button>
+      <button onclick="restart()" style="opacity:0.7;font-size:13px;">Start over, try a different path in this region</button>
     </div>`;
   }
   m.innerHTML = h;

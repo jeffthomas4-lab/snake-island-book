@@ -1,4 +1,4 @@
-# Keira's Region — The Painted Cliff
+# Keira's Region, The Painted Cliff
 
 **Region ID:** R-KEIRA
 **Passages:** P-160 through P-166
@@ -25,7 +25,7 @@ Target ~2,600 words.
 
 ---
 
-## P-160 — ARRIVAL AT THE PAINTED CLIFF
+## P-160, ARRIVAL AT THE PAINTED CLIFF
 
 *~350 words. Slight variant per wrapper.*
 
@@ -43,11 +43,11 @@ The cliff is *breathing.*
 
 [VARIANT: STAY-TOGETHER. *The other seven kids land beside her. Aiden takes one look at the cliff and says "He's tired." Reid agrees without saying anything. Madison is already counting the basalt columns. Carson tilts his head and squints, trying to see whatever Keira is clearly seeing. He cannot. He shrugs and trusts her anyway.*]
 
-[VARIANT: SPLIT. *Three other kids are with her. Aiden is one of them — he picked her group because he wanted to see the cliff she described from the boat. Reid is the second. Kellen is the third, already crouching to study a stone. They give her space. They all sense she sees something they don't.*]
+[VARIANT: SPLIT. *Three other kids are with her. Aiden is one of them, he picked her group because he wanted to see the cliff she described from the boat. Reid is the second. Kellen is the third, already crouching to study a stone. They give her space. They all sense she sees something they don't.*]
 
-[VARIANT: SOLO. *Just her and the cliff. Her hands are already itching for a brush. The silence here is a different silence — the silence of something asleep, breathing. She has never been alone in a place this big. She finds, to her own surprise, that she likes it. She has been waiting her whole life to look at something this size without someone telling her to hurry up.*]
+[VARIANT: SOLO. *Just her and the cliff. Her hands are already itching for a brush. The silence here is a different silence, the silence of something asleep, breathing. She has never been alone in a place this big. She finds, to her own surprise, that she likes it. She has been waiting her whole life to look at something this size without someone telling her to hurry up.*]
 
-She steps off her raft. The cliff doesn't move. But she can hear something — a small sound. Like... snoring? But the snore is *colored.* She can see the color of the snore in the air. Pale blue, with flecks of orange.
+She steps off her raft. The cliff doesn't move. But she can hear something, a small sound. Like... snoring? But the snore is *colored.* She can see the color of the snore in the air. Pale blue, with flecks of orange.
 
 She blinks. She still sees the colors.
 
@@ -77,7 +77,7 @@ He yawns. The yawn is purple.
 
 ---
 
-## P-161 — THE BOTH-AT-ONCE MOMENT
+## P-161, THE BOTH-AT-ONCE MOMENT
 
 *~250 words. Always read.*
 
@@ -113,7 +113,7 @@ She picks up a brush.
 
 ---
 
-## P-162 — KEIRA'S CHOICE
+## P-162, KEIRA'S CHOICE
 
 *~150 words. The real branch.*
 
@@ -125,21 +125,21 @@ He says, "How would you like to begin?"
 >
 > **If you say "what do you want to be painted AS?" turn to P-164.** *(He thinks about it for a long time. The conversation is slow but it goes somewhere.)*
 >
-> **If you say "I'm going to climb up first — I want to see what you've been dreaming," turn to P-165.** *(Hardest. He's a thousand feet tall. You are ten.)*
+> **If you say "I'm going to climb up first, I want to see what you've been dreaming," turn to P-165.** *(Hardest. He's a thousand feet tall. You are ten.)*
 
 ---
 
-## P-163 — PATH A: JUST START PAINTING (BASE)
+## P-163, PATH A: JUST START PAINTING (BASE)
 
 *~500 words. Yields Brush (base).*
 
 Keira shrugs and picks up the orange. The orange leaps out of the jar. She catches it with the brush. It is *eager.*
 
-She paints. Fast. The way she paints when nobody is watching — wide strokes, no plan, the colors deciding their own next move. The orange leads. The blue follows. A green she doesn't recognize joins in halfway through.
+She paints. Fast. The way she paints when nobody is watching, wide strokes, no plan, the colors deciding their own next move. The orange leads. The blue follows. A green she doesn't recognize joins in halfway through.
 
 The cliff is purring now. Each stroke wakes him a little more. His snore has stopped. His breathing has slowed.
 
-She gets to his eyes — they are thirty feet up.
+She gets to his eyes, they are thirty feet up.
 
 She climbs.
 
@@ -177,7 +177,7 @@ She climbs onto her raft. Cliffy waves. The mouse waves. The paints in her jars 
 
 ---
 
-## P-164 — PATH B: ASK WHAT HE WANTS (ENHANCED)
+## P-164, PATH B: ASK WHAT HE WANTS (ENHANCED)
 
 *~600 words. Yields Brush (enhanced) + Cliffy as echo at showdown.*
 
@@ -201,7 +201,7 @@ Cliffy goes very still.
 
 Keira nods. She thinks so. She thinks that's exactly right.
 
-She paints. Up his basalt forearm, a long curving stroke of warm gold — a hand. Up his other forearm, the other hand, reaching. She paints them so the fingertips don't quite touch. They are reaching, always reaching, never finishing the reach. The reach is the thing.
+She paints. Up his basalt forearm, a long curving stroke of warm gold, a hand. Up his other forearm, the other hand, reaching. She paints them so the fingertips don't quite touch. They are reaching, always reaching, never finishing the reach. The reach is the thing.
 
 When she steps back, Cliffy is crying.
 
@@ -209,7 +209,7 @@ His tears are pale blue paint. They drip down his basalt face and pool at his fe
 
 "That is the most beautiful thing," he whispers, "that has ever been on me."
 
-She climbs to his eyes. (Same climb as Path A — she's not afraid.) She paints a small ring around each. She perches on his cheekbone.
+She climbs to his eyes. (Same climb as Path A, she's not afraid.) She paints a small ring around each. She perches on his cheekbone.
 
 "Open."
 
@@ -223,13 +223,13 @@ He pulls a Truth Brush out of his basalt chest and gives it to her. This one is 
 
 "This is mine. It was my mother's. She was a cliff too. You should have it. You earned it."
 
-Then he says, very quietly: "I cannot leave this place. I am stone in this ground. But — if you call my name from somewhere with stone, my *attention* will travel. I will be there in spirit. The basalt around your home will notice. The man with the clipboards — he won't see me. But he will feel watched. That is all I can offer."
+Then he says, very quietly: "I cannot leave this place. I am stone in this ground. But, if you call my name from somewhere with stone, my *attention* will travel. I will be there in spirit. The basalt around your home will notice. The man with the clipboards, he won't see me. But he will feel watched. That is all I can offer."
 
 Keira says, "That's a lot."
 
 Cliffy says, "It is what I have."
 
-[CROSSOVER HOOK: *Three operatic notes carry across the canyon. Cliffy's whole face turns toward the sound. "That woman has been singing here for as long as I've been awake," he says. "Wait — I just woke up. As long as I was asleep. She sang to me. I always thought I was dreaming her."*]
+[CROSSOVER HOOK: *Three operatic notes carry across the canyon. Cliffy's whole face turns toward the sound. "That woman has been singing here for as long as I've been awake," he says. "Wait, I just woke up. As long as I was asleep. She sang to me. I always thought I was dreaming her."*]
 
 She climbs down. He bows slightly. The mouse with spectacles is writing furiously.
 
@@ -239,7 +239,7 @@ She climbs down. He bows slightly. The mouse with spectacles is writing furiousl
 
 ---
 
-## P-165 — PATH C: CLIMB FIRST (HIDDEN)
+## P-165, PATH C: CLIMB FIRST (HIDDEN)
 
 *~650 words. Yields Brush (full) + Cliffy ally (the canyon transforms) + CanyonWokeColor flag.*
 
@@ -253,7 +253,7 @@ Cliffy makes a sound that is somewhere between a yawn and a laugh.
 
 Keira is already climbing.
 
-She finds the seams. The basalt is forgiving. The columns are perfectly hexagonal and her fingers know exactly where to wedge. She climbs steadily — not fast, not slow, the way she climbs the rocks at home, the way she climbs the small cliff the older boys jump off.
+She finds the seams. The basalt is forgiving. The columns are perfectly hexagonal and her fingers know exactly where to wedge. She climbs steadily, not fast, not slow, the way she climbs the rocks at home, the way she climbs the small cliff the older boys jump off.
 
 She is fifty feet up before Cliffy realizes she is *actually doing this.*
 
@@ -273,7 +273,7 @@ A hundred feet. Two hundred. Three hundred. She gets to a ledge near his eyes an
 
 The view from up here is not the view from below.
 
-She can see what Cliffy has been dreaming. The canyon — the whole canyon — has color *in the rock.* Veins of blue. Veins of orange. Streaks of green where the basalt should be black. The color is *there,* under the surface, invisible from the ground. The cliffs have been dreaming color this whole time and the color is still in them, waiting.
+She can see what Cliffy has been dreaming. The canyon, the whole canyon, has color *in the rock.* Veins of blue. Veins of orange. Streaks of green where the basalt should be black. The color is *there,* under the surface, invisible from the ground. The cliffs have been dreaming color this whole time and the color is still in them, waiting.
 
 "Oh," Keira says. "Oh."
 
@@ -283,7 +283,7 @@ Cliffy says, quietly, "You see them."
 
 "I forgot. I'd forgotten. For so long I was just black rock to everyone. I forgot the color was still in me. Even I had stopped seeing it."
 
-Keira opens a jar of paint she brought up clipped to her belt. She paints around his eyes. She uses the colors she sees in the rock — *his* colors, the ones he forgot. Blue. Orange. Green.
+Keira opens a jar of paint she brought up clipped to her belt. She paints around his eyes. She uses the colors she sees in the rock, *his* colors, the ones he forgot. Blue. Orange. Green.
 
 "Open," she says.
 
@@ -291,17 +291,17 @@ He opens his eyes.
 
 And the canyon WAKES.
 
-Color floods up the cliff face. Every basalt column from the water to the sky lights up — blue veins, orange streaks, green ribbons. The whole canyon, both walls, miles of basalt, turns colored at once. It is *enormous.* It is the size of the whole world.
+Color floods up the cliff face. Every basalt column from the water to the sky lights up, blue veins, orange streaks, green ribbons. The whole canyon, both walls, miles of basalt, turns colored at once. It is *enormous.* It is the size of the whole world.
 
 Keira can hear, faintly, every basalt cliff in The Old Roar starting to hum. The wakeup is contagious. Cliffs that have been asleep for thousands of years are stretching.
 
 And then she sees something nobody else will ever see.
 
-For one second — just one — there is a *face* in the canyon wall opposite. Made of veins. Blue and orange. A woman's face, the basalt arranged like cheekbones, the orange streaks shaped like an open mouth. The face is singing. Keira can't hear it from this far, but she can see the shape of the singing — the mouth open, the throat working, the face full of the joy of a person who didn't know anyone was listening.
+For one second, just one, there is a *face* in the canyon wall opposite. Made of veins. Blue and orange. A woman's face, the basalt arranged like cheekbones, the orange streaks shaped like an open mouth. The face is singing. Keira can't hear it from this far, but she can see the shape of the singing, the mouth open, the throat working, the face full of the joy of a person who didn't know anyone was listening.
 
 The face fades into ordinary colored rock.
 
-Keira does not tell anyone. She knows already that this was meant for her. She has the artist's eye. The lake had been waiting for someone with an artist's eye to *notice.* Someday — maybe at home, maybe at this lake, maybe many summers from now — she will hear that face singing for real. She will know who it is. She will not say.
+Keira does not tell anyone. She knows already that this was meant for her. She has the artist's eye. The lake had been waiting for someone with an artist's eye to *notice.* Someday, maybe at home, maybe at this lake, maybe many summers from now, she will hear that face singing for real. She will know who it is. She will not say.
 
 The mouse with spectacles drops his pen.
 
@@ -311,11 +311,11 @@ He says, "You woke up the WHOLE CANYON."
 
 Keira says, "You were already this colorful. I just looked."
 
-He carries her down — gently, his hand the size of a small house. He sets her on her feet. He pulls a Truth Brush from his chest and hands it to her. The light at the tip is brighter than the other versions. It looks like a small contained sunrise.
+He carries her down, gently, his hand the size of a small house. He sets her on her feet. He pulls a Truth Brush from his chest and hands it to her. The light at the tip is brighter than the other versions. It looks like a small contained sunrise.
 
 "I am COMING with you," he says. "I am going to walk to the lake-up-above. I am a CLIFF. This will take many hours. I will be slow. I do not care. I am coming. The basalt around your cove is my family. I want to stand with my family."
 
-[CROSSOVER HOOK: *A small bright shape gallops along a ridge of the freshly-colored canyon, glimpsed for two seconds — a unicorn with a small boy on her back. Cliffy laughs (the laugh is enormous and colored). "There's the boy who never stopped believing," he says. "He's part of this. Good."*]
+[CROSSOVER HOOK: *A small bright shape gallops along a ridge of the freshly-colored canyon, glimpsed for two seconds, a unicorn with a small boy on her back. Cliffy laughs (the laugh is enormous and colored). "There's the boy who never stopped believing," he says. "He's part of this. Good."*]
 
 Keira climbs onto her raft. Behind her, miles of basalt are humming in color. The paints in her jars are leaping with joy.
 
@@ -325,7 +325,7 @@ Keira climbs onto her raft. Behind her, miles of basalt are humming in color. Th
 
 ---
 
-## P-166 — EXIT
+## P-166, EXIT
 
 *~200 words. Always read.*
 
@@ -335,7 +335,7 @@ The raft is waiting. The paints settle. The Truth Brush sits in her pocket warm 
 
 [VARIANT: PATH B. *Cliffy's hands stay reaching for each other up the basalt of his arms. The canyon hums quietly. The blue tears at his feet are slowly drying into a small ribbon of color across the floor.*]
 
-[VARIANT: PATH C. *The whole canyon is in color. Cliffy is walking — actually walking, ground-shaking step by step — toward the meadow. Color is leaking out of every basalt cliff in The Old Roar. Keira can hear a hundred giants stretching.*]
+[VARIANT: PATH C. *The whole canyon is in color. Cliffy is walking, actually walking, ground-shaking step by step, toward the meadow. Color is leaking out of every basalt cliff in The Old Roar. Keira can hear a hundred giants stretching.*]
 
 She has the Brush (in whatever form she earned it). She has, somewhere behind her ribs, the new and powerful feeling that the world has been more colorful all along than she'd been allowed to see.
 
@@ -347,14 +347,14 @@ She paddles toward the sound of the C-130, faint and far, somewhere up in the wo
 
 ## Editor notes
 
-**On "the both-at-once moment" (P-161):** Keira's cared-for beat. Cliffy notices that she has both an artist's eye AND a climber's body and tells her *don't ever pick.* This is the editor's-note fix — Keira is celebrated for being all of herself simultaneously, not for one half over the other.
+**On "the both-at-once moment" (P-161):** Keira's cared-for beat. Cliffy notices that she has both an artist's eye AND a climber's body and tells her *don't ever pick.* This is the editor's-note fix, Keira is celebrated for being all of herself simultaneously, not for one half over the other.
 
-**On the MASSIVE visual moment (P-165):** This is the big payoff the previous editor demanded. Path C: when Cliffy opens his eyes, the entire canyon lights up in color. Miles of basalt cliffs wake up at once. Color floods. *You woke up the WHOLE CANYON.* This is exactly the spectacle Keira needed. It is also a perfect commercial-illustration moment if/when this gets art — full color, two-page spread, the canyon transformed.
+**On the MASSIVE visual moment (P-165):** This is the big payoff the previous editor demanded. Path C: when Cliffy opens his eyes, the entire canyon lights up in color. Miles of basalt cliffs wake up at once. Color floods. *You woke up the WHOLE CANYON.* This is exactly the spectacle Keira needed. It is also a perfect commercial-illustration moment if/when this gets art, full color, two-page spread, the canyon transformed.
 
-**On Cliffy crossing (Path C):** Per the locked crossover rule, Cliffy is huge. He walks slowly toward the lake-above. At the showdown he is *visible to the kids and to Drystone only* — every other adult sees nothing. Drystone looking up at an enormous basalt giant standing where there shouldn't be one and being unable to mention it is one of the strongest possible Drystone-breakdown beats.
+**On Cliffy crossing (Path C):** Per the locked crossover rule, Cliffy is huge. He walks slowly toward the lake-above. At the showdown he is *visible to the kids and to Drystone only*, every other adult sees nothing. Drystone looking up at an enormous basalt giant standing where there shouldn't be one and being unable to mention it is one of the strongest possible Drystone-breakdown beats.
 
 **On crossovers:** Path A: Reid's tree-being walking (the mouse notes it). Path B: Madison's Canyon Singer (Cliffy admits he heard her in his sleep). Path C: Aiden's Pegasus (on a freshly-colored ridge). Each crossover is given a slightly different texture.
 
 **On the mouse with spectacles:** Inherited from v2 draft. Small, dignified, biographer of Cliffy. Adds quiet humor without intruding.
 
-**On word count:** Total ~2,650.
+**On word count:** Total

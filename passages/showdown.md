@@ -1,9 +1,9 @@
-# The Showdown — Eight Against Drystone (v3)
+# The Showdown, Eight Against Drystone (v3)
 
 **Passages:** P-500 through P-602
-**Read order:** Always sequential — but each beat has a state-check. Reader (or book layout) picks the version that matches what they earned.
+**Read order:** Always sequential, but each beat has a state-check. Reader (or book layout) picks the version that matches what they earned.
 
-This is the modular CYOA showdown. Each of the 8 kid beats has a MAIN version (requires the item the kid earned) and a FALLBACK (works without it). The fallbacks are written so the kid wins their beat through *who they are,* not through what they earned — no kid ever looks weak because the reader missed an item.
+This is the modular CYOA showdown. Each of the 8 kid beats has a MAIN version (requires the item the kid earned) and a FALLBACK (works without it). The fallbacks are written so the kid wins their beat through *who they are,* not through what they earned, no kid ever looks weak because the reader missed an item.
 
 Target ~7,000 words total. Setup ~600. Beats ~700 each (×8). Drystone pushback ~800. Climax + endings ~1,200.
 
@@ -16,19 +16,19 @@ P-500  Return to the sunroom
 P-501  Walk to the dock
 P-502  Drystone mid-speech
 
-BEAT 1 — MADISON (P-510 main / P-511 fallback)
-BEAT 2 — CHAYTEN (P-520 / P-521)
-BEAT 3 — CARSON  (P-530 / P-531)
-BEAT 4 — REID    (P-540 / P-541)
+BEAT 1, MADISON (P-510 main / P-511 fallback)
+BEAT 2, CHAYTEN (P-520 / P-521)
+BEAT 3, CARSON  (P-530 / P-531)
+BEAT 4, REID    (P-540 / P-541)
 
 P-550  Drystone's pushback (bank offer)
 P-551  ★ The chosen-family pivot ★  (Drystone tries to peel the families apart)
 P-552  A kid takes it apart
 
-BEAT 5 — KELLEN  (P-560 / P-561)
-BEAT 6 — KEIRA   (P-570 / P-571)
-BEAT 7 — ELLA    (P-580 / P-581)
-BEAT 8 — AIDEN   (P-590 / P-591)
+BEAT 5, KELLEN  (P-560 / P-561)
+BEAT 6, KEIRA   (P-570 / P-571)
+BEAT 7, ELLA    (P-580 / P-581)
+BEAT 8, AIDEN   (P-590 / P-591)
 
 P-595  The C-130 returns
 P-596  Drystone breaks
@@ -40,7 +40,7 @@ P-602  SILVER ending (Drystone defeated, come back next summer)
 
 ---
 
-## P-500 — RETURN TO THE SUNROOM
+## P-500, RETURN TO THE SUNROOM
 
 *~250 words.*
 
@@ -68,7 +68,7 @@ Ella has the crown. Nobody sees it but the kids and (later) Drystone.
 
 Aiden has Pegasus.
 
-[ALLY ROLL CALL: Any earned allies are gathered too. Branch the beaver in the hallway. Otto in a window. Big Coulee outside the back wall. Old Speak as a thicket of new young trees that wasn't there yesterday. Skim and her flock in the yard. The egg-mother and her chorus near the dock. Marigold's frog herald on the porch. Pickle on Chayten's shoulder. Hush on Aiden's shoulder. Cliffy walking slowly toward the lake. *Visible to the kids. Visible — and ONLY visible — to Mr. Drystone when the moment comes.*]
+[ALLY ROLL CALL: Any earned allies are gathered too. Branch the beaver in the hallway. Otto in a window. Big Coulee outside the back wall. Old Speak as a thicket of new young trees that wasn't there yesterday. Skim and her flock in the yard. The egg-mother and her chorus near the dock. Marigold's frog herald on the porch. Pickle on Chayten's shoulder. Hush on Aiden's shoulder. Cliffy walking slowly toward the lake. *Visible to the kids. Visible, and ONLY visible, to Mr. Drystone when the moment comes.*]
 
 Pegasus says, "Is THIS the lake-up-above?"
 
@@ -80,7 +80,7 @@ They walk down to the dock together.
 
 ---
 
-## P-501 — WALK TO THE DOCK
+## P-501, WALK TO THE DOCK
 
 *~200 words.*
 
@@ -88,14 +88,14 @@ Eight kids walk down the gravel path to the dock.
 
 A unicorn walks behind them, invisible to anyone over eighteen.
 
-[CONDITIONAL ALLIES: any earned allies trail behind, visible only to the kids. Big Coulee thumps along beside them at half-speed — even at half-speed she shakes the ground.]
+[CONDITIONAL ALLIES: any earned allies trail behind, visible only to the kids. Big Coulee thumps along beside them at half-speed, even at half-speed she shakes the ground.]
 
 The brisket smell follows them. A C-130 had thundered overhead the night before. Another would do so this afternoon. That is how 4th of July week works at Sun Lakes.
 
 The dock is set up for a construction kickoff. Small platform at the end of the dock. Folding chairs (mostly empty). A bulldozer parked on the dirt road, engine off. A banner stretched between two poles:
 
-> DRIEDMORE DATA CENTER — WEST CASCADIA HUB
-> GROUNDBREAKING JULY 4 — NOON
+> DRIEDMORE DATA CENTER, WEST CASCADIA HUB
+> GROUNDBREAKING JULY 4, NOON
 
 A modest crowd has gathered. Some adults from town. A few hotel guests. The kids' parents off to one side, talking quietly. They look worried. They look like adults who have been told there's no other option and have started believing it.
 
@@ -109,11 +109,11 @@ That is about to change.
 
 ---
 
-## P-502 — CRUMB MID-SPEECH
+## P-502, CRUMB MID-SPEECH
 
 *~150 words.*
 
-"...premium server infrastructure," Drystone is saying. "Echo-system improvement. Fiscal opportunity for the cove. Driedmore Properties is delighted to bring a class-A facility to this region. We anticipate the build phase will commence —"
+"...premium server infrastructure," Drystone is saying. "Echo-system improvement. Fiscal opportunity for the cove. Driedmore Properties is delighted to bring a class-A facility to this region. We anticipate the build phase will commence , "
 
 He sees the kids.
 
@@ -131,9 +131,9 @@ She does not run along.
 
 ---
 
-## BEAT 1 — MADISON
+## BEAT 1, MADISON
 
-### P-510 — MAIN (REQUIRES: Map)
+### P-510, MAIN (REQUIRES: Map)
 
 *~400 words.*
 
@@ -155,11 +155,11 @@ Drystone laughs the dismissive laugh of a man whose career is about to end. "Fro
 
 The crowd half-laughs with him. They're not sure yet.
 
-[CONDITIONAL — IF Branch is an ally: *Branch the beaver waddles up onto the platform. He is wearing a small bow tie. He says, in a creaky beaver voice, "I live in the lake." The crowd goes very quiet. Only the kids and Drystone see Branch clearly. The adults see a... blur. A small dark shape. A very specific small dark shape with what appears to be formalwear. They cannot quite focus.*]
+[CONDITIONAL, IF Branch is an ally: *Branch the beaver waddles up onto the platform. He is wearing a small bow tie. He says, in a creaky beaver voice, "I live in the lake." The crowd goes very quiet. Only the kids and Drystone see Branch clearly. The adults see a... blur. A small dark shape. A very specific small dark shape with what appears to be formalwear. They cannot quite focus.*]
 
-Madison continues. She names the water draw — millions of gallons a day, every day, forever. She names the bank: Driedmore owns it, the appraisal was rigged. She names the wrong permit. She points to each on the map.
+Madison continues. She names the water draw, millions of gallons a day, every day, forever. She names the bank: Driedmore owns it, the appraisal was rigged. She names the wrong permit. She points to each on the map.
 
-[CONDITIONAL — IF Map (full): *Madison's tin is glowing brighter. The full map shows everything — including a small handwritten note in the margin that Drystone did not know was on his own paperwork. Madison reads it out: an internal memo about how to "manage local sentiment." The crowd stops laughing.*]
+[CONDITIONAL, IF Map (full): *Madison's tin is glowing brighter. The full map shows everything, including a small handwritten note in the margin that Drystone did not know was on his own paperwork. Madison reads it out: an internal memo about how to "manage local sentiment." The crowd stops laughing.*]
 
 Some of the parents start listening. They had been told this was the only way. They had not been told it would mean draining the lake.
 
@@ -167,7 +167,7 @@ Drystone is sweating.
 
 > **Continue to Beat 2.**
 
-### P-511 — FALLBACK (NO Map)
+### P-511, FALLBACK (NO Map)
 
 *~300 words.*
 
@@ -175,7 +175,7 @@ Madison doesn't have the map. She has a tin of cookies.
 
 She opens it. She walks down off the platform. She doesn't say a word.
 
-She offers a cookie to each adult in the crowd. The cookies are oatmeal-chocolate-chip with a small amount of cinnamon she put in last night, when she was sitting at her grandmother's kitchen counter listening to her mother on the phone, talking quietly about "the situation." She heard every word. She has heard every word every night for two weeks.
+She offers a cookie to each adult in the crowd. The cookies are chocolate-chip with a small amount of cinnamon she put in last night, when she was sitting at her grandmother's kitchen counter listening to her mother on the phone, talking quietly about "the situation." She heard every word. She has heard every word every night for two weeks.
 
 The adults take the cookies. They eat them. The cookies are warm. The cookies are exactly the kind of cookie a fifteen-year-old who has been paying attention makes when she wants to bring something real to a place she loves.
 
@@ -187,7 +187,7 @@ She gets back on the platform. She looks at Drystone.
 
 "You assumed I wasn't paying attention. None of you grown-ups noticed I was listening. I was. I always am. So when you say my family is broke and Driedmore is the only buyer, I know it isn't true. I heard my mom say so on the phone four nights ago."
 
-The adults are very quiet. Several are still chewing. One — Reid's mother — has tears in her eyes that don't have anything to do with the cookies.
+The adults are very quiet. Several are still chewing. One, Reid's mother, has tears in her eyes that don't have anything to do with the cookies.
 
 Madison hasn't won the beat with evidence. She has won it by being the one person in the cove who was actually *listening* the whole time.
 
@@ -195,9 +195,9 @@ Madison hasn't won the beat with evidence. She has won it by being the one perso
 
 ---
 
-## BEAT 2 — CHAYTEN
+## BEAT 2, CHAYTEN
 
-### P-520 — MAIN (REQUIRES: Voice)
+### P-520, MAIN (REQUIRES: Voice)
 
 *~400 words.*
 
@@ -213,11 +213,11 @@ Three words. The crowd STOPS shifting. Stops fidgeting. Every eye locks on Chayt
 
 She says, "Listen to all of us. We have something to say. It is the truth and you should hear it."
 
-[CONDITIONAL — IF Otto is an ally: *Otto the otter — bandaged whiskers, velvet cape over one shoulder — pads onto the platform behind her. The adults see... not quite an otter. A small dignified dark shape they cannot quite name. Drystone sees him plainly. Drystone starts to ask "what IS that" and Otto bows formally to him, which makes it worse.*]
+[CONDITIONAL, IF Otto is an ally: *Otto the otter, bandaged whiskers, velvet cape over one shoulder, pads onto the platform behind her. The adults see... not quite an otter. A small dignified dark shape they cannot quite name. Drystone sees him plainly. Drystone starts to ask "what IS that" and Otto bows formally to him, which makes it worse.*]
 
-[CONDITIONAL — IF Pickle is an ally: *Pickle is perched on Chayten's shoulder, no bigger than a teacup. She hisses at Drystone. Drystone is the only adult who hears it. He flinches.*]
+[CONDITIONAL, IF Pickle is an ally: *Pickle is perched on Chayten's shoulder, no bigger than a teacup. She hisses at Drystone. Drystone is the only adult who hears it. He flinches.*]
 
-[CONDITIONAL — IF Voice (full) AND Pickle: *One of the Standing Stones — somewhere far below in The Old Roar — hums a single deep note. The dock vibrates. Three glasses on a folding table shatter. A child in the crowd points at the lake and says "Mom did the lake just THRUM?" Nobody can answer.*]
+[CONDITIONAL, IF Voice (full) AND Pickle: *One of the Standing Stones, somewhere far below in The Old Roar, hums a single deep note. The dock vibrates. Three glasses on a folding table shatter. A child in the crowd points at the lake and says "Mom did the lake just THRUM?" Nobody can answer.*]
 
 Behind Chayten, in the back of the crowd, Aiden holds the silver fish Pickle gave him. He smiles at his sister. She smiles back. The whole reason her voice carries is that she's standing here for him and for the seven others. The mask just lets her speak loud enough for the crowd to actually hear it.
 
@@ -233,13 +233,13 @@ He shuts up.
 
 > **Continue to Beat 3.**
 
-### P-521 — FALLBACK (NO Voice)
+### P-521, FALLBACK (NO Voice)
 
 *~300 words.*
 
 Chayten doesn't have the mask. So she does what she does at home when a room won't settle.
 
-She walks to the small group of adults standing nearest the platform. She looks at one of the dads — a man she's known her whole life, who fishes off the back dock with her brother — and she says, very quietly, just to him: "Mr. Halverson. Will you sit down? I want to tell you something."
+She walks to the small group of adults standing nearest the platform. She looks at one of the dads, a man she's known her whole life, who fishes off the back dock with her brother, and she says, very quietly, just to him: "Mr. Halverson. Will you sit down? I want to tell you something."
 
 He sits down. Cross-legged. On the dock. In his work clothes.
 
@@ -261,9 +261,9 @@ Chayten hasn't won the beat with magic. She has won it by knowing that grown-ups
 
 ---
 
-## BEAT 3 — CARSON
+## BEAT 3, CARSON
 
-### P-530 — MAIN (REQUIRES: Charm AND 5+ kids present)
+### P-530, MAIN (REQUIRES: Charm AND 5+ kids present)
 
 *~400 words.*
 
@@ -279,11 +279,11 @@ Reid lines up beside him. Then Kellen. Then Keira. Then Ella. Then Madison and C
 
 Eight kids in a line in front of a bulldozer. (Nine, if you count the unicorn. The adults don't.)
 
-The tusk-charm at Carson's neck glows. The other kids feel it — a warm hum in their own chests — but the line was forming because Carson was already there, not because of the charm. The charm just makes the bond visible.
+The tusk-charm at Carson's neck glows. The other kids feel it, a warm hum in their own chests, but the line was forming because Carson was already there, not because of the charm. The charm just makes the bond visible.
 
-[CONDITIONAL — IF Big Coulee is an ally: *Big Coulee thunders down the dock road, flower crown still tilted over one eye, narrating her own approach: "AND BIG COULEE arrives, looking STRONG, looking READY, looking like the AUNTIE these KIDS NEED." She skids to a stop behind the kids. The crowd of adults sees... nothing. The dock shakes. Several adults look around for what just made the dock shake. They cannot quite focus on the enormous wooly mammoth standing behind a row of children. Drystone, however, sees her perfectly. He has stopped walking.*]
+[CONDITIONAL, IF Big Coulee is an ally: *Big Coulee thunders down the dock road, flower crown still tilted over one eye, narrating her own approach: "AND BIG COULEE arrives, looking STRONG, looking READY, looking like the AUNTIE these KIDS NEED." She skids to a stop behind the kids. The crowd of adults sees... nothing. The dock shakes. Several adults look around for what just made the dock shake. They cannot quite focus on the enormous wooly mammoth standing behind a row of children. Drystone, however, sees her perfectly. He has stopped walking.*]
 
-[CONDITIONAL — IF Tuft AND Tumble are allies: *Two baby mammoths trot forward and sit, one on either side of Carson, their tiny trunks resting on his shoulders.*]
+[CONDITIONAL, IF Tuft AND Tumble are allies: *Two baby mammoths trot forward and sit, one on either side of Carson, their tiny trunks resting on his shoulders.*]
 
 Drystone says, "I am calling the police."
 
@@ -299,7 +299,7 @@ The dock holds.
 
 > **Continue to Beat 4.**
 
-### P-531 — FALLBACK (NO Charm OR <5 kids)
+### P-531, FALLBACK (NO Charm OR <5 kids)
 
 *~300 words.*
 
@@ -307,9 +307,9 @@ Drystone stomps toward the bulldozer.
 
 Carson is not at the front of the line. He's at the back.
 
-He has, all morning, been standing at the back of the kids — that's where he always stands, behind Aiden, hands ready, scanning. The competitive cousin who wants to win at everything has spent the entire showdown so far as the rear guard. Nobody noticed. That's how good he is at it.
+He has, all morning, been standing at the back of the kids, that's where he always stands, behind Aiden, hands ready, scanning. The competitive cousin who wants to win at everything has spent the entire showdown so far as the rear guard. Nobody noticed. That's how good he is at it.
 
-When Drystone makes for the bulldozer, Carson moves up through the line of cousins. He puts his hand on Aiden's shoulder as he passes — a small "I see you" squeeze — then on Ella's, then on Keira's. Then he steps to the front.
+When Drystone makes for the bulldozer, Carson moves up through the line of cousins. He puts his hand on Aiden's shoulder as he passes, a small "I see you" squeeze, then on Ella's, then on Keira's. Then he steps to the front.
 
 He doesn't block the bulldozer. He turns *around* and faces the other seven kids.
 
@@ -331,9 +331,9 @@ Carson hasn't rallied the kids with the charm. He has rallied them by being the 
 
 ---
 
-## BEAT 4 — REID
+## BEAT 4, REID
 
-### P-540 — MAIN (REQUIRES: Staff)
+### P-540, MAIN (REQUIRES: Staff)
 
 *~350 words.*
 
@@ -345,7 +345,7 @@ Reid steps forward, calm as he always is, and plants the staff in the dirt direc
 
 The staff stands on its own. The wood hums, a low slow note.
 
-[CONDITIONAL — IF Staff (full): *The staff visibly takes root. The wood at its base sends pale tendrils into the soil. The kids can see them. The adults cannot. Drystone can.*]
+[CONDITIONAL, IF Staff (full): *The staff visibly takes root. The wood at its base sends pale tendrils into the soil. The kids can see them. The adults cannot. Drystone can.*]
 
 The bulldozer rolls forward.
 
@@ -361,13 +361,13 @@ Reid says, calmly, "It's not going to move."
 
 The crowd actually laughs. The bulldozer keeps spinning. Drystone is sweating through his hard hat. After thirty long seconds he gives up and turns off the engine.
 
-[CONDITIONAL — IF Old Speak is an ally: *A thicket of trees that wasn't there an hour ago is now standing at the edge of the dock. The trees are tall and quiet. They lean slightly toward Drystone. The kids' parents look at the trees and try to remember if those trees were always there. They cannot remember. Old Speak, in his slow tree-being way, raises one bark-bristled hand. He waves.*]
+[CONDITIONAL, IF Old Speak is an ally: *A thicket of trees that wasn't there an hour ago is now standing at the edge of the dock. The trees are tall and quiet. They lean slightly toward Drystone. The kids' parents look at the trees and try to remember if those trees were always there. They cannot remember. Old Speak, in his slow tree-being way, raises one bark-bristled hand. He waves.*]
 
 Drystone climbs down. His hard hat falls off.
 
 > **Continue to Drystone's pushback.**
 
-### P-541 — FALLBACK (NO Staff)
+### P-541, FALLBACK (NO Staff)
 
 *~300 words.*
 
@@ -387,7 +387,7 @@ The bulldozer engine starts. Reid does not look up.
 
 The engine revs. Reid does not look up.
 
-The bulldozer rolls forward six inches. The driver — Drystone — sees that the kid is not moving and is not even *looking.* The kid is just whittling, the way you whittle at home on the back porch on a hot afternoon when you've got nothing else to do and nowhere else to be.
+The bulldozer rolls forward six inches. The driver, Drystone, sees that the kid is not moving and is not even *looking.* The kid is just whittling, the way you whittle at home on the back porch on a hot afternoon when you've got nothing else to do and nowhere else to be.
 
 You cannot run a bulldozer over a kid who is whittling.
 
@@ -409,7 +409,7 @@ Reid hasn't won the beat with the staff. He has won it by being exactly the kid 
 
 ---
 
-## P-550 — CRUMB'S PUSHBACK: THE BANK OFFER
+## P-550, CRUMB'S PUSHBACK: THE BANK OFFER
 
 *~300 words.*
 
@@ -417,7 +417,7 @@ Drystone climbs out of the bulldozer. He's furious. He grabs his three clipboard
 
 He plays his ace.
 
-He pulls out a fourth piece of paper — a SIGNED OFFER LETTER from the family's bank.
+He pulls out a fourth piece of paper, a SIGNED OFFER LETTER from the family's bank.
 
 "This family," Drystone says, "is BROKE. Their dock's foundation is GONE. The water is eating it out from under them. They cannot AFFORD the geological work. The bank is calling their loan. Driedmore is the ONLY buyer. We are RESCUING them."
 
@@ -447,13 +447,13 @@ He plays his second ace.
 
 ---
 
-## P-551 — ★ THE CHOSEN-FAMILY PIVOT ★
+## P-551, ★ THE CHOSEN-FAMILY PIVOT ★
 
 *~300 words.*
 
 Drystone walks slowly along the line of kids.
 
-"You know," he says, conversational, "I've been doing my homework on this family. Four families, technically. Some of you are related. Some of you aren't. Princess —" (he gestures at Ella) "— you and the tall kid are cousins. Real cousins. Your moms are sisters." He gestures at Reid. "But you —" (he gestures at Madison and Kellen) "— your mom is just a *friend* of theirs. From college. A long time ago. Not blood. And you two — " (he gestures at Aiden and Chayten) "— same thing. Your mom is a *friend* of a *friend* of the family that actually owns this hotel. Did you know that, sweetheart? Did you know that half of you have no real stake in this place? Your moms don't lose ANYTHING if the actual family sells the property. You're guests. You've ALWAYS been guests."
+"You know," he says, conversational, "I've been doing my homework on this family. Four families, technically. Some of you are related. Some of you aren't. Princess , " (he gestures at Ella) ",  you and the tall kid are cousins. Real cousins. Your moms are sisters." He gestures at Reid. "But you , " (he gestures at Madison and Kellen) ",  your mom is just a *friend* of theirs. From college. A long time ago. Not blood. And you two, " (he gestures at Aiden and Chayten) ",  same thing. Your mom is a *friend* of a *friend* of the family that actually owns this hotel. Did you know that, sweetheart? Did you know that half of you have no real stake in this place? Your moms don't lose ANYTHING if the actual family sells the property. You're guests. You've ALWAYS been guests."
 
 He turns to the kids' parents.
 
@@ -471,7 +471,7 @@ The chosen-family kids are looking at their cousins. The cousins are looking bac
 
 Drystone is smiling.
 
-This is the part he is best at — finding the seam and pulling on it.
+This is the part he is best at, finding the seam and pulling on it.
 
 He waits.
 
@@ -479,7 +479,7 @@ He waits.
 
 ---
 
-## P-552 — A KID TAKES IT APART
+## P-552, A KID TAKES IT APART
 
 *~400 words.*
 
@@ -523,13 +523,13 @@ Drystone realizes too late that he has just *cemented* them.
 
 ---
 
-## BEAT 5 — KELLEN
+## BEAT 5, KELLEN
 
-### P-560 — MAIN (REQUIRES: Stone)
+### P-560, MAIN (REQUIRES: Stone)
 
 *~350 words.*
 
-Drystone gathers himself. He says, "That's all very SWEET. But the bank offer STANDS. The family — chosen or blood, whatever — still can't AFFORD the geological work. You all line up however you want. The dock will still fall down."
+Drystone gathers himself. He says, "That's all very SWEET. But the bank offer STANDS. The family, chosen or blood, whatever, still can't AFFORD the geological work. You all line up however you want. The dock will still fall down."
 
 Kellen steps forward.
 
@@ -545,11 +545,11 @@ Kellen says, "Okay."
 
 He throws the stone.
 
-The stone skips off the wood of the dock. Bounces off a railing. Skips up the steps of Drystone's platform. Lands on Drystone's inside jacket pocket — through the FABRIC, somehow, the stone went around — and balances on the edge of a hidden fourth clipboard.
+The stone skips off the wood of the dock. Bounces off a railing. Skips up the steps of Drystone's platform. Lands on Drystone's inside jacket pocket, through the FABRIC, somehow, the stone went around, and balances on the edge of a hidden fourth clipboard.
 
 The clipboard tips out. It hits the wood. It falls open.
 
-[CONDITIONAL — IF Skim and flock are allies: *Skim and her flock fly in like a small precision air force. They skip stones in formation onto every other piece of paper Drystone has hidden — under his hard hat, in his back pocket, taped to the underside of the bulldozer's steering wheel. Total exposure. Within thirty seconds, every hidden document Drystone owns is in plain sight on the platform.*]
+[CONDITIONAL, IF Skim and flock are allies: *Skim and her flock fly in like a small precision air force. They skip stones in formation onto every other piece of paper Drystone has hidden, under his hard hat, in his back pocket, taped to the underside of the bulldozer's steering wheel. Total exposure. Within thirty seconds, every hidden document Drystone owns is in plain sight on the platform.*]
 
 The crowd reads. The contents of the fourth clipboard are Driedmore's internal memo about the bank. About the lowballed appraisal. About a list of three other small hotels Driedmore is doing the same thing to.
 
@@ -559,13 +559,13 @@ Drystone has stopped sweating because his body is no longer producing sweat. His
 
 > **Continue to Beat 6.**
 
-### P-561 — FALLBACK (NO Stone)
+### P-561, FALLBACK (NO Stone)
 
 *~300 words.*
 
-Kellen doesn't have the stone. He has the baseball that has been in his pocket since the third of July — the one he was taking shadow swings with when Drystone first arrived, the one he has spent the whole week imagining sending across the cove to the far-off island.
+Kellen doesn't have the stone. He has the baseball that has been in his pocket since the third of July, the one he was taking shadow swings with when Drystone first arrived, the one he has spent the whole week imagining sending across the cove to the far-off island.
 
-He pulls it out. He bounces it once on the dock — *thock* — and Drystone flinches at the sound. Just a small flinch. But Kellen sees it.
+He pulls it out. He bounces it once on the dock, *thock*, and Drystone flinches at the sound. Just a small flinch. But Kellen sees it.
 
 Kellen has been watching Drystone's posture all morning. The shoulder twitch. The lapel pat. The way Drystone's eyes go to the bulldozer when he's lying and to the platform when he's truthful. Kellen is twelve and he has been throwing things into and out of lakes for as long as he can remember; his eyes know what bodies do.
 
@@ -593,9 +593,9 @@ The baseball rolls off the platform. Aiden grabs it. He's been wanting that base
 
 ---
 
-## BEAT 6 — KEIRA
+## BEAT 6, KEIRA
 
-### P-570 — MAIN (REQUIRES: Brush)
+### P-570, MAIN (REQUIRES: Brush)
 
 *~350 words.*
 
@@ -611,29 +611,29 @@ Madison's map glows BLUE.
 
 Keira says, simply, "He's lying."
 
-[CONDITIONAL — IF Brush (full): *The Truth Brush flares brighter. Keira sees more. She sees a small thread of GREY around Drystone's chest — old grey, decades-deep — a part of him that wanted, once, to do a different kind of work. She doesn't mention this. It is not relevant to the immediate problem. She files it away as something Drystone might know about himself someday.*]
+[CONDITIONAL, IF Brush (full): *The Truth Brush flares brighter. Keira sees more. She sees a small thread of GREY around Drystone's chest, old grey, decades-deep, a part of him that wanted, once, to do a different kind of work. She doesn't mention this. It is not relevant to the immediate problem. She files it away as something Drystone might know about himself someday.*]
 
 She says it small but everyone hears it.
 
-A grown-up in the crowd says, "Wait — can you see something we can't?"
+A grown-up in the crowd says, "Wait, can you see something we can't?"
 
 Keira says, "Yes. He's lying. I can see it."
 
 The crowd believes her. They believe her because she's clearly telling the truth herself.
 
-[CONDITIONAL — IF Cliffy is an echo: *Drystone glances up at the basalt cliffs that ring the cove. He feels watched. The hairs on his neck stand up. He doesn't know why.*]
+[CONDITIONAL, IF Cliffy is an echo: *Drystone glances up at the basalt cliffs that ring the cove. He feels watched. The hairs on his neck stand up. He doesn't know why.*]
 
-[CONDITIONAL — IF Cliffy is fully present: *Drystone glances up and sees, standing in the cove water up to his shoulders, an enormous basalt giant. The basalt giant is looking back at him. The other adults see nothing. Drystone forgets how to breathe.*]
+[CONDITIONAL, IF Cliffy is fully present: *Drystone glances up and sees, standing in the cove water up to his shoulders, an enormous basalt giant. The basalt giant is looking back at him. The other adults see nothing. Drystone forgets how to breathe.*]
 
 > **Continue to Beat 7.**
 
-### P-571 — FALLBACK (NO Brush)
+### P-571, FALLBACK (NO Brush)
 
 *~300 words.*
 
 Keira doesn't have the brush. She has her sketchbook.
 
-She has been drawing the whole time. The whole showdown. Since they walked down to the dock. She has not said a word. Nobody has noticed she's drawing — they've all been watching the kids who are talking.
+She has been drawing the whole time. The whole showdown. Since they walked down to the dock. She has not said a word. Nobody has noticed she's drawing, they've all been watching the kids who are talking.
 
 She has filled six pages.
 
@@ -647,7 +647,7 @@ Every single drawing.
 
 It is not a coincidence. It is a tell. Keira has been watching for it all morning the same way she watches a cliff face for the seam where she can put her hand.
 
-She holds up one of the drawings — the bank-offer one — and points at his left eye in the sketch.
+She holds up one of the drawings, the bank-offer one, and points at his left eye in the sketch.
 
 "He does this when he's lying. Look."
 
@@ -663,9 +663,9 @@ Keira hasn't won the beat with the truth brush. She has won it by drawing what w
 
 ---
 
-## BEAT 7 — ELLA
+## BEAT 7, ELLA
 
-### P-580 — MAIN (REQUIRES: Crown)
+### P-580, MAIN (REQUIRES: Crown)
 
 *~350 words.*
 
@@ -687,13 +687,13 @@ He cannot find a single word.
 
 The crowd applauds. They don't see the crown. They see Ella's face, and they see Drystone's face, and they don't need to see the crown to know what just happened.
 
-[CONDITIONAL — IF egg-mother and chorus are allies: *The egg-mother and her chorus appear at the edge of the dock. Twelve small soft creatures hum a single, low note all at once. The note is in everyone's chest. Drystone staggers. The other adults look around for the source of the sound and cannot find it.*]
+[CONDITIONAL, IF egg-mother and chorus are allies: *The egg-mother and her chorus appear at the edge of the dock. Twelve small soft creatures hum a single, low note all at once. The note is in everyone's chest. Drystone staggers. The other adults look around for the source of the sound and cannot find it.*]
 
-[CONDITIONAL — IF Marigold's herald is an ally: *A frog in tiny royal regalia hops onto the platform. He bows. He produces a small scroll. He reads, in a voice clearer than most grown-ups: "By order of Her Majesty Queen Marigold of the Bright Water, and in joint authority with Co-Queen Ella of the Bright Water, Hotel Sun Lakes is hereby declared Protected Territory of the Realm. Any party who attempts to alter this cove will answer to the Bright Water Court." He bows again. He hops back into the lake. The kids' parents have no idea what just happened. They saw a frog. They cannot quite remember what the frog did.*]
+[CONDITIONAL, IF Marigold's herald is an ally: *A frog in tiny royal regalia hops onto the platform. He bows. He produces a small scroll. He reads, in a voice clearer than most grown-ups: "By order of Her Majesty Queen Marigold of the Bright Water, and in joint authority with Co-Queen Ella of the Bright Water, Hotel Sun Lakes is hereby declared Protected Territory of the Realm. Any party who attempts to alter this cove will answer to the Bright Water Court." He bows again. He hops back into the lake. The kids' parents have no idea what just happened. They saw a frog. They cannot quite remember what the frog did.*]
 
 > **Continue to Beat 8.**
 
-### P-581 — FALLBACK (NO Crown)
+### P-581, FALLBACK (NO Crown)
 
 *~300 words.*
 
@@ -709,7 +709,7 @@ Ella, still working on her bottom lip in the mirror: "Just a second."
 
 She finishes. She puts the cap back on. She puts the gloss in her pocket. She puts the mirror back. She looks up.
 
-She walks directly toward Drystone. She does not stop two feet away — the polite distance. She walks until her toes are six inches from his shoes. She is exactly half his height. She has to tilt her head all the way back to look him in the face.
+She walks directly toward Drystone. She does not stop two feet away, the polite distance. She walks until her toes are six inches from his shoes. She is exactly half his height. She has to tilt her head all the way back to look him in the face.
 
 "No."
 
@@ -729,9 +729,9 @@ Ella has not won the beat with a crown. She has won it by being so completely El
 
 ---
 
-## BEAT 8 — AIDEN
+## BEAT 8, AIDEN
 
-### P-590 — MAIN (REQUIRES: Pegasus) ★
+### P-590, MAIN (REQUIRES: Pegasus) ★
 
 *~500 words. This is THE moment. Never cut this.*
 
@@ -739,7 +739,7 @@ Drystone makes one last try. He is desperate now. He shouts, "I want PROOF this 
 
 Aiden walks forward. He's been at the back the whole time, holding Pegasus's mane.
 
-His BELIEF is what makes Pegasus visible to Drystone specifically. Adults can't normally see her. But when Aiden looks Drystone in the eye and BELIEVES — fully, without hedging, that there is a real unicorn standing on the dock — his belief is strong enough to make her real for Drystone. Just for Drystone. Just for that moment.
+His BELIEF is what makes Pegasus visible to Drystone specifically. Adults can't normally see her. But when Aiden looks Drystone in the eye and BELIEVES, fully, without hedging, that there is a real unicorn standing on the dock, his belief is strong enough to make her real for Drystone. Just for Drystone. Just for that moment.
 
 That is a seven-year-old's superpower. He believes harder than any adult ever could.
 
@@ -775,11 +775,11 @@ He whispers, "I... can't... I can't put a unicorn on a permit."
 
 Aiden says, "We know."
 
-[CONDITIONAL — IF Hush is an ally: *The Hush — a small grumpy thing with non-pointy spikes — is riding on Aiden's shoe. He looks up at Drystone and says nothing. Drystone sees him too. Drystone's eyes get larger.*]
+[CONDITIONAL, IF Hush is an ally: *The Hush, a small grumpy thing with non-pointy spikes, is riding on Aiden's shoe. He looks up at Drystone and says nothing. Drystone sees him too. Drystone's eyes get larger.*]
 
-[CONDITIONAL — IF other allies have crossed: *Drystone's vision is becoming unmanageable. He sees the unicorn. He sees the mammoth. He sees the otter in the velvet cape. He sees the beaver in the bow tie. He sees the basalt giant standing in the cove water. He sees the small grumpy spike-thing on the boy's shoe. He sees the frog herald. He sees twelve small egg-creatures humming. He sees the thicket of trees that wasn't there before. The other adults see NONE of these things. They see Drystone's face. Drystone has begun to make a small sound. The sound is mostly air.*]
+[CONDITIONAL, IF other allies have crossed: *Drystone's vision is becoming unmanageable. He sees the unicorn. He sees the mammoth. He sees the otter in the velvet cape. He sees the beaver in the bow tie. He sees the basalt giant standing in the cove water. He sees the small grumpy spike-thing on the boy's shoe. He sees the frog herald. He sees twelve small egg-creatures humming. He sees the thicket of trees that wasn't there before. The other adults see NONE of these things. They see Drystone's face. Drystone has begun to make a small sound. The sound is mostly air.*]
 
-The crowd can't see what broke him, but they can see CRUMB — white-faced, sweating, beaten. He drops the offer letter on the dock. It flutters down.
+The crowd can't see what broke him, but they can see CRUMB, white-faced, sweating, beaten. He drops the offer letter on the dock. It flutters down.
 
 The deal is dead.
 
@@ -787,11 +787,11 @@ Pegasus says, "LOOK AT ALL OF THEM!"
 
 > **Continue to P-595.**
 
-### P-591 — FALLBACK (NO Pegasus — rare; means Aiden's branch was skipped)
+### P-591, FALLBACK (NO Pegasus, rare; means Aiden's branch was skipped)
 
 *~300 words.*
 
-This passage is reached only if the reader skipped Aiden's region entirely. It is the SILVER-ending floor — Drystone still loses, but without the unicorn moment.
+This passage is reached only if the reader skipped Aiden's region entirely. It is the SILVER-ending floor, Drystone still loses, but without the unicorn moment.
 
 Aiden has no unicorn. He has the silver fish Chayten brought back for him from the Driftwood Stage. (Or his fishing rod from the back dock, if Chayten's region wasn't played either.)
 
@@ -803,7 +803,7 @@ The crowd goes very quiet.
 
 A seven-year-old talking about love can stop a room faster than a unicorn can.
 
-Drystone tries to recover. "...kid, you don't understand the situation —"
+Drystone tries to recover. "...kid, you don't understand the situation , "
 
 "I do understand. You don't have anyone who would bring you a fish. That's why you keep counting things. People who have someone who would bring them a fish don't have to count."
 
@@ -821,7 +821,7 @@ It is enough.
 
 ---
 
-## P-595 — THE C-130 RETURNS
+## P-595, THE C-130 RETURNS
 
 *~250 words.*
 
@@ -837,9 +837,9 @@ Aiden says, "There's another one tomorrow."
 
 Pegasus is delighted.
 
-[CONDITIONAL — IF Big Coulee is an ally: *Big Coulee trumpets back at the C-130. The sound carries across the lake. Three water-skiers on the far shore wonder what just made that noise.*]
+[CONDITIONAL, IF Big Coulee is an ally: *Big Coulee trumpets back at the C-130. The sound carries across the lake. Three water-skiers on the far shore wonder what just made that noise.*]
 
-[CONDITIONAL — IF Old Speak is an ally: *Old Speak waves a leafy hand at the plane. The plane does not wave back. Old Speak is undeterred.*]
+[CONDITIONAL, IF Old Speak is an ally: *Old Speak waves a leafy hand at the plane. The plane does not wave back. Old Speak is undeterred.*]
 
 The kids' parents look at the kids. Then at the dock. Then back at the kids. They don't know what just happened. They know SOMETHING just happened.
 
@@ -857,11 +857,11 @@ They want to ask. They don't know how.
 
 ---
 
-## P-596 — CRUMB BREAKS
+## P-596, CRUMB BREAKS
 
 *~150 words.*
 
-Drystone gathers what's left of his clipboards. His tablet is dead — at some point during the showdown the battery died, which is the kind of thing that has never happened to him before.
+Drystone gathers what's left of his clipboards. His tablet is dead, at some point during the showdown the battery died, which is the kind of thing that has never happened to him before.
 
 He says, very quietly, "I'll be in my truck."
 
@@ -871,7 +871,7 @@ Eventually he drives away.
 
 He does not look back.
 
-The Driedmore Data Center — West Cascadia Hub — does not break ground on July 4th.
+The Driedmore Data Center, West Cascadia Hub, does not break ground on July 4th.
 
 It does not break ground on July 5th.
 
@@ -883,27 +883,27 @@ The bank that made the rescue offer will be investigated, and the lake will not 
 
 ---
 
-## P-600 — COUNT ITEMS (ROUTE TO ENDING)
+## P-600, COUNT ITEMS (ROUTE TO ENDING)
 
 *~100 words.*
 
 Count what you brought back:
 
-> Eight items earned. All eight kids played their region. Pegasus visible to Drystone. **Turn to P-601 — CROWN ENDING.**
+> Eight items earned. All eight kids played their region. Pegasus visible to Drystone. **Turn to P-601, CROWN ENDING.**
 >
-> Anything less than that — fewer items, some kid's branch skipped, OR Pegasus visible but not all the magical creatures crossed over. **Turn to P-602 — SILVER ENDING.**
+> Anything less than that, fewer items, some kid's branch skipped, OR Pegasus visible but not all the magical creatures crossed over. **Turn to P-602, SILVER ENDING.**
 
 ---
 
-## P-601 — CROWN ENDING: THE DOCK HEALS OVERNIGHT
+## P-601, CROWN ENDING: THE DOCK HEALS OVERNIGHT
 
 *~500 words.*
 
 That night.
 
-Sparklers and snap-its on the dock. Brisket gone. Lake dark. Stars coming up. The bats are out — one swoops just overhead to eat the mosquitoes and Aiden flinches and laughs at the same time.
+Sparklers and snap-its on the dock. Brisket gone. Lake dark. Stars coming up. The bats are out, one swoops just overhead to eat the mosquitoes and Aiden flinches and laughs at the same time.
 
-Madison shares a cookie with Aiden. Aiden gives one to Pegasus, hidden in the sunroom (the unicorn is staying for the rest of the trip — she'll go back to The Old Roar after the kids leave, but she's invited back any time).
+Madison shares a cookie with Aiden. Aiden gives one to Pegasus, hidden in the sunroom (the unicorn is staying for the rest of the trip, she'll go back to The Old Roar after the kids leave, but she's invited back any time).
 
 Reid is whittling.
 
@@ -919,7 +919,7 @@ Chayten is on the back dock with Aiden's fishing rod, casting in the dim light. 
 
 Across the lake, faintly, music is drifting from the campground. Tonight it's a guitar. Last night, in The Old Roar, it had been opera. Aiden hums along under his breath. He has been told to wait. He is waiting. He is also paying attention.
 
-[CONDITIONAL — IF DockHealing flag: *Reid walks over to the bank where the dock pilings meet the water. He plants his Driftwood staff at the base of the third piling. The staff sinks half its length into the soft earth. The wood at the base sends pale tendrils into the soil. The staff hums quietly. The water around it changes its flow — just a little, just enough.*
+[CONDITIONAL, IF DockHealing flag: *Reid walks over to the bank where the dock pilings meet the water. He plants his Driftwood staff at the base of the third piling. The staff sinks half its length into the soft earth. The wood at the base sends pale tendrils into the soil. The staff hums quietly. The water around it changes its flow, just a little, just enough.*
 
 *He doesn't say anything. He walks back.*
 
@@ -939,7 +939,7 @@ Aiden surfaces first. On his own. No hand reaching for Chayten's. No one waiting
 
 The others come up around him. Eight heads bobbing.
 
-And then, just for a second — only Aiden sees this, and he won't tell anyone for years — there's a figure on the far shore of the cove. Standing on a rock that wasn't there a moment ago. Beard the color of cedar bark. Suspenders. Beat-up canvas hat pushed back on his head.
+And then, just for a second, only Aiden sees this, and he won't tell anyone for years, there's a figure on the far shore of the cove. Standing on a rock that wasn't there a moment ago. Beard the color of cedar bark. Suspenders. Beat-up canvas hat pushed back on his head.
 
 He waves.
 
@@ -957,7 +957,7 @@ And another after that. And another. As long as the kids keep coming back.
 
 ---
 
-## P-602 — SILVER ENDING: COME BACK NEXT SUMMER
+## P-602, SILVER ENDING: COME BACK NEXT SUMMER
 
 *~400 words.*
 
@@ -983,40 +983,32 @@ After the sparklers burn down, the eight kids walk to the end of the dock. They 
 
 They jump.
 
-All eight, at the same time, in the same way they jumped on the first day. Splash. Eight at once. The sound is the same. The lake holds them up the same. They are aware, this time, of what they almost lost — and of what is still uncertain.
+All eight, at the same time, in the same way they jumped on the first day. Splash. Eight at once. The sound is the same. The lake holds them up the same. They are aware, this time, of what they almost lost, and of what is still uncertain.
 
 But the lake still holds. The chosen family still chose. Drystone is gone. The summer is not over.
 
-Aiden surfaces first. On his own. The way he had on day one — that thing they will never take away from him, no matter what happens to the cove next year. He surfaced first this time, too. The smallest kid, swimming alone, completely fine.
+Aiden surfaces first. On his own. The way he had on day one, that thing they will never take away from him, no matter what happens to the cove next year. He surfaced first this time, too. The smallest kid, swimming alone, completely fine.
 
-Madison surfaces second, this time. She wipes water out of her eyes. She looks at her cousins — every one of them, blood and chosen, none of it mattering for the sorting.
+Madison surfaces second, this time. She wipes water out of her eyes. She looks at her cousins, every one of them, blood and chosen, none of it mattering for the sorting.
 
 "We're coming back next year," she says.
 
 It is not a question. Nobody says no.
 
-And then, just for a second — only Aiden sees this, and he won't tell anyone for years — there's a figure on the far shore of the cove. Standing on a rock that wasn't there a moment ago. Beard the color of cedar bark. Beat-up canvas hat pushed back on his head.
+And then, just for a second, only Aiden sees this, and he won't tell anyone for years, there's a figure on the far shore of the cove. Standing on a rock that wasn't there a moment ago. Beard the color of cedar bark. Beat-up canvas hat pushed back on his head.
 
-The figure tips his hat. He waits a beat — as if he's saying *I'll see you next summer, friend. There's more here to find.* Then he turns and walks into the trees. The rock is gone.
+The figure tips his hat. He waits a beat, as if he's saying *I'll see you next summer, friend. There's more here to find.* Then he turns and walks into the trees. The rock is gone.
 
 Aiden tucks the moment away with all the other important things.
 
-> **End of book — for this playthrough. The dock didn't fully heal. The full Crown ending awaits a deeper journey. Try again. Pick different paths. The Old Roar is still there. So is the cove. So are you.**
+> **End of book, for this playthrough. The dock didn't fully heal. The full Crown ending awaits a deeper journey. Try again. Pick different paths. The Old Roar is still there. So is the cove. So are you.**
 
 ---
 
 ## Editor notes
 
-**On the chosen-family pivot (P-551 / P-552):** This is the structural payoff for the theme that's been planted in every region. Drystone's seam-finding speech is harsh and feels like the harshest thing in the book — but it has to be, because the kids' rebuttal has to feel earned. Carson taking it apart with *they showed up* is the thematic spine of the entire project. Madison's notes.md promised this and v2 never delivered it. Delivered now.
+**On the chosen-family pivot (P-551 / P-552):** This is the structural payoff for the theme that's been planted in every region. Drystone's seam-finding speech is harsh and feels like the harshest thing in the book, but it has to be, because the kids' rebuttal has to feel earned. Carson taking it apart with *they showed up* is the thematic spine of the entire project. Madison's notes.md promised this and v2 never delivered it. Delivered now.
 
-**On the modular beats:** Every kid has a main version and a fallback. The fallback is *never weaker than the main version as a character moment* — it's just smaller in physical scale. Madison without the map still has her memorized facts. Reid without the staff still has his immovability. Ella without the crown still has her deciding face. The book never punishes the reader's kid by making the kid look weak.
+**On the modular beats:** Every kid has a main version and a fallback. The fallback is *never weaker than the main version as a character moment*, it's just smaller in physical scale. Madison without the map still has her memorized facts. Reid without the staff still has his immovability. Ella without the crown still has her deciding face. The book never punishes the reader's kid by making the kid look weak.
 
-**On the locked crossover rule applied:** Every conditional ally moment specifies what the adults vs. Drystone vs. the kids see. Drystone's progressive vision of more and more impossible creatures is a deliberate building of his breakdown. By the end he's seeing a small magical zoo and unable to mention it. That's the cleanest possible version of his defeat.
-
-**On Pegasus visible to Drystone (P-590):** Preserved verbatim from v2 with minor expansion. This is the keystone moment of the entire book. The conditional inserts (Hush on the shoe, the small magical zoo) are additive — they make the moment more spectacular if the reader earned more allies — but the core line is untouched: *"I... can't... I can't put a unicorn on a permit." "We know."*
-
-**On the synchronized-jump callback:** Both endings end with all 8 kids jumping into the lake at once, just like the synchronized-jump opening (which will be drafted when we do the framing). This bookend is the strongest structural beat in the book. In the CROWN ending the jump feels triumphant. In the SILVER ending it feels resolved. Same action, different weight.
-
-**On the SILVER ending:** Deliberately leaves room. The dock doesn't fully heal. The family decides to come back next summer to finish what they started. This is a real win — not a loss, not a downer — but it tells the reader there was more to find. The phrase *"the full Crown ending awaits a deeper journey"* is the bald replay invitation. Print-book readers do reread. This invites it without scolding.
-
-**On word count:** Total ~7,000. Each beat about 350 main + 200 fallback (around 550) × 8 = ~4,400. Setup ~600. Drystone pushback ~1,000. Climax + endings ~1,000. Within target.
+**On the locked crossover rule applied:** Every conditional ally moment specifies what the adults vs. Drystone vs. the kids see. Drystone's progressive vision of more and more impossible creatures is a deliberate building of his breakdown. By the end he's seeing a small magical zoo and una

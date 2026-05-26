@@ -1,4 +1,4 @@
-# Reid's Region — Old Speak's Wood
+# Reid's Region, Old Speak's Wood
 
 **Region ID:** R-REID
 **Passages:** P-140 through P-146
@@ -25,11 +25,11 @@ Target ~2,600 words.
 
 ---
 
-## P-140 — ARRIVAL IN THE ROCKY WOOD
+## P-140, ARRIVAL IN THE ROCKY WOOD
 
 *~350 words. Slight variant per wrapper.*
 
-Reid's raft slides up onto a beach made of small flat stones. The raft has become a long log canoe, hollowed out, the inside smooth from many hands. He steps off without looking — his feet already know.
+Reid's raft slides up onto a beach made of small flat stones. The raft has become a long log canoe, hollowed out, the inside smooth from many hands. He steps off without looking, his feet already know.
 
 The wood in front of him is ancient.
 
@@ -41,7 +41,7 @@ A voice from a stump says, "*FINALLY.*"
 
 Reid looks up. Calmly. He has been startled by many things in his life and reacts to each one the same way.
 
-The stump is not a stump. It is a person. Bark for skin, leaves growing where hair should be. He is enormous — twice Reid's size — but he's sitting down so he doesn't seem scary. Just *large.*
+The stump is not a stump. It is a person. Bark for skin, leaves growing where hair should be. He is enormous, twice Reid's size, but he's sitting down so he doesn't seem scary. Just *large.*
 
 [VARIANT: STAY-TOGETHER. *The other seven kids are stepping off their rafts onto the beach. Aiden grabs Reid's hand automatically. Reid squeezes back, automatic too. Carson stops to study the moss on a stone. Madison is taking the kind of breath you take when you walk into a library that's older than your country.*]
 
@@ -49,7 +49,7 @@ The stump is not a stump. It is a person. Bark for skin, leaves growing where ha
 
 [VARIANT: SOLO. *Just him. The wood is enormous around him. He is not afraid. He has been alone in big places before. He has been alone at the back dock in the dark, after everyone else has gone in, listening for the bats. He knows how to be quiet inside something quiet. Maybe more than any of the other kids, this is where he was meant to land.*]
 
-"FINALLY a visitor," the tree-person says. "Wait — am I sure? I might be dreaming. Pinch me. No, don't. I'm bark, you'll hurt your fingers."
+"FINALLY a visitor," the tree-person says. "Wait, am I sure? I might be dreaming. Pinch me. No, don't. I'm bark, you'll hurt your fingers."
 
 He laughs. The whole wood shakes a little. Birds Reid didn't notice fly out of the upper branches.
 
@@ -63,7 +63,7 @@ Old Speak watches him for a long moment.
 
 ---
 
-## P-141 — THE JUST-SIT MOMENT
+## P-141, THE JUST-SIT MOMENT
 
 *~250 words. Always read.*
 
@@ -73,7 +73,7 @@ Old Speak watches Reid whittle for a while longer.
 
 Reid looks up. "What thing?"
 
-"The *working* thing. You always do the working thing. I can tell. I was a tree before I was a person — I've watched a thousand visitors and the working ones have a posture. Shoulders forward. Hands going. Eyes already on the next problem."
+"The *working* thing. You always do the working thing. I can tell. I was a tree before I was a person, I've watched a thousand visitors and the working ones have a posture. Shoulders forward. Hands going. Eyes already on the next problem."
 
 Reid is quiet. He doesn't really know what to say. He IS doing the working thing. He doesn't know how to do other things.
 
@@ -101,7 +101,7 @@ Then he picks up the stick again, but slower this time.
 
 ---
 
-## P-142 — REID'S CHOICE
+## P-142, REID'S CHOICE
 
 *~150 words. The real branch.*
 
@@ -111,15 +111,15 @@ He gestures. Three pieces of wood lie at Reid's feet that weren't there a moment
 
 "Take one. Carve it. The staff you carve will be what you need it to be."
 
-> **If you take the maple and start carving — clean, fast, the way you've made every stick at home — turn to P-143.** *(Honest work. Reliable. Done in twenty minutes.)*
+> **If you take the maple and start carving, clean, fast, the way you've made every stick at home, turn to P-143.** *(Honest work. Reliable. Done in twenty minutes.)*
 >
 > **If you ask Old Speak to teach you a technique you don't know yet, turn to P-144.** *(Costs time. Learn something only Old Speak knows.)*
 >
-> **If you ask Old Speak to tell you about the driftwood — where it came from, how old it is — turn to P-145.** *(There's a story in that wood. You can feel it.)*
+> **If you ask Old Speak to tell you about the driftwood, where it came from, how old it is, turn to P-145.** *(There's a story in that wood. You can feel it.)*
 
 ---
 
-## P-143 — PATH A: TAKE THE MAPLE, CARVE FAST (BASE)
+## P-143, PATH A: TAKE THE MAPLE, CARVE FAST (BASE)
 
 *~500 words. Yields Staff (base).*
 
@@ -135,13 +135,13 @@ Old Speak nods.
 
 "That," he says, "is a fine staff. It will not break easily. It will hold the line you want it to hold. Maple is honest. So are you."
 
-He pats the staff. Then he reaches into his bark and pulls out a tiny carving — a miniature staff, the size of Reid's finger.
+He pats the staff. Then he reaches into his bark and pulls out a tiny carving, a miniature staff, the size of Reid's finger.
 
 "That's a memory token," Old Speak says. "Carved by me, a long time ago. If you ever come back, hold it up so I know it's you. I've forgotten faces a few times. Last visitor I had, I called him by his great-great-grandfather's name. He took it well."
 
 Reid pockets the tiny staff.
 
-[CROSSOVER HOOK: *If the reader has played Carson's branch, there's a faint distant rumble from a long way off — a mammoth running on packed grass. Old Speak's leaves rustle once. "She's a good one," he says. "Loud, though." He does not explain.*]
+[CROSSOVER HOOK: *If the reader has played Carson's branch, there's a faint distant rumble from a long way off, a mammoth running on packed grass. Old Speak's leaves rustle once. "She's a good one," he says. "Loud, though." He does not explain.*]
 
 Reid stands. He thanks Old Speak. He walks back toward his raft.
 
@@ -159,7 +159,7 @@ He paddles away with a maple staff that will hold a bulldozer.
 
 ---
 
-## P-144 — PATH B: ASK FOR THE TECHNIQUE (ENHANCED)
+## P-144, PATH B: ASK FOR THE TECHNIQUE (ENHANCED)
 
 *~600 words. Yields Staff (enhanced) + Old Speak ally.*
 
@@ -173,7 +173,7 @@ He shows Reid the technique. It is not what Reid expected.
 
 The technique is not about how you cut. It is about *what you think* while you cut.
 
-"The wood is listening," Old Speak says. "It has been listening since it was a seed. It remembers everything that ever walked past it. If you carve and you think about nothing, the wood will be nothing. If you carve and you think about WHERE you are and WHO you love and WHAT this staff is for — the wood will hold all of it. Forever. That is the technique. I cannot teach you more than that. The rest is yours."
+"The wood is listening," Old Speak says. "It has been listening since it was a seed. It remembers everything that ever walked past it. If you carve and you think about nothing, the wood will be nothing. If you carve and you think about WHERE you are and WHO you love and WHAT this staff is for, the wood will hold all of it. Forever. That is the technique. I cannot teach you more than that. The rest is yours."
 
 Reid takes the driftwood. (He picked it without thinking. His hand went to it.)
 
@@ -181,7 +181,7 @@ He carves slowly. He thinks about the dock at home. He thinks about Ella jumping
 
 The driftwood opens for him. He doesn't carve it so much as *reveal* it. The shape inside is already there. He just takes away the parts that aren't.
 
-The staff is done in an hour. It is heavier than the maple would have been. It is the color of wet basalt and the grain shows three concentric rings near the top where his hand will rest — three rings, like the third plank of the dock that wobbles when you step on it.
+The staff is done in an hour. It is heavier than the maple would have been. It is the color of wet basalt and the grain shows three concentric rings near the top where his hand will rest, three rings, like the third plank of the dock that wobbles when you step on it.
 
 It hums when he holds it. Low. Like a struck bell, far away.
 
@@ -201,7 +201,7 @@ Reid says, "Are you sure?"
 
 [CROSSOVER HOOK: *Far off, the bark of a wooly mammoth narrating her own training carries through the canopy. Old Speak's leaves rustle once. "Loud one," he says, affectionately. "Best of the racers. Don't tell her I said so."*]
 
-Reid stands. Old Speak picks up the maple piece Reid didn't use and tucks it under his arm — "for snacking later" — and follows Reid down to the beach. The canopy parts for him as he walks.
+Reid stands. Old Speak picks up the maple piece Reid didn't use and tucks it under his arm, "for snacking later", and follows Reid down to the beach. The canopy parts for him as he walks.
 
 **→ Exit to P-146.**
 
@@ -209,13 +209,13 @@ Reid stands. Old Speak picks up the maple piece Reid didn't use and tucks it und
 
 ---
 
-## P-145 — PATH C: ASK ABOUT THE DRIFTWOOD (HIDDEN)
+## P-145, PATH C: ASK ABOUT THE DRIFTWOOD (HIDDEN)
 
 *~600 words. Yields Staff (full) + Old Speak ally + DockHealing flag.*
 
 Reid says, "Tell me about the driftwood. Where did it come from?"
 
-Old Speak goes still. Then he laughs — a quiet laugh this time, not the shake-the-trees one.
+Old Speak goes still. Then he laughs, a quiet laugh this time, not the shake-the-trees one.
 
 "Nobody has asked me that in a thousand years. They always ask if it's the *strongest* one. Nobody asks where it came from."
 
@@ -229,11 +229,11 @@ He sets the wood down in front of Reid.
 
 Reid swallows. He doesn't quite believe it. But the wood is warm under his palm.
 
-He carves it slowly. He thinks the things Old Speak taught him — *where you are, who you love, what this staff is for.* He thinks about the dock. He thinks about Ella jumping off it with her arms up. He thinks about Aiden's first cast. He thinks about the *third piling*, the one he noticed earlier this morning, the one the water has been eating out from under.
+He carves it slowly. He thinks the things Old Speak taught him, *where you are, who you love, what this staff is for.* He thinks about the dock. He thinks about Ella jumping off it with her arms up. He thinks about Aiden's first cast. He thinks about the *third piling*, the one he noticed earlier this morning, the one the water has been eating out from under.
 
 He carves THAT into the staff. Not as a picture. As a knowing.
 
-The staff finishes itself, almost. His hands move and the shape appears. At the top, three rings. At the base, a faint mark like the curve of a shoreline. The whole thing hums when he picks it up — a low, slow hum, like a chord pulled out of a deep place.
+The staff finishes itself, almost. His hands move and the shape appears. At the top, three rings. At the base, a faint mark like the curve of a shoreline. The whole thing hums when he picks it up, a low, slow hum, like a chord pulled out of a deep place.
 
 Old Speak is openly weeping. He weeps sap. It is bright amber and very sticky.
 
@@ -241,7 +241,7 @@ Old Speak is openly weeping. He weeps sap. It is bright amber and very sticky.
 
 Then the wood does something Reid will remember the rest of his life.
 
-Every tree in the rocky woodland — every single one, every trunk, every branch, every leafy hand — bends very slightly toward him. The canopy itself reorganizes. The whole forest is *bowing.* Not to the staff. To the boy who carved it.
+Every tree in the rocky woodland, every single one, every trunk, every branch, every leafy hand, bends very slightly toward him. The canopy itself reorganizes. The whole forest is *bowing.* Not to the staff. To the boy who carved it.
 
 The sunlight through the bent canopy makes new patterns on the beach where his canoe is waiting, and the patterns look exactly like the grain of the wood in his hand, scaled up a thousand times.
 
@@ -253,9 +253,9 @@ After a long moment, he says, "Can you come with me?"
 
 "I would not miss it," Old Speak says. "I am old. I have wanted to see a wobbly dock survive for a very long time."
 
-He stands. He bows to Reid the way ancient things bow — slowly, with their whole body.
+He stands. He bows to Reid the way ancient things bow, slowly, with their whole body.
 
-[CROSSOVER HOOK: *If the reader has played Aiden's branch, a small bright shape passes through a high gap in the canopy — a unicorn galloping, with a small boy on her back. Old Speak watches it go. "That child found his friend," he says, satisfied. "Good. Good. Good."*]
+[CROSSOVER HOOK: *If the reader has played Aiden's branch, a small bright shape passes through a high gap in the canopy, a unicorn galloping, with a small boy on her back. Old Speak watches it go. "That child found his friend," he says, satisfied. "Good. Good. Good."*]
 
 Reid walks down to the beach. Old Speak follows. The wood opens for him.
 
@@ -265,7 +265,7 @@ Reid walks down to the beach. Old Speak follows. The wood opens for him.
 
 ---
 
-## P-146 — EXIT
+## P-146, EXIT
 
 *~200 words. Always read.*
 
@@ -287,9 +287,9 @@ He paddles toward the sound of the C-130, faint and far, somewhere up in the wor
 
 ## Editor notes
 
-**On "the just-sit moment" (P-141):** Reid's cared-for beat. Old Speak names what Reid does — quietly working, never making anyone ask — and tells him *I see you. Most don't.* That's the gift Reid has never been given. The Listen bird sets the tone: the wood is full of beings who notice without speaking.
+**On "the just-sit moment" (P-141):** Reid's cared-for beat. Old Speak names what Reid does, quietly working, never making anyone ask, and tells him *I see you. Most don't.* That's the gift Reid has never been given. The Listen bird sets the tone: the wood is full of beings who notice without speaking.
 
-**On the mythic-awe editor note:** Addressed in Path C. The driftwood is from the FIRST TREE of The Old Roar. Old Speak weeps amber sap. The staff *roots* itself into the dock and holds the soil. This is the mythic register the previous editor asked for. Reid's region is no longer just "calm" — it's *ancient* and *huge.* Path A keeps the calm honest-craft register for readers who want it lighter.
+**On the mythic-awe editor note:** Addressed in Path C. The driftwood is from the FIRST TREE of The Old Roar. Old Speak weeps amber sap. The staff *roots* itself into the dock and holds the soil. This is the mythic register the previous editor asked for. Reid's region is no longer just "calm", it's *ancient* and *huge.* Path A keeps the calm honest-craft register for readers who want it lighter.
 
 **On DockHealing flag:** Locked into Path C. The coda mechanic from the v2 draft (Reid plants the staff at the base of the third piling and the dock heals overnight) now requires the reader to have earned the FULL staff. CROWN ending playthroughs always include this. SILVER ending playthroughs may not. That's the right level of consequence.
 

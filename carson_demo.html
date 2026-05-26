@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Carson's Region — 3-Deep CYOA Demo</title>
+<title>Carson's Region, 3-Deep CYOA Demo</title>
 <style>
   :root { --paper: #faf6ed; --ink: #2b2419; --warm: #c97a3f; --water: #4a7d8c; --green: #6b8e4e; --gold: #c9a23f; --rule: rgba(43, 36, 25, 0.15); }
   * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -36,7 +36,7 @@
 <body>
 <div class="container">
   <header>
-    <h1>Carson's Region — 3-Deep CYOA Demo</h1>
+    <h1>Carson's Region, 3-Deep CYOA Demo</h1>
     <div class="controls"><button onclick="restart()">Start over</button></div>
   </header>
   <div id="state-display"></div>
@@ -47,8 +47,8 @@ const SCENES = {
 
 start: {
   id: 'START', title: 'Carson on the Coulee Plains',
-  meta: 'A 3-deep CYOA demo for Carson (15) — competitor, oldest cousin, big heart',
-  text: `<figure class="illus"><img src="images/carson_region.webp" alt="Carson on the Coulee Plains — Big Coulee the wooly mammoth, her two babies, the wide grass"><figcaption>Carson on the Coulee Plains — Big Coulee the wooly mammoth, her two babies, the wide grass</figcaption></figure><div class="demo-note"><strong>27 ways through Carson's region.</strong> He lands on a wide plain where a wooly mammoth named Big Coulee narrates her own race-training out loud. Your three choices each branch into three more.</div>`,
+  meta: 'A 3-deep CYOA demo for Carson (15), competitor, oldest cousin, big heart',
+  text: `<figure class="illus"><img src="images/carson_region.webp" alt="Carson on the Coulee Plains, Big Coulee the wooly mammoth, her two babies, the wide grass"><figcaption>Carson on the Coulee Plains, Big Coulee the wooly mammoth, her two babies, the wide grass</figcaption></figure><div class="demo-note"><strong>27 ways through Carson's region.</strong> He lands on a wide plain where a wooly mammoth named Big Coulee narrates her own race-training out loud. Your three choices each branch into three more.</div>`,
   choices: [{ label: 'Begin Carson\'s region', target: 'p130' }],
 },
 
@@ -63,7 +63,7 @@ p130: {
 },
 
 p131: {
-  id: 'P-131', title: 'The Go-Hard Moment', meta: 'Carson — cared-for',
+  id: 'P-131', title: 'The Go-Hard Moment', meta: 'Carson, cared-for',
   text: `<p>Big Coulee explains. The Long Race is in thirty minutes. She's been training for six moons. Her babies keep wandering off. She is NERVOUS. She needs a worthy opponent.</p>
 <p>"WILL YOU RACE ME?"</p>
 <p>Carson is about to say yes when Big Coulee does something he doesn't expect. She <em>rams</em> him. A nudge with her flank. Carson is 120 pounds. Big Coulee is roughly 10,000. He goes sprawling. Lands in the grass. Laughing.</p>
@@ -78,17 +78,17 @@ p131: {
 },
 
 p132: {
-  id: 'P-132', title: 'CHOICE 1 — How do you approach this?', meta: 'First decision',
+  id: 'P-132', title: 'CHOICE 1, How do you approach this?', meta: 'First decision',
   text: `<p>Big Coulee paws the ground. "How do you want to race? I am open to RULES, child. I love a rule. Make ONE."</p>`,
   choices: [
-    { label: 'Just race — straight to the finish, fastest wins', target: 'p133', sub: "Honest competition. She'll probably destroy you. Worth it." },
+    { label: 'Just race, straight to the finish, fastest wins', target: 'p133', sub: "Honest competition. She'll probably destroy you. Worth it." },
     { label: 'Race AND gather her babies along the way', target: 'p134', sub: "Smart rule. The babies are scattered. You might actually win." },
     { label: 'Stop. The babies are scared. Settle them first.', target: 'p135', sub: "Give up your race prep. There's something more important here." },
   ],
 },
 
 p133: {
-  id: 'P-133', title: 'CHOICE 2A — How do you race?', meta: 'You chose straight race',
+  id: 'P-133', title: 'CHOICE 2A, How do you race?', meta: 'You chose straight race',
   text: `<p>Big Coulee rears back. "YES." She trumpets. The grass flattens for ten feet around her.</p>
 <p>Pip-Pip (her bird trainer) explains the course. Two flagged poles a quarter-mile apart. Around the far pole. Back. First nose across the line wins.</p>
 <p>What's your strategy?</p>`,
@@ -100,19 +100,19 @@ p133: {
 },
 
 p134: {
-  id: 'P-134', title: 'CHOICE 2B — How do you gather?', meta: 'Race and rescue babies',
+  id: 'P-134', title: 'CHOICE 2B, How do you gather?', meta: 'Race and rescue babies',
   text: `<p>Big Coulee laughs/trumpets/cries. "CHILD. That is the BEST rule anyone has ever made. We use it FOREVER."</p>
 <p>Seven baby mammoths are scattered across the plain. First to all seven wins.</p>
 <p>How do you go?</p>`,
   choices: [
     { label: 'Speed only. Grab and go. Babies in arms, run.', target: 'p134a', sub: "Volume strategy. The babies don't have feelings, only mass." },
     { label: 'Care first. Calm each baby before picking it up.', target: 'p134b', sub: "Slower. But the babies don't squirm when carried." },
-    { label: 'Improvise — different strategy for each baby', target: 'p134c', sub: "Read the situation. Be flexible." },
+    { label: 'Improvise, different strategy for each baby', target: 'p134c', sub: "Read the situation. Be flexible." },
   ],
 },
 
 p135: {
-  id: 'P-135', title: 'CHOICE 2C — How do you settle Tuft and Tumble?', meta: 'The babies are scared',
+  id: 'P-135', title: 'CHOICE 2C, How do you settle Tuft and Tumble?', meta: 'The babies are scared',
   text: `<p>Carson looks at Tuft and Tumble. Their trunks are tangled. Tumble is making a small worried sound. Tuft is trying to nurse on Big Coulee's leg and getting kicked off because Big Coulee is in race mode.</p>
 <p>"Race in twenty. Let's settle them first."</p>
 <p>Big Coulee snorts. "Child. The race is in THIRTY MINUTES."</p>
@@ -129,7 +129,7 @@ p135: {
 // CHOICE 3 NODES
 
 p133a: {
-  id: 'P-133A', title: 'CHOICE 3 — All-out sprint', meta: 'Burn yourself empty',
+  id: 'P-133A', title: 'CHOICE 3, All-out sprint', meta: 'Burn yourself empty',
   text: `<p>You go. From the gun. Full speed. By the halfway mark your lungs are burning.</p>
 <p>Big Coulee is way ahead. You can either keep this pace and finish destroyed, or do something else.</p>`,
   choices: [
@@ -140,7 +140,7 @@ p133a: {
 },
 
 p133b: {
-  id: 'P-133B', title: 'CHOICE 3 — Pacing strategy', meta: 'Save the legs',
+  id: 'P-133B', title: 'CHOICE 3, Pacing strategy', meta: 'Save the legs',
   text: `<p>You hold back. Big Coulee thinks she's destroying you. She slows slightly to gloat. You make your move on the back half.</p>
 <p>You're closing. She notices. She trumpets in disbelief. The finish line is ahead. How do you finish?</p>`,
   choices: [
@@ -151,18 +151,18 @@ p133b: {
 },
 
 p133c: {
-  id: 'P-133C', title: 'CHOICE 3 — Narrate the race', meta: 'Match her energy',
+  id: 'P-133C', title: 'CHOICE 3, Narrate the race', meta: 'Match her energy',
   text: `<p>"AND CARSON CROSSES THE LINE!" you yell, before you've crossed anything. "CARSON OVERTAKES! CARSON IS A LEGEND!"</p>
 <p>Big Coulee, mid-stride, laughs so hard she stumbles. She loses ground. You're suddenly even. What do you narrate?</p>`,
   choices: [
-    { label: '"AND BIG COULEE — FALTERS — IS SHE OKAY — WHO WILL SAVE HER —"', target: 'leaf_133c1', sub: "Mock concern. She'll laugh harder. You'll catch her." },
-    { label: '"TWO CHAMPIONS — NECK AND NECK — THE CROWD CANNOT BELIEVE IT —"', target: 'leaf_133c2', sub: "Heroic register. Both of you are the heroes." },
-    { label: '"BIG COULEE PULLS AHEAD — CARSON CONCEDES — A LEGEND BOWS TO A GREATER LEGEND —"', target: 'leaf_133c3', sub: "Concede mid-narration. Make her the legend." },
+    { label: '"AND BIG COULEE, FALTERS, IS SHE OKAY, WHO WILL SAVE HER , "', target: 'leaf_133c1', sub: "Mock concern. She'll laugh harder. You'll catch her." },
+    { label: '"TWO CHAMPIONS, NECK AND NECK, THE CROWD CANNOT BELIEVE IT , "', target: 'leaf_133c2', sub: "Heroic register. Both of you are the heroes." },
+    { label: '"BIG COULEE PULLS AHEAD, CARSON CONCEDES, A LEGEND BOWS TO A GREATER LEGEND , "', target: 'leaf_133c3', sub: "Concede mid-narration. Make her the legend." },
   ],
 },
 
 p134a: {
-  id: 'P-134A', title: 'CHOICE 3 — Volume scoop', meta: 'Just grab and go',
+  id: 'P-134A', title: 'CHOICE 3, Volume scoop', meta: 'Just grab and go',
   text: `<p>You sprint. You grab three babies in your first lap, four in your second. Babies are confused but unharmed. You're winning.</p>
 <p>The last baby is small. It's hiding behind a clump of bunchgrass. You can:</p>`,
   choices: [
@@ -173,21 +173,21 @@ p134a: {
 },
 
 p134b: {
-  id: 'P-134B', title: 'CHOICE 3 — Care first', meta: 'Calm before carry',
+  id: 'P-134B', title: 'CHOICE 3, Care first', meta: 'Calm before carry',
   text: `<p>You take it slow. You crouch by each baby. You tell each one: "I'm Carson. Your mom said it's okay. Come here."</p>
 <p>The babies come willingly. You're WAY behind Big Coulee. She's already heading home with four.</p>
 <p>You catch up at the field of bunchgrass where two babies are hiding together. Big Coulee arrives at the same time.</p>`,
   choices: [
-    { label: 'Coordinate with Big Coulee — split the field', target: 'leaf_134b1', sub: "Turn the race into a team. Both win, both lose." },
-    { label: 'Trust the babies — let them choose who to go with', target: 'leaf_134b2', sub: "Honor the babies' preferences." },
+    { label: 'Coordinate with Big Coulee, split the field', target: 'leaf_134b1', sub: "Turn the race into a team. Both win, both lose." },
+    { label: 'Trust the babies, let them choose who to go with', target: 'leaf_134b2', sub: "Honor the babies' preferences." },
     { label: 'Take both. Race her home with all the babies you have.', target: 'leaf_134b3', sub: "Compete to the end." },
   ],
 },
 
 p134c: {
-  id: 'P-134C', title: 'CHOICE 3 — Improvise per baby', meta: 'Read each one',
+  id: 'P-134C', title: 'CHOICE 3, Improvise per baby', meta: 'Read each one',
   text: `<p>You read each baby's energy. The bouncy one you scoop on the run. The crying one you stop and comfort. The hiding one you coax out with a flower.</p>
-<p>You finish with five babies on you. Big Coulee has three. You meet at the last baby — a tiny one, no bigger than a loaf of bread, who is eating a flower very seriously.</p>`,
+<p>You finish with five babies on you. Big Coulee has three. You meet at the last baby, a tiny one, no bigger than a loaf of bread, who is eating a flower very seriously.</p>`,
   choices: [
     { label: 'Both arrive at the same second. Carry it together.', target: 'leaf_134c1', sub: "Tie. Mammoth and human, one baby between you." },
     { label: 'Step aside. Let her have this one.', target: 'leaf_134c2', sub: "She's the mom. She gets the last baby." },
@@ -196,30 +196,30 @@ p134c: {
 },
 
 p135a: {
-  id: 'P-135A', title: 'CHOICE 3 — Calm explanation', meta: 'Information for the scared',
+  id: 'P-135A', title: 'CHOICE 3, Calm explanation', meta: 'Information for the scared',
   text: `<p>"Hey. I'm Carson. Your mom is the best racer in The Old Roar. She's been training for six moons. The race is just to that pole and back. You'll see her the whole time."</p>
 <p>The babies listen. Tuft puts her trunk on Carson's wrist. What do you say next?</p>`,
   choices: [
     { label: '"I\'ll point to where she is every few seconds so you know."', target: 'leaf_135a1', sub: "Active reassurance during the race." },
     { label: '"She\'s racing because she loves you and wants to show you she\'s strong."', target: 'leaf_135a2', sub: "Reframe the race as a love language." },
-    { label: '"When she comes back, you can tell her you weren\'t scared."', target: 'leaf_135a3', sub: "Give them a goal — they can be brave for her." },
+    { label: '"When she comes back, you can tell her you weren\'t scared."', target: 'leaf_135a3', sub: "Give them a goal, they can be brave for her." },
   ],
 },
 
 p135b: {
-  id: 'P-135B', title: 'CHOICE 3 — Make them laugh', meta: 'Laughter first',
+  id: 'P-135B', title: 'CHOICE 3, Make them laugh', meta: 'Laughter first',
   text: `<p>You tell the babies your worst joke. ("Why don't mammoths use computers? Because they're afraid of the MOUSE.")</p>
 <p>Tuft snort-laughs. Tumble does what mammoths do instead of laughing, which is sort of a HONK.</p>
 <p>Now they're loose. What now?</p>`,
   choices: [
     { label: 'Race-narrate the babies through the race', target: 'leaf_135b1', sub: "Turn watching mom into a sportscast." },
-    { label: 'Give them a job — pick the winning trunk-flag', target: 'leaf_135b2', sub: "Make them part of the race." },
+    { label: 'Give them a job, pick the winning trunk-flag', target: 'leaf_135b2', sub: "Make them part of the race." },
     { label: 'Teach them a quick mammoth-stomp dance', target: 'leaf_135b3', sub: "Give them something to do with all their energy." },
   ],
 },
 
 p135c: {
-  id: 'P-135C', title: 'CHOICE 3 — Show them the course', meta: 'Spatial certainty',
+  id: 'P-135C', title: 'CHOICE 3, Show them the course', meta: 'Spatial certainty',
   text: `<p>You point. "See that pole? Mom will go AROUND it and come BACK. She won't leave your sight."</p>
 <p>Tumble watches the pole intently. Tuft asks: "What if a wolf comes?"</p>
 <p>How do you reassure?</p>`,
@@ -236,7 +236,7 @@ leaf_133a1: {
   id: 'L-1', title: 'Burned Through the Line', meta: 'Pure effort, no regrets',
   text: `<p>You finish a hundred yards behind Big Coulee, gasping, sides heaving, vision a little doubled. You can taste the morning grass. She trumpets, gathers you up in her trunk like a puppy, and sets you on her back. The warmth of her shoulder under your knees is the first thing that feels solid in three minutes.</p>
 <p>"CHILD. You ran like you MEANT it. That is rare and GOOD."</p>
-<p>Pip-Pip the bird flutters down with the Tusk-Charm in her beak — a small disc of pale ivory, smoother than river stone, warm even before you touch it. "My great-great-grandmother carved this from a piece of her own tusk after a race like yours. She told me — never give it to a child who runs polite. Give it to one who runs hungry. You're the first I've met since."</p>
+<p>Pip-Pip the bird flutters down with the Tusk-Charm in her beak, a small disc of pale ivory, smoother than river stone, warm even before you touch it. "My great-great-grandmother carved this from a piece of her own tusk after a race like yours. She told me, never give it to a child who runs polite. Give it to one who runs hungry. You're the first I've met since."</p>
 <p>You close your fingers around it. It hums a little against your palm.</p>`,
   earns: { item: ['charm', 'base'] }, next: 'exit',
 },
@@ -269,7 +269,7 @@ leaf_133b1: {
 leaf_133b2: {
   id: 'L-5', title: 'Crossing Together', meta: 'A tie',
   text: `<p>You ease up just enough to tie. You cross at the same step. Pip-Pip's clipboard catches fire (metaphorically). There has never been a tie in the Coulee Games.</p>
-<p>Big Coulee is overwhelmed. "We TIED. We — we TIED."</p>
+<p>Big Coulee is overwhelmed. "We TIED. We, we TIED."</p>
 <p>She gives you the Tusk-Charm and breaks a piece off her own. "We are EQUALS, child. I have never been an equal with a human."</p>`,
   earns: { item: ['charm', 'enhanced'], allies: ['BigCoulee'] }, next: 'exit',
 },
@@ -285,7 +285,7 @@ leaf_133b3: {
 
 leaf_133c1: {
   id: 'L-7', title: 'Mock Concern Race', meta: 'Concern-narrate her into laughing',
-  text: `<p>Big Coulee is laughing so hard she can barely run. You catch her at the far pole. You round it. You sprint home together, both of you yelling "AND BIG COULEE/CARSON ROUNDS THE BEND, LOOKING — ABSOLUTELY HEROIC —"</p>
+  text: `<p>Big Coulee is laughing so hard she can barely run. You catch her at the far pole. You round it. You sprint home together, both of you yelling "AND BIG COULEE/CARSON ROUNDS THE BEND, LOOKING, ABSOLUTELY HEROIC , "</p>
 <p>You tie. Pip-Pip is shocked.</p>
 <p>Big Coulee gives you the Tusk-Charm. "You made me LAUGH while I was RACING. That has never happened. Take this. Use it to make tired grown-ups laugh."</p>`,
   earns: { item: ['charm', 'enhanced'], flags: ['MammothLaugh'] }, next: 'exit',
@@ -300,7 +300,7 @@ leaf_133c2: {
 
 leaf_133c3: {
   id: 'L-9', title: 'A Bow to a Legend', meta: 'Concede mid-narration',
-  text: `<p>You narrate yourself losing. "AND CARSON CONCEDES — BOWS TO A GREATER ATHLETE —"</p>
+  text: `<p>You narrate yourself losing. "AND CARSON CONCEDES, BOWS TO A GREATER ATHLETE , "</p>
 <p>Big Coulee finishes first. She comes back. She looks at you for a long time.</p>
 <p>"You conceded out loud. To honor me. Nobody has done that for me in three hundred years."</p>
 <p>She gives you the Tusk-Charm, the flower crown from her own head, and a promise: "I will come when you call. With my whole family."</p>`,
@@ -317,7 +317,7 @@ leaf_134a1: {
 
 leaf_134a2: {
   id: 'L-11', title: 'Coax the Hiding One', meta: 'Slow for one baby',
-  text: `<p>You lose a few seconds. The baby comes willingly. You finish second by a hair. Big Coulee won — but the baby is calm in your arms.</p>
+  text: `<p>You lose a few seconds. The baby comes willingly. You finish second by a hair. Big Coulee won, but the baby is calm in your arms.</p>
 <p>She gives you the Tusk-Charm and a piece of her own tusk. "You lost the race to comfort the baby. That is the right loss."</p>`,
   earns: { item: ['charm', 'enhanced'], flags: ['RightLoss'] }, next: 'exit',
 },
@@ -364,7 +364,7 @@ leaf_134c1: {
 leaf_134c2: {
   id: 'L-17', title: 'Step Aside for Mom', meta: 'Honor her instinct',
   text: `<p>You step aside. Big Coulee scoops the last baby. She crosses first.</p>
-<p>"You let me get my own last baby. That is — that is a deep kindness."</p>
+<p>"You let me get my own last baby. That is, that is a deep kindness."</p>
 <p>She gives you the Tusk-Charm. Tuft and Tumble climb on you anyway. "They have decided you are their second-favorite."</p>`,
   earns: { item: ['charm', 'enhanced'], allies: ['Tuft', 'Tumble'] }, next: 'exit',
 },
@@ -398,7 +398,7 @@ leaf_135a3: {
   text: `<p>"When she comes back you can tell her you weren't scared."</p>
 <p>Tuft and Tumble nod. They sit through the race like little statues. Big Coulee races. She wins. She returns.</p>
 <p>Both babies stand and yell: "MOM. WE. WEREN'T. SCARED."</p>
-<p>Big Coulee cries — mammoth tears, the size of plums. She gives Carson the Tusk-Charm and full alliance. "You taught them bravery in twenty minutes. I have been trying for two years."</p>`,
+<p>Big Coulee cries, mammoth tears, the size of plums. She gives Carson the Tusk-Charm and full alliance. "You taught them bravery in twenty minutes. I have been trying for two years."</p>`,
   earns: { item: ['charm', 'full'], allies: ['BigCoulee', 'Tuft', 'Tumble'], flags: ['TaughtBravery'] }, next: 'exit',
 },
 
@@ -445,14 +445,14 @@ leaf_135c3: {
   text: `<p>"If anything comes, I'M here. I'm a tall human. Scary to wolves."</p>
 <p>Tuft solemnly puts her trunk on Carson's wrist. "Okay. You guard us."</p>
 <p>You guard them. The race happens. Big Coulee, watching from across the field, sees Carson standing guard over her two babies the entire race.</p>
-<p>She wins by accident — she runs the fastest race she's ever run because she trusts Carson with her children. Afterward she gives him the Tusk-Charm AND a piece of her tusk AND a promise of full alliance, the whole family.</p>`,
+<p>She wins by accident, she runs the fastest race she's ever run because she trusts Carson with her children. Afterward she gives him the Tusk-Charm AND a piece of her tusk AND a promise of full alliance, the whole family.</p>`,
   earns: { item: ['charm', 'full'], allies: ['BigCoulee', 'Tuft', 'Tumble'], flags: ['StoodGuard', 'FullAlliance'] }, next: 'exit',
 },
 
 exit: {
-  id: 'EXIT', title: 'Big Coulee Walks Him to His Raft', meta: 'Carson — region complete',
+  id: 'EXIT', title: 'Big Coulee Walks Him to His Raft', meta: 'Carson, region complete',
   text: `<p>Before Carson climbs back onto the boat-on-wheels, Big Coulee stops him. She lowers her head one more time. Her voice is small. Just for him.</p>
-<p>"Child. The thing you did today — not pretending I was easier than I was. People follow the loud ones. They <em>trust</em> the ones like you."</p>
+<p>"Child. The thing you did today, not pretending I was easier than I was. People follow the loud ones. They <em>trust</em> the ones like you."</p>
 <p>Then she rams him again. Gently this time. He laughs and rams her back, shoulder to flank, both of them grinning. Her flower crown slips again. She lets it.</p>
 <p>"Go on," she says. "Tell the small ones about me."</p>
 <p>Carson climbs onto the raft. He files the rest under things he'll think about later. Right now he's still grinning.</p>
@@ -507,7 +507,7 @@ function render() {
     h += `<div class="choices">
       <button onclick="location.href='index.html?goto=showdown_intro'" style="background:#2b2419;color:#faf6ed;border-color:#2b2419;"><strong>Head to the Showdown &rarr;</strong><span class="sub" style="color:#f5c587;">End the book. Face Drystone with what you've earned.</span></button>
       <button onclick="location.href='index.html?goto=hub'">&larr; Pick another cousin first</button>
-      <button onclick="restart()" style="opacity:0.7;font-size:13px;">Start over &mdash; try a different path in this region</button>
+      <button onclick="restart()" style="opacity:0.7;font-size:13px;">Start over, try a different path in this region</button>
     </div>`;
   }
   m.innerHTML = h;
