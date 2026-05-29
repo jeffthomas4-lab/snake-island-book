@@ -95,6 +95,8 @@ Reid feels his face get warm.
 
 Old Speak says, "I see you. Most don't. I just wanted to say so."
 
+Old Speak's voice goes quieter still. "You are Reid the Noticer. The wood will remember that you saw. So will I."
+
 Reid swallows.
 
 Then he picks up the stick again, but slower this time.
@@ -284,15 +286,3 @@ He paddles toward the sound of the C-130, faint and far, somewhere up in the wor
 **→ Region complete.**
 
 ---
-
-## Editor notes
-
-**On "the just-sit moment" (P-141):** Reid's cared-for beat. Old Speak names what Reid does, quietly working, never making anyone ask, and tells him *I see you. Most don't.* That's the gift Reid has never been given. The Listen bird sets the tone: the wood is full of beings who notice without speaking.
-
-**On the mythic-awe editor note:** Addressed in Path C. The driftwood is from the FIRST TREE of The Old Roar. Old Speak weeps amber sap. The staff *roots* itself into the dock and holds the soil. This is the mythic register the previous editor asked for. Reid's region is no longer just "calm", it's *ancient* and *huge.* Path A keeps the calm honest-craft register for readers who want it lighter.
-
-**On DockHealing flag:** Locked into Path C. The coda mechanic from the v2 draft (Reid plants the staff at the base of the third piling and the dock heals overnight) now requires the reader to have earned the FULL staff. CROWN ending playthroughs always include this. SILVER ending playthroughs may not. That's the right level of consequence.
-
-**On crossovers:** Path A: Carson's mammoth rumble. Path B: Madison's Canyon Singer. Path C: Aiden's Pegasus. Three different crossovers across three paths gives the reader a different sense of the world being alive depending on what they pick.
-
-**On word count:** Total ~2,600. Lighter than Madison/Chayten/Carson because Reid's region IS quieter and tightening matches the character.

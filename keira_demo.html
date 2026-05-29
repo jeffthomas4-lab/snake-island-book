@@ -78,6 +78,7 @@ p161: {
 <p>Keira doesn't know what to say. Her face gets warm in a pleasant way. She is ten. People have been calling her good-for-an-artist or good-for-her-age her whole life. Nobody has ever told her she gets to be all of herself at once.</p>
 <p>"Okay," she says.</p>
 <p>"Good. Now. Please paint me awake. I have been BORED for two hundred of the last five hundred years and I would like to see the sky again."</p>
+<p>"And one more thing, child," Cliffy says, his enormous bark face turned toward her. "You are Keira Both-at-Once. Artist AND climber. The cliff will remember that you refused to pick. So should you."</p>
 <p>He yawns purple. Keira opens her paint jars.</p>
 <p>The paints <em>move</em> when she opens them. They lean toward her. They are excited to be used.</p>
 <p>And then she notices something. Something nobody else has ever noticed. A faint line of orange, almost invisible, running down the seam between two basalt columns of Cliffy's cheek. She tilts her head. The orange brightens. She tilts the other way. There's blue down by his jaw. Green near his eye. The colors have been THERE the whole time. Five hundred years\' worth of color, waiting under the black.</p>
@@ -89,7 +90,7 @@ p161: {
 },
 
 p162: {
-  id: 'P-162', title: 'CHOICE 1, How do you begin?', meta: 'First decision',
+  id: 'P-162', title: 'CHOICE 1: How do you begin?', meta: 'First decision',
   text: `<p>The cliff yawns one more time. Now the yawn is lavender with green flecks. The colors drift. He says, "How would you like to begin?"</p>`,
   choices: [
     { label: '"I\'ll just start painting and see what happens."', target: 'p163', sub: "Bold. Trust the brush. Let color lead." },
@@ -101,7 +102,7 @@ p162: {
 // CHOICE 2 NODES
 
 p163: {
-  id: 'P-163', title: 'CHOICE 2A, Which color leads?', meta: 'You chose to paint first',
+  id: 'P-163', title: 'CHOICE 2A: Which color leads?', meta: 'You chose to paint first',
   text: `<p>Keira shrugs and reaches for a jar. The paint inside leans toward her hand. Three jars are particularly eager. Which one leads?</p>`,
   choices: [
     { label: 'Lead with ORANGE, warm, eager, awake', target: 'p163a', sub: "The color that has been waiting to be picked." },
@@ -111,7 +112,7 @@ p163: {
 },
 
 p164: {
-  id: 'P-164', title: 'CHOICE 2B, What concept do you paint?', meta: 'You asked what he wants',
+  id: 'P-164', title: 'CHOICE 2B: What concept do you paint?', meta: 'You asked what he wants',
   text: `<p>Cliffy is quiet for a long time. "Nobody has ever asked me that."</p>
 <p>You wait.</p>
 <p>"I don't think I know what I look like. I've been asleep so long. What does the world look like now? What's NEW? What would I want to wear?"</p>
@@ -126,7 +127,7 @@ p164: {
 },
 
 p165: {
-  id: 'P-165', title: 'CHOICE 2C, How do you climb?', meta: 'You chose to climb first',
+  id: 'P-165', title: 'CHOICE 2C: How do you climb?', meta: 'You chose to climb first',
   text: `<p>Keira looks up. Up. Up. She says, "I'm going to climb up first. I want to see what you've been dreaming."</p>
 <p>Cliffy makes a sound that is somewhere between a yawn and a laugh. "Climb me? CLIMB me? No one climbs me. I am a CLIFF. I am hundreds of feet tall."</p>
 <p>You are already finding the first seam. How do you go?</p>`,
@@ -140,7 +141,7 @@ p165: {
 // CHOICE 3 NODES, PATH A (PAINT FIRST)
 
 p163a: {
-  id: 'P-163A', title: 'CHOICE 3, How do you place the orange?', meta: 'Orange leads',
+  id: 'P-163A', title: 'CHOICE 3: How do you place the orange?', meta: 'Orange leads',
   text: `<p>The orange leaps from the jar. It catches on your brush. It is <em>eager.</em> Where does it want to go?</p>`,
   choices: [
     { label: 'A sunrise across his forehead', target: 'leaf_163a1', sub: "The color of a morning he hasn't seen in centuries." },
@@ -150,7 +151,7 @@ p163a: {
 },
 
 p163b: {
-  id: 'P-163B', title: 'CHOICE 3, How do you place the blue?', meta: 'Blue leads',
+  id: 'P-163B', title: 'CHOICE 3: How do you place the blue?', meta: 'Blue leads',
   text: `<p>The blue is calm in the jar. It rises onto your brush without urgency. Where does it want to go?</p>`,
   choices: [
     { label: 'A calm river across his chest', target: 'leaf_163b1', sub: "A long horizontal stroke. The shape of slow water." },
@@ -160,7 +161,7 @@ p163b: {
 },
 
 p163c: {
-  id: 'P-163C', title: 'CHOICE 3, How do you use the unnamed color?', meta: 'Let the strange color lead',
+  id: 'P-163C', title: 'CHOICE 3: How do you use the unnamed color?', meta: 'Let the strange color lead',
   text: `<p>You pick up a jar of color you do not have a word for. It is somewhere between green and pink and not-quite-purple. It rises onto your brush warm and slightly humming.</p>`,
   choices: [
     { label: 'Paint a pattern only you can see', target: 'leaf_163c1', sub: "Trust your eye. Don't explain it to anyone." },
@@ -172,7 +173,7 @@ p163c: {
 // CHOICE 3 NODES, PATH B (ASK WHAT)
 
 p164a: {
-  id: 'P-164A', title: 'CHOICE 3, How does kindness look?', meta: 'You\'ll paint kindness',
+  id: 'P-164A', title: 'CHOICE 3: How does kindness look?', meta: 'You\'ll paint kindness',
   text: `<p>"Kindness," Cliffy says, slowly. "I haven't thought about that in five hundred years."</p>
 <p>You start to imagine. How will kindness look on him?</p>`,
   choices: [
@@ -183,7 +184,7 @@ p164a: {
 },
 
 p164b: {
-  id: 'P-164B', title: 'CHOICE 3, How does courage look?', meta: 'You\'ll paint courage',
+  id: 'P-164B', title: 'CHOICE 3: How does courage look?', meta: 'You\'ll paint courage',
   text: `<p>"Courage," Cliffy says, slowly. "Show me."</p>`,
   choices: [
     { label: 'A small kid standing alone, eyes up at the sky', target: 'leaf_164b1', sub: "Courage is small. It's looking up anyway." },
@@ -193,7 +194,7 @@ p164b: {
 },
 
 p164c: {
-  id: 'P-164C', title: 'CHOICE 3, How does rest look?', meta: 'You\'ll paint rest',
+  id: 'P-164C', title: 'CHOICE 3: How does rest look?', meta: 'You\'ll paint rest',
   text: `<p>"REST," Cliffy says, wistfully. "Oh. Oh, that one."</p>`,
   choices: [
     { label: 'A figure curled small under a tree', target: 'leaf_164c1', sub: "Rest as taking up less room than usual." },
@@ -205,7 +206,7 @@ p164c: {
 // CHOICE 3 NODES, PATH C (CLIMB FIRST)
 
 p165a: {
-  id: 'P-165A', title: 'CHOICE 3, Fast climb. What do you do at the top?', meta: 'You climbed fast',
+  id: 'P-165A', title: 'CHOICE 3: Fast climb. What do you do at the top?', meta: 'You climbed fast',
   text: `<p>You go fast. Cliffy doesn't realize you're actually doing this until you're fifty feet up. He goes very still so as not to dislodge you. You are at the top before he finishes saying "You are TEN."</p>
 <p>From the top you can see the canyon's hidden color, veins of blue, orange, green, all under the surface of every basalt cliff. He has been dreaming color this whole time.</p>`,
   choices: [
@@ -216,7 +217,7 @@ p165a: {
 },
 
 p165b: {
-  id: 'P-165B', title: 'CHOICE 3, Careful climb. What do you find?', meta: 'You mapped the seams',
+  id: 'P-165B', title: 'CHOICE 3: Careful climb. What do you find?', meta: 'You mapped the seams',
   text: `<p>You climb deliberately. You notice the seams. You notice the basalt grain. You notice, wait. There's a pattern in the way the columns join. As if the cliff were carved deliberately. As if Cliffy is HIDING something in his own geometry.</p>`,
   choices: [
     { label: 'Find a hidden seam. Paint into the seam itself.', target: 'leaf_165b1', sub: "Color in the cracks. Light from inside." },
@@ -226,7 +227,7 @@ p165b: {
 },
 
 p165c: {
-  id: 'P-165C', title: 'CHOICE 3, Climb-and-look. Where do you stop?', meta: 'Both halves at once',
+  id: 'P-165C', title: 'CHOICE 3: Climb-and-look. Where do you stop?', meta: 'Both halves at once',
   text: `<p>You climb. You stop on each ledge. You look. You climb again. The mouse with spectacles is below biting his tiny knuckles. The paints in the jars are watching too. Where do you stop and what do you see?</p>`,
   choices: [
     { label: 'Twenty feet up, discover veins of color near his throat', target: 'leaf_165c1', sub: "Paint them visible. Small reveal, big effect." },

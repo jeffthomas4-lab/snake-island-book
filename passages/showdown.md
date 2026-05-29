@@ -133,7 +133,15 @@ She does not run along.
 
 ## BEAT 1, MADISON
 
+
+> **Reader: which version do you read?**
+> *If you played Madison's chapter, read the MAIN version below (Madison has her tin of cookies, her map).*
+> *If you skipped Madison's chapter, skip to the FALLBACK version, Madison wins her beat through who she is, not what she brought back.*
+
+
 ### P-510, MAIN (REQUIRES: Map)
+
+*Madison the Dancer.*
 
 *~400 words.*
 
@@ -197,7 +205,15 @@ Madison hasn't won the beat with evidence. She has won it by being the one perso
 
 ## BEAT 2, CHAYTEN
 
+
+> **Reader: which version do you read?**
+> *If you played Chayten's chapter, read the MAIN version below (Chayten has her otter mask).*
+> *If you skipped Chayten's chapter, skip to the FALLBACK version, Chayten wins her beat through who she is, not what she brought back.*
+
+
 ### P-520, MAIN (REQUIRES: Voice)
+
+*Chayten the Connector.*
 
 *~400 words.*
 
@@ -263,7 +279,15 @@ Chayten hasn't won the beat with magic. She has won it by knowing that grown-ups
 
 ## BEAT 3, CARSON
 
+
+> **Reader: which version do you read?**
+> *If you played Carson's chapter, read the MAIN version below (Carson has his tusk-charm).*
+> *If you skipped Carson's chapter, skip to the FALLBACK version, Carson wins her beat through who she is, not what she brought back.*
+
+
 ### P-530, MAIN (REQUIRES: Charm AND 5+ kids present)
+
+*Carson the Trustworthy.*
 
 *~400 words.*
 
@@ -333,7 +357,15 @@ Carson hasn't rallied the kids with the charm. He has rallied them by being the 
 
 ## BEAT 4, REID
 
+
+> **Reader: which version do you read?**
+> *If you played Reid's chapter, read the MAIN version below (Reid has his staff).*
+> *If you skipped Reid's chapter, skip to the FALLBACK version, Reid wins her beat through who she is, not what she brought back.*
+
+
 ### P-540, MAIN (REQUIRES: Staff)
+
+*Reid the Noticer.*
 
 *~350 words.*
 
@@ -525,7 +557,15 @@ Drystone realizes too late that he has just *cemented* them.
 
 ## BEAT 5, KELLEN
 
+
+> **Reader: which version do you read?**
+> *If you played Kellen's chapter, read the MAIN version below (Kellen has his True-Skipping Stone).*
+> *If you skipped Kellen's chapter, skip to the FALLBACK version, Kellen wins her beat through who she is, not what she brought back.*
+
+
 ### P-560, MAIN (REQUIRES: Stone)
+
+*Kellen the Whole.*
 
 *~350 words.*
 
@@ -595,7 +635,15 @@ The baseball rolls off the platform. Aiden grabs it. He's been wanting that base
 
 ## BEAT 6, KEIRA
 
+
+> **Reader: which version do you read?**
+> *If you played Keira's chapter, read the MAIN version below (Keira has her Truth Brush).*
+> *If you skipped Keira's chapter, skip to the FALLBACK version, Keira wins her beat through who she is, not what she brought back.*
+
+
 ### P-570, MAIN (REQUIRES: Brush)
+
+*Keira Both-at-Once.*
 
 *~350 words.*
 
@@ -665,7 +713,15 @@ Keira hasn't won the beat with the truth brush. She has won it by drawing what w
 
 ## BEAT 7, ELLA
 
+
+> **Reader: which version do you read?**
+> *If you played Ella's chapter, read the MAIN version below (Ella has her crown).*
+> *If you skipped Ella's chapter, skip to the FALLBACK version, Ella wins her beat through who she is, not what she brought back.*
+
+
 ### P-580, MAIN (REQUIRES: Crown)
+
+*Ella the Deciding Face.*
 
 *~350 words.*
 
@@ -731,7 +787,15 @@ Ella has not won the beat with a crown. She has won it by being so completely El
 
 ## BEAT 8, AIDEN
 
+
+> **Reader: which version do you read?**
+> *If you played Aiden's chapter, read the MAIN version below (Aiden has Pegasus).*
+> *If you skipped Aiden's chapter, skip to the FALLBACK version, Aiden wins her beat through who she is, not what she brought back.*
+
+
 ### P-590, MAIN (REQUIRES: Pegasus) ★
+
+*Aiden the Exactly-Right.*
 
 *~500 words. This is THE moment. Never cut this.*
 
@@ -1004,11 +1068,3 @@ Aiden tucks the moment away with all the other important things.
 > **End of book, for this playthrough. The dock didn't fully heal. The full Crown ending awaits a deeper journey. Try again. Pick different paths. The Old Roar is still there. So is the cove. So are you.**
 
 ---
-
-## Editor notes
-
-**On the chosen-family pivot (P-551 / P-552):** This is the structural payoff for the theme that's been planted in every region. Drystone's seam-finding speech is harsh and feels like the harshest thing in the book, but it has to be, because the kids' rebuttal has to feel earned. Carson taking it apart with *they showed up* is the thematic spine of the entire project. Madison's notes.md promised this and v2 never delivered it. Delivered now.
-
-**On the modular beats:** Every kid has a main version and a fallback. The fallback is *never weaker than the main version as a character moment*, it's just smaller in physical scale. Madison without the map still has her memorized facts. Reid without the staff still has his immovability. Ella without the crown still has her deciding face. The book never punishes the reader's kid by making the kid look weak.
-
-**On the locked crossover rule applied:** Every conditional ally moment specifies what the adults vs. Drystone vs. the kids see. Drystone's progressive vision of more and more impossible creatures is a deliberate building of his breakdown. By the end he's seeing a small magical zoo and una

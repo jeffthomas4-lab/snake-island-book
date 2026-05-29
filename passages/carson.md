@@ -95,7 +95,9 @@ Carson grins. He has not been told to stop softening in a long time. He didn't k
 
 "Okay."
 
-Big Coulee straightens up. "*EXCELLENT.* Then we have a RACE. Choose your path."
+Big Coulee lowers her enormous head, eye level with Carson. "You are Carson the Trustworthy, child. People follow the loud ones because they have to. They follow you because they already wanted to. Remember that name."
+
+She straightens up. "*EXCELLENT.* Then we have a RACE. Choose your path."
 
 ---
 
@@ -350,19 +352,3 @@ He heads back toward the meadow, toward whoever is waiting, toward the sound of 
 **→ Region complete.**
 
 ---
-
-## Editor notes
-
-**On "the go-hard moment" (P-131):** This is Carson's parallel to Madison's float and Chayten's demotion. Big Coulee specifically notices he's been holding himself in, being polite, soft, careful, the way an older cousin learns to be, and gives him permission to compete for real. The cared-for thing for Carson is the opposite of comfort: it's *being asked to GO HARD without softening.* That's what he never gets at home with the younger kids around.
-
-**On the competition-is-good editor note:** Big Coulee's "thirty competitors all held back" speech directly addresses the previous editor's flag. The book is saying out loud: *holding back to be polite is its own kind of disrespect.* That's a healthy message for competitive kids. Path A celebrates a full-effort losing race. Path B celebrates strategy. Path C celebrates noticing what matters more than the win. All three paths honor competition. None of them moralize against it.
-
-**On Tuft and Tumble:** They become physical allies on Path C, small enough that they're "visible only to kids and Drystone" per the locked crossover rule. Big Coulee is huge and follows the same rule (Drystone sees a mammoth on the dock; the other adults see nothing). This is when Drystone starts to genuinely question his sanity.
-
-**On the chosen-family theme:** Big Coulee's "I will look out for yours" line in Path C is a chosen-family beat with a non-human creature. The thematic argument is *anyone who shows up for you becomes family.* This compounds with Madison's Lake Sisters ("the lake itself is family to us") and Chayten's Otto ("we were not blood, we were better than blood").
-
-**On crossovers:** Path A has a Madison hook (faint operatic note). Path C has an Aiden hook (Pegasus passing overhead with her rider). Light touch only.
-
-**On word count:** Total ~2,800. Path A reader: ~1,500. Path B: ~1,650. Path C: ~1,700. Same shape.
-
-**Open structural note:** I made Big Coulee's pre-race "you've been holding yourself in" speech quite specific. If you'd rather it lands more lightly, less direct emotional content from the mammoth, more action, flag it and I'

@@ -86,12 +86,13 @@ p151: {
 <p>He weighs the stone. He times his step to the next gust of wind. He throws.</p>
 <p>The stone skips out, one, two, three, four, and lands in the dinner-plate of glass. Exactly. The flock turns as one. Skim makes a sound that is somewhere between a laugh and a cry.</p>
 <p>"You SAW that," she says. "And you HIT it. Both halves. In one throw. <em>That</em> is what I have been waiting forty years to see."</p>
+<p>Skim hops back another step. Her voice goes formal. "You are Kellen the Whole, child. The kid who plays with both halves of himself at once. We do not see many of you. Carry that name."</p>
 <p>Kellen picks the throwing stone. He is, for the first time in a year, all the way in his own body.</p>`,
   choices: [{ label: 'Begin the game', target: 'p152' }],
 },
 
 p152: {
-  id: 'P-152', title: 'CHOICE 1, How do you begin?', meta: 'First decision',
+  id: 'P-152', title: 'CHOICE 1: How do you begin?', meta: 'First decision',
   text: `<p>Skim raises a tiny wing-flag. "Kid. How do you want to begin?"</p>`,
   choices: [
     { label: '"First approved pattern. Show me." Play through the seven.', target: 'p153', sub: "Honest play. Beat them at their own game." },
@@ -103,7 +104,7 @@ p152: {
 // CHOICE 2 NODES
 
 p153: {
-  id: 'P-153', title: 'CHOICE 2A, What\'s your style as you play?', meta: 'You chose to play the seven',
+  id: 'P-153', title: 'CHOICE 2A: What\'s your style as you play?', meta: 'You chose to play the seven',
   text: `<p>Skim calls the first pattern. <em>Three short, two long, one stop.</em></p>
 <p>Kellen throws. The stone obeys.</p>
 <p>Skim watches him reset. "How do you want to play these, kid? You can hide. You can show off. Or you can be honest. Up to you."</p>`,
@@ -115,7 +116,7 @@ p153: {
 },
 
 p154: {
-  id: 'P-154', title: 'CHOICE 2B, What do you watch for?', meta: 'You asked Skim to demonstrate',
+  id: 'P-154', title: 'CHOICE 2B: What do you watch for?', meta: 'You asked Skim to demonstrate',
   text: `<p>Skim's head tilts. The other birds make small surprised sounds. Nobody has ever asked her to demonstrate first. She likes this kid.</p>
 <p>She steps to the line. She rolls her shoulders. "What are you watching, kid?"</p>`,
   choices: [
@@ -126,7 +127,7 @@ p154: {
 },
 
 p155: {
-  id: 'P-155', title: 'CHOICE 2C, What kind of new pattern?', meta: 'You proposed an invention',
+  id: 'P-155', title: 'CHOICE 2C: What kind of new pattern?', meta: 'You proposed an invention',
   text: `<p>The birds laugh, automatic, dismissive. Skim does not laugh.</p>
 <p>"Nobody has invented a new pattern in three hundred years."</p>
 <p>"Why not?"</p>
@@ -145,7 +146,7 @@ p155: {
 // CHOICE 3 NODES, PATH A (PLAY THE SEVEN)
 
 p153a: {
-  id: 'P-153A', title: 'CHOICE 3, How do you mark your rhythm?', meta: 'Clean execution',
+  id: 'P-153A', title: 'CHOICE 3: How do you mark your rhythm?', meta: 'Clean execution',
   text: `<p>You play the patterns. Clean. Honest. No flourish. The birds get quieter with each one. By the fifth pattern, the flock is taking notes.</p>
 <p>How do you mark your rhythm between throws?</p>`,
   choices: [
@@ -156,7 +157,7 @@ p153a: {
 },
 
 p153b: {
-  id: 'P-153B', title: 'CHOICE 3, What\'s your flourish?', meta: 'Sign each pattern',
+  id: 'P-153B', title: 'CHOICE 3: What\'s your flourish?', meta: 'Sign each pattern',
   text: `<p>You decide to add a tiny end-flourish to each pattern. The birds notice immediately. Skim's eyebrow-feathers go up.</p>`,
   choices: [
     { label: 'Each stone ends balanced on its edge on the shore', target: 'leaf_153b1', sub: "Impossible. You'll do it anyway." },
@@ -166,7 +167,7 @@ p153b: {
 },
 
 p153c: {
-  id: 'P-153C', title: 'CHOICE 3, How loud do you narrate?', meta: 'Brain showing',
+  id: 'P-153C', title: 'CHOICE 3: How loud do you narrate?', meta: 'Brain showing',
   text: `<p>You start to talk through what you're doing. The birds didn't expect this. Several of them tilt their heads at the same angle.</p>`,
   choices: [
     { label: 'Quietly, just so Skim can hear you', target: 'leaf_153c1', sub: "A private duet with her ears." },
@@ -178,7 +179,7 @@ p153c: {
 // CHOICE 3 NODES, PATH B (WATCH SKIM)
 
 p154a: {
-  id: 'P-154A', title: 'CHOICE 3, How do you apply her technique?', meta: 'You studied her hands',
+  id: 'P-154A', title: 'CHOICE 3: How do you apply her technique?', meta: 'You studied her hands',
   text: `<p>You watched her hand and hip. You see exactly what she does. Now it's your turn.</p>`,
   choices: [
     { label: 'Copy her exactly, same hands, same hip', target: 'leaf_154a1', sub: "Honor her by mimicry. Show you saw." },
@@ -188,7 +189,7 @@ p154a: {
 },
 
 p154b: {
-  id: 'P-154B', title: 'CHOICE 3, Where do you aim, knowing what she watches?', meta: 'You watched her eyes',
+  id: 'P-154B', title: 'CHOICE 3: Where do you aim, knowing what she watches?', meta: 'You watched her eyes',
   text: `<p>You noticed where she looks before each throw, never AT the bounce point, always one bounce AHEAD. You can use that.</p>`,
   choices: [
     { label: 'Throw to where you saw she\'s going to look', target: 'leaf_154b1', sub: "Beat her to the next bounce. Show her you saw." },
@@ -198,7 +199,7 @@ p154b: {
 },
 
 p154c: {
-  id: 'P-154C', title: 'CHOICE 3, How do you sync your breath?', meta: 'You studied her timing',
+  id: 'P-154C', title: 'CHOICE 3: How do you sync your breath?', meta: 'You studied her timing',
   text: `<p>You noticed her breath. The way she exhales just before release. The way the throw rides on the exhale.</p>`,
   choices: [
     { label: 'Match her breath rhythm exactly', target: 'leaf_154c1', sub: "Become her tempo. Disappear into it." },
@@ -210,7 +211,7 @@ p154c: {
 // CHOICE 3 NODES, PATH C (INVENT)
 
 p155a: {
-  id: 'P-155A', title: 'CHOICE 3, How does the Mirror work?', meta: 'You proposed mirroring',
+  id: 'P-155A', title: 'CHOICE 3: How does the Mirror work?', meta: 'You proposed mirroring',
   text: `<p>Skim is quiet for ten full seconds. Then she says: "Throw."</p>
 <p>She picks her stone. You walk to the line together. She throws first, <em>three short, a curve right, a long, a stop.</em></p>
 <p>How exactly do you mirror?</p>`,
@@ -222,7 +223,7 @@ p155a: {
 },
 
 p155b: {
-  id: 'P-155B', title: 'CHOICE 3, How does the Echo work?', meta: 'You proposed an echo',
+  id: 'P-155B', title: 'CHOICE 3: How does the Echo work?', meta: 'You proposed an echo',
   text: `<p>Skim's head tilts again. "Echo. Like a song coming back off a cliff?"</p>
 <p>"Like that."</p>
 <p>How do you echo?</p>`,
@@ -234,7 +235,7 @@ p155b: {
 },
 
 p155c: {
-  id: 'P-155C', title: 'CHOICE 3, How do you answer her half-pattern?', meta: 'You proposed a dialogue',
+  id: 'P-155C', title: 'CHOICE 3: How do you answer her half-pattern?', meta: 'You proposed a dialogue',
   text: `<p>Skim's wings ruffle. "A QUESTION-AND-ANSWER. Like a, like a CONVERSATION made of stones."</p>
 <p>"Exactly. You throw half a pattern. I finish it. But different from how you'd expect."</p>
 <p>How do you answer her half-pattern?</p>`,

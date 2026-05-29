@@ -110,6 +110,8 @@ Madison feels something specific in her chest. Not surprise, she knew she could 
 
 She sits down on the bank. Her hair drips upward, just a little. She catches sight of herself in the pool's reflection, fifteen years old, breath steady, all three Sisters still beaming at her, and laughs out loud. The laugh of someone who brought a gift and discovered the gift was exactly the right one.
 
+Pip puts a small wet hand on Madison's knee. "And one more thing, before you go. You are Madison the Dancer, who shares her grace with audiences who deserve to see it. The pool will remember that name. You should too."
+
 Pip nods. "Go back to your cousins now. We will remember today for a very long time. You were exactly what we had been hoping for."
 
 Madison laughs. It's a real laugh. The kind she usually saves for inside her own head.
@@ -384,7 +386,7 @@ Pip seems to know. She lifts a hand. Three flat stones rise up out of the pool, 
 
 Madison steps onto the first one. It holds.
 
-She hasn't danced in a year. Maybe more. But her body remembers, the way an old book remembers how to fall open at the right page.
+She knows the count before her head does. She has danced this same sequence a hundred times this spring; her body falls into it the way an old book falls open at the right page.
 
 She steps to the second stone in one clean line, the way her old teacher used to drill it: head up, shoulders down, the foot finding the place before you trust it. She turns once on the second stone. She lands.
 
@@ -465,19 +467,3 @@ Madison heads back toward the sound of the C-130, faint and far, somewhere up in
 **→ Region complete. Route to next region per Strategy choice, or to P-400 (gather) if this is her last region.**
 
 ---
-
-## Editor notes
-
-**On the "cared-for moment" (P-111):** The previous editor flagged that Madison risks becoming "the useful one." P-111 fixes this. The Sisters take care of HER before she takes care of anyone else. It happens regardless of which path the reader picks. It is not earned. It is offered.
-
-**On the three paths:** Path A is the fast path, works for younger readers, gets you the basic Map, takes maybe 6 minutes to read aloud. Path B costs you time (Branch's tea takes forty minutes in-world) but yields the enhanced Map AND a witness ally. Path C is the deepest, costs you nothing tangible but requires the reader to NOTICE WREN, which is the kind of choice Madison would actually make and the kind of empathy the book wants to reward.
-
-**On the Canyon Singer easter egg:** Reveal is deliberately oblique. Madison doesn't know who the voice belongs to. The reader who knows the family lore (Madison & Kellen's mom singing across the lake one summer) gets the chill. The reader who doesn't gets a beautiful mystery. Both work.
-
-**On the chosen-family theme:** The Lake Sisters' "the lake itself is family to us, which means it's family to you" line lands in all three paths but with different weights. Path C makes it explicit (the song carries across worlds, the lake itself remembers the family). This is the seed of what Drystone will try to peel apart at the showdown.
-
-**On crossover hooks:** Path A has one Pegasus crossover ([CROSSOVER HOOK] tag). When we draft the other branches, similar small hooks should appear in each, Big Coulee's cheers echoing from a valley, colored winds from Keira's cliff, a frog herald passing through. Light touch only. One per region max.
-
-**On word count:** Total ~2,800 words across all passages. A reader who picks Path A reads about 1,500 of those words. A reader who picks Path C reads about 1,750. Path B reads about 1,700. None of the paths is dramatically longer than the others, the reader doesn't feel "punished" for picking the short path.
-
-**On the wrapper variants:** I've added [VARIANT: STAY-TOGETHER / SPLIT / SOLO] tags at the key beats. These are conditional inserts, short paragraphs that swap in based on the reader's Strategy choice. The skeleton stays the same. This is ho

@@ -1,6 +1,6 @@
 # The Framing Chapter, Sun Lakes Arrival to The Old Roar (v3)
 
-**Passages:** P-001 through P-012
+**Passages:** P-001 through P-005, then P-010 through P-012.
 **Read order:** Always sequential. P-012 is the first real branch.
 
 Target ~3,500 words total. This is Act 1, the family-at-peace, the threat, the portal, the arrival, the choice.

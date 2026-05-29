@@ -115,6 +115,8 @@ Kellen swallows.
 
 "Yes," he says. He means it this time.
 
+Skim hops back another step. Her voice goes formal. "You are Kellen the Whole, child. The kid who plays with both halves of himself at once. We do not see many of you. Carry that name."
+
 He picks the throwing stone. He is, for the first time in a year, all the way in his own body.
 
 ---
@@ -334,15 +336,3 @@ He paddles toward the sound of the C-130, faint and far, somewhere up in the wor
 **→ Region complete.**
 
 ---
-
-## Editor notes
-
-**On "the whole-self moment" (P-151):** Kellen's cared-for beat. Skim names what most adults miss: kids hide a half of themselves to avoid being teased. She tells him to play with ALL of him. *Eyes, hands, thinking, instinct. The whole kid.* This is also a direct fix for the previous editor's note, the book doesn't frame his intelligence as a "surprise reveal." It names it from the start as one of his two halves, and Skim's gift is permission to use both.
-
-**On Path C (Invented Pattern):** This is the deepest payoff. Kellen invents a new pattern in a game that hasn't had one in three hundred years. The birds *name it after him.* That's enormous for an 11-year-old kid who's been hiding his brain. The "why is it the seven? Who approved them?" question is a small, perfect kid-philosophy moment.
-
-**On crossovers:** Path A: Carson's mammoth on a distant ridge. Path B: Madison's Canyon Singer. Path C: Aiden's Pegasus passing overhead. Three different glimpses of the world being alive.
-
-**On the smallest bird:** The smallest one trips over its own feet repeatedly. It's a runner gag and also the warmth of the flock, they have a goofy little member they love. The kind of detail kids remember.
-
-**On word count:** Total ~2,600. Same tighter shape as Reid.

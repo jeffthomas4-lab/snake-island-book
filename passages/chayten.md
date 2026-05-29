@@ -112,7 +112,9 @@ Otto sits down on the stage beside her. Cross-legged otter style. He doesn't spe
 
 It lasts maybe ten seconds. It is the most important ten seconds Chayten has experienced in a year. Nobody at home knows how to do this with her. They love her so much they always reach for her to *do* something.
 
-Otto stands up. "*Excellent.* Now. Follow me."
+Otto stands slowly. "And one more thing, child. You are Chayten the Connector. The one who sits with people because they need someone to sit with them. That is rarer than the world tells you. Remember the name."
+
+"*Excellent.* Now. Follow me."
 
 ---
 
@@ -377,23 +379,3 @@ She always does.
 **→ Region complete. Route to next region per Strategy choice, or to P-400 (gather) if this is her last region.**
 
 ---
-
-## Editor notes
-
-**On "the be-a-kid moment" (P-121):** This is Chayten's parallel to Madison's float. The structural rule: every region has one passage where the focal kid gets to be a *person*, not a role, before the task begins. Otto sees Chayten holding herself like a chaperone and explicitly demotes her: "for one hour, you are an actor." This addresses the editor note that Chayten risks being "valued for what she does, not who she is."
-
-**On the play's content:** "The Tale of the Lost Brother" is a chosen-family story in Paths B and C. Otto's brother was not blood. They were brothers anyway. This is the same thematic seed Madison's Lake Sisters planted ("the lake is family"), Chayten's region waters it. By the time we get to the showdown, the chosen-family vs blood-family theme has been hit in two regions without ever being lectured about.
-
-**On Pickle (Path C):** Pickle is the deepest payoff. She is the small one Chayten *sees* before she sees her own opportunity. The Stones explicitly say "**SHE SAW THE SMALL ONE FIRST. THAT IS A REAL THING.**" That is the editor's note, "make sure one character explicitly values her presence, not her performance", delivered by the most ancient audience in the world. The capital letters are deliberate; the Stones are huge.
-
-**On the new ending Chayten writes (Path B):** Otto has played the play 712 times always landing on "*you came home.*" Chayten changes it to "*you were always with me.*" This is a real-life rewrite of grief. It also previews how the showdown will work, the kids don't BEAT the adults' problem. They reframe what's possible.
-
-**On crossovers:** Path A has a Madison crossover (the small otter hears a woman singing on water). Path C has an Aiden crossover (the moss-lights make a unicorn shape on the ceiling). Both are quiet enough to miss; the reader who's played other branches gets the gift.
-
-**On Pickle as an ally:** Pickle goes to the showdown if you took Path C. She perches on Chayten's shoulder. She does not speak. But when Drystone tries to dismiss the kids, Pickle hisses at him, and an adult in the crowd hears a sound they can't quite locate, and decides Drystone is suddenly less credible. Quiet but real.
-
-**On wrapper variants:** Same approach as Madison, short conditional inserts at key beats. Aiden being PRESENT or ABSENT in the wrapper matters more for Chayten than for any other region, because the play she ends up in is about a lost brother. The SOLO variant where Aiden is somewhere else hits harder.
-
-**On word count:** Total ~2,800 words. Path A reader: ~1,500. Path B: ~1,700. Path C: ~1,750. Same shape as Madison's region.
-
-**Open structural question:** I made Otto LEAVE The Old Roar to come to the showdown in Path B. This is a precedent, does any creature get to physically cross over with the kids, or is Pegasus the only one? If Otto can come, can Branch (Madison's ally)? Can Big Coulee? I think the answer is *only allies yo

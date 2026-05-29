@@ -80,12 +80,13 @@ p171: {
 <p>She looks at Ella. "I think <em>you</em> decide. That's why I knew you were a princess before you stepped off your boat."</p>
 <p>Ella notices that the smallest frog, the one who got handed the crown, is sitting alone on a moss tuft looking a little embarrassed. She slides off the throne, walks over, sits down beside him, and adjusts a tiny leaf that had blown crooked on his head. She doesn\'t say anything. She just sits with him until his shoulders unhunch. Then she comes back to the throne.</p>
 <p>Marigold has watched the whole thing without speaking. Her eyes are shiny.</p>
-<p>"The fox is coming," she says, quieter now. "Now you\'ll see."</p>`,
+<p>Marigold lowers her voice. "And, child, you are Ella the Deciding Face. The crown is just the proof. People listen because of the face, not because of the metal. Remember that name."</p>
+<p>"The fox is coming," she says, quieter still. "Now you'll see."</p>`,
   choices: [{ label: 'The fox arrives', target: 'p172' }],
 },
 
 p172: {
-  id: 'P-172', title: 'CHOICE 1, How do you face the fox?', meta: 'First decision',
+  id: 'P-172', title: 'CHOICE 1: How do you face the fox?', meta: 'First decision',
   text: `<p>The double-doors of the court (which are really two large lily pads on hinges) slam open. A fox-creature strides in, much bigger than the frogs, carrying a scroll. He looks confident.</p>
 <p>Behind him, hiding under a fern, is a tiny round soft water-creature with a clutch of small eggs huddled at her feet. The egg-mother. She is shaking.</p>
 <p>Marigold whispers: "Oh no."</p>`,
@@ -99,7 +100,7 @@ p172: {
 // CHOICE 2 NODES
 
 p173: {
-  id: 'P-173', title: 'CHOICE 2A, What kind of advice?', meta: 'You chose to advise',
+  id: 'P-173', title: 'CHOICE 2A: What kind of advice?', meta: 'You chose to advise',
   text: `<p>Ella sits beside Marigold. The fox starts unrolling his scroll, reading territorial claims in a smooth confident voice. Marigold's hands are shaking.</p>
 <p>You lean in. What do you give her?</p>`,
   choices: [
@@ -110,7 +111,7 @@ p173: {
 },
 
 p174: {
-  id: 'P-174', title: 'CHOICE 2B, How do you stand?', meta: 'You stepped between',
+  id: 'P-174', title: 'CHOICE 2B: How do you stand?', meta: 'You stepped between',
   text: `<p>You walk down the throne steps and step between the fox and the fern.</p>
 <p>You are ten. You are four feet tall. The fox is twice your size. The water in the moss circle goes flat, not still, <em>flat</em>, like a lid pressed onto it. The frogs stop arguing and turn to face you. The egg-mother takes the smallest deep breath she has taken in days.</p>
 <p>The fox blinks. He starts to laugh. The laugh stops in his throat. How do you stand?</p>`,
@@ -122,7 +123,7 @@ p174: {
 },
 
 p175: {
-  id: 'P-175', title: 'CHOICE 2C, How do you co-rule?', meta: 'You proposed co-rule',
+  id: 'P-175', title: 'CHOICE 2C: How do you co-rule?', meta: 'You proposed co-rule',
   text: `<p>"You don't have to do this alone."</p>
 <p>Marigold looks at you sideways. Her crown slides further over her eye. "...Can you DO that?"</p>
 <p>"Why not. It's your court. You make the rule."</p>
@@ -139,7 +140,7 @@ p175: {
 // CHOICE 3 NODES, PATH A (ADVICE)
 
 p173a: {
-  id: 'P-173A', title: 'CHOICE 3, Which strategic counter?', meta: 'You feed her words',
+  id: 'P-173A', title: 'CHOICE 3: Which strategic counter?', meta: 'You feed her words',
   text: `<p>Marigold leans toward you. The fox is mid-claim. What do you tell her to say?</p>`,
   choices: [
     { label: 'Quote a precedent, make one up if you have to', target: 'leaf_173a1', sub: "Confidence trumps research. He won't check." },
@@ -149,7 +150,7 @@ p173a: {
 },
 
 p173b: {
-  id: 'P-173B', title: 'CHOICE 3, Which part of her voice?', meta: 'You coach her tone',
+  id: 'P-173B', title: 'CHOICE 3: Which part of her voice?', meta: 'You coach her tone',
   text: `<p>You whisper, "Marigold. It's not the words. It's the WAY you say them. Watch me."</p>`,
   choices: [
     { label: 'Teach her to SLOW DOWN', target: 'leaf_173b1', sub: "Queens are never rushed. Stretch each word." },
@@ -159,7 +160,7 @@ p173b: {
 },
 
 p173c: {
-  id: 'P-173C', title: 'CHOICE 3, How do you reveal the forgery?', meta: 'You spotted the fake',
+  id: 'P-173C', title: 'CHOICE 3: How do you reveal the forgery?', meta: 'You spotted the fake',
   text: `<p>You see it. The ink at the bottom of his scroll sits ON TOP of the seal instead of UNDER it. He signed AFTER the seal was already pressed. Your six-year-old cousin forges permission slips the same way.</p>
 <p>How do you let Marigold deliver it?</p>`,
   choices: [
@@ -172,7 +173,7 @@ p173c: {
 // CHOICE 3 NODES, PATH B (STEP BETWEEN)
 
 p174a: {
-  id: 'P-174A', title: 'CHOICE 3, How long do you not move?', meta: 'You hold the silence',
+  id: 'P-174A', title: 'CHOICE 3: How long do you not move?', meta: 'You hold the silence',
   text: `<p>You don't speak. You don't move. The fox tries to wait you out. The court holds its breath. What\'s the last thing you do?</p>`,
   choices: [
     { label: 'Look at him without blinking', target: 'leaf_174a1', sub: "Pure stillness. Two minutes. Three." },
@@ -182,7 +183,7 @@ p174a: {
 },
 
 p174b: {
-  id: 'P-174B', title: 'CHOICE 3, How do you name it?', meta: 'You speak plain',
+  id: 'P-174B', title: 'CHOICE 3: How do you name it?', meta: 'You speak plain',
   text: `<p>You say what he is. The court goes silent. What words exactly?</p>`,
   choices: [
     { label: '"You came here to take her home."', target: 'leaf_174b1', sub: "Direct sentence. No room for him to slide." },
@@ -192,7 +193,7 @@ p174b: {
 },
 
 p174c: {
-  id: 'P-174C', title: 'CHOICE 3, What\'s wrong with the scroll?', meta: 'You examine the evidence',
+  id: 'P-174C', title: 'CHOICE 3: What\'s wrong with the scroll?', meta: 'You examine the evidence',
   text: `<p>"Show me where it's signed."</p>
 <p>He shows you. The signature is florid and large. You look closely. What do you find?</p>`,
   choices: [
@@ -205,7 +206,7 @@ p174c: {
 // CHOICE 3 NODES, PATH C (CO-RULE)
 
 p175a: {
-  id: 'P-175A', title: 'CHOICE 3, How do you tag-team?', meta: 'Side-by-side on the throne',
+  id: 'P-175A', title: 'CHOICE 3: How do you tag-team?', meta: 'Side-by-side on the throne',
   text: `<p>You squeeze onto the throne next to Marigold. The fox tries to interrupt. You both turn toward him at once. He stops talking. How do you split the work?</p>`,
   choices: [
     { label: 'Marigold knows the law. You know the lying.', target: 'leaf_175a1', sub: "She quotes precedent. You spot the forgery." },
@@ -215,7 +216,7 @@ p175a: {
 },
 
 p175b: {
-  id: 'P-175B', title: 'CHOICE 3, How do you stand together?', meta: 'Both step down',
+  id: 'P-175B', title: 'CHOICE 3: How do you stand together?', meta: 'Both step down',
   text: `<p>You both step down from the throne. You face the fox at his level. The frogs are stunned. The fox is, briefly, even more confident, until he isn\'t.</p>`,
   choices: [
     { label: 'Stand shoulder-to-shoulder. Two faces, one front.', target: 'leaf_175b1', sub: "He can\'t pick one of you to bully." },
@@ -225,7 +226,7 @@ p175b: {
 },
 
 p175c: {
-  id: 'P-175C', title: 'CHOICE 3, How does the egg-mother\'s voice enter?', meta: 'Invite the trembling one',
+  id: 'P-175C', title: 'CHOICE 3: How does the egg-mother\'s voice enter?', meta: 'Invite the trembling one',
   text: `<p>You walk to the fern. You crouch. You hold out your hand to the egg-mother. "Will you sit between us?"</p>
 <p>The egg-mother trembles. Then she comes. She climbs onto the throne, eggs cradled in a fold of her skin. The fox is now facing THREE queens. He didn\'t plan for this.</p>`,
   choices: [

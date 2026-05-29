@@ -103,6 +103,8 @@ She is ten years old. People have been telling her she's *good for an artist* or
 
 "Good," the cliff says. "Now. Please paint me awake. I have been BORED for two hundred of the last five hundred years and I would like to see the sky again."
 
+"And one more thing, child," Cliffy says, his enormous bark face turned toward her. "You are Keira Both-at-Once. Artist AND climber. The cliff will remember that you refused to pick. So should you."
+
 He yawns purple.
 
 Keira opens her paint jars.
@@ -344,17 +346,3 @@ She paddles toward the sound of the C-130, faint and far, somewhere up in the wo
 **→ Region complete.**
 
 ---
-
-## Editor notes
-
-**On "the both-at-once moment" (P-161):** Keira's cared-for beat. Cliffy notices that she has both an artist's eye AND a climber's body and tells her *don't ever pick.* This is the editor's-note fix, Keira is celebrated for being all of herself simultaneously, not for one half over the other.
-
-**On the MASSIVE visual moment (P-165):** This is the big payoff the previous editor demanded. Path C: when Cliffy opens his eyes, the entire canyon lights up in color. Miles of basalt cliffs wake up at once. Color floods. *You woke up the WHOLE CANYON.* This is exactly the spectacle Keira needed. It is also a perfect commercial-illustration moment if/when this gets art, full color, two-page spread, the canyon transformed.
-
-**On Cliffy crossing (Path C):** Per the locked crossover rule, Cliffy is huge. He walks slowly toward the lake-above. At the showdown he is *visible to the kids and to Drystone only*, every other adult sees nothing. Drystone looking up at an enormous basalt giant standing where there shouldn't be one and being unable to mention it is one of the strongest possible Drystone-breakdown beats.
-
-**On crossovers:** Path A: Reid's tree-being walking (the mouse notes it). Path B: Madison's Canyon Singer (Cliffy admits he heard her in his sleep). Path C: Aiden's Pegasus (on a freshly-colored ridge). Each crossover is given a slightly different texture.
-
-**On the mouse with spectacles:** Inherited from v2 draft. Small, dignified, biographer of Cliffy. Adds quiet humor without intruding.
-
-**On word count:** Total

@@ -83,7 +83,7 @@ Aiden sits in the grass.
 
 Pegasus folds her legs under her and lies down across from him. Her horn glows faintly.
 
-"You are EXACTLY RIGHT," she says.
+"You are Aiden the Exactly-Right," she says. "EXACTLY RIGHT.
 
 Aiden says, "For what?"
 
@@ -386,19 +386,3 @@ Aiden says, "Yeah."
 **→ Region complete.**
 
 ---
-
-## Editor notes
-
-**On preserving the best v2 lines:** Kept verbatim: "I picked it MYSELF," "LOOK AT THIS!", "I have been waiting for a rider for two hundred years," "We'll all be unicorns. We just won't have horns. We'll just be... unicorns INSIDE." Those lines exist nowhere else and shouldn't be touched.
-
-**On Pegasus always crossing:** Locked. Per the crossover rule, Pegasus is the one ally who *always* comes back with the kid. Aiden's branch is the engine of the whole book. Even on Path A (the easy path) Pegasus still comes home. This is non-negotiable.
-
-**On "the exactly-right moment" (P-181):** Aiden's cared-for beat. Pegasus tells him, directly, before the quest starts, *you are not too small. You are not too young. I picked you. The world is going to tell you you're too little for the rest of your life. The world is going to be wrong.* This is the most important thing the book says to its youngest reader. Worth being explicit.
-
-**On Path C (Canyon Singer confirmation):** This is the deepest payoff for the whole book's easter egg. Aunt Stream confirms what Madison's Path C suggested: *the lake has been carrying that voice across the worlds. Your mother is shyer than she pretends.* This is the most explicit the book ever gets about the Canyon Singer. It STILL doesn't name names. But the kid reading it will land on the answer, and any adult reader who knows the family lore gets the full reveal here.
-
-**On the otter family connection (Path C):** Aunt Stream is Otto's cousin. The Driftwood Players are family. The otter network across The Old Roar is real and connected, which echoes the chosen-family theme one more time before the showdown. This also sets up Aiden being proud of Chayten, a small reciprocal beat to Chayten being proud of him in her region.
-
-**On crossovers:** Path A: Reid's tree-being walking (bells ring a deep chord). Path B: Kellen's stones skipping across the sky (a small cool image). Path C: Keira's color canyon (visible above the river). Same rotation.
-
-**On word count:** Total ~2,600.

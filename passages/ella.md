@@ -107,6 +107,8 @@ She looks at Ella.
 
 Ella sits up straighter.
 
+Marigold lowers her voice. "And, child, you are Ella the Deciding Face. The crown is just the proof. People listen because of the face, not because of the metal. Remember that name."
+
 "The fox is coming. Now you'll see."
 
 ---
@@ -320,19 +322,3 @@ She paddles toward the sound of the C-130, faint and far, somewhere up in the wo
 **→ Region complete.**
 
 ---
-
-## Editor notes
-
-**On "the not-the-dress moment" (P-171):** Ella's cared-for beat. Marigold tells her straight: *I knew you were a princess before you stepped off. It wasn't the dress. It was your face. Royalty is a face that decides.* This is the editor's-note fix, Ella is respected for her courage, not for the trappings. The princess aesthetics are not erased; they're contextualized.
-
-**On the deciding-face theme:** Marigold's phrase "the deciding kind" becomes the through-line for Ella at the showdown. When she stands in front of Drystone, what stops him isn't the crown. It's the face. The crown is just so other people know.
-
-**On Path B (fox confrontation):** This is the punch path. Ella catches the forged signature with the *six-year-old cousin who forges permission slips* line, a real-life kid moment, very specific, very age-appropriate. The fox doesn't lose because Ella out-magics him. He loses because she sees what he did and names it.
-
-**On Path C (co-rule):** The thematic punch. Ella's solution to court chaos isn't to take the throne. It's to *share* it. This is the chosen-family theme again, *we rule together, we are stronger because we are not alone.* Marigold trades crowns with her, which is small and warm and exactly the kind of girl-friendship beat that lands for a 9-year-old reader.
-
-**On allies:** Path B yields the egg-mother chorus (visible only to kids and Drystone per locked rule, but their humming is audible to everyone). Path C yields a formal Bright Water Alliance, the herald delivers an actual proclamation at the showdown that declares Hotel Sun Lakes Protected Territory. Drystone can't legally argue with a frog-court alliance but he also can't admit it exists.
-
-**On crossovers:** Path A: Carson's mammoth baby (Tuft/Tumble argument, a tiny scene-stealer). Path B: Madison's Canyon Singer. Path C: Aiden's Pegasus. Same crossover-rotation pattern.
-
-**On word count:**
