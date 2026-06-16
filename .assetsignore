@@ -15,3 +15,25 @@ package.json
 package-lock.json
 archive
 archive/**
+
+# build tooling and large source files (never web assets; docx/pdf exceed Cloudflare's 25MB/file limit)
+*.py
+*.docx
+*.pdf
+
+# scratch renders from the PDF review pass
+page-*.jpg
+pdf_review_*.jpg
+_manuscript_build
+_manuscript_build/**
+images_small
+images_small/**
+unpacked_manuscript
+unpacked_manuscript/**
+images/ChatGPT Image*
+
+# superseded pre-launch HTML. index.html is now the single faithful book; bingo_card.html stays.
+reading_copy.html
+prototype.html
+signature_pages.html
+*_demo.html

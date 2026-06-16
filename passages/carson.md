@@ -1,33 +1,6 @@
-# Carson's Region, The Coulee Games
+## Passage 130 — Arrival on the Coulee Plains
 
-**Region ID:** R-CARSON
-**Passages:** P-130 through P-136
-**Focal kid:** Carson (15)
-**Item earned:** The Tusk-Charm (base / enhanced / full)
-**Possible allies:** Big Coulee, Tuft, Tumble
-**Possible flags:** GoodCompetition, ChampionAndFriend
-
----
-
-## Structure overview
-
-```
-P-130  Entry: arrival on the Coulee Plains       (always read, slight variant per wrapper)
-P-131  The go-hard moment                        (always read, Carson's parallel to Madison's float)
-P-132  Carson's choice                           (the real branch)
-       ├─ A. Just race straight                  → P-133 → Charm (base)
-       ├─ B. Race AND gather the babies          → P-134 → Charm (enhanced) + Big Coulee ally
-       └─ C. Help her settle the babies first    → P-135 → Charm (full) + Big Coulee + Tuft + Tumble allies + ChampionAndFriend flag
-P-136  Exit: Big Coulee walks him to his raft    (always read, variant per path)
-```
-
-Target ~2,800 words.
-
----
-
-## P-130, ARRIVAL ON THE COULEE PLAINS
-
-*~350 words. Slight variant per wrapper.*
+![](images/big_coulee.png)
 
 Carson's raft slides to a stop on a wide grass plain that goes farther than his eyes can follow. The raft has become a sturdy wooden boat on tiny wheels. He hops out. The grass is the bright kind, the kind that only grows when there's been a lot of rain.
 
@@ -47,11 +20,7 @@ She sees Carson. She skids to a stop in a way that produces a small dust cloud.
 
 "CHILD," she says. "Are you here for the GAMES?"
 
-[VARIANT: STAY-TOGETHER. *The other seven kids are tumbling out of their rafts behind him. Aiden gasps and grabs Chayten's hand. Reid says, quietly, "Mammoth." He sounds delighted. Carson notices Aiden, automatically scans for safe ground, automatically positions himself between Aiden and the giant creature. It is automatic. He does it without thinking. It is what he always does.*]
-
-[VARIANT: SPLIT. *Three other kids land beside him. Kellen is already counting the baby mammoths. Keira is reaching for her sketchbook. Madison is watching Big Coulee with her oldest-kid eyes.*]
-
-[VARIANT: SOLO. *He's alone. No Aiden to keep an eye on. No cousins to organize. Just him and a wooly mammoth in a flower crown. It is the strangest, most peaceful feeling he's had in months.*]
+He's alone. No Aiden to keep an eye on. No cousins to organize. Just him and a wooly mammoth in a flower crown. It is the strangest, most peaceful feeling he's had in months.
 
 Carson opens his mouth to ask what the games are.
 
@@ -61,11 +30,13 @@ She doesn't stop for breath.
 
 She is, he realizes, the loudest creature he has ever met. He likes her immediately.
 
+> **Turn to Passage 131.**
+
 ---
 
-## P-131, THE GO-HARD MOMENT
+## Passage 131 — The Go-hard Moment
 
-*~300 words. Always read.*
+![](images/carson_region.png)
 
 Big Coulee explains. The Long Race is in thirty minutes. She has been training for six moons. Her babies keep wandering off. She is NERVOUS. She needs a worthy opponent.
 
@@ -91,36 +62,31 @@ Carson does, in fact, know what that's like.
 
 "Today you race like you mean it. Like a champion. Not like an older cousin. Race ME. You can be polite tomorrow."
 
-Carson grins. He has not been told to stop softening in a long time. He didn't know he was doing it.
-
 "Okay."
 
-Big Coulee lowers her enormous head, eye level with Carson. "You are Carson the Trustworthy, child. People follow the loud ones because they have to. They follow you because they already wanted to. Remember that name."
+Big Coulee lowers her enormous head, eye level with Carson. Her voice drops, the only quiet sentence she has said all day. *"You don't have to soften today, child. People follow the loud ones because they have to. They follow you because they already wanted to. Run like you mean it."*
 
 She straightens up. "*EXCELLENT.* Then we have a RACE. Choose your path."
 
+> **Turn to Passage 132.**
+
 ---
 
-## P-132, CARSON'S CHOICE
-
-*~150 words. The real branch.*
+## Passage 132 — Carson's Choice
 
 Big Coulee paws the ground.
 
 "How do you want to race?" she asks. "I am open to RULES, child. I love a rule. Make ONE."
 
-> **If you say "just race, straight to the finish line, fastest one wins," turn to P-133.** *(Honest competition. She might destroy you. Worth it.)*
+> **If you say "just race, straight to the finish line, fastest one wins," turn to passage 133.**
 >
-> **If you say "race AND we gather your babies along the way, most babies at the end wins," turn to P-134.** *(Smart competitive. You might actually win this one.)*
+> **If you say "race AND we gather your babies along the way, most babies at the end wins," turn to passage 134.**
 >
-> **If you stop and look at Tuft and Tumble, who are anxious and bumping into each other, and say "race in twenty. Let's settle them first," turn to P-135.** *(You give up your race-prep time. There's something here worth more than a head start.)*
+> **If you stop and look at Tuft and Tumble, who are anxious and bumping into each other, and say "race in twenty. Let's settle them first," turn to passage 135.**
 
 ---
 
-## P-133, PATH A: RACE STRAIGHT (BASE)
-
-*~600 words. Yields Charm (base). No physical ally.*
-
+## Passage 133 — Race Straight
 Carson grins. "Just race. Straight to the finish line. Fastest wins."
 
 Big Coulee's eyes light up. She rears back onto her hind legs (a thing that should not be physically possible for a wooly mammoth and yet) and trumpets so loud the grass flattens for ten feet around her.
@@ -159,7 +125,7 @@ Pip-Pip presents the prize from her clipboard: a small, smooth piece of polished
 
 Carson loops the cord around his neck. The charm is warm against his collarbone.
 
-[CROSSOVER HOOK: *If the reader has played Madison's branch, a small spotted otter comes up to the finish line carrying a cookie. "From the cookie-bringer," she says, and waddles off before Carson can ask who that is.*]
+*If the reader has played Madison's branch, a small spotted otter comes up to the finish line carrying a cookie. "From the cookie-bringer," she says, and waddles off before Carson can ask who that is.*
 
 She walks him back to his boat-on-wheels. Tuft and Tumble follow her, occasionally falling over and getting back up.
 
@@ -167,16 +133,13 @@ She walks him back to his boat-on-wheels. Tuft and Tumble follow her, occasional
 
 Carson says, "Deal."
 
-**→ Exit to P-136.**
 
-[STATE SET: items_earned += Charm (base).]
+> *This is Carson's SILVER ending.*
+> **Turn to Passage 136.**
 
 ---
 
-## P-134, PATH B: RACE AND GATHER (ENHANCED)
-
-*~700 words. Yields Charm (enhanced) + Big Coulee ally.*
-
+## Passage 134 — Race and Gather
 Carson looks at Tuft and Tumble, who are currently chewing on each other's ears.
 
 "Race AND we gather babies along the way," he says. "Whoever gets back to the finish line with the most babies wins."
@@ -237,16 +200,13 @@ She bumps her forehead against his, gently. The flower crown drops over his head
 
 Carson laughs. He puts the flower crown back on her head.
 
-**→ Exit to P-136.**
 
-[STATE SET: items_earned += Charm (enhanced). allies += BigCoulee. flags += GoodCompetition.]
+> *This is Carson's CROWN ending.*
+> **Turn to Passage 136.**
 
 ---
 
-## P-135, PATH C: SETTLE THE BABIES FIRST (HIDDEN)
-
-*~700 words. Yields Charm (full) + BigCoulee, Tuft, Tumble as allies + ChampionAndFriend flag.*
-
+## Passage 135 — Settle the Babies First
 Carson is about to say something competitive.
 
 Then he looks at Tuft and Tumble.
@@ -301,31 +261,26 @@ Big Coulee lowers herself. She presses her enormous forehead against his. Then s
 
 "This is yours. But also." She nudges Tuft and Tumble forward. "*These* are yours when you need them. Whatever comes, whoever you need to face, *we* will be there. The whole family. You looked out for mine. I will look out for yours. That is how it works."
 
+She lowers her enormous head once more, eye level with him. "Now I know your name, child. *Carson the Trustworthy.* Not because somebody decided. Because you earned it in front of me, with my own babies. People will follow you because they already wanted to. Remember that."
+
 Carson can't quite speak.
 
 Tuft puts her trunk on his shoulder. Tumble headbutts his hip gently.
 
-[CROSSOVER HOOK: *If the reader has played Aiden's branch, a small bright shape passes overhead, a unicorn, faintly visible, with a small boy on her back. Big Coulee looks up. "Oh," she says, delighted. "He found his rider."*]
+*If the reader has played Aiden's branch, a small bright shape passes overhead, a unicorn, faintly visible, with a small boy on her back. Big Coulee looks up. "Oh," she says, delighted. "He found his rider."*
 
 Big Coulee walks him back to his boat. Tuft and Tumble walk beside him, one on each side.
 
-**→ Exit to P-136.**
 
-[STATE SET: items_earned += Charm (full). allies += BigCoulee. allies += Tuft. allies += Tumble. flags += GoodCompetition. flags += ChampionAndFriend.]
+> *This is Carson's CROWN ending.*
+> **Turn to Passage 136.**
 
 ---
 
-## P-136, EXIT: BIG COULEE WALKS HIM TO HIS RAFT
-
-*~250 words. Always read. Slight variant per path.*
+## Passage 136 — Exit: Big Coulee Walks Him to His Raft
 
 The boat-on-wheels is waiting where he left it. The grass is bent where it sat.
 
-[VARIANT: PATH A. *Big Coulee bows her head. "Worthy opponent," she says. "Come back next year. I'll go easier on you. Maybe." She is lying about going easier. They both know.*]
-
-[VARIANT: PATH B. *Big Coulee bumps her forehead against his one more time. The flower crown briefly migrates back onto Carson's head. He puts it back on hers. "Champion AND friend," she says. "Most grown-ups forget you can be both. Don't you forget it."*]
-
-[VARIANT: PATH C. *Big Coulee kneels. Tuft and Tumble climb onto her back. Then they climb back off and stand next to Carson like small fuzzy bodyguards. "We're coming," Big Coulee says simply. "You looked out for mine. We look out for yours."*]
 
 Before he climbs back onto the boat-on-wheels, Big Coulee stops him.
 
@@ -345,10 +300,19 @@ Carson nods. He doesn't say anything. He doesn't quite know what to say. But he 
 
 Carson climbs into the boat. He waves. Big Coulee waves back with her trunk and trumpets a goodbye so loud Pip-Pip falls off her head.
 
-He has the Tusk-Charm in his hand (whatever version he earned). He has a feeling in his chest that he can pretty clearly identify as the kind of feeling he wants to keep.
+He has the Tusk-Charm in his hand. He has a feeling in his chest that he can pretty clearly identify as the kind of feeling he wants to keep.
 
 He heads back toward the meadow, toward whoever is waiting, toward the sound of the C-130 somewhere up in the world above.
 
-**→ Region complete.**
+> **Carson's chapter ends here.** Pick another cousin to follow next, or, if you've read them all, turn to Passage 400 (the gather).
+>
+> Madison at the Quiet Pool — turn to Passage 110.
+> Reid at Old Speak's Wood — turn to Passage 140.
+> Chayten at the Driftwood Stage — turn to Passage 120.
+> Kellen at Skip-Stone Lake — turn to Passage 150.
+> Kiera at the Painted Cliff — turn to Passage 160.
+> Ella at the Bright Water Court — turn to Passage 170.
+> Aiden at the Unicorn Meadow — turn to Passage 180.
+> Ready to bring everyone home — turn to Passage 400.
 
 ---

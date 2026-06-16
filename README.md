@@ -40,14 +40,16 @@ Three ways:
 
 ## The eight kids
 
-- **Madison (15)** — strategist, the oldest, brings the cookies
-- **Carson (15)** — competitor, the rally point, big heart
-- **Chayten (13)** — connector, performer, fierce sister
-- **Reid (14)** — gentle giant, craftsman, the calm center
-- **Kellen (12)** — athlete and thinker, played whole
-- **Keira (10)** — artist, climber, sees what others miss
-- **Ella (10)** — courage in a small package, deciding face
-- **Aiden (7)** — wonder, kindness, just learned to swim
+Four sibling pairs, all cousins to each other. Reid & Ella are siblings; Carson & Kiera are siblings and blood cousins to Reid & Ella. Madison & Kellen are siblings (chosen family); Chayten & Aiden are siblings (chosen family). Nobody's family owns the cove. They all rent every July.
+
+- **Madison** — strategist, the oldest, brings the cookies, a dancer with real strength
+- **Carson** — competitor, the rally point, big heart under the contest
+- **Chayten** — connector, performer, fierce sister, sure on her feet
+- **Reid** — craftsman, the calm center, strong in heart and will, knows when to speak
+- **Kellen** — athlete and thinker, played whole, lets you see he loves it
+- **Kiera** — artist, climber, strong shoulders, sees what others miss
+- **Ella** — courage in a small package, the deciding face, fastest of the little ones
+- **Aiden** — wonder, kindness, just learned to swim, the youngest
 
 ## The story
 

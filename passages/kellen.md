@@ -1,33 +1,6 @@
-# Kellen's Region, Skip-Stone Lake
+## Passage 150 — Arrival at Skip-stone Lake
 
-**Region ID:** R-KELLEN
-**Passages:** P-150 through P-156
-**Focal kid:** Kellen (12)
-**Item earned:** The True-Skipping Stone (base / enhanced / full)
-**Possible allies:** Skim, the Skip-Stone flock
-**Possible flags:** WholeKidPlay, PatternInvented
-
----
-
-## Structure overview
-
-```
-P-150  Entry: arrival at Skip-Stone Lake
-P-151  The whole-self moment                  (Kellen's cared-for beat)
-P-152  Kellen's choice
-       ├─ A. Play the seven approved patterns → P-153 → Stone (base)
-       ├─ B. Study the birds before playing   → P-154 → Stone (enhanced) + Skim ally
-       └─ C. Invent a new pattern             → P-155 → Stone (full) + Skim + flock allies + PatternInvented flag
-P-156  Exit
-```
-
-Target ~2,600 words.
-
----
-
-## P-150, ARRIVAL AT SKIP-STONE LAKE
-
-*~350 words. Slight variant per wrapper.*
+![](images/kellen_region.png)
 
 Kellen's raft slides up to the edge of a long flat lake. His raft is now a sleek racing canoe with carbon-black sides. He steps onto the shore and a stone skims past his ear.
 
@@ -41,11 +14,7 @@ The biggest one, tall as Kellen's knee, with white markings around her eyes, not
 
 "Kid," she says. "This is a CHAMPIONSHIP game. You can watch from over there." She points with one wing at a flat rock thirty feet away.
 
-[VARIANT: STAY-TOGETHER. *The other seven kids are scattered along the bank. Carson is already picking up stones, weighing them. Reid is studying the layout of the water, the way the wind crosses it, where the surface chops, where it stays glassy. Madison is watching the birds the way she watches a chess opening. Aiden is talking quietly to a small frog he found.*]
-
-[VARIANT: SPLIT. *Three other kids are with him. Aiden is one, he tried to hand Kellen a special skipping stone he had in his pocket, and Kellen accepted it solemnly. Carson is the second; he is already eyeing the birds like an opposing baseball team. Keira is the third; she has her sketchbook open and is drawing the formation the flock has settled into.*]
-
-[VARIANT: SOLO. *Just him. He likes it. He always plays better when there's nobody watching him pretend not to think. The lake is enormous. The wind is good. The birds don't know him yet. He can be all of himself before anyone has decided who he is.*]
+Just him. He likes it. He always plays better when there's nobody watching him pretend not to think. The lake is enormous. The wind is good. The birds don't know him yet. He can be all of himself before anyone has decided who he is.
 
 Kellen says, "I'd like to play."
 
@@ -71,11 +40,11 @@ Kellen nods.
 
 He doesn't say *I'll take that bet* again. He doesn't need to.
 
+> **Turn to Passage 151.**
+
 ---
 
-## P-151, THE WHOLE-SELF MOMENT
-
-*~280 words. Always read.*
+## Passage 151 — The Whole-self Moment
 
 Skim hops over (it is more of a hop, with her wings folded behind her like a tiny field general). She holds two stones in her beak.
 
@@ -103,13 +72,11 @@ She tilts her head at him. "You're both. I saw your hand on that stone. I saw yo
 
 Kellen is quiet for a longer time than he expected to be.
 
-Because here's the thing he hasn't told anyone, not Madison, not his mom, not even himself most days: he has been afraid. Not big afraid. Small afraid. The kind of afraid where you laugh first so nobody can laugh at you. The kind of afraid where you make sure your arm goes faster than your brain so nobody asks what you're thinking. He has been doing this since fourth grade and he has gotten good at it.
-
 Skim is the first creature in a year who has looked at him and seen *both* halves and decided the both was the good part.
 
-He says, quietly: "I get scared people will tease me."
+He says, quietly: "I haven't wanted to give them the chance."
 
-Skim nods, like she expected this. "I know. Most kids who hide a half are. That's why I told you first. So you don't have to hide here."
+Skim nods, like she expected this. "I know. Most kids who hide a half haven't. That's why I told you first. So you don't have to hide here."
 
 Kellen swallows.
 
@@ -119,28 +86,25 @@ Skim hops back another step. Her voice goes formal. "You are Kellen the Whole, c
 
 He picks the throwing stone. He is, for the first time in a year, all the way in his own body.
 
+> **Turn to Passage 152.**
+
 ---
 
-## P-152, KELLEN'S CHOICE
-
-*~150 words. The real branch.*
+## Passage 152 — Kellen's Choice
 
 Skim raises a tiny wing-flag.
 
 "Kid. How do you want to begin?"
 
-> **If you say "the first approved pattern. Show me," and start working through the seven, turn to P-153.** *(Honest play. Beat them at their own game.)*
+> **If you say "the first approved pattern. Show me," and start working through the seven, turn to passage 153.**
 >
-> **If you say "Skim, you go first, let me watch how YOU do it," turn to P-154.** *(Patient. Strategic. You'll learn the patterns by watching, then play them better.)*
+> **If you say "Skim, you go first, let me watch how YOU do it," turn to passage 154.**
 >
-> **If you say "what happens if I invent a new pattern?" turn to P-155.** *(Risky. The birds might laugh. They also might not.)*
+> **If you say "what happens if I invent a new pattern?" turn to passage 155.**
 
 ---
 
-## P-153, PATH A: PLAY THE SEVEN PATTERNS (BASE)
-
-*~500 words. Yields Stone (base).*
-
+## Passage 153 — Play the Seven Patterns
 Kellen says, "First approved pattern. Show me."
 
 Skim calls it. *Three short, two long, one stop.*
@@ -171,20 +135,17 @@ Kellen says, "I'll try not to forget."
 
 Skim nods once.
 
-[CROSSOVER HOOK: *If the reader has played Carson's branch, a baby mammoth thunders past on a distant ridge, briefly visible. Skim follows it with her eyes. "That one runs because she loves it," she says. "Same as you throw because you love it. Different shape, same thing."*]
+*If the reader has played Carson's branch, a baby mammoth thunders past on a distant ridge, briefly visible. Skim follows it with her eyes. "That one runs because she loves it," she says. "Same as you throw because you love it. Different shape, same thing."*
 
 Kellen walks back to his raft. The birds part for him without him asking.
 
-**→ Exit to P-156.**
 
-[STATE SET: items_earned += Stone (base). flags += WholeKidPlay.]
+> *This is Kellen's SILVER ending.*
+> **Turn to Passage 156.**
 
 ---
 
-## P-154, PATH B: ASK SKIM TO GO FIRST (ENHANCED)
-
-*~600 words. Yields Stone (enhanced) + Skim ally.*
-
+## Passage 154 — Ask Skim to Go First
 Kellen says, "Skim. You go first. Let me watch."
 
 Skim's head tilts. The other birds make small surprised sounds. Skim has been the lead thrower for forty years and nobody has *ever* asked her to demonstrate first. They have all wanted to prove themselves immediately.
@@ -229,20 +190,17 @@ Kellen says, "I want you."
 
 Skim's flock erupts in tiny dignified bird-cheering. They are all secretly delighted to be invited somewhere.
 
-[CROSSOVER HOOK: *Far off, a long deep hum rolls across the lake. Skim's wings twitch. "Standing Stones. They're applauding something. Hasn't happened in a hundred years." She does not explain.*]
+*Far off, a long deep hum rolls across the lake. Skim's wings twitch. "Standing Stones. They're applauding something. Hasn't happened in a hundred years." She does not explain.*
 
 Skim flies a small loop above Kellen's head as he walks to his raft. The other birds line the bank like an honor guard. The smallest one trips over its own feet and laughs.
 
-**→ Exit to P-156.**
 
-[STATE SET: items_earned += Stone (enhanced). allies += Skim. flags += WholeKidPlay.]
+> *This is Kellen's CROWN ending.*
+> **Turn to Passage 156.**
 
 ---
 
-## P-155, PATH C: INVENT A NEW PATTERN (HIDDEN)
-
-*~600 words. Yields Stone (full) + Skim + flock allies + PatternInvented flag.*
-
+## Passage 155 — Invent a New Pattern
 Kellen says, "What happens if I invent a new pattern?"
 
 The birds laugh, automatic, dismissive. Skim does not laugh.
@@ -299,29 +257,22 @@ Skim hops to the pile of slate. She returns with the True-Skipping Stone in her 
 
 She says, "When you go back to that man with the clipboards, I'm coming. *We're* coming. Whole flock. We owe you a debt and we settle our debts."
 
-[CROSSOVER HOOK: *A small bright shape gallops across the high air above the lake, a unicorn, glimpsed for two seconds, with a small boy on her back. Skim watches it go. "Oh," she says. "There's another one of those today."*]
+*A small bright shape gallops across the high air above the lake, a unicorn, glimpsed for two seconds, with a small boy on her back. Skim watches it go. "Oh," she says. "There's another one of those today."*
 
 The flock lines the bank. They bow as Kellen walks past. The smallest one trips over its own feet again. Kellen catches it gently and sets it upright. The smallest one is in love with him forever.
 
-**→ Exit to P-156.**
 
-[STATE SET: items_earned += Stone (full). allies += Skim. allies += SkipStoneFlock. flags += WholeKidPlay. flags += PatternInvented.]
+> *This is Kellen's CROWN ending.*
+> **Turn to Passage 156.**
 
 ---
 
-## P-156, EXIT
-
-*~200 words. Always read.*
+## Passage 156 — Exit
 
 The racing canoe is where Kellen left it. The stones in his pocket clack softly against each other.
 
-[VARIANT: PATH A. *The birds wave with their wings. Skim watches him go without saying anything more.*]
 
-[VARIANT: PATH B. *Skim flies one loop above him as he pushes off, then settles on the bow of his canoe like she's claimed it. "I'll come when you call," she says. "Don't waste the call."*]
-
-[VARIANT: PATH C. *The whole flock takes off in formation behind his canoe, a small precision air force, the smallest bird at the back, doing its best. Skim flies alongside. "Kid invented a pattern," she keeps muttering. "Eleven years old. Kid invented a PATTERN."*]
-
-He has the stone (in whatever form he earned it). He has, somewhere in his chest, the new and weird feeling that he doesn't have to hide either half of himself anymore.
+He has the stone. He has, somewhere in his chest, the new and weird feeling that he doesn't have to hide either half of himself anymore.
 
 The flock has flown ahead. The smallest bird circles back to wave once.
 
@@ -333,6 +284,15 @@ That's the line. That's the line he is going to remember when he is fifteen, and
 
 He paddles toward the sound of the C-130, faint and far, somewhere up in the world above.
 
-**→ Region complete.**
+> **Kellen's chapter ends here.** Pick another cousin to follow next, or, if you've read them all, turn to Passage 400 (the gather).
+>
+> Madison at the Quiet Pool — turn to Passage 110.
+> Carson at the Coulee Plains — turn to Passage 130.
+> Reid at Old Speak's Wood — turn to Passage 140.
+> Chayten at the Driftwood Stage — turn to Passage 120.
+> Kiera at the Painted Cliff — turn to Passage 160.
+> Ella at the Bright Water Court — turn to Passage 170.
+> Aiden at the Unicorn Meadow — turn to Passage 180.
+> Ready to bring everyone home — turn to Passage 400.
 
 ---

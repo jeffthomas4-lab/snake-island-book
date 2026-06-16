@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>The Old Roar — Author Signature Pages</title>
+<style>
+  /* Print sizing — designed for 6×9 trade paperback */
+  @page {
+    size: 6in 9in;
+    margin: 0.75in 0.75in 0.875in 0.75in;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body {
+    background: #faf6ed;
+    color: #2b2419;
+    font-family: 'Charter', 'Georgia', serif;
+    font-size: 11pt;
+    line-height: 1.5;
+  }
+  body {
+    max-width: 6in;
+    margin: 0 auto;
+    padding: 0.75in 0.75in 0.875in 0.75in;
+  }
+  .page {
+    page-break-after: always;
+    min-height: 7.25in;
+    display: flex;
+    flex-direction: column;
+  }
+  .page:last-child { page-break-after: auto; }
+
+  h1.title {
+    font-size: 26pt;
+    font-weight: normal;
+    font-style: italic;
+    text-align: center;
+    margin-top: 1.25in;
+    letter-spacing: 1px;
+  }
+  .subtitle {
+    text-align: center;
+    font-size: 11pt;
+    font-style: italic;
+    color: #5a4f3f;
+    margin-top: 8px;
+    margin-bottom: 0.75in;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  .intro {
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 0.4in;
+    line-height: 1.7;
+    font-size: 11pt;
+    max-width: 4in;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .belongs-block {
+    text-align: center;
+    margin-top: 0.6in;
+    margin-bottom: 1in;
+  }
+  .belongs-label {
+    font-size: 12pt;
+    font-style: italic;
+    color: #2b2419;
+    margin-bottom: 0.4in;
+    letter-spacing: 1px;
+  }
+  .belongs-line {
+    border-bottom: 1.5px solid #2b2419;
+    width: 3.5in;
+    margin: 0 auto;
+    height: 0.5in;
+  }
+  .small-note {
+    text-align: center;
+    font-size: 9pt;
+    font-style: italic;
+    color: #8a7a60;
+    margin-top: 0.6in;
+    letter-spacing: 0.5px;
+  }
+
+  /* Author block grid */
+  h2.authors-title {
+    font-size: 22pt;
+    font-weight: normal;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 6px;
+    letter-spacing: 0.5px;
+  }
+  .authors-subtitle {
+    text-align: center;
+    font-size: 9pt;
+    font-style: italic;
+    color: #8a7a60;
+    margin-bottom: 0.28in;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  .author-block {
+    border-top: 1px solid rgba(43,36,25,0.25);
+    padding: 0.16in 0 0.18in 0;
+    margin-bottom: 0;
+  }
+  .author-block:last-child {
+    border-bottom: 1px solid rgba(43,36,25,0.25);
+  }
+  .author-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.1in;
+  }
+  .author-name {
+    font-size: 13pt;
+    font-weight: normal;
+    font-style: italic;
+    letter-spacing: 0.5px;
+  }
+  .author-name strong {
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 11pt;
+  }
+  .author-role {
+    font-size: 9pt;
+    font-style: italic;
+    color: #8a7a60;
+    letter-spacing: 0.5px;
+  }
+  .write-lines {
+    height: 0.85in;
+    background-image: repeating-linear-gradient(
+      to bottom,
+      transparent 0,
+      transparent 0.27in,
+      rgba(43,36,25,0.18) 0.27in,
+      rgba(43,36,25,0.18) calc(0.27in + 0.5pt)
+    );
+  }
+  .sig-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.08in;
+    font-size: 8.5pt;
+    font-style: italic;
+    color: #8a7a60;
+  }
+  .sig-line {
+    display: inline-block;
+    border-bottom: 0.75pt solid #2b2419;
+    height: 0.22in;
+    min-width: 1.8in;
+    margin-left: 6px;
+  }
+  .date-line {
+    display: inline-block;
+    border-bottom: 0.75pt solid #2b2419;
+    height: 0.22in;
+    min-width: 0.9in;
+    margin-left: 6px;
+  }
+
+  /* On-screen preview — gives a soft "page" backdrop so you can see the layout */
+  @media screen {
+    body { background: #eae3d2; padding: 0; }
+    .page {
+      background: #faf6ed;
+      max-width: 6in;
+      margin: 18px auto;
+      padding: 0.75in 0.75in 0.875in 0.75in;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+      min-height: 9in;
+    }
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ PAGE 1: This Book Belongs To ============ -->
+<section class="page">
+  <h1 class="title">This Book Belongs To</h1>
+  <div class="subtitle">A Sun Lakes Keepsake</div>
+
+  <div class="belongs-block">
+    <div class="belongs-line"></div>
+    <div class="belongs-label" style="margin-top:6px;font-size:9pt;letter-spacing:2px;text-transform:uppercase;">Owner</div>
+  </div>
+
+  <div class="intro" style="max-width:4.25in;">
+    This book was written by the eight of us, in the summer of <span style="border-bottom:0.75pt solid #2b2419;display:inline-block;min-width:0.7in;text-align:center;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>, at Sun Lakes. The pages that follow are signed by the rest of us. The story is yours. So are we.
+  </div>
+
+  <div class="small-note">&mdash; The Authors &mdash;</div>
+</section>
+
+
+<!-- ============ PAGE 2: The Authors (Madison, Carson, Reid, Chayten) ============ -->
+<section class="page">
+  <h2 class="authors-title">The Authors</h2>
+  <div class="authors-subtitle">Signed by all eight of us</div>
+
+  <div class="author-block">
+    <div class="author-head">
+      <div class="author-name"><strong>Madison</strong> &middot; <em>15</em></div>
+      <div class="author-role">Author of <em>The Quiet Pool</em></div>
+    </div>
+    <div class="write-lines"></div>
+    <div class="sig-row">
+      <span>Signed <span class="sig-line"></span></span>
+      <span>Date <span class="date-line"></span></span>
+    </div>
+  </div>
+
+  <div class="author-block">
+    <div class="author-head">
+      <div class="author-name"><strong>Carson</strong> &middot; <em>15</em></div>
+      <div class="author-role">Author of <em>The Coulee Plains</em></div>
+    </div>
+    <div class="write-lines"></div>
+    <div class="sig-row">
+      <span>Signed <span class="sig-line"></span></span>
+      <span>Date <span class="date-line"></span></span>
+    </div>
+  </div>
+
+  <div class="author-block">
+    <div class="author-head">
+      <div class="author-name"><strong>Reid</strong> &middot; <em>14</em></div>
+      <div class="author-role">Author of <em>Old Speak's Wood</em></div>
+    </div>
+    <div class="write-lines"></div>
+    <div class="sig-row">
+      <span>Signed <span class="sig-line"></span></span>
+      <span>Date <span class="date-line"></span></span>
+    </div>
+  </div>
+
+  <div class="author-block">
+    <div class="author-head">
+      <div class="author-name"><strong>Chayten</strong> &middot; <em>13</em></div>
+      <div class="author-role">Author of <em>The Driftwood Stage</em></div>
+    </div>
+    <div class="write-lines"></div>
+    <div class="sig-row">
+      <span>Signed <span class="sig-line"></span></span>
+      <span>Date <span class="date-line"></span></span>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============ PAGE 3: The Authors (Kellen, Keira, Ella, Aiden) ============ -->
+<section class="page">
+  <h2 class="authors-title">The Authors, continued</h2>
+  <div class="authors-subtitle">The younger half of the eight</div>
+
+  <div class="author-block">
+    <div class="author-head">
+      <div class="author-name"><strong>Kellen</strong> &middot; <em>12</em></div>
+      <div class="author-role">Author of <em>Skip-Stone Lake</em></div>
+    </div>
+    <div class="write-lines"></div>
+    <div class="sig-row">
+      <span>Signed <span class="sig-line"></span></span>
+      <span>Date <span class="date-line"></span></span>
+    </div>
+  </div>
+
+  <div class="author-block">
+    <div class="author-head">
+      <div class="author-name"><strong>Keira</strong> &middot; <em>10</em></div>
+      <div class="author-role">Author of <em>The Painted Cliff</em></div>
+    </div>
+    <div class="write-lines"></div>
+    <div class="sig-row">
+      <span>Signed <span class="sig-line"></span></span>
+      <span>Date <span class="date-line"></span></span>
+    </div>
+  </div>
+
+  <div class="author-block">
+    <div class="author-head">
+      <div class="author-name"><strong>Ella</strong> &middot; <em>10</em></div>
+      <div class="author-role">Author of <em>The Bright Water Court</em></div>
+    </div>
+    <div class="write-lines"></div>
+    <div class="sig-row">
+      <span>Signed <span class="sig-line"></span></span>
+      <span>Date <span class="date-line"></span></span>
+    </div>
+  </div>
+
+  <div class="author-block">
+    <div class="author-head">
+      <div class="author-name"><strong>Aiden</strong> &middot; <em>7</em></div>
+      <div class="author-role">Author of <em>The Unicorn Meadow</em></div>
+    </div>
+    <div class="write-lines"></div>
+    <div class="sig-row">
+      <span>Signed <span class="sig-line"></span></span>
+      <span>Date <span class="date-line"></span></span>
+    </div>
+  </div>
+
+  <div class="small-note" style="margin-top:0.3in;">
+    &mdash; The summer always starts the same way. The summer always will. &mdash;
+  </div>
+</section>
+
+</body>
+</html>

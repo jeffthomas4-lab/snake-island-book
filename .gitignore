@@ -22,3 +22,14 @@ Desktop.ini
 
 # Local environment
 .env
+
+# Large binaries (exceed GitHub's 100MB limit; regenerate from manuscript.md)
+*.docx
+*.pdf
+
+# Scratch renders from the PDF review pass
+page-*.jpg
+pdf_review_*.jpg
+images_small/
+unpacked_manuscript/
+.wrangler/

@@ -1,38 +1,6 @@
-# Madison's Region, The Quiet Pool
+## Passage 110 — Arrival at the Quiet Pool
 
-**Region ID:** R-MADISON
-**Passages:** P-110 through P-119
-**Focal kid:** Madison (15)
-**Item earned:** The Map (base / enhanced / full versions)
-**Possible allies:** Branch the beaver, the Lake Sisters
-**Possible flags:** CanyonSinger, HarborKeeperConnection
-
-This is the v3 CYOA-structured draft of Madison's region. The old `branches/madison.md` is kept as reference for v2 content.
-
----
-
-## Structure overview
-
-```
-P-110  Entry: arrival at the Quiet Pool       (always read, slight variant per wrapper)
-       ↓
-P-111  The cared-for moment                   (always read, fixes the editor note)
-       ↓
-P-112  Madison's choice                       (the real branch)
-       ├─ A. Share the cookies (base)         → P-113 → Map (base)
-       ├─ B. Ask how to help first (enhanced) → P-114 → Map (enhanced) + Branch ally
-       └─ C. Notice Wren first (hidden)       → P-115 → Map (full) + CanyonSinger flag
-       ↓
-P-116  Exit: the Sisters wave her off         (always read)
-```
-
-Word counts target ~2,800 total for the region.
-
----
-
-## P-110, ARRIVAL AT THE QUIET POOL
-
-*~350 words. Slight variant per wrapper (group of 8 / group of 4 / solo).*
+![](images/madison_region.png)
 
 Madison's raft slides to a stop on the shore of a pool so still you could roll a coin across it.
 
@@ -40,11 +8,7 @@ The raft is a wooden canoe now, with her name carved into the side: **MADISON**.
 
 The pool is shaped like a heart, if a heart had been drawn by someone who'd never seen one. Rocks at the edge. Cottonwoods leaning over the water. A heron standing on one leg in the shallows, looking at her like she's late.
 
-[VARIANT: STAY-TOGETHER. *The other seven kids are climbing out of their rafts behind her. Reid is already studying the rocks. Aiden is whispering something to a frog. Carson is sizing up the heron like he wants to race it. Madison turns and counts heads, eight. All present. Good.*]
-
-[VARIANT: SPLIT. *Three other kids are climbing out behind her, the group she came in with. They give her space. They know this one is hers.*]
-
-[VARIANT: SOLO. *She's alone. The other seven landed somewhere else. The silence is bigger than she expected. She steadies herself. Oldest kid. She knows what she's doing.*]
+She's alone. The other seven landed somewhere else. The silence is bigger than she expected. She steadies herself. Oldest kid. She knows what she's doing.
 
 Three heads pop up out of the water.
 
@@ -72,11 +36,13 @@ She is about to share them.
 
 Then Lark says: "Wait. First, sit down."
 
+> **Turn to Passage 111.**
+
 ---
 
-## P-111, THE CARED-FOR MOMENT
+## Passage 111 — The Cared-for Moment
 
-*~300 words. Always read. This is the fix for the previous editor's note about Madison needing one moment of being taken care of, not just being useful.*
+![](images/lake_sisters.png)
 
 "Wait. Don't sit. STAND. We have been watching you walk down the bank."
 
@@ -124,11 +90,11 @@ Madison sits forward.
 
 She is, in fact, ready now.
 
+> **Turn to Passage 112.**
+
 ---
 
-## P-112, MADISON'S CHOICE
-
-*~150 words. The real branch.*
+## Passage 112 — Madison's Choice
 
 Pip tells her the rest fast.
 
@@ -142,18 +108,15 @@ Pip is holding the first piece. It glints in her hand.
 
 Madison thinks for a second.
 
-> **If you take the piece Pip has and head back to the others, turn to P-113.** *(The fast path. You'll have a Map. Not the whole map, but enough.)*
+> **If you take the piece Pip has and head back to the others, turn to passage 113.**
 >
-> **If you ask the Sisters what they need from YOU first, turn to P-114.** *(There's a story there. It might cost time. It might be worth it.)*
+> **If you ask the Sisters what they need from YOU first, turn to passage 114.**
 >
-> **If you notice that Wren has gone quiet and ask her what's wrong, turn to P-115.** *(Wren is small. Most people don't see her. You see her.)*
+> **If you notice that Wren has gone quiet and ask her what's wrong, turn to passage 115.**
 
 ---
 
-## P-113, PATH A: SHARE THE COOKIES, TAKE THE PIECE (BASE)
-
-*~600 words. Yields Map (base version). No ally.*
-
+## Passage 113 — Share the Cookies, Take the Piece
 Madison opens her tin and shares the cookies fairly. One for Pip. One for Lark. The biggest one for Wren, because Wren is smallest.
 
 (Wren cries with joy. Lark and Pip do not comment. They've seen Wren cry over a particularly good rock.)
@@ -188,7 +151,7 @@ Madison rolls the paper carefully and tucks it inside her cookie tin. The tin cl
 
 Madison nods.
 
-[CROSSOVER HOOK: *If the reader has already played Aiden's branch and unlocked Pegasus, a small rainbow arcs over the pool for no reason. Lark looks up. "Huh," she says. "That hasn't happened before." Madison doesn't know what it means yet. She will.*]
+*If the reader has already played Aiden's branch and unlocked Pegasus, a small rainbow arcs over the pool for no reason. Lark looks up. "Huh," she says. "That hasn't happened before." Madison doesn't know what it means yet. She will.*
 
 Wren tugs her hand. "Will you come back?"
 
@@ -214,18 +177,15 @@ That lake is family to HER.
 
 She feels something land in her chest that she's been almost-knowing for years.
 
-She walks back to where the others are waiting (or back to her canoe, if solo) with the Map in her tin and a feeling in her chest she'll figure out later.
+She walks back to her canoe with the Map in her tin and a feeling in her chest she'll figure out later.
 
-**→ Exit to P-116.**
 
-[STATE SET: items_earned += Map (base). flags += ChosenFamilyHinted.]
+> *This is Madison's SILVER ending.*
+> **Turn to Passage 116.**
 
 ---
 
-## P-114, PATH B: ASK WHAT THEY NEED FIRST (ENHANCED)
-
-*~700 words. Yields Map (enhanced) + Branch the beaver as ally.*
-
+## Passage 114 — Ask What They Need First
 Madison doesn't open the tin yet.
 
 She looks at Pip and says, "What do you NEED?"
@@ -272,6 +232,8 @@ Branch is suspicious. But Madison didn't lead with what she wanted. Branch finds
 
 Inside the lodge: a tiny rocking chair, a tea kettle on a stone fire, and a wall of WONDERFUL trash. A spoon. A fishing lure. A pair of sunglasses. A small ceramic pig. Two folded pieces of paper that Madison's eyes go to immediately and then, very deliberately, away from.
 
+![](images/branch_beaver.png)
+
 Branch pours her a thimble of tea. (For a beaver, a thimble is a normal-sized cup. For Madison, it is approximately one drop.)
 
 She sits.
@@ -304,16 +266,13 @@ Branch waddles to the door, picks up a small bow tie from his wall of trash, and
 
 "Ready," he says.
 
-**→ Exit to P-116.**
 
-[STATE SET: items_earned += Map (enhanced). allies += Branch.]
+> *This is Madison's CROWN ending.*
+> **Turn to Passage 116.**
 
 ---
 
-## P-115, PATH C: NOTICE WREN FIRST (HIDDEN)
-
-*~700 words. Yields Map (full) + CanyonSinger flag. Hardest to find. Most rewarding.*
-
+## Passage 115 — Notice Wren First
 Madison was about to open her tin.
 
 She doesn't.
@@ -426,17 +385,15 @@ She doesn't know what she's going to tell her mom about this later.
 
 She'll figure it out.
 
-**→ Exit to P-116.**
 
-[STATE SET: items_earned += Map (full). flags += CanyonSinger. flags += ChosenFamilyHinted.]
+> *This is Madison's CROWN ending.*
+> **Turn to Passage 116.**
 
 ---
 
-## P-116, EXIT: THE SISTERS WAVE HER OFF
+## Passage 116 — Exit: the Sisters Wave Her Off
 
-*~250 words. Always read. Slight variant per path.*
-
-Madison walks back toward the meadow. (Or toward her canoe, if solo. Or toward her group, if split.)
+Madison walks back toward her canoe.
 
 The Sisters wave from the water. Their hair drips upward. Wren waves with both hands and a half-eaten pondweed cookie.
 
@@ -448,22 +405,26 @@ She turns back. "Who's your older sister?"
 
 Lark says, "The big one. The one your hotel is named for. The cove."
 
-[VARIANT: PATH A. *Madison feels something land in her chest she'll figure out later.*]
-
-[VARIANT: PATH B. *Madison feels something land in her chest. Behind her, Branch the beaver in a small bow tie says, "Tell her I said hi too." Madison promises she will.*]
-
-[VARIANT: PATH C. *Madison feels something land in her chest. She also feels, somewhere far below the pool, a woman's voice humming the start of a song. The lake is family. The song is family. She'll figure the rest out later.*]
 
 Her canoe is waiting.
 
 She steps in.
 
-She has the Map (in whatever form she earned it). She has, somewhere in her bones, the start of a feeling about chosen family that she's going to need at the dock in about an hour.
+She has the Map. She has, somewhere in her bones, the start of a feeling about chosen family that she's going to need at the dock in about an hour.
 
 The canoe pushes off. The Sisters wave from the water.
 
 Madison heads back toward the sound of the C-130, faint and far, somewhere up in the world above.
 
-**→ Region complete. Route to next region per Strategy choice, or to P-400 (gather) if this is her last region.**
+> **Madison's chapter ends here.** Pick another cousin to follow next, or, if you've read them all, turn to Passage 400 (the gather).
+>
+> Carson at the Coulee Plains — turn to Passage 130.
+> Reid at Old Speak's Wood — turn to Passage 140.
+> Chayten at the Driftwood Stage — turn to Passage 120.
+> Kellen at Skip-Stone Lake — turn to Passage 150.
+> Kiera at the Painted Cliff — turn to Passage 160.
+> Ella at the Bright Water Court — turn to Passage 170.
+> Aiden at the Unicorn Meadow — turn to Passage 180.
+> Ready to bring everyone home — turn to Passage 400.
 
 ---

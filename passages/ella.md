@@ -1,33 +1,6 @@
-# Ella's Region, The Bright Water Court
+## Passage 170 — Arrival at the Bright Water Court
 
-**Region ID:** R-ELLA
-**Passages:** P-170 through P-176
-**Focal kid:** Ella (10)
-**Item earned:** The Crown (base / enhanced / full)
-**Possible allies:** Marigold (frog herald), the egg-mother chorus
-**Possible flags:** CourageNotCrown, BrightWaterAlliance
-
----
-
-## Structure overview
-
-```
-P-170  Entry: arrival at the Bright Water Court
-P-171  The not-the-dress moment            (Ella's cared-for beat)
-P-172  Ella's choice
-       ├─ A. Take the throne, give advice   → P-173 → Crown (base)
-       ├─ B. Confront the fox in the court → P-174 → Crown (enhanced) + frog herald ally + egg-mother chorus
-       └─ C. Refuse the throne until co-rule → P-175 → Crown (full) + Marigold's herald + Bright Water Alliance flag
-P-176  Exit
-```
-
-Target ~2,600 words.
-
----
-
-## P-170, ARRIVAL AT THE BRIGHT WATER COURT
-
-*~350 words. Slight variant per wrapper.*
+![](images/ella_region.png)
 
 Ella's raft slides up onto a moss circle. The raft is now a small wooden boat with golden trim and a velvet seat. The velvet is dark green and the gold is real gold. She steps off, very carefully, because the gold trim catches the sun.
 
@@ -41,11 +14,7 @@ The frog says, "Your boat has GOLDEN TRIM. Only royalty have golden trim. We've 
 
 Ella looks at her boat. It really does have golden trim.
 
-[VARIANT: STAY-TOGETHER. *The other seven kids are standing on the edge of the moss circle, trying not to step on it. Aiden is talking to a frog. Madison is watching the court with her oldest-kid eyes. Carson is suppressing a grin because the frog has just bowed to Ella with extreme formality. Reid bows back to a different frog. The frog bows back to Reid. They are now in a formal exchange that neither of them knows the rules for.*]
-
-[VARIANT: SPLIT. *Three other kids are with her. Aiden is one, he chose her group because he likes how Ella always knows what to do. Keira is the second; she is already drawing the throne. Reid is the third, and he is being polite to the bowing frog. They give her space. They sense this one is hers.*]
-
-[VARIANT: SOLO. *Just her. She likes it. She likes the silence. At home she is the youngest girl and there is always someone in the next room. Here, for one whole hour, she gets to be the person other people are listening to. She straightens her dress without thinking. She makes her face the deciding face without knowing yet that's what it's called.*]
+Just her. She likes it. She likes the silence. At home she is the youngest girl and there is always someone in the next room. Here, for one whole hour, she gets to be the person other people are listening to. She straightens her dress without thinking. She makes her face the deciding face without knowing yet that's what it's called.
 
 She follows the frog into the glade. There are more frogs. There's a tiny throne in the middle, made of mossy stone. On the throne sits a girl Ella's age, wearing a crown that is slipping over one eye.
 
@@ -67,11 +36,11 @@ Ella has TWO older cousins who do this.
 
 She knows exactly how to handle it.
 
+> **Turn to Passage 171.**
+
 ---
 
-## P-171, THE NOT-THE-DRESS MOMENT
-
-*~280 words. Always read.*
+## Passage 171 — The Not-the-dress Moment
 
 Marigold scoots over on the throne. There's room for two. Ella sits beside her.
 
@@ -111,11 +80,11 @@ Marigold lowers her voice. "And, child, you are Ella the Deciding Face. The crow
 
 "The fox is coming. Now you'll see."
 
+> **Turn to Passage 172.**
+
 ---
 
-## P-172, ELLA'S CHOICE
-
-*~150 words. The real branch.*
+## Passage 172 — Ella's Choice
 
 The double-doors of the court (which are really two large lily pads on hinges) slam open.
 
@@ -125,18 +94,15 @@ Behind him, hiding under a fern, is a tiny water-creature, round, soft, frighten
 
 Marigold says, "Oh no."
 
-> **If you take the throne and give Marigold advice from the royal chair, turn to P-173.** *(You play the strategist. You help with words.)*
+> **If you take the throne and give Marigold advice from the royal chair, turn to passage 173.**
 >
-> **If you stand up, walk past Marigold, and step between the fox and the fern, turn to P-174.** *(You play protector. Face the fox.)*
+> **If you stand up, walk past Marigold, and step between the fox and the fern, turn to passage 174.**
 >
-> **If you tell Marigold "you don't have to do this alone, I'll be queen WITH you," turn to P-175.** *(You play friend. You change the rules of the court.)*
+> **If you tell Marigold "you don't have to do this alone, I'll be queen WITH you," turn to passage 175.**
 
 ---
 
-## P-173, PATH A: GIVE ADVICE (BASE)
-
-*~500 words. Yields Crown (base).*
-
+## Passage 173 — Give Advice
 Ella takes the throne next to Marigold.
 
 She whispers advice. Marigold listens. The fox unrolls his scroll and starts reading territorial claims in a smooth confident voice. Marigold counters him, using Ella's words, and the fox's claims wobble. The court frogs jump back and forth, taking notes, occasionally yelling about a misplaced clause.
@@ -153,20 +119,17 @@ Marigold says, "Now you're a Queen of the Bright Water too. If you ever need us,
 
 Ella curtseys. Marigold curtseys back. The frogs erupt in tiny ceremonious clapping.
 
-[CROSSOVER HOOK: *If the reader has played Carson's branch, a small mammoth baby's trumpet carries faintly from somewhere across the plains. The smallest frog says, "Was that, Tuft?" The other frogs argue about whether it was Tuft or Tumble. They argue about this for the rest of the day.*]
+*If the reader has played Carson's branch, a small mammoth baby's trumpet carries faintly from somewhere across the plains. The smallest frog says, "Was that, Tuft?" The other frogs argue about whether it was Tuft or Tumble. They argue about this for the rest of the day.*
 
 Ella walks back to her boat. She is wearing an invisible crown that she alone can see. It feels exactly right on her head.
 
-**→ Exit to P-176.**
 
-[STATE SET: items_earned += Crown (base).]
+> *This is Ella's SILVER ending.*
+> **Turn to Passage 176.**
 
 ---
 
-## P-174, PATH B: STEP BETWEEN THE FOX AND THE FERN (ENHANCED)
-
-*~600 words. Yields Crown (enhanced) + frog herald ally + egg-mother chorus ally.*
-
+## Passage 174 — Step Between the Fox and the Fern
 Ella stands up.
 
 She walks down the throne steps. She steps between the fox and the fern.
@@ -225,20 +188,17 @@ Marigold has been silent on the throne, watching all of this. Now she stands.
 
 The frog herald (a small dignified frog in a sash) bows.
 
-[CROSSOVER HOOK: *A long ribbon of color drifts across the sky above the court, blue, orange, green, that hadn't been there before. The egg-mother looks up. "The painter girl. She's been at the cliff. The basalt is waking up. We have not seen the basalt wake up in a hundred years."*]
+*A long ribbon of color drifts across the sky above the court, blue, orange, green, that hadn't been there before. The egg-mother looks up. "The painter girl. She's been at the cliff. The basalt is waking up. We have not seen the basalt wake up in a hundred years."*
 
 Ella walks back toward her boat. The herald hops along beside her. The egg-mother (and twelve tiny rolling eggs) follow.
 
-**→ Exit to P-176.**
 
-[STATE SET: items_earned += Crown (enhanced). allies += FrogHerald. allies += EggMotherChorus. flags += CourageNotCrown.]
+> *This is Ella's CROWN ending.*
+> **Turn to Passage 176.**
 
 ---
 
-## P-175, PATH C: CO-RULE (HIDDEN)
-
-*~600 words. Yields Crown (full) + Marigold's herald + Bright Water Alliance flag.*
-
+## Passage 175 — Co-rule
 Before the fox can finish his bow, Ella turns to Marigold.
 
 "You don't have to do this alone."
@@ -287,29 +247,22 @@ The frog herald produces a tiny scroll, bows three times, and hops off into a sm
 
 Marigold gives Ella the formal queen-greeting (a kiss on each cheek). The frogs do their best to cheer. The smallest frog faints again.
 
-[CROSSOVER HOOK: *If the reader has played Aiden's branch, a small bright shape passes through the glade for a moment, a unicorn with a small boy on her back. Marigold sees it. "He's a friend of yours?" she asks. "He looks like he believes in things."*]
+*If the reader has played Aiden's branch, a small bright shape passes through the glade for a moment, a unicorn with a small boy on her back. Marigold sees it. "He's a friend of yours?" she asks. "He looks like he believes in things."*
 
 Ella walks back to her boat. The crown on her head is invisible to most. The egg-mother and her chorus, somehow, have also decided to come.
 
-**→ Exit to P-176.**
 
-[STATE SET: items_earned += Crown (full). allies += FrogHerald. allies += MarigoldHerald. flags += CourageNotCrown. flags += BrightWaterAlliance.]
+> *This is Ella's CROWN ending.*
+> **Turn to Passage 176.**
 
 ---
 
-## P-176, EXIT
-
-*~200 words. Always read.*
+## Passage 176 — Exit
 
 The boat with the gold trim is waiting in the rushes.
 
-[VARIANT: PATH A. *Marigold waves from the throne. The frogs argue about the correct way to wave. Ella laughs.*]
 
-[VARIANT: PATH B. *The herald hops alongside. The egg-mother rides on Ella's shoulder, tiny eggs cradled in a fold of velvet she has commandeered.*]
-
-[VARIANT: PATH C. *The herald is already gone, somewhere ahead, in the world above. Marigold stands and waves from the throne with both hands. She is wearing Ella's Sun Lakes hair ornament. It looks ridiculous on a frog-queen and Marigold loves it.*]
-
-She has the Crown (in whatever form). She has, on her head, a weight that feels less like decoration and more like *deciding.*
+She has the Crown. She has, on her head, a weight that feels less like decoration and more like *deciding.*
 
 She practices it as she pushes off, the deciding face. She tries it once in the reflection of the water. There it is. She did not have it this morning. She has it now.
 
@@ -319,6 +272,15 @@ That's the line she'll remember. *She knows what her face is.* No one can take t
 
 She paddles toward the sound of the C-130, faint and far, somewhere up in the world above.
 
-**→ Region complete.**
+> **Ella's chapter ends here.** Pick another cousin to follow next, or, if you've read them all, turn to Passage 400 (the gather).
+>
+> Madison at the Quiet Pool — turn to Passage 110.
+> Carson at the Coulee Plains — turn to Passage 130.
+> Reid at Old Speak's Wood — turn to Passage 140.
+> Chayten at the Driftwood Stage — turn to Passage 120.
+> Kellen at Skip-Stone Lake — turn to Passage 150.
+> Kiera at the Painted Cliff — turn to Passage 160.
+> Aiden at the Unicorn Meadow — turn to Passage 180.
+> Ready to bring everyone home — turn to Passage 400.
 
 ---

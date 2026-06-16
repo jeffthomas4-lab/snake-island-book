@@ -1,36 +1,6 @@
-# Chayten's Region, The Driftwood Stage
+## Passage 120 — Arrival at the Driftwood Stage
 
-**Region ID:** R-CHAYTEN
-**Passages:** P-120 through P-126
-**Focal kid:** Chayten (13)
-**Item earned:** The Voice (base / enhanced / full)
-**Possible allies:** Otto the otter, Pickle the small otter, the Driftwood Players
-**Possible flags:** ValuedForPresence, ChosenBrotherTheme
-
----
-
-## Structure overview
-
-```
-P-120  Entry: arrival at the Driftwood Stage    (always read, slight variant per wrapper)
-       ↓
-P-121  The be-a-kid moment                     (always read, Chayten's parallel to Madison's float)
-       ↓
-P-122  Chayten's choice                         (the real branch)
-       ├─ A. Just take the role and perform     → P-123 → Voice (base)
-       ├─ B. Ask Otto what the play is about    → P-124 → Voice (enhanced) + Otto ally
-       └─ C. Notice Pickle in the back first    → P-125 → Voice (full) + Pickle as small companion + ValuedForPresence flag
-       ↓
-P-126  Exit: the troupe sees her off            (always read, variant per path)
-```
-
-Target ~2,800 words total.
-
----
-
-## P-120, ARRIVAL AT THE DRIFTWOOD STAGE
-
-*~350 words. Slight variant per wrapper.*
+![](images/driftwood_players.png)
 
 Chayten's raft slides onto a grassy hill above a half-moon of water. The raft used to be a paddle board. Now it's a small driftwood boat with her initials burned into the bow. Her sandals are still wet from the dock at home.
 
@@ -42,11 +12,7 @@ They are humming.
 
 It's a low sound, the kind of sound you feel in your sternum before your ears catch it. The stones are warming up for something. They are an audience that arrived early.
 
-[VARIANT: STAY-TOGETHER. *The other seven kids land beside her. Aiden grabs her hand the way he always does when there's a new sound. Madison is counting heads. Reid is studying the construction of the stage. Carson, who has been to a play exactly twice in his life, says quietly: "This is going to be amazing."*]
-
-[VARIANT: SPLIT. *Three other kids are with her. Aiden is one of them, he asked to come with Chayten, the way he always does, and Chayten said yes, the way she always does. Reid is the other one, positioning himself so he can see both the stage and his cousins at once.*]
-
-[VARIANT: SOLO. *She's alone. The others are elsewhere. Aiden is not here. Her stomach pulls toward wherever he is. She is very aware of how loud the Stones' humming is when there's no one beside her to share the sound with. She has not been this alone in a long time. The humming gets bigger when nobody else is there to soak it up.*]
+She's alone. The others are elsewhere. Aiden is not here. Her stomach pulls toward wherever he is. She is very aware of how loud the Stones' humming is when there's no one beside her to share the sound with. She has not been this alone in a long time. The humming gets bigger when nobody else is there to soak it up.
 
 On the stage, a dozen otters are running in a panic.
 
@@ -58,11 +24,13 @@ He stands up very slowly.
 
 He says, in a voice like an entire theater season ending: "*You.* You with the EYES. Get DOWN here."
 
+> **Turn to Passage 121.**
+
 ---
 
-## P-121, THE BE-A-KID MOMENT
+## Passage 121 — The Be-a-kid Moment
 
-*~300 words. Always read.*
+![](images/chayten_region.png)
 
 Chayten walks down the grass slope. The wet ones in her sandals squelch.
 
@@ -116,11 +84,11 @@ Otto stands slowly. "And one more thing, child. You are Chayten the Connector. T
 
 "*Excellent.* Now. Follow me."
 
+> **Turn to Passage 122.**
+
 ---
 
-## P-122, CHAYTEN'S CHOICE
-
-*~150 words. The real branch.*
+## Passage 122 — Chayten's Choice
 
 Otto leads her up the driftwood ramp to the stage. The other otters part for her like she's already someone important. One of them tries to hand her a small velvet cape. Another tries to hand her a script.
 
@@ -128,18 +96,15 @@ Otto waves them all off. He turns to Chayten and says, with great formality:
 
 "The play is *The Tale of the Lost Brother.* The lead is the SISTER. You have forty minutes. How would you like to begin?"
 
-> **If you take the script and start reading, turn to P-123.** *(Fast. Honest. You're a quick study.)*
+> **If you take the script and start reading, turn to passage 123.**
 >
-> **If you ask Otto what the play is really about first, turn to P-124.** *(There's a story under the story. There always is.)*
+> **If you ask Otto what the play is really about first, turn to passage 124.**
 >
-> **If you notice a small otter shaking by the wardrobe trunk and go to her first, turn to P-125.** *(Otto can wait. The small one can't.)*
+> **If you notice a small otter shaking by the wardrobe trunk and go to her first, turn to passage 125.**
 
 ---
 
-## P-123, PATH A: TAKE THE SCRIPT (BASE)
-
-*~600 words. Yields Voice (base). No ally beyond the troupe in general.*
-
+## Passage 123 — Take the Script
 Chayten takes the script. The paper is soft from a thousand readings. The handwriting is small and looped.
 
 She reads fast. The play is short, six scenes, maybe twenty minutes of stage time. It is about a young otter girl whose little brother was lost in a storm. She spends the rest of her life singing him home, every night, by the water, until she is old. Then she finds him. That's the ending.
@@ -172,7 +137,7 @@ The small otter shrugs. "You said his name when you got nervous."
 
 Chayten tucks the fish in her pocket.
 
-[CROSSOVER HOOK: *If the reader has played Madison's branch, the small otter pauses and tilts her head toward something far off. "Did you hear that?" she whispers. "Someone is dancing on water." Chayten listens. She thinks she hears, very faintly, footsteps on stone, the precise sound a ballerina makes when she lands.*]
+*If the reader has played Madison's branch, the small otter pauses and tilts her head toward something far off. "Did you hear that?" she whispers. "Someone is dancing on water." Chayten listens. She thinks she hears, very faintly, footsteps on stone, the precise sound a ballerina makes when she lands.*
 
 She leaves with the mask in her hands, the fish in her pocket, and the feeling that she did something well.
 
@@ -186,16 +151,13 @@ She thinks she might know.
 
 She doesn't quite say it out loud.
 
-**→ Exit to P-126.**
 
-[STATE SET: items_earned += Voice (base). flags += SmallFishForAiden.]
+> *This is Chayten's SILVER ending.*
+> **Turn to Passage 126.**
 
 ---
 
-## P-124, PATH B: ASK WHAT THE PLAY IS ABOUT (ENHANCED)
-
-*~700 words. Yields Voice (enhanced) + Otto as showdown ally.*
-
+## Passage 124 — Ask What the Play Is About
 Chayten doesn't take the script yet.
 
 She looks Otto in the eye.
@@ -254,16 +216,13 @@ A small otter (Pickle, Chayten learns) gives her a silver fish for Aiden. Pickle
 
 Chayten leaves with the mask, the fish, an old otter shouldering a velvet cape behind her, and a feeling she will not put into words for several days.
 
-**→ Exit to P-126.**
 
-[STATE SET: items_earned += Voice (enhanced). allies += Otto. flags += ChosenBrotherTheme.]
+> *This is Chayten's CROWN ending.*
+> **Turn to Passage 126.**
 
 ---
 
-## P-125, PATH C: NOTICE PICKLE FIRST (HIDDEN)
-
-*~700 words. Yields Voice (full) + Pickle as small companion + ValuedForPresence flag.*
-
+## Passage 125 — Notice Pickle First
 Chayten was about to take the script.
 
 But there's a small otter shaking by the wardrobe trunk.
@@ -340,42 +299,44 @@ So she just bows.
 
 The Stones hum.
 
-[CROSSOVER HOOK: *If the reader has played Aiden's branch, the bioluminescent moss-lights above the stage briefly form the shape of a unicorn galloping across the ceiling. Pickle squeaks and points. Chayten looks up. She smiles like she already knew.*]
+*If the reader has played Aiden's branch, the bioluminescent moss-lights above the stage briefly form the shape of a unicorn galloping across the ceiling. Pickle squeaks and points. Chayten looks up. She smiles like she already knew.*
 
 Pickle gives her a small silver fish for Aiden. (Pickle had been saving it. She had been waiting for someone like Chayten.)
 
 Chayten leaves with the mask, the fish, Pickle on her shoulder, and the weird permanent feeling that the biggest Stone in the back was speaking specifically to her.
 
-**→ Exit to P-126.**
 
-[STATE SET: items_earned += Voice (full). allies += Otto. allies += Pickle. flags += ValuedForPresence. flags += ChosenBrotherTheme.]
+> *This is Chayten's CROWN ending.*
+> **Turn to Passage 126.**
 
 ---
 
-## P-126, EXIT: THE TROUPE SEES HER OFF
-
-*~250 words. Always read. Slight variant per path.*
+## Passage 126 — Exit: the Troupe Sees Her Off
 
 The otters line up to wave her off. They are an enthusiastic farewell committee. The fussy one with the measuring tape demands she stand still for "*one more fitting, in case we need you again.*" The wardrobe-trunk one gives her a small velvet square ("*for emergencies*").
 
 The Stones hum, low and warm.
 
-[VARIANT: PATH A. *Chayten waves back and walks toward the meadow. The small otter who gave her the fish stands at the edge of the stage and waves until she's out of sight.*]
-
-[VARIANT: PATH B. *Otto walks beside her, his velvet cape over his shoulder, his bandaged whiskers tilted with new dignity. He hums his brother's name under his breath. Chayten doesn't ask. She just walks with him.*]
-
-[VARIANT: PATH C. *Pickle is on her shoulder. Otto walks beside her, weeping discreetly. The Stones in the back, the big silent ones, hum once more in farewell. Chayten feels it in her teeth.*]
 
 Her boat is waiting in the water below the stage.
 
 She steps in.
 
-She has the Otter Mask (in whatever form she earned it). She has the silver fish for Aiden. She has, somewhere under her ribs, the new and complicated feeling that a play she helped fix was also somehow a play about her own life.
+She has the Otter Mask. She has the silver fish for Aiden. She has, somewhere under her ribs, the new and complicated feeling that a play she helped fix was also somehow a play about her own life.
 
 She heads back toward wherever Aiden is.
 
 She always does.
 
-**→ Region complete. Route to next region per Strategy choice, or to P-400 (gather) if this is her last region.**
+> **Chayten's chapter ends here.** Pick another cousin to follow next, or, if you've read them all, turn to Passage 400 (the gather).
+>
+> Madison at the Quiet Pool — turn to Passage 110.
+> Carson at the Coulee Plains — turn to Passage 130.
+> Reid at Old Speak's Wood — turn to Passage 140.
+> Kellen at Skip-Stone Lake — turn to Passage 150.
+> Kiera at the Painted Cliff — turn to Passage 160.
+> Ella at the Bright Water Court — turn to Passage 170.
+> Aiden at the Unicorn Meadow — turn to Passage 180.
+> Ready to bring everyone home — turn to Passage 400.
 
 ---

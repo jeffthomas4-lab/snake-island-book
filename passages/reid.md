@@ -1,33 +1,6 @@
-# Reid's Region, Old Speak's Wood
+## Passage 140 — Arrival in the Rocky Wood
 
-**Region ID:** R-REID
-**Passages:** P-140 through P-146
-**Focal kid:** Reid (14)
-**Item earned:** The Unbreakable Staff (base / enhanced / full)
-**Possible allies:** Old Speak
-**Possible flags:** DockHealing, AncientWitness
-
----
-
-## Structure overview
-
-```
-P-140  Entry: arrival in the rocky wood
-P-141  The just-sit moment                     (Reid's cared-for beat)
-P-142  Reid's choice
-       ├─ A. Carve a staff quickly             → P-143 → Staff (base)
-       ├─ B. Ask Old Speak to teach the technique → P-144 → Staff (enhanced) + Old Speak ally
-       └─ C. Tell Old Speak a story first      → P-145 → Staff (full) + Old Speak ally + DockHealing flag
-P-146  Exit
-```
-
-Target ~2,600 words.
-
----
-
-## P-140, ARRIVAL IN THE ROCKY WOOD
-
-*~350 words. Slight variant per wrapper.*
+![](images/reid_region.png)
 
 Reid's raft slides up onto a beach made of small flat stones. The raft has become a long log canoe, hollowed out, the inside smooth from many hands. He steps off without looking, his feet already know.
 
@@ -43,11 +16,7 @@ Reid looks up. Calmly. He has been startled by many things in his life and react
 
 The stump is not a stump. It is a person. Bark for skin, leaves growing where hair should be. He is enormous, twice Reid's size, but he's sitting down so he doesn't seem scary. Just *large.*
 
-[VARIANT: STAY-TOGETHER. *The other seven kids are stepping off their rafts onto the beach. Aiden grabs Reid's hand automatically. Reid squeezes back, automatic too. Carson stops to study the moss on a stone. Madison is taking the kind of breath you take when you walk into a library that's older than your country.*]
-
-[VARIANT: SPLIT. *Three others land beside him. Aiden is one of them. Ella is another. Madison is the third. Reid is the only one in his cabin who didn't bring a book on this vacation, and he is also the only one who feels at home in places like this. Aiden tucks himself against Reid's side. Reid puts a hand on the top of his head without thinking about it.*]
-
-[VARIANT: SOLO. *Just him. The wood is enormous around him. He is not afraid. He has been alone in big places before. He has been alone at the back dock in the dark, after everyone else has gone in, listening for the bats. He knows how to be quiet inside something quiet. Maybe more than any of the other kids, this is where he was meant to land.*]
+Just him. The wood is enormous around him. He is not afraid. He has been alone in big places before. He has been alone at the back dock in the dark, after everyone else has gone in, listening for the bats. He knows how to be quiet inside something quiet. Maybe more than any of the other kids, this is where he was meant to land.
 
 "FINALLY a visitor," the tree-person says. "Wait, am I sure? I might be dreaming. Pinch me. No, don't. I'm bark, you'll hurt your fingers."
 
@@ -61,11 +30,13 @@ Old Speak watches him for a long moment.
 
 "You make sticks," he says. "I like sticks."
 
+> **Turn to Passage 141.**
+
 ---
 
-## P-141, THE JUST-SIT MOMENT
+## Passage 141 — The Just-sit Moment
 
-*~250 words. Always read.*
+![](images/trees_bowing.png)
 
 Old Speak watches Reid whittle for a while longer.
 
@@ -101,11 +72,11 @@ Reid swallows.
 
 Then he picks up the stick again, but slower this time.
 
+> **Turn to Passage 142.**
+
 ---
 
-## P-142, REID'S CHOICE
-
-*~150 words. The real branch.*
+## Passage 142 — Reid's Choice
 
 Old Speak says, "Now then. You're here to make a STAFF. I can tell. The wood under your hand wants to become one. The wood always wants to become whatever the maker wants. That is a wood thing."
 
@@ -113,18 +84,15 @@ He gestures. Three pieces of wood lie at Reid's feet that weren't there a moment
 
 "Take one. Carve it. The staff you carve will be what you need it to be."
 
-> **If you take the maple and start carving, clean, fast, the way you've made every stick at home, turn to P-143.** *(Honest work. Reliable. Done in twenty minutes.)*
+> **If you take the maple and start carving, clean, fast, the way you've made every stick at home, turn to passage 143.**
 >
-> **If you ask Old Speak to teach you a technique you don't know yet, turn to P-144.** *(Costs time. Learn something only Old Speak knows.)*
+> **If you ask Old Speak to teach you a technique you don't know yet, turn to passage 144.**
 >
-> **If you ask Old Speak to tell you about the driftwood, where it came from, how old it is, turn to P-145.** *(There's a story in that wood. You can feel it.)*
+> **If you ask Old Speak to tell you about the driftwood, where it came from, how old it is, turn to passage 145.**
 
 ---
 
-## P-143, PATH A: TAKE THE MAPLE, CARVE FAST (BASE)
-
-*~500 words. Yields Staff (base).*
-
+## Passage 143 — Take the Maple, Carve Fast
 Reid takes the maple. He knows maple. He's made twenty walking sticks out of maple over twenty summers. His hands know the grain and the way it splits and the way it doesn't.
 
 He carves. Old Speak watches.
@@ -143,7 +111,7 @@ He pats the staff. Then he reaches into his bark and pulls out a tiny carving, a
 
 Reid pockets the tiny staff.
 
-[CROSSOVER HOOK: *If the reader has played Carson's branch, there's a faint distant rumble from a long way off, a mammoth running on packed grass. Old Speak's leaves rustle once. "She's a good one," he says. "Loud, though." He does not explain.*]
+*If the reader has played Carson's branch, there's a faint distant rumble from a long way off, a mammoth running on packed grass. Old Speak's leaves rustle once. "She's a good one," he says. "Loud, though." He does not explain.*
 
 Reid stands. He thanks Old Speak. He walks back toward his raft.
 
@@ -155,16 +123,13 @@ Reid laughs, just a little.
 
 He paddles away with a maple staff that will hold a bulldozer.
 
-**→ Exit to P-146.**
 
-[STATE SET: items_earned += Staff (base).]
+> *This is Reid's SILVER ending.*
+> **Turn to Passage 146.**
 
 ---
 
-## P-144, PATH B: ASK FOR THE TECHNIQUE (ENHANCED)
-
-*~600 words. Yields Staff (enhanced) + Old Speak ally.*
-
+## Passage 144 — Ask for the Technique
 Reid says, "Can you teach me something I don't know yet?"
 
 Old Speak's whole face does something. His leaves brighten. The bark at the corners of his mouth crinkles upward.
@@ -201,20 +166,17 @@ Reid says, "Are you sure?"
 
 "Child," Old Speak says, "I am made of *wood.* I will be very dramatic. Try and stop me."
 
-[CROSSOVER HOOK: *Far off, the bark of a wooly mammoth narrating her own training carries through the canopy. Old Speak's leaves rustle once. "Loud one," he says, affectionately. "Best of the racers. Don't tell her I said so."*]
+*Far off, the bark of a wooly mammoth narrating her own training carries through the canopy. Old Speak's leaves rustle once. "Loud one," he says, affectionately. "Best of the racers. Don't tell her I said so."*
 
 Reid stands. Old Speak picks up the maple piece Reid didn't use and tucks it under his arm, "for snacking later", and follows Reid down to the beach. The canopy parts for him as he walks.
 
-**→ Exit to P-146.**
 
-[STATE SET: items_earned += Staff (enhanced). allies += OldSpeak.]
+> *This is Reid's CROWN ending.*
+> **Turn to Passage 146.**
 
 ---
 
-## P-145, PATH C: ASK ABOUT THE DRIFTWOOD (HIDDEN)
-
-*~600 words. Yields Staff (full) + Old Speak ally + DockHealing flag.*
-
+## Passage 145 — Ask About the Driftwood
 Reid says, "Tell me about the driftwood. Where did it come from?"
 
 Old Speak goes still. Then he laughs, a quiet laugh this time, not the shake-the-trees one.
@@ -257,32 +219,34 @@ After a long moment, he says, "Can you come with me?"
 
 He stands. He bows to Reid the way ancient things bow, slowly, with their whole body.
 
-[CROSSOVER HOOK: *If the reader has played Aiden's branch, a small bright shape passes through a high gap in the canopy, a unicorn galloping, with a small boy on her back. Old Speak watches it go. "That child found his friend," he says, satisfied. "Good. Good. Good."*]
+*If the reader has played Aiden's branch, a small bright shape passes through a high gap in the canopy, a unicorn galloping, with a small boy on her back. Old Speak watches it go. "That child found his friend," he says, satisfied. "Good. Good. Good."*
 
 Reid walks down to the beach. Old Speak follows. The wood opens for him.
 
-**→ Exit to P-146.**
 
-[STATE SET: items_earned += Staff (full). allies += OldSpeak. flags += DockHealing. flags += AncientWitness.]
+> *This is Reid's CROWN ending.*
+> **Turn to Passage 146.**
 
 ---
 
-## P-146, EXIT
-
-*~200 words. Always read.*
+## Passage 146 — Exit
 
 The log canoe is where Reid left it. The Listen bird watches from the upper branches.
 
-[VARIANT: PATH A. *Reid pushes off. Old Speak waves with leafy fingers from the beach.*]
 
-[VARIANT: PATH B. *Reid pushes off with his enhanced staff across the bow. Old Speak wades into the shallows beside him, his bark feet creating their own small wake. They travel together.*]
-
-[VARIANT: PATH C. *Reid pushes off with his bonded staff across his lap, humming faintly. Old Speak walks alongside, half in the water, half not, the canopy of every tree on the bank reaching slightly toward him as he passes.*]
-
-He has a staff (base, enhanced, or full). He has a tiny carved memory token in his pocket. He has, somewhere under his ribs, a feeling about being SEEN that he is still figuring out.
+He has a staff. He has a tiny carved memory token in his pocket. He has, somewhere under his ribs, a feeling about being SEEN that he is still figuring out.
 
 He paddles toward the sound of the C-130, faint and far, somewhere up in the world above.
 
-**→ Region complete.**
+> **Reid's chapter ends here.** Pick another cousin to follow next, or, if you've read them all, turn to Passage 400 (the gather).
+>
+> Madison at the Quiet Pool — turn to Passage 110.
+> Carson at the Coulee Plains — turn to Passage 130.
+> Chayten at the Driftwood Stage — turn to Passage 120.
+> Kellen at Skip-Stone Lake — turn to Passage 150.
+> Kiera at the Painted Cliff — turn to Passage 160.
+> Ella at the Bright Water Court — turn to Passage 170.
+> Aiden at the Unicorn Meadow — turn to Passage 180.
+> Ready to bring everyone home — turn to Passage 400.
 
 ---
